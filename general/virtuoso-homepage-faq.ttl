@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/1a606985c34713e64c4c04446c2dca2e634089f5#this>
+  a schema:Question;
+  schema:about <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/a902b6ad755dbd97b7e967c9c2ed9cc56e4edbd5#this>;
+  schema:name "How Do I Get Started?"@en.
+
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/a902b6ad755dbd97b7e967c9c2ed9cc56e4edbd5#this>
+  a schema:Answer;
+  schema:text """If you are installing on-premise simply download a free evaluation license using our on-boarding service. If you prefer Docker Containers, 
+                 simply download an appropriate container from our Docker Hub Repository. If you need instant gratification provided by Cloud deployment, 
+                 you have a choice of Bring-Your-Own-License (BYOL) and Pay-As-You-Go (PAGO) options from the Amazon Web Services (AWS) and Microsoft Azure Clouds. """;
+  schema:name "Getting started is simple. Download and begin a 30-day evaluation license via our on-boarding site"@en ;
+  schema:relatedLink <https://shop.openlinksw.com/license_generator/virtuoso/>, <https://hub.docker.com/u/openlink>, 
+                  <https://aws.amazon.com/marketplace/pp/B08K97YRGK?ref_=srh_res_product_title>, 
+                  <https://aws.amazon.com/marketplace/pp/B08KTPPY8V?ref_=srh_res_product_title>,
+                  <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview>,
+                  <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-pago-offer-20201019?tab=Overview> . 
+
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/517696a8604089bedb7562b999e57ae538eca3ce#this>
+  a schema:Question;
+  schema:about <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/3c99389b877fba9266377eded245983f2320976c#this>;
+  schema:name "How much does a Virtuoso License cost?"@en.
+
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/3c99389b877fba9266377eded245983f2320976c#this>
+  a schema:Answer;
+  schema:text "Entry-Level Pricing can be found on our pricing page. Custom and Enterprise quotes can also be made by contacting a sales representative.";
+  schema:name "A selection of offers can be found using our offers page, or by contacting a sales representative."@en ;
+  schema:relatedLink <https://virtuoso.openlinksw.com/pricing>, <https://www.openlinksw.com/contact/> . 
+
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/2417d14acdf01e5ed2993eb5014ac5ee314aae67#this>
+  a schema:Question;
+  schema:about <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/38223c3529264d6d8c355047bc6173be111a2b29#this>;
+  schema:name "What are the Developer, Integrator, Reseller, Distributor, and OEM partnering options?"@en.
+
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/38223c3529264d6d8c355047bc6173be111a2b29#this>
+  a schema:Answer;
+  schema:text "Partnering options can be explored through our partners page.";
+  schema:name "Partnering options can be explored through our partners page."@en ;
+  schema:relatedLink <https://www.openlinksw.com/partners/> . 

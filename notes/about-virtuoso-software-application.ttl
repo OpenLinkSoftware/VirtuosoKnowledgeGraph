@@ -1,0 +1,108 @@
+## Prefix Declarations ##
+@prefix schema: <http://schema.org/> . 
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix virt-software-app-main: <http://data.openlinksw.com/oplweb/product/Virtuoso#> . 
+@prefix virt-software-app-release: <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#> . 
+@prefix virt-software-app: <http://virtuoso.openlinksw.com/#> . 
+@prefix virt-software-app-page: <http://virtuoso.openlinksw.com/> . 
+
+@prefix virt-azure-pago: <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-pago-offer-20201019#> .
+@prefix virt-azure-pago-page: <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-pago-offer-20201019/> .
+@prefix virt-azure-pago-pricing-page: <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-pago-offer-20201019?tab=PlansAndPrice#> .
+@prefix virt-azure-byol: <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017#> .
+@prefix virt-azure-byol-page: <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017/> .
+@prefix virt-azure-byol-pricing-page: <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=PlansAndPrice#> .
+
+@prefix virt-aws-pago: <https://aws.amazon.com/marketplace/pp/OpenLink-Software-Virtuoso-833319-PAGO-Edition-for/B011VMCZ8K#> .
+@prefix virt-aws-pago-page: <https://aws.amazon.com/marketplace/pp/OpenLink-Software-Virtuoso-833319-PAGO-Edition-for/B011VMCZ8K/> .
+@prefix virt-aws-pago-pricing-page: <https://aws.amazon.com/marketplace/pp/OpenLink-Software-Virtuoso-833319-PAGO-Edition-for/B011VMCZ8K#pdp-pricing/> .
+@prefix virt-aws-byol: <https://aws.amazon.com/marketplace/pp/OpenLink-Software-Virtuoso-833319-BYOL-Edition-for/B00ZWMSNOG#> .
+@prefix virt-aws-byol-page: <https://aws.amazon.com/marketplace/pp/OpenLink-Software-Virtuoso-833319-BYOL-Edition-for/B00ZWMSNOG/> .
+@prefix virt-aws-byol-pricing-page: <https://aws.amazon.com/marketplace/pp/OpenLink-Software-Virtuoso-833319-BYOL-Edition-for/B00ZWMSNOG#pdp-pricing/> .
+
+@prefix virt-linkedin: <https://www.linkedin.com/products/openlink-software-virtuoso-universal-server#> .
+@prefix virt-linkedin-page: <https://www.linkedin.com/products/openlink-software-virtuoso-universal-server/> .
+
+@prefix oplprod: <http://www.openlinksw.com/ontology/products#> . 
+@prefix oplami:  <http://www.openlinksw.com/ontology/oplami#> . 
+
+## Entity Descriptions
+
+## Virtuoso Home Page ##
+
+virt-software-app-page:
+a schema:WebPage ;
+schema:about virt-software-app:this ;
+schema:relatedLink virt-aws-pago-page:, virt-aws-byol-page:,
+                   virt-azure-byol-page:, virt-azure-pago-page:,
+                   virt-linkedin-page: . 
+
+
+## Azure ##
+
+### PAGO
+
+virt-azure-pago:this
+a schema:SoftwareApplication, oplami:CloudHostedVirtualMachine ;
+schema:name "Virtuoso Pay-As-You-Go (PAGO) Edition for Microsoft Azure Cloud" ;
+schema:mainEntityOfPage virt-azure-pago-page: ;
+schema:isBasedOn virt-software-app:this ;
+schema:isPartOf virt-software-app:this ;
+oplprod:isReleaseOf virt-software-app-main:this ;
+schema:version "8.3"^^xsd:decimal ;
+oplprod:versionText "8.3"^^xsd:string ;
+schema:relatedLink virt-aws-pago-page:, virt-aws-byol-page:, virt-software-app-page:, virt-linkedin-page: . 
+
+### BYOL
+
+virt-azure-byol:this
+a schema:SoftwareApplication, oplami:CloudHostedVirtualMachine ;
+schema:name "Virtuoso Bring-Your-Own-License (BYOL) Edition for Microsoft Azure Cloud" ;
+schema:mainEntityOfPage virt-azure-byol-page: ;
+schema:isBasedOn virt-software-app:this ;
+schema:isPartOf virt-software-app:this ;
+oplprod:isReleaseOf virt-software-app-main:this ;
+schema:version "8.3"^^xsd:decimal ;
+oplprod:versionText "8.3"^^xsd:string ;
+schema:relatedLink virt-aws-pago-page:, virt-aws-byol-page:, virt-software-app-page:,  virt-linkedin-page: . 
+
+## AWS ##
+
+### PAGO
+
+virt-aws-pago:this
+a schema:SoftwareApplication, oplami:CloudHostedVirtualMachine ;
+schema:name "Virtuoso Pay-As-You-Go (PAGO) Edition for Amazon Web Services Cloud" ;
+schema:mainEntityOfPage virt-aws-pago-page: ;
+schema:isBasedOn virt-software-app:this ;
+schema:isPartOf virt-software-app:this ;
+oplprod:isReleaseOf virt-software-app-main:this ;
+schema:version "8.3"^^xsd:decimal ;
+oplprod:versionText "8.3"^^xsd:string ;
+schema:relatedLink virt-azure-byol-page:, virt-azure-pago-page:, virt-software-app-page:,  virt-linkedin-page: . 
+
+### BYOL
+
+virt-aws-byol:this
+a schema:SoftwareApplication, oplami:CloudHostedVirtualMachine ;
+schema:name "Virtuoso Bring-Your-Own-License (BYOL) Edition for Amazon Web Services Cloud" ;
+schema:mainEntityOfPage virt-aws-byol-page: ;
+schema:isBasedOn virt-software-app:this ;
+schema:isPartOf virt-software-app:this ;
+oplprod:isReleaseOf virt-software-app-main:this ;
+schema:version "8.3"^^xsd:decimal ;
+oplprod:versionText "8.3"^^xsd:string ;
+schema:relatedLink virt-azure-byol-page:, virt-azure-pago-page:, virt-software-app-page:,  virt-linkedin-page: . 
+
+
+## LinkedIn ##
+
+virt-linkedin:this
+a schema:SoftwareApplication ;
+schema:name "Virtuoso Universal Server" ;
+schema:sameAs virt-software-app-page:;
+owl:sameAs virt-software-app:this ;
+schema:mainEntityOfPage  virt-linkedin-page: ;
+schema:relatedLink virt-azure-pago:, virt-azure-pago:, virt-aws-pago:, virt-aws-byol:,
+                   virt-azure-byol-page:, virt-azure-byol-pricing-page:, virt-software-app-page:  . 
+                           

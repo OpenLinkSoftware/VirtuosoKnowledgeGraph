@@ -1,0 +1,1056 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oplsoft: <http://www.openlinksw.com/ontology/software#> .
+
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> a schema:HowTo ;
+	schema:name "How Do I Install Virtuoso on Windows?" ;
+	schema:description "Perform the following steps to install Virtouso on Windows" .
+
+<http://data.openlinksw.com/oplweb/howto/f575976cbfd605b8e564db09a4289628#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description "Select the Virtuoso release number and Windows operating system required from the download site 8 and click on the Find Downloads button. Note: Virtuoso 7.x and above is 64-bit only, and requires Vista or Windows Server 2003, or later." ;
+	schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/a51d4dc3d3c8d8aae77b17add2d517bc#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/f575976cbfd605b8e564db09a4289628#step1> ;
+	schema:category "Installation Guide" ;
+	oplsoft:hasOperatingSystemFamily <http://data.openlinksw.com/oplweb/opsys_family/Windows#this> ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/a51d4dc3d3c8d8aae77b17add2d517bc#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description "Download the required Virtuoso Client and/or Client & Server installer archives from the list presented." ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/5fc8a6376c45973ccce7709943494420#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/a51d4dc3d3c8d8aae77b17add2d517bc#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/5fc8a6376c45973ccce7709943494420#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description "If you don't not already have a license file, one can be obtained by clicking on the Generate Evaluation License button in step 1." ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/6b060a12515542c7c09c9428870a6d68#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/5fc8a6376c45973ccce7709943494420#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/6b060a12515542c7c09c9428870a6d68#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description "In addition, a copy of the license file will also be stored in your OpenLink Data Spaces Briefcase 1 folder." ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/a463c7536efac0fd92d3ddbbed2f62ba#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/6b060a12515542c7c09c9428870a6d68#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/a463c7536efac0fd92d3ddbbed2f62ba#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description "Note – the file must be named  virtuoso.lic for use. Some browsers may rename the file during download; you can simply rename the file on your machine ." ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/afb03cdc7a015d6aec86e7b51f7b3d2c#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/a463c7536efac0fd92d3ddbbed2f62ba#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/bf46abc9f9e5937105e0ee06747e2205#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description "Double-click the installer archive,  wavpz2zz , to start the process with the Installer Program Introduction." ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/497b04b85801998bbe7f7282acb503b7#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/bf46abc9f9e5937105e0ee06747e2205#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/497b04b85801998bbe7f7282acb503b7#step7> a schema:HowToStep ;
+	schema:name "Step 7" ;
+	schema:description "Click  Next , and the License Agreement dialog is presented:" ;
+	schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/a9c6c8780aab1d13821589397ba556d7#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/497b04b85801998bbe7f7282acb503b7#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/a9c6c8780aab1d13821589397ba556d7#step8> a schema:HowToStep ;
+	schema:name "Step 8" ;
+	schema:description "Tick the box for  I accept , and click  Next . Use the  Browse button to select the location for the installation or if the default location is acceptable click the  Next button." ;
+	schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/f25f676cfbe1bed31825a7b3e017d606#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/a9c6c8780aab1d13821589397ba556d7#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/f25f676cfbe1bed31825a7b3e017d606#step9> a schema:HowToStep ;
+	schema:name "Step 9" ;
+	schema:description "Use the  Browse button to locate the license file you obtained earlier then, click  Next . The dialog to Select the Components to be installed is presented:" ;
+	schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:next <http://data.openlinksw.com/oplweb/howto/0c248b232878e383ece03a3b8224c76f#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/f25f676cfbe1bed31825a7b3e017d606#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/0c248b232878e383ece03a3b8224c76f#step10> a schema:HowToStep ;
+	schema:name "Step 10" ;
+	schema:description """Select the of the component types to install:
+Full – installs both Client and Server components
+
+Client – installs the Client components only
+
+Server – installs the Server components only""" ;
+	schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/e6b217838c38579140328ffbd10cd162#this> schema:step <http://data.openlinksw.com/oplweb/howto/0c248b232878e383ece03a3b8224c76f#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:name "How Do I Install Virtuoso on macOS?" ;
+	schema:description "Perform the following steps to install Virtouso on macOS (pre or post-Monterrey and Apple Silicon)" ;
+	a schema:HowTo .
+
+<http://data.openlinksw.com/oplweb/howto/c581133237ca32d43e89359e305638c8#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description "Download the Virtuoso 8.x DMG archive (mwvpz2zz.dmg) from the download site 19.  Note:Virtuoso 8.x requires OS X Lion (10.9) or later." ;
+	schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/20ed4021229c0dd233ab9c7ef0a4899a#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/c581133237ca32d43e89359e305638c8#step1> ;
+	schema:category "Installation Guide" ;
+	oplsoft:hasOperatingSystemFamily <http://data.openlinksw.com/oplweb/opsys_family/macOS#this> ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/20ed4021229c0dd233ab9c7ef0a4899a#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description "Open the  mwvpz2zz.dmg file, and drag the  Virtuoso 8.3.app into your  Applications folder or other preferred location." ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/22fd6718e57ef8ca4dd44875573544eb#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/20ed4021229c0dd233ab9c7ef0a4899a#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/22fd6718e57ef8ca4dd44875573544eb#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description "Once the copy is complete, you can  Eject the  Virtuoso 8.3 disk, and discard or retain the mwvpz2zz.dmg file as you prefer." ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/d98b461992186e47cae38a11a92952c7#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/22fd6718e57ef8ca4dd44875573544eb#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/d98b461992186e47cae38a11a92952c7#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description """If you haven’t already obtained a suitable Virtuoso 8.x license file, return to the download site 3
+click on the Generate Evaluation License button from step 1 to obtain a Free 30 Day Evaluation License will be generated and emailed to your email account.""" ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/d8422ead138d27346a382b7d56c44c8e#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/d98b461992186e47cae38a11a92952c7#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/d8422ead138d27346a382b7d56c44c8e#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description "In addition, a copy of the license file will also be stored in your OpenLink Data Spaces Briefcase 3 folder." ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/c5c855a380e556003ac46892736de306#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/d8422ead138d27346a382b7d56c44c8e#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/dfe9dd53a9d1488627da1596a2c6169f#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description "Double-click the  Virtuoso 8.3.app icon in the Applications folder to trigger installation and startup of helper tools – the  Virtuoso Monitor and  OpenLink License Manager ." ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/2f76636f7aac24021f871fadc401bdc6#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/dfe9dd53a9d1488627da1596a2c6169f#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/2f76636f7aac24021f871fadc401bdc6#step7> a schema:HowToStep ;
+	schema:name "Step 7" ;
+	schema:description "Locate the  Virtuoso Monitor in your menu bar – it’s the  V icon toward the right." ;
+	schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/1cf89b377e35c811fa15ebef3552fe79#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/2f76636f7aac24021f871fadc401bdc6#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/1cf89b377e35c811fa15ebef3552fe79#step8> a schema:HowToStep ;
+	schema:name "Step 8" ;
+	schema:description "You may also choose to automatically  Start Virtuoso Monitor at Login , or you may prefer to manually start it when needed (by double-clicking  Virtuoso 8.3.app , as you just did)." ;
+	schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/f9287f3e182bb18271533361c2c3da43#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/1cf89b377e35c811fa15ebef3552fe79#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/f9287f3e182bb18271533361c2c3da43#step9> a schema:HowToStep ;
+	schema:name "Step 9" ;
+	schema:description "In the Finder’s  Go menu, select  Go to Folder… , and input '/Library/Application Support/OpenLink/Licenses`" ;
+	schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:next <http://data.openlinksw.com/oplweb/howto/ee25585aea84dab2fce0d4ac5196152d#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/f9287f3e182bb18271533361c2c3da43#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/ee25585aea84dab2fce0d4ac5196152d#step10> a schema:HowToStep ;
+	schema:name "Step 10" ;
+	schema:description "Drag the license file ( virtuoso.lic ) you downloaded above into this folder." ;
+	schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/bdb85fa6b26d15b94eb46969fabf1c01#this> schema:step <http://data.openlinksw.com/oplweb/howto/ee25585aea84dab2fce0d4ac5196152d#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/79ae40bf6b9d3c414cf1cf9b87fe659d#step1> schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/3fc3bb10b493f7bd1b31773a520f6783#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/79ae40bf6b9d3c414cf1cf9b87fe659d#step1> ;
+	schema:category "Installation Guide" ;
+	a schema:HowTo ;
+	schema:name "How Do I Install Virtuoso on Linux and other Unix Operating Systems?" ;
+	schema:description "Perform the following steps to install Virtouso on Unix Operating Systems" .
+
+<http://data.openlinksw.com/oplweb/howto/79ae40bf6b9d3c414cf1cf9b87fe659d#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description "Download the Installer Archive (e.g., Linux Installer Archive 5) to a designated installation directory." .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> oplsoft:hasOperatingSystemFamily <http://data.openlinksw.com/oplweb/opsys_family/GenericLinux> ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/3fc3bb10b493f7bd1b31773a520f6783#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description """Un-tar the file to obtain the install script and archive file using a command like this, where XX specifies the OS identifier (e.g., l9 = Linux glibc25 x86_64, sv = Solaris 2.10 x86_64, etc.): tar xvf XXvpz2zz.tar
+
+""" ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/3597a7bda341904c032582eed62966f9#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/3fc3bb10b493f7bd1b31773a520f6783#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/3597a7bda341904c032582eed62966f9#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description "If you don't not already have a license file, one can be obtained by clicking on the Generate Evaluation License button in step 1." ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/d315ec08a8b851056faf9761fff1c111#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/3597a7bda341904c032582eed62966f9#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/d315ec08a8b851056faf9761fff1c111#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description "In addition, a copy of the license file will also be stored in your OpenLink Data Spaces Briefcase 1folder." ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/5b0d98dd25e6f190100c87e9f6748cc5#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/d315ec08a8b851056faf9761fff1c111#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/5b0d98dd25e6f190100c87e9f6748cc5#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description "If a license file exists, place this in the same directory as the installation files, and it will automatically be applied during installation. If upgrading an existing Virtuoso instance, be sure to take a backup of your database file and shut down the existing instance before proceeding." ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/3b05265281973596756ad43b0622ce36#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/5b0d98dd25e6f190100c87e9f6748cc5#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/936a8358a2316fa6b5334d5dc56f7fbb#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description """Run the install script using the following command:
+
+$  sh install.sh
+
+- Extracting Virtuoso Universal Server v8.3
+
+- Checking where license file should be stored
+
+Please make sure all licenses are stored in: \"/etc/oplmgr\"
+
+- Checking for initial Virtuoso license
+
+- Starting OpenLink License Manager
+- Using License directory \"/etc/oplmgr\"
+
+- Creating default environment settings
+
+- Creating default database settings
+
+- Configuring: database
+  - Creating directory $VIRTUOSO_HOME/database/backup
+  - Creating directory $VIRTUOSO_HOME/database/logs
+  - Installing new virtuoso.ini in $VIRTUOSO_HOME/database
+  - Installing new php.ini in $VIRTUOSO_HOME/database
+  - Creating symlink to $VIRTUOSO_HOME/bin/virtuoso-iodbc-t
+
+- Registering ODBC drivers
+
+- Registering .NET provider for Mono
+
+- Finalizing installation
+
+
+This concludes the first part of the installation.
+
+To start the Virtuoso database, please use the following command:
+
+    $ bin/virtuoso-start.sh
+
+After the Virtuoso database successfully started, you can continue
+setting up your database by opening the following URL in your
+browser:
+
+    http://localhost:8890/conductor/
+
+Installation completed
+$  """ ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/344b6d929fafa22b7ee901698f8cfa4a#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/936a8358a2316fa6b5334d5dc56f7fbb#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/344b6d929fafa22b7ee901698f8cfa4a#step7> a schema:HowToStep ;
+	schema:name "Step 7" ;
+	schema:description """Run the “bin/virtuoso-start.sh” script to start the Virtuoso database. If this is an upgrade then the existing database will be started as is or if this is a new installation then a new database will be created in the “database” directory and an initial-password set for it:
+
+$ bin/virtuoso-start.sh
+
+Checking the OpenLink License Manager
+- Using License directory \"/etc/oplmgr\"
+
+Starting Virtuoso instance in [database]
+  - Generating a random password
+  - Initializing the new database
+
+NOTE: The new database has been initialized with a randomly generated
+      password for both dba and dav accounts. Make sure you change it
+      at your earliest opportunity.
+      The password has been saved to disk in:
+            database/.initial-password
+
+  - Starting the database
+
+""" ;
+	schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/762cde0560748f69245a5a52c50e4055#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/344b6d929fafa22b7ee901698f8cfa4a#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/762cde0560748f69245a5a52c50e4055#step8> a schema:HowToStep ;
+	schema:name "Step 8" ;
+	schema:description """Check the “database/.initial-password” file to what the random password has been set to for the database:
+$ cat database/.initial-password 
+sH7YX2kp
+$""" ;
+	schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/9db443c5b6450ac5121ab1785d21debc#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/762cde0560748f69245a5a52c50e4055#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/9db443c5b6450ac5121ab1785d21debc#step9> a schema:HowToStep ;
+	schema:name "Step 9" ;
+	schema:description "The Virtuoso Conductor Database Administration Web interface “http://hostname:8890/conductor” can now be logged into using the password above:" ;
+	schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:next <http://data.openlinksw.com/oplweb/howto/5bf186a4318384a57e8d3c048cbe00d5#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/9db443c5b6450ac5121ab1785d21debc#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/5bf186a4318384a57e8d3c048cbe00d5#step10> a schema:HowToStep ;
+	schema:name "Step 10" ;
+	schema:description "If Conductor login is successful the installation is now ready for use:" ;
+	schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/d4162acea498a56c8f7125684f8e363a#this> schema:step <http://data.openlinksw.com/oplweb/howto/5bf186a4318384a57e8d3c048cbe00d5#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/360c6d77ab6d48cd4c969935fda67522#step1> schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/2db8af4f294a4bf7afccd56d2e34ae05#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/360c6d77ab6d48cd4c969935fda67522#step1> ;
+	schema:category "Installation Guide" ;
+	a schema:HowTo ;
+	schema:name "How Do I Install Virtuoso Docker Container Image?" ;
+	schema:description "Perform the following steps to install Virtouso on Docker Systems" .
+
+<http://data.openlinksw.com/oplweb/howto/360c6d77ab6d48cd4c969935fda67522#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description """Choose Docker image
+We’ve put together three Docker Images to choose from (https://hub.docker.com/u/openlink/). The Enterprise Edition images require a version-matched license file (about which more details are below), just as if you were running on a local machine or in the cloud; the Open Source (“VOS”) image does not.
+        •        Enterprise Edition 8.3 – openlink/virtuoso-closedsource-8 (https://hub.docker.com/r/openlink/virtuoso-closedsource-8/)
+        •        Enterprise Edition 7.2 – openlink/virtuoso-closedsource-7 (https://hub.docker.com/r/openlink/virtuoso-closedsource-7/)
+        •        Open Source (“VOS”) 7.2 – openlink/virtuoso-opensource-7 (https://hub.docker.com/r/openlink/virtuoso-opensource-7/)
+The remainder of this article is focused on the first of these (Enterprise Edition 8.3); most of the content applies to all three, with minor, hopefully obvious, adjustments.""" .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> oplsoft:hasOperatingSystemFamily <http://data.openlinksw.com/oplweb/opsys_family/GenericLinux> ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/2db8af4f294a4bf7afccd56d2e34ae05#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description """Download Docker image
+
+To pull the latest Virtuoso 11 8.2 docker 8 image to your local system, you can use the following command:
+
+$ docker pull openlink/virtuoso-closedsource-8
+
+To check the version of the Virtuoso 11 binary, you can use the following command:
+
+$ docker run openlink/virtuoso-closedsource-8 version
+
+This Docker image is using the following version of Virtuoso:
+
+OpenLink Virtuoso Universal Server (Enterprise Edition)
+Version 08.03.3319-pthreads as of Sep  9 2020 (b5a3cfa1e0)
+Compiled for Linux (x86_64-generic-linux-glibc25)
+Hosted Runtime Environments:  VDB
+Copyright (C) 1998-2020 OpenLink Software""" ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/631a88554ca54dac4101c87267538e7b#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/2db8af4f294a4bf7afccd56d2e34ae05#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/631a88554ca54dac4101c87267538e7b#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description """Creating a sample Virtuoso Docker instance
+
+Here is a quick example of how to create a new virtuoso instance on your system:
+
+$ mkdir my_virtdb
+$ cd my_virtdb
+$ docker run \\
+    --name my_virtdb \\
+    --interactive \\
+    --tty \\
+    --env DBA_PASSWORD=mysecret \\
+    --publish 1111:1111 \\
+    --publish  8890:8890 \\
+    --volume `pwd`:/database \\
+    openlink/virtuoso-closedsource-8:latest
+
+This will create a new Virtuoso 11 database in the my_virtdb subdirectory and starts a Virtuoso instance with the HTTP server listening on port 8890 and the ODBC 2 / JDBC / ADO.Net / OLE-DB / ISQL data server listening on port 1111.
+
+The docker 8 image in running in foreground (with -i or --interactive) mode, so you can see what it is doing.
+
+You should now be able to contact the Virtuoso 11 HTTP server using the following URL:
+
+http://localhost:8890/
+
+You can shut down Virtuoso by pressing the CTRL and C buttons in that terminal session.""" ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/775d4613fb98430af1306fc8fdf31482#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/631a88554ca54dac4101c87267538e7b#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/775d4613fb98430af1306fc8fdf31482#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description """Licensing
+
+If the Virtuoso 11 Enterprise Edition binary cannot find a license, it will start with a restrictive courtesy license 1 license which allows a small number of concurrent ODBC 2 / JDBC / ADO.Net / OLE-DB / ISQL connections, with a low limit on the maximum number of rows that can be retrieved in a query result-set, and terminates the instance after 10 minutes of use.
+
+To unlock the full potential of Virtuoso, you can obtain a FREE Evaluation License via our License Generator Web Service (https://shop.openlinksw.com/license_generator/virtuoso/).
+
+Naturally, following successful evaluation, you can choose from a variety of Enterprise Edition licenses from our online shop 5 or contact us (or your account manager) directly for more specialized Enterprise and/or VAR/ISV/OEM licenses.
+
+Place the resulting virtuoso.lic file in the newly created database/ directory alongside the virtuoso.ini on your local filesystem, so the docker image can pick it up on the next startup:
+
+$ docker cp virtuoso.lic my_virtdb:/database
+$ docker stop my_virtdb
+$ docker start my_virtdb""" ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/637a1858eed40cc1468821bb051c7825#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/775d4613fb98430af1306fc8fdf31482#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/637a1858eed40cc1468821bb051c7825#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description """Passwords
+
+When a new database is created, the docker image will use the Environment settings DBA_PASSWORD and DAV_PASSWORD to set passwords for the dba and dav user accounts.
+
+If the DBA_PASSWORD environment variable is not set, a random password will be assigned to the dba user account, and stored on the internal docker filesystem as /settings/dba_password.
+
+If the DAV_PASSWORD Environment variable is not set, it will be set to the DBA_PASSWORD and stored as /settings/dav_password.
+
+These files will only be readable by the user that started the image. Commands like the following may be used to reveal the randomised passwords:
+
+$ docker exec -i -t my_virtdb cat /settings/dba_password
+
+Without this password, you will not be able to log in to the dba account using either the isql tool or the Virtuoso Conductor.
+
+NOTE: Users are advised to immediately change the password and then remove this file from the filesystem.""" ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/5dca62a92e065b2c5b3a694beb79ba6a#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/637a1858eed40cc1468821bb051c7825#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/b38de4c66d3d38af898beed81765322e#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description """Persistent storage
+
+In order to retain changes to the Virtuoso 11 database, the database documents should be stored on the host file system.
+
+The docker 8 image exposes a /database volume that can be easily mapped to a local directory on the filesystem. If this directory is empty, the docker image will put an initial virtuoso.ini into the mapped directory and then proceeds to create a new database.""" ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/a4497eb27215e527eee605b9ead10c6b#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/b38de4c66d3d38af898beed81765322e#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/a4497eb27215e527eee605b9ead10c6b#step7> a schema:HowToStep ;
+	schema:name "Step 7" ;
+	schema:description """Stopping the image
+
+When the docker image is running in foreground mode (with -i or --interactive), you can shut down Virtuoso by pressing the CTRL and C buttons in that terminal session. You can also use the following command on a different terminal:
+
+$ docker stop my_virtdb""" ;
+	schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/85f90863bc7df1c9be452b6cef11e626#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/a4497eb27215e527eee605b9ead10c6b#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/85f90863bc7df1c9be452b6cef11e626#step8> a schema:HowToStep ;
+	schema:name "Step 8" ;
+	schema:description """Restarting the image
+
+Once the docker image has been registered with the docker run or docker create command on your local system, you can start it in the background using:
+
+$ docker start my_virtdb
+
+If you prefer to run the instance in foreground mode, you can use:
+
+$ docker start -i -a my_virtdb""" ;
+	schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/c1db78dd2953cd7fc0bbdf1c10d1f11e#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/85f90863bc7df1c9be452b6cef11e626#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/c1db78dd2953cd7fc0bbdf1c10d1f11e#step9> a schema:HowToStep ;
+	schema:name "Step 9" ;
+	schema:description """Checking the startup log
+
+If the docker image is started in background (without -i or --interactive) mode, you can look at the recent output of the virtuoso process by running:
+
+$ docker logs my_virtdb""" ;
+	schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:next <http://data.openlinksw.com/oplweb/howto/50304d52c11886b5ce6073dc6365dd45#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/c1db78dd2953cd7fc0bbdf1c10d1f11e#step9> .
+
+<http://data.openlinksw.com/oplweb/howto/50304d52c11886b5ce6073dc6365dd45#step10> a schema:HowToStep ;
+	schema:name "Step 10" ;
+	schema:description """Using isql to connect
+
+To connect to your running Virtuoso 11 instance, you can use the following command:
+
+$ docker exec -i my_virtdb isql 1111
+
+You will be prompted for the dba account password.
+
+NOTE: If you provide an incorrect password multiple times, Virtuoso will lock the dba account for a couple of minutes.""" ;
+	schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/e8bc1e05d15230673958e7be040cdb71#this> schema:step <http://data.openlinksw.com/oplweb/howto/50304d52c11886b5ce6073dc6365dd45#step10> .
+
+<http://data.openlinksw.com/oplweb/howto/0c3916074b62d92d08a4edc310164c55#step1> schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/cec4d5b941d9ab3682ba649472cf1184#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/0c3916074b62d92d08a4edc310164c55#step1> ;
+	schema:category "Installation Guide" ;
+	a schema:HowTo ;
+	schema:name "How Do I Install or Update Virtuoso Releases across Debian, Ubuntu, RHEL, and CentOS, via the OpenLink Nexus Repo" ;
+	schema:description "Peform the following steps to Install or Update Virtuoso Releases across Debian, Ubuntu, RHEL, and CentOS, via the OpenLink Nexus Repo" .
+
+<http://data.openlinksw.com/oplweb/howto/0c3916074b62d92d08a4edc310164c55#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description """AWS RedHat Enterprise Linux 7
+
+OpenLink provides Amazon BYOL & PAGO Virtuoso EC2 AMI MarketPlace Offers.
+
+The latest Amazon BYOL & PAGO Virtuoso EC2 AMI MarketPlace Offers, since version 08.03.3323 and above are already hooked into the OpenLink Nexus Repository (https://nexus.openlinksw.com/) , and thus can simply be updated with the command:
+
+   yum update
+
+Which will automatically download and install the latest operating system and Virtuoso updates.""" .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> oplsoft:hasOperatingSystemFamily <http://data.openlinksw.com/oplweb/opsys_family/GenericLinux> ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/cec4d5b941d9ab3682ba649472cf1184#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description """AWS & Azure Ubuntu 18.04 LTS
+
+The Virtuoso Ubuntu 18.04 LTS AWS PAGO 1, AWS BYOL, Azure PAGO and Azure BYOL offers are built from the OpenLink Nexus Repository 6 and are thus automatically bound to the repository and can be updated to the latest Virtuoso packages with the command:
+
+   sudo apt upgrade
+   sudo apt upgrade
+
+Which will automatically download and install the latest operating system and Virtuoso updates.""" ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/4f5e7d58540ac369162136013a6393f7#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/cec4d5b941d9ab3682ba649472cf1184#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/4f5e7d58540ac369162136013a6393f7#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description """CentOS 7 and 8
+
+The following sequence can be use to install the Virtuoso 8.3 RPM packages on CentOS 7 and 8 systems, whether in the Cloud or on on-premise standalone systems.
+
+1. Install the EPEL metadata:
+
+   sudo yum install -y epel-release
+
+2. Install the OpenLink repository metadata:
+
+   sudo yum install -y https://nexus.openlinksw.com/repository/openlink-files/openlink-repo.rpm
+
+3. Install Virtuoso 8.3 on a local machine:
+
+   sudo yum install -y virtuoso-8-commercial-full
+
+The Virtuoso installation is now hooked into the OpenLink Nexus Repository 6 and updated to the latest Virtuoso components, and can be started and stopped with the Linux service commands:
+
+   sudo service virtuoso { start | status | stop }
+
+The latest Virtuoso packages can be obtained from the OpenLink Nexus Repository 6 with the command:
+
+   sudo yum update""" ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/ed2b34242c82dee6618d0e9ef5dd71c5#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/4f5e7d58540ac369162136013a6393f7#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/ed2b34242c82dee6618d0e9ef5dd71c5#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description """RedHat Enterprise Linux 7
+
+The following sequence can be use to install the Virtuoso 8.3 RPM packages on RedHat Enterprise Linux (RHEL) 7 systems, whether in the Cloud or on on-premise standalone systems.
+
+1. Install the EPEL metadata:
+
+   sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+2. Install the OpenLink repository metadata:
+
+   sudo yum install -y https://nexus.openlinksw.com/repository/openlink-files/openlink-repo.rpm
+
+3. Install Virtuoso 8.3 on a local machine:
+
+   sudo yum install -y virtuoso-8-commercial-full
+
+The Virtuoso installation is now hooked into the OpenLink Nexus Repository 6 and updated to the latest Virtuoso components, and can be started and stopped with the Linux service commands:
+
+   sudo service virtuoso { start | status | stop }
+
+The latest Virtuoso packages can be obtained from the OpenLink Nexus Repository 6 with the command:
+
+   sudo yum update""" ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/3c39ff0d8a51ca5e63eea94850574464#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/ed2b34242c82dee6618d0e9ef5dd71c5#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/3c39ff0d8a51ca5e63eea94850574464#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description """RedHat Enterprise Linux 8.x / 9.x
+
+The following command sequence can be use to install the Virtuoso 8.3 RPM packages on RedHat Enterprise Linux (RHEL) 8.x / 9.x systems, whether in the Cloud or on on-premise standalone systems.
+
+1. Install the EPEL metadata:
+
+   sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest.noarch.rpm
+
+2. Install the OpenLink repository metadata:
+
+   sudo yum install -y https://nexus.openlinksw.com/repository/openlink-files/openlink-repo.rpm
+
+3. Install Virtuoso 8.3 on a local machine:
+
+   sudo yum install -y virtuoso-8-commercial-full
+
+The Virtuoso installation is now hooked into the OpenLink Nexus Repository 6 and updated to the latest Virtuoso components, and can be started and stopped with the Linux service commands:
+
+   sudo service virtuoso { start | status | stop }
+
+The latest Virtuoso packages can be obtained from the OpenLink Nexus Repository 6 with the command:
+
+   sudo yum update""" ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/181bed0f148223a6f9938dfd6aca50ef#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/3c39ff0d8a51ca5e63eea94850574464#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/8032330576f2d8aa66e9eb5aa6d11456#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description """Ubuntu 18.04 / 20.04 / 22.04 LTS and Debian 10 / 11
+
+The following command sequence can be use to install the Virtuoso 8.3 RPM packages on Ubuntu 18.04 / 20.04 / 22.04 LTS and Debian 10 / 11 systems, whether in the Cloud or on-premise standalone systems.
+
+1. Run the following commands to install Virtuoso from the OpenLink Nexus Repository 1:
+
+    apt update
+    wget https://nexus.openlinksw.com/repository/openlink-files/openlink-repo.deb
+    apt install ./openlink-repo.deb
+    apt update
+    apt install virtuoso-8-commercial-full
+
+2. If no errors are reported during the installation, run the following command to enable the Virtuoso instance to auto-start on reboot:
+
+    sudo systemctl enable virtuoso
+
+The Virtuoso installation is now hooked into the OpenLink Nexus Repository 6 and updated to the latest Virtuoso components, and can be started and stopped with the Linux service commands:
+
+    sudo service virtuoso { start | status | stop }
+
+The latest Virtuoso packages can be obtained from the OpenLink Nexus Repository with the command:
+
+    sudo apt-get upgrade""" ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/3ed24b4a76ca0d2c0f1fb06918b7d67d#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/8032330576f2d8aa66e9eb5aa6d11456#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/3ed24b4a76ca0d2c0f1fb06918b7d67d#step7> a schema:HowToStep ;
+	schema:name "Step 7" ;
+	schema:description """Apply Virtuoso License
+
+Once the Virtuoso packages for the target Linux distribution have been installed from the repository, if a valid Virtuoso license (virtuoso.lic) is not already in place, one needs to be added to the directory /etc/oplmgr, and the OpenLink License Manager (oplmgr) then stopped and started with the commands:
+
+    sudo service oplmgr { start | status | stop }
+
+If the Virtuoso server is running, it also needs to stopped and started for the license file to be picked up, with the commands:
+
+    sudo service virtuoso { start | status | stop }
+
+Finally, check the /opt/database/virtuoso.log file to ensure the license file is valid and has been accepted for use.""" ;
+	schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/fdc12c90b206d03e6eb12615325b6371#this> schema:step <http://data.openlinksw.com/oplweb/howto/3ed24b4a76ca0d2c0f1fb06918b7d67d#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/2286dcc4d935dc051d93a69a0e074d39#step1> schema:name "Step 1" ;
+	schema:description """select count(*) from bad_iri_id where  id_to_iri (id) like 'iri_id_%';
+""" ;
+	schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/cb65ced150286f4b8368d84ef8b722e1#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/2286dcc4d935dc051d93a69a0e074d39#step1> ;
+	schema:category "Administration" ;
+	a schema:HowTo ;
+	schema:name "How do I clean out an RDF_IRI table following an ACID-unaware ETL process that's created broken IRIs?" ;
+	schema:description "Perform the following steps to rebuild the table" .
+
+<http://data.openlinksw.com/oplweb/howto/2286dcc4d935dc051d93a69a0e074d39#step1> a schema:HowToStep .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> oplsoft:hasOperatingSystemFamily oplsoft:OSFamilyAny ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/cb65ced150286f4b8368d84ef8b722e1#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description """create table bad_iri_id (id iri_id_8 primary key);
+log_enable (2);
+insert into bad_iri_id select ri_id from rdf_iri where subseq (ri_name, 0, 4) = '\\0\\0\\0\\x6'; --<<< this takes a long time to complete ~30m""" ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/71d8981fcbf0221b6e911ef5eb32f602#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/cb65ced150286f4b8368d84ef8b722e1#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/71d8981fcbf0221b6e911ef5eb32f602#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description "delete from   bad_iri_id where  id_to_iri (id) not like  'iri_id_%_with_no_name_entry';" ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/3d9d57c1671cda8314be0b535a879377#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/71d8981fcbf0221b6e911ef5eb32f602#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/3d9d57c1671cda8314be0b535a879377#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description "select count(*) from bad_iri_id;" ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/7de2ee77646e2be12746b1f633497ddd#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/3d9d57c1671cda8314be0b535a879377#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/7de2ee77646e2be12746b1f633497ddd#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description """-- delete from RDF_IRI
+delete from RDF_IRI where RI_ID in (select id from bad_iri_id) ;""" ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/d5a4b5d550112d385d4c527e9f73dd84#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/7de2ee77646e2be12746b1f633497ddd#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/43d5b5079d4677dcfd108fd9cc52f197#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description "checkpoint;" ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/9d88b9bf4aa5ff0a82ae13ad820b282d#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/43d5b5079d4677dcfd108fd9cc52f197#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/9d88b9bf4aa5ff0a82ae13ad820b282d#step7> a schema:HowToStep ;
+	schema:name "Step 7" ;
+	schema:description "shutdown ;" ;
+	schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/548b8451cfc4e26c17c3a4e610ed48c4#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/9d88b9bf4aa5ff0a82ae13ad820b282d#step7> .
+
+<http://data.openlinksw.com/oplweb/howto/548b8451cfc4e26c17c3a4e610ed48c4#step8> a schema:HowToStep ;
+	schema:name "Step 8" ;
+	schema:description "restart database server" ;
+	schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/3092a01694295a0b22b14c89348e12de#this> schema:step <http://data.openlinksw.com/oplweb/howto/548b8451cfc4e26c17c3a4e610ed48c4#step8> .
+
+<http://data.openlinksw.com/oplweb/howto/b87928f87f350f158cb8646aa80f711b#this> schema:step <http://data.openlinksw.com/oplweb/howto/2da63d6602ac717791f5eed21ab93787#step1> ;
+	schema:category "Administration" ;
+	a schema:HowTo ;
+	schema:name "Migrating Virtuoso from a 32-Bit Prefixed to 64-Bit Prefixed Database" ;
+	schema:description """The Virtuoso 08.03.3326+ engine has been enhanced to use 64-bit prefix IDs in RDF_IRI which allows for even larger databases.
+
+This enhancement fixes two important problems in Virtuoso:
+
+1. When Virtuoso was upgraded to use 64-bit IRI_IDs around v6.0.x, we forgot to upgrade the RDF_IRI table to use a 64-bit prefix ID. This meant that Virtuoso could only store around 2 billion distinct prefixes before returning an error.
+2. The algorithm to generate distinct prefixes resulted in too many prefixes being created.
+
+While this is not a problem for storing small or even medium sized data sets, this becomes a problem when you want to host large databases the size of Uniprot which now contains over 90 billion triples""" .
+
+<http://data.openlinksw.com/oplweb/howto/2da63d6602ac717791f5eed21ab93787#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description """When starting an existing 8.x database with the new 08.03.3326+ binary, the following message will appear in the virtuoso.log file:
+
+    NOTE: Your database is using 32-bit prefix IDs in RDF_IRI
+
+    This Virtuoso engine has been upgraded to use 64-bit prefix IDs
+    in RDF_IRI to allow for even larger databases.
+
+    To take advantage of this new feature, your database needs to
+    be upgraded.
+
+    The performance of your existing database should not be affected,
+    except when performing certain bulkload operations.
+
+    Please contact OpenLink Support <support@openlinksw.com> for
+    more information.
+
+As stated in the message, the engine will use a backward compatibility function to handle existing databases without causing a performance degradation when running SPARQL queries, inserts and deletes.""" ;
+	schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/5d89c46bbc339570f4fc349b2be93e89#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/b87928f87f350f158cb8646aa80f711b#this> oplsoft:hasOperatingSystemFamily oplsoft:OSFamilyAny ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/5d89c46bbc339570f4fc349b2be93e89#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description """Caveat
+
+Bulkloading operations on an existing database using 32-bit prefix IDs will be restricted to use non-vectored functions. This will cause a drop in bulkload performance, so users who rely on this functionality should upgrade their database as soon as possible.
+
+Calling vectored functions like TTLP_V() and RDF_LOAD_RDFXML_V() will automatically call their non-vectored equivalents like TTLP() and RDF_LOAD_RDFXML().
+
+Bulkloading using the rdf_loader_run() functions also automatically will downgrade to use non-vectored functions.
+
+Some functions may fail with the following error:
+
+   [42000] Can not use dpipe IRI operations before upgrading the RDF_IRI table to 64-bit prefixes IDs
+""" ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/8a09d9f35c744273856409eae12c6f42#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/b87928f87f350f158cb8646aa80f711b#this> schema:step <http://data.openlinksw.com/oplweb/howto/5d89c46bbc339570f4fc349b2be93e89#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/8a09d9f35c744273856409eae12c6f42#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description """Upgrade method 1
+
+The preferred way of upgrading to the new 08.03.3326+ format is to perform an NQUAD dump of all your triples using the RDF_DUMP_NQUADS()(https://community.openlinksw.com/t/producing-rdf-dumps-of-virtuoso-quad-store-hosted-rdf-model-data/3323) function and bulk loading(https://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) them into a new database.""" ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/a196cf6306147ac691b07a29859186fc#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/b87928f87f350f158cb8646aa80f711b#this> schema:step <http://data.openlinksw.com/oplweb/howto/8a09d9f35c744273856409eae12c6f42#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/a196cf6306147ac691b07a29859186fc#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description """Upgrade method 2
+
+To upgrade an existing database in-place, make sure you have a proper backup of your existing database before performing the following commands:
+
+set echo on; 
+scheduler_interval(0);
+backup '/dev/null'; -- make sure db is consistent
+log_enable (2,0);
+
+-- copy
+create table DB.DBA.RDF_IRI_64 (RI_NAME varchar not null primary key, RI_ID IRI_ID_8 not null);
+insert into DB.DBA.RDF_IRI_64 (RI_ID, RI_NAME) select RI_ID, __iri_name_id_64(RI_NAME) from DB.DBA.RDF_IRI;
+checkpoint;
+
+-- rename
+drop table DB.DBA.RDF_IRI;
+alter table DB.DBA.RDF_IRI_64 rename DB.DBA.RDF_IRI;
+create unique index DB_DBA_RDF_IRI_UNQC_RI_ID on DB.DBA.RDF_IRI (RI_ID);
+
+-- set db is upgraded
+__dbf_set('rdf_rpid64_mode',1);
+shutdown;
+
+Note however that depending on the number of records in the DB.DBA.RDF_IRI table, this can take a long time and will increase the size of your database.""" ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/b87928f87f350f158cb8646aa80f711b#this> schema:step <http://data.openlinksw.com/oplweb/howto/a196cf6306147ac691b07a29859186fc#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> a schema:HowTo ;
+	schema:name "Virtuoso reports problems with indexes prior to performing a backup run" ;
+	schema:description """Virtuoso RDF QUAD Store Index Repair
+
+This document details steps for the recovery of a Virtuoso database from situations where the indexes on the Virtuoso DB.DBA.RDF_QUAD System Table are broken/corrupt and not in sync.""" .
+
+<http://data.openlinksw.com/oplweb/howto/82ae3b0280f3a68874d00ee123329ca8#step1> a schema:HowToStep ;
+	schema:name "Step 1" ;
+	schema:description """Data Integrity Check reports Broken index RDF_QUAD_XXXX
+
+If when running a database integrity check to check the state of the database with the command:
+
+   backup '/dev/null';
+
+Failure of this command to complete is an indication of the database having some form of corruption, requiring a +backup-dump of the database with the command:
+
+   virtuoso-iodbc-t +configfile virtuoso.ini +backup-dump
+
+If the Virtuoso log output of this command indicates a Broken Index as below:
+
+08:20:27 Database dump started 
+08:20:27 Checkpoint finished, log reused 
+08:20:27 Dumping the schema tables 
+08:20:27 Dumping the registry 
+08:20:27 Dumping the schema done 
+09:03:02 Broken index RDF_QUAD_POGS 
+09:03:02 GPF: colsearch.c:1753 less ces in seg than indicated in leaf col ref 
+GPF: colsearch.c:1753 less ces in seg than indicated in leaf col ref 
+Segmentation fault (core dumped)""" ;
+	schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/58ea98800a7be0e747517ae2fe3f9a7b#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> schema:step <http://data.openlinksw.com/oplweb/howto/82ae3b0280f3a68874d00ee123329ca8#step1> ;
+	schema:category "Administration" ;
+	oplsoft:hasOperatingSystemFamily oplsoft:OSFamilyAny ;
+	oplsoft:hasDatabaseFamily <http://data.openlinksw.com/oplweb/dbms_family/OpenLinkVirtuoso#this> .
+
+<http://data.openlinksw.com/oplweb/howto/58ea98800a7be0e747517ae2fe3f9a7b#step2> a schema:HowToStep ;
+	schema:name "Step 2" ;
+	schema:description """Index Rebuild Steps
+
+Then that index and any others (comma delimited) need to be removed from the +backup-dump by adding them to the BackupIgnoreKeys parameter in the [Parameters] section of the Virtuoso config file (virtuoso.ini):
+
+[Parameters] 
+BackupIgnoreKeys = RDF_QUAD_POGS
+
+Repeat the +backup-dump which should then complete as which time the database can be restored with the +restore-crash-dump command:
+
+   virtuoso-iodbc-t +configfile virtuoso.ini +restore-crash-dump 
+
+The missing index will then have to be recreated as detailed in the RDF Performance Tuning guide, thus is the case of the RDF_QUAD_POGS index the command would be:
+
+   DROP INDEX RDF_QUAD_POGS ;
+   CREATE COLUMN INDEX RDF_QUAD_POGS 
+     ON DB.DBA.RDF_QUAD (P, O, G, S) 
+     PARTITION (O varchar (-1, 0hexffff));""" ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/421bf6046304a7b55fed6d11ec22802f#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> schema:step <http://data.openlinksw.com/oplweb/howto/58ea98800a7be0e747517ae2fe3f9a7b#step2> .
+
+<http://data.openlinksw.com/oplweb/howto/421bf6046304a7b55fed6d11ec22802f#step3> a schema:HowToStep ;
+	schema:name "Step 3" ;
+	schema:description """Database reports Broken index RDF_QUAD_XXXX on startup
+
+If on startup the Virtuoso database fails to start reporting Broken index RDF_QUAD_XXXX:
+
+11:14:55 built-in procedure \"WS.WS.SYS_DAV_RES_RES_CONTENT_HOOK\" overruled by the RDBMS
+11:14:55 built-in procedure \"WS.WS.SYS_DAV_RES_RES_CONTENT_INDEX_HOOK\" overruled by the RDBMS
+11:14:59 Roll forward started
+11:15:03     353 transactions, 3698455 bytes replayed (100 %)
+11:15:03 Roll forward complete
+11:15:05 Broken index RDF_QUAD_POGS
+11:15:05 GPF: colsearch.c:1757 less ces in seg than indicated in leaf col ref
+GPF: colsearch.c:1757 less ces in seg than indicated in leaf col ref
+
+This can be recovered by as follows:
+
+Ensure a full backup or copy of the database is made
+
+Remove or rename the virtuoso.trx transaction log file
+
+Start the database again which should not start successfully and run the command to drop the broken RDF index:
+
+   _INTERNAL_DROP_INDEX ('DB.DBA.RDF_QUAD', 'RDF_QUAD_POGS');
+
+Perform a database crash dump of the database with the +crash-dump command:
+
+   virtuoso-iodbc-t +configfile virtuoso.ini +crash-dump 
+
+On completion the database can be restored with the +restore-crash-dump command:
+
+   virtuoso-iodbc-t +configfile virtuoso.ini +restore-crash-dump 
+
+The missing index can then be recreated as detailed in the RDF Performance Tuning guide, thus is the case of the RDF_QUAD_POGS index the command would be:
+
+   DROP INDEX RDF_QUAD_POGS ;
+   CREATE COLUMN INDEX RDF_QUAD_POGS 
+     ON DB.DBA.RDF_QUAD (P, O, G, S) 
+     PARTITION (O varchar (-1, 0hexffff));""" ;
+	schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/0e4b162c6a4169f8d7aea8580a45e483#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> schema:step <http://data.openlinksw.com/oplweb/howto/421bf6046304a7b55fed6d11ec22802f#step3> .
+
+<http://data.openlinksw.com/oplweb/howto/0e4b162c6a4169f8d7aea8580a45e483#step4> a schema:HowToStep ;
+	schema:name "Step 4" ;
+	schema:description """Checking RDF index have been repaired
+
+The following operations can be performed to verify the RDF indexes on the RDF_QUAD table repaired by either of the above methods have been fixed.
+
+Database Integrity Check
+
+Run a database integrity with the command:
+
+   backup '/dev/null';
+
+Check RDF index counts
+
+First check with the following count queries on all the indexes on the RDF_QUAD table by running the following queries for Virtuoso:
+
+   select count (*) from rdf_quad a table option (index rdf_quad) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_pogs, no exists join) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); 
+   select count (*) from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index primary key, no exists join) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); 
+   select count (*) from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_op, no exists join) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); 
+   select count (*) from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_sp, no exists join) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); 
+   select count (*) from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_gs, no exists join) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); """ ;
+	schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/704907d2d30729d0333257157b6e1e83#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> schema:step <http://data.openlinksw.com/oplweb/howto/0e4b162c6a4169f8d7aea8580a45e483#step4> .
+
+<http://data.openlinksw.com/oplweb/howto/704907d2d30729d0333257157b6e1e83#step5> a schema:HowToStep ;
+	schema:name "Step 5" ;
+	schema:description """If the counts of the queries are not all \"0\" this indicated the indexes with none \"0\" counts are corrupt and needs to be repaired, which can be done with the following queries/commands:
+
+create table rq_recov (g iri_id_8, s iri_id_8, p iri_id_8, o any, primary key (g,s,p,o));
+
+log_enable (3,1);
+insert soft rq_recov (g,s,p,o) select g,s,p,o from RDF_QUAD a table option (index RDF_QUAD) 
+    where not exists (select 1 from RDF_QUAD b table option (loop, index RDF_QUAD_POGS, no exists join) 
+        where a.G = b.G and a.P = b.P and a.O = b.O and a.S = b.S);
+
+insert soft rq_recov (g,s,p,o) select g,s,p,o from RDF_QUAD a table option (index RDF_QUAD_POGS) 
+    where not exists (select 1 from RDF_QUAD b table option (loop, index primary key, no exists join) 
+        where a.G = b.G and a.P = b.P and a.O = b.O and a.S = b.S);
+insert soft rdf_quad index rdf_quad (g,s,p,o)  select g,s,p,o from rq_recov;
+insert soft rdf_quad index rdf_quad_pogs (g,s,p,o)  select g,s,p,o from rq_recov;
+insert soft rdf_quad index rdf_quad_sp (g,s,p,o)  select g,s,p,o from rq_recov;
+insert soft rdf_quad index rdf_quad_op (g,s,p,o)  select g,s,p,o from rq_recov;
+insert soft rdf_quad index rdf_quad_gs (g,s,p,o)  select g,s,p,o from rq_recov;
+log_enable (1,1);
+drop table rq_recov;
+checkpoint;
+
+Then run the select count ... queries again for Virtuoso 7 or 8 , as above, to check indexes, the counts ALL of which should all be zero indicating they are repaired.""" ;
+	schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	schema:nextItem <http://data.openlinksw.com/oplweb/howto/986d5987081c6c6dc838e7b2f4d8ee3e#step6> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> schema:step <http://data.openlinksw.com/oplweb/howto/704907d2d30729d0333257157b6e1e83#step5> .
+
+<http://data.openlinksw.com/oplweb/howto/c16137d776398c8f363f4b128cfad5f9#step6> a schema:HowToStep ;
+	schema:name "Step 6" ;
+	schema:description """Check the primary key on the RDF_QUAD table is not broken by running the command:
+
+   select count (s), count (p ), count (o ), count (g ) from rdf_quad   table option (index rdf_quad, check);
+
+The counts of the `s, p, o, g` columns should all be the same, and if not the primary key index can be repaired by running the following queries:
+
+   insert into rdf_quad index rdf_quad_pogs (s,p,o,g) select s,p,o,g from rdf_quad a table option (index rdf_quad) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_pogs) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); 
+
+Then the reverse insert query needs to be run to insert any missing rows from the `rdf_quad` index into the `rdf_quad_pogs` full index ie
+
+   insert into rdf_quad index rdf_quad (s,p,o,g) select s,p,o,g from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad) where a.g = b.g and a.p = b.p and a.o = b.o and a.s = b.s); 
+
+And the following 3 insert queries need to be run to insert any missing rows in the 3 partial indexes ie rdf_quad_gs, rdf_quad_sp & rdf_quad_op as follows:
+
+   insert into rdf_quad index rdf_quad_sp (s,p) select s,p from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_sp) where a.p = b.p and a.s = b.s); 
+   insert into rdf_quad index rdf_quad_op (o,p) select o,p from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_op) where a.o = b.o and a.p = b.p); 
+   insert into rdf_quad index rdf_quad_gs (g,s) select g,s from rdf_quad a table option (index rdf_quad_pogs) where not exists (select 1 from rdf_quad b table option (loop, index rdf_quad_gs) where a.g = b.g and a.s = b.s); 
+
+Then run the `select count ...` queries again as above, to check indexes, the counts `ALL` of which should all be zero indicating they are repaired.
+
+If the above steps are successful the RDF index has been repaired and the database is ready for use again.""" ;
+	schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.openlinksw.com/oplweb/howto/0b45802f4d1a588ada8a8d98be565d21#this> schema:step <http://data.openlinksw.com/oplweb/howto/c16137d776398c8f363f4b128cfad5f9#step6> .

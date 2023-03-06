@@ -1,0 +1,328 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema:	<http://schema.org/> .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+@prefix ns4:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/urn/webdev:> .
+@prefix ns5:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/entity/urn/webdev:> .
+@prefix ns6:	<http://www.openlinksw.com/ontology/faq#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ns8:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQLQueryLanguage#> .
+@prefix ns9:	<http://www.openlinksw.com/#> .
+@prefix ns10:	<http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#> .
+@prefix ns11:	<http://data.openlinksw.com/oplweb/glossary-term/clustering#> .
+@prefix ns12:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#> .
+@prefix ns13:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#> .
+@prefix ns14:	<http://data.openlinksw.com/oplweb/glossary-term/NewSQL#> .
+@prefix ns15:	<http://data.openlinksw.com/oplweb/glossary-term/NoSQL#> .
+@prefix ns16:	<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#> .
+@prefix ns17:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#> .
+@prefix ns18:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#> .
+@prefix ns19:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#> .
+@prefix ns20:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#> .
+@prefix ns21:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#> .
+@prefix ns22:	<http://data.openlinksw.com/oplweb/glossary-term/ABAC#> .
+@prefix ns23:	<http://data.openlinksw.com/oplweb/glossary-term/JDBC#> .
+@prefix ns24:	<http://data.openlinksw.com/oplweb/glossary-term/ODBC#> .
+@prefix ns25:	<http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#> .
+@prefix ns26:	<http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#> .
+@prefix ns27:	<http://data.openlinksw.com/oplweb/glossary-term/R2RML#> .
+@prefix ns28:	<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/virtuoso-faq.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/virtuoso-faq.ttl> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix oplweb-faq: <https://data.openlinksw.com/oplweb/faq/Virtuoso#> . 
+@prefix oplweb-faq-page: <https://virtuoso.openlinksw.com/faq/> . 
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this>  ;
+   schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions -- WebDAV hosted TURTLE Document 2"@en;
+   schema:description """RDF based Linked Data document that describes the OpenLink Virtuoso Universal Server Frequently Asked Questions."""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+   cc:attributionName  "OpenLink Software"@en;
+   dcterms:format "text/turtle"@en;
+   cc:attributionURL  <http://www.openlinksw.com/>  ;
+   owl:sameAs source: ;
+   schema:mainEntity oplweb-faq-page: . 
+
+source:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this>  ;
+   schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions -- WebDAV hosted TURTLE Document"@en;
+   schema:comment """RDF based Linked Data document that describes the OpenLink Virtuoso Universal Server Frequently Asked Questions."""@en ;
+   schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName  "OpenLink Software"@en;
+   dcterms:format "text/turtle"@en;
+   cc:attributionURL  <http://www.openlinksw.com/>  ;
+   schema:mainEntity oplweb-faq-page: . 
+
+oplweb-faq-page:
+a schema:WebPage, schema:FAQPage ;
+schema:creator <http://www.openlinksw.com/#this>  ;
+schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+schema:dateModified "2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions (FAQ) Page"@en ;
+schema:keywords: "database, http, sql, sparql, rdf, knowledgegraph, faq, data virtualization, data federation, dbms, semanticweb, linkeddata" ;
+schema:description """
+                     Virtuoso Frequently Asked Questions (FAQ) Page.
+					 This page includes questions and answers related to functionality across the following Virtuoso Modules:
+                     <ul>
+					 <li>Multi-Model Database Management (Single-Server & Cluster Editions)</li>
+					 <li>Web HTTP Server and Linked Data Deployment</li>
+					 <li>Native and Virtual Knowledge Graph Deployment</li>
+					 <li>SQL and SPARQL Query Language Support</li>
+					 <li>Data Virtualization</li>
+					 <li>Data Federation</li>
+					 <li>Cloud Deployment</li>
+					 </ul>
+					"""@en ;
+schema:mainEntity oplweb-faq:VirtVisualizeWithPivotViewerQuestion, oplweb-faq:VirtVisualizeWithHtmlPivotViewerQuestion,
+				  oplweb-faq:VirtRdb2RDFViewsGenerationQuestion, oplweb-faq:VirtR2RMLQuestion,
+			      oplweb-faq:VirtLinkRemoteTablesQuestion, oplweb-faq:VirtDeployingLinkedDataGuideQuestion,
+				  oplweb-faq:VOSSQL2RDFQuestion, oplweb-faq:ScaleQuestion, oplweb-faq:PlansCloudQuestion,
+				  oplweb-faq:ManageClusterQuestion, oplweb-faq:FederationTripleStoreQuestion,
+				  oplweb-faq:EvaluatingNoSQLDBQuestion, oplweb-faq:ClusterConfigDifQuestion,
+				  oplweb-faq:VirtSparqlCxmlQuestion .
+
+oplweb-faq:VirtSparqlCxmlQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns8:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtSparqlCxmlAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:ClusterConfigDifAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"Configuration A:  4 cluster nodes, 3 instances per cluster node (quorum), 1 instance per host cluster node, 12 host cluster nodes.  \n\nConfiguration B:  4 cluster nodes, 3 instances per cluster node (quorum), 4 instances per host cluster node, 3 host cluster nodes.  \n\nPerformance has more to do with the number of Virtuoso Server processes running on each cluster node.  One instance per cluster node will work better than four instances per cluster node.  You will have more OS resources available as the Virtuoso instances are reduced.  Ideally, you want to spread the instances over distinct machines so that you have resources pooled across those machines."@en.
+
+oplweb-faq:ClusterConfigDifQuestion
+	rdf:type	schema:Question ;
+	schema:name	"What is the differences in terms of performance/scalability between 2 cluster configurations?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns10:this , ns11:this , ns12:this , ns13:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:ClusterConfigDifAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:EvaluatingNoSQLDBAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"Virtuoso is a Native Hybrid DBMS  it is SQL and NoSQL combined."@en.
+
+oplweb-faq:EvaluatingNoSQLDBQuestion
+	rdf:type	schema:Question ;
+	schema:name	"Is Virtuoso currently evaluating NoSQL database for the storage of quads?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns14:this , ns15:this , ns16:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:EvaluatingNoSQLDBAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:FederationStatusAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created."@en.
+
+oplweb-faq:FederationStatusQuestion
+	rdf:type	schema:Question ;
+	schema:name	"What is the current status of development for Virtuoso federation of triple stores?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns17:this , ns18:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:FederationStatusAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:FederationTripleStoreAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created.  Clustering has more to do with horizontal partitioning of the database across many machines (physical or virtual) to parallelize execution of queries, etc.  SPARQL-FED may be used with a Virtuoso Cluster, just as with a Single-Server Instance."@en.
+
+oplweb-faq:FederationTripleStoreQuestion
+	rdf:type	schema:Question ;
+	schema:name	"When will federation of triple stores be available in Virtuosoand  how does it compare to clustering?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns10:this , ns11:this , ns12:this , ns19:this , ns13:this , ns17:this , ns18:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:FederationTripleStoreAnswer ;
+	schema:creator	ns9:this .
+	
+oplweb-faq:HighAvailAndRecoverAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"You can use replication for HA across Elastic Clusters or Single-Server instances.  For example, nearly-instantaneous Transactional Replication is used by some of our larger customers (e.g., Globo of Brazil used a Transactional Replication setup for the entire World Cup 2014 without any issues)."@en.
+
+oplweb-faq:HighAvailAndRecoverQuestion
+	rdf:type	schema:Question ;
+	schema:name	"What are the best options to offer High-Avaliability and Disaster Recovery?  Is it possible to move data from one datacenter to another and how is data transferred?  Are there any numbers about the speed of data replication between two datacenters and consistency of the process?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns10:this , ns11:this , ns12:this , ns20:this , ns19:this , ns13:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:HighAvailAndRecoverAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:ManageClusterAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"If the \"elastic cluster\" option is enabled at DB creation time, adding nodes and repartitioning indexes can be done without stopping the cluster."@en.
+
+oplweb-faq:ManageClusterQuestion
+	rdf:type	schema:Question ;
+	schema:name	"Do I have to stop the cluster to add a node or partition an index?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns10:this , ns11:this , ns12:this , ns21:this , ns19:this , ns13:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:ManageClusterAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:PlansCloudAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"Virtuoso Open Source Edition (VOS) is part of the LOD2 OpenStack deliverables, but this does not include Enterprise Edition features (i.e., no replication clustering, elastic clustering, fine-grained ABAC security, nor virtual DBMS functionality for making RDF views over external SQL data sources). That said, Virtuoso (both Open Source and Enterprise) may be instatiated on cloud services, including Amazon EC2."@en.
+
+oplweb-faq:PlansCloudQuestion
+	rdf:type	schema:Question ;
+	schema:name	"Are there any Virtuoso plans for Cloud technologies (Openstack, etc.)?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns11:this , ns12:this , ns20:this , ns19:this , ns13:this , ns22:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:PlansCloudAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:ScaleAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"Yes.  You start with Single-Server, enable the Elastic Cluster optionand  then add nodes as scalability demands increase."@en.
+
+oplweb-faq:ScaleQuestion
+	rdf:type	schema:Question ;
+	schema:name	"What is the Virtuoso strategy to scale?  Is it possible to start small and then add servers if needed?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns10:this , ns11:this , ns12:this , ns21:this , ns19:this , ns13:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:ScaleAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VOSSQL2RDFAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"This page discusses the basics of creating RDF-based Linked Data Views over Relational Data Sourcesand  links to several other pages with specific guides for various local and remote (ODBC- and JDBC-accessible) data sources."@en.
+
+oplweb-faq:VOSSQL2RDFQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I create RDF-based Linked Data Views over Relational Data Sources?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns23:this , ns24:this , ns25:this , ns26:this , ns27:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VOSSQL2RDFAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtDeployingLinkedDataGuideAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"This page discusses some of the difficulties faced in exposing RDF data and in bridging the \"Linked Data Web\" and the traditional \"Document Web\". Two generic approaches to resolving these deployment challenges  content negotiation and URL rewriting  are described, before looking at OpenLink Virtuoso, from the standpoint of both how it implements these solutions and how Linked Data is deployed."@en.
+
+oplweb-faq:VirtDeployingLinkedDataGuideQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I use Virtuoso to deploy Linked Data to the Web?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns28:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtDeployingLinkedDataGuideAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtFacetBrowserInstallConfigAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"See required prerequisites, pre-installation steps, VAD package installation, post-installation stepsand  example tutorials."@en.
+
+oplweb-faq:VirtFacetBrowserInstallConfigQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I install and configure the Virtuoso Faceted Browser?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns28:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtFacetBrowserInstallConfigAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtLinkRemoteTablesAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"See OpenLink How-To guides to learn how to connect Virtuoso's Virtual Database Engine to local or remote data sources including Firebird, DB2, Informix, Ingres, MySQL, Microsoft SQL Server, Oracle, PostgreSQL, Progress, Sybaseand  others accessible by ODBC or JDBC. (Note  JDBC requires an ODBC-to-JDBC Bridge, which OpenLink may also supply.)"@en.
+
+oplweb-faq:VirtLinkRemoteTablesQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns23:this , ns24:this , ns26:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtLinkRemoteTablesAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtR2RMLAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"R2RML, a W3C Recommendation, is a language for expressing customized mappings from relational databases to RDF data sets. Such mappings provide the ability to view existing relational data in the RDF data model, expressed in a structure and target vocabulary of the mapping author's choice. R2RML mappings are themselves RDF graphs written in Turtle syntax. R2RML is becoming the generic standard adopted by most vendors of tools mapping relational data to RDF, enabling the interoperability of R2RML scripts, whether created with such tools or by hand. This page discusses how to use R2RML specifically with Virtuoso."@en.
+
+oplweb-faq:VirtR2RMLQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I use R2RML to map RDB to RDF with Virtuoso?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns23:this , ns24:this , ns25:this , ns26:this , ns27:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtR2RMLAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtRdb2RDFViewsGenerationAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"See example of One-Click Linked Data Generation & Deployment of Linked Data Views over Relational Data Sources with Virtuoso."@en.
+
+oplweb-faq:VirtRdb2RDFViewsGenerationQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I use just one click on Virtuoso's HTML-based Wizard to Generate and Deploy RDF-based Linked Data from Relational Databases?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns23:this , ns24:this , ns25:this , ns26:this , ns27:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtRdb2RDFViewsGenerationAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtSparqlCxmlAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"See OpenLink How-To guide that demonstrates the generation of CXML-based output from SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer."@en.
+
+oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."@en.
+
+oplweb-faq:VirtVisualizeWithHtmlPivotViewerQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I explore Linked Data using the HTML5-based Pivot Viewer?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns28:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer ;
+	schema:creator	ns9:this .
+
+oplweb-faq:VirtVisualizeWithPivotViewerAnswer
+	rdf:type	schema:Answer ;
+	schema:text	"See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."@en.
+
+oplweb-faq:VirtVisualizeWithPivotViewerQuestion
+	rdf:type	schema:Question ;
+	schema:name	"How do I explore Linked Data using the Microsoft Pivot Viewer?"@en;
+	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
+	schema:category	ns28:this ;
+	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:acceptedAnswer	oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
+	schema:creator	ns9:this .

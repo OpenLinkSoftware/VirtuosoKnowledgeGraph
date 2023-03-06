@@ -1,0 +1,95 @@
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix schema:    <http://schema.org/> .
+@prefix ami:       <http://www.openlinksw.com/ontology/oplami#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix :          <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-amazon-ebs-storage-dbpedia.ttl#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-amazon-ebs-storage-dbpedia.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/virtuoso-amazon-ebs-storage-dbpedia.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "Description of Virtuoso hosted DBpedia 3.10 EBS Snapshot -- WebDAV hosted TURTLE Document 2" ;
+   schema:comment """Description of DBpedia 3.10 Preloaded & Preconfigured Elastic Block Storage (EBS) Device on Amazon Web Services based Elastic Computing Cloud."""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated  "2014-03-30T18:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2015-03-31T13:38:00-05:00"^^xsd:dateTime ;
+   cc:attributionName  "OpenLink Software" ;
+   dcterms:format "text/turtle" ;
+   cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   owl:sameAs source: .
+
+source:
+    a schema:CreativeWork ;
+    schema:name "Description of Virtuoso hosted DBpedia 3.10 EBS Snapshot" ;
+    schema:dateCreated "2015-01-22T16:53:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2015-05-21T13:38:00-05:00"^^xsd:dateTime ;
+    dcterms:subject :Virtuoso-aws-ebs-snap-dbpedia-fae8e458 ;
+    schema:about :Virtuoso-aws-ebs-snap-dbpedia-fae8e458 ,
+                 <http://kidehen.blogspot.com/2014/03/preloaded-preconfigured-dbpedia.html> ;
+    schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    cc:attributionName  "OpenLink Software" ;
+    dcterms:format "text/turtle" ;
+    cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+    schema:comment """Description of DBpedia 3.10 Preloaded & Preconfigured Elastic Block Storage (EBS) Device on Amazon Web Services based Elastic Computing Cloud. """@en;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:mainEntity :Virtuoso-aws-ebs-snap-dbpedia-fae8e458 .
+
+<http://kidehen.blogspot.com/2014/03/preloaded-preconfigured-dbpedia.html> a schema:WebPage, schema:TechArticle ;
+    schema:name """Preloaded & Preconfigured DBpedia Cloud Instance"""^^xsd:string ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    dcterms:subject :Virtuoso-aws-ebs-snap-dbpedia-fae8e458 ;
+    schema:about :Virtuoso-aws-ebs-snap-dbpedia-fae8e458 ;
+    xhv:related <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/DBpedia#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+    schema:comment """Blog post that covers installation and configuration of a personal and/or service-specific instance of DBpedia 3.10 (a/k/a DBpedia 2014) via the Amazon EC2 Cloud. """@en;
+    wdrs:describedby source: ;
+    schema:mainEntity :Virtuoso-aws-ebs-snap-dbpedia-fae8e458 .
+
+:Virtuoso-aws-ebs-snap-dbpedia-fae8e458
+    a ami:AmazonEC2EBSSnapshot ;
+    schema:name "Virtuoso-aws-ebs-snap-dbpedia-fae8e458>" ;
+    ami:ec2EBSSnapshotCapacity "75 GiB" ;
+    ami:ec2EBSSnapshotEncrypted 0 ;
+    ami:ec2EBSSnapshotID "snap-fae8e458" ;
+    ami:ec2EBSSnapshotKMSKeyARN "none" ;
+    ami:ec2EBSSnapshotKMSKeyAliases "none" ;
+    ami:ec2EBSSnapshotKMSKeyID "none" ;
+    ami:ec2EBSSnapshotOwnerID "940880361860" ;
+    ami:ec2EBSSnapshotProductCodes "none" ;
+    ami:ec2EBSSnapshotStatus "completed" ;
+    ami:ec2EBSSnapshotVolumeID "vol-ff114593" ;
+    schema:dateCreated "2014-09-19T09:53:58-04:00"^^xsd:dateTime ;
+    dcterms:identifier "snap-fae8e458" ;
+    xhv:related <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
+        <http://dbpedia.org/resource/Amazon_Web_Services>,
+        <http://dbpedia.org/resource/Category:Cloud_platforms>,
+        <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtAWSPublicDataSets>,
+        <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtInstallationEC2> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/DBpedia#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+        <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+    schema:comment """Amazon Cloud Services hosted Elastic Block Storage that's comprised of a preconfigured instance of Virtuoso 7.1 (Single-Server Edition)	and a preloaded DBpedia 3.10 dataset. Mounting this device to an Amazon Machine Instance (Virtual Machine) in the EC2 (Elastic Computing Cloud) provides you with immediate access to a personal or service-specific instance of DBpedia 3.10 (a/k/a DBpedia 2014)."""@en;
+    skos:prefLabel "DBpedia 3.10 (Virtuoso 7.1 Single-Server)" ;
+    wdrs:describedby source: ;
+    schema:image <http://media-cache-ec0.pinimg.com/originals/62/e5/a5/62e5a55b04b58272a182691c2be66266.jpg> .
+
+

@@ -1,0 +1,860 @@
+## Turtle Document That Describes Virtuoso How Do I ... ##
+
+@prefix schema:    <http://schema.org/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix voswiki:   <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/> .
+@prefix :          <http://data.openlinksw.com/oplweb/faq/virtuoso/how_do_i_question#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/virtuoso_vdb_how_do_i.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/virtuoso_vdb_how_do_i.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:name """Virtuoso HOWTO Guides: Virtual Database Functionality"""^^xsd:string ;
+   schema:comment """A collection of "How Do I..." themed articles focused on Virtuoso's Virtual Database functionality."""@en ;
+   schema:dateCreated  "2014-01-21T13:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software"@en;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   owl:sameAs source: .
+
+source:
+  a schema:CreativeWork ;
+  schema:name  "Virtuoso HOWTO Guides: Virtual Database Functionality"^^xsd:string ;
+  schema:comment  """A collection of "How Do I..." themed articles focused on Virtuoso's Virtual Database functionality."""@en ;
+  schema:dateCreated  "2014-01-21T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName  "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:about <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithPivotViewer#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithHtmlPivotViewer#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSparqlCxml#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtLinkRemoteTables#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtDeployingLinkedDataGuide#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtR2RML#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtRdb2RDFViewsGeneration#OneClickLinkedDataGenerationAndDeployment> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSSQL2RDF#this> ,
+               <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtFacetBrowserInstallConfig#this> ,
+               :FederationStatus ,
+               :FederationTripleStore ,
+               :ClusterConfigDif ,
+               :HighAvailAndRecover ,
+               :Scale ,
+               :ManageCluster ,
+               :PlansCloud ,
+               :EvaluatingNoSQLDB   ;
+  dcterms:subject <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithPivotViewer#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithHtmlPivotViewer#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSparqlCxml#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtLinkRemoteTables#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtDeployingLinkedDataGuide#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtR2RML#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtRdb2RDFViewsGeneration#OneClickLinkedDataGenerationAndDeployment> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSSQL2RDF#this> ,
+                  <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtFacetBrowserInstallConfig#this> ,
+                  :FederationStatus ,
+                  :FederationTripleStore ,
+                  :ClusterConfigDif ,
+                  :HighAvailAndRecover ,
+                  :Scale ,
+                  :ManageCluster ,
+                  :PlansCloud ,
+                  :EvaluatingNoSQLDB .
+
+:VirtVisualizeWithPivotViewerQuestion
+  a schema:Question ;
+  schema:name "How do I explore Linked Data using the Microsoft Pivot Viewer?"@en;
+  schema:text "How do I explore Linked Data using the Microsoft Pivot Viewer?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtVisualizeWithPivotViewerAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtVisualizeWithPivotViewerAnswer
+  a schema:Answer ;
+  schema:name """How do I explore Linked Data using the Microsoft Pivot Viewer -- Answer"""@en;
+  schema:text """See OpenLink HOWTO guide that showcases how to use a Virtuoso hosted instance
+               of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithPivotViewer#this>
+  a schema:TechArticle ;
+  wdrs:describedby  source: ;
+  schema:mainEntity  :VirtVisualizeWithPivotViewer ;
+  schema:name "Linked Data Exploration with the Microsoft Pivot Viewer"@en;
+  schema:comment """Answering the question: How do I explore Linked Data using the Microsoft Pivot Viewer?"""@en ;
+  schema:description """This document provides a HOWTO guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."""@en ;
+  schema:headline "Linked Data Exploration with the Microsoft Pivot Viewer"@en;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+  schema:url voswiki:VirtVisualizeWithPivotViewer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> ,
+                     <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+						         <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ,
+						         <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this>  .
+
+
+:VirtVisualizeWithHtmlPivotViewerQuestion
+  a schema:Question ;
+  schema:name "How do I explore Linked Data using the HTML5-based Pivot Viewer?"@en;
+  schema:text "How do I explore Linked Data using the HTML5-based Pivot Viewer?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtVisualizeWithHtmlPivotViewerAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby source: .
+
+:VirtVisualizeWithHtmlPivotViewerAnswer
+  a schema:Answer ;
+  schema:name """How do I explore Linked Data using the HTML5-based Pivot Viewer -- Answer"""@en;
+  schema:text """See OpenLink HOWTO guide that showcases how to use a Virtuoso
+                         hosted instance of the Microsoft PivotViewer as a Linked Data front-end for
+                         follow-your-nose data exploration."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby source: .
+
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithHtmlPivotViewer#this>
+  a schema:TechArticle ;
+  schema:headline "Linked Data Exploration with the HTML5 Pivot Viewer"@en;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:mainEntity :VirtVisualizeWithHtmlPivotViewer ;
+  wdrs:describedby source: ;
+  schema:name "Linked Data Exploration with the HTML5 Pivot Viewer"@en;
+  schema:comment """Answering the question: How do I explore Linked Data using the HTML5-based Pivot Viewer? """@en ;
+  schema:description  """This document provides a HOWTO guide that showcases how to use a Virtuoso
+                         hosted instance of the Microsoft PivotViewer as a Linked Data front-end for
+                         follow-your-nose data exploration."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtVisualizeWithHtmlPivotViewer ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+						             <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+
+:VirtSparqlCxmlQuestion
+  a schema:Question ;
+  schema:name "How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?"@en;
+  schema:text "How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtSparqlCxmlAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtSparqlCxmlAnswer
+  a schema:Answer ;
+  schema:name """How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer -- Answer"""@en;
+  schema:text "See OpenLink HOWTO guide that showcases the generation of CXML based output from SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer."  ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSparqlCxml#this>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Working with SPARQL-based Pivot Collections and Virtuoso"@en;
+  schema:mainEntity :VirtSparqlCxml ;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:name "Working with SPARQL-based Pivot Collections and Virtuoso"@en;
+  schema:comment """Answering the question: How do I use SPARQL to dynamically generate CXML collections for the
+                         Microsoft or HTML5-based PivotViewer?"""@en ;
+  schema:description  """This document provides a HOWTO guide that showcases the generation of CXML based output from
+                         SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtSparqlCxml ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+						             <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+
+:VirtLinkRemoteTablesQuestion
+  a schema:Question ;
+  schema:name "How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?"@en;
+  schema:text "How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtLinkRemoteTablesAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtLinkRemoteTablesAnswer
+  a schema:Answer ;
+  schema:name """How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources -- Answer"""@en;
+  schema:text """See OpenLink HOWTO guides that showcase how to connect Virtuoso's Virtual Database Engine
+                         to local or remote data sources including Firebird, DB2, Informix, Ingres, MySQL, Microsoft SQL Server,
+                          Oracle, PostgreSQL, Progress, Sybase, and others accessible by ODBC or JDBC."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtLinkRemoteTables#this>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Attaching the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources"@en;
+  schema:mainEntity :VirtLinkRemoteTables ;
+  schema:name "Attaching the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources"@en;
+  schema:comment """Answering the question: How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?"""@en ;
+  schema:description  """This document provides links to HOWTO guides that showcase how to connect Virtuoso's Virtual Database Engine
+                         to local or remote data sources including Firebird, DB2, Informix, Ingres, MySQL, Microsoft SQL Server,
+                          Oracle, PostgreSQL, Progress, Sybase, and others accessible by ODBC or JDBC."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  schema:image <https://s-media-cache-ak0.pinimg.com/originals/ac/f3/0f/acf30f15248f0044396fdc00a4c91c02.jpg> ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtLinkRemoteTables ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+ 						             <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+:VirtDeployingLinkedDataGuideQuestion
+  a schema:Question ;
+  schema:name "How do I use Virtuoso to deploy Linked Data to the Web?"@en;
+  schema:text "How do I use Virtuoso to deploy Linked Data to the Web?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtDeployingLinkedDataGuideAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtDeployingLinkedDataGuideAnswer
+  a schema:Answer ;
+  schema:name """How do I use Virtuoso to deploy Linked Data to the Web -- Answer"""@en;
+  schema:text """This page discusses some of the difficulties faced in exposing RDF data and in bridging
+                         the "Linked Data Web" and the traditional "Document Web". Two generic approaches to
+                         resolving these deployment challenges are described, content negotiation and URL rewriting,
+                         before looking at OpenLink Virtuoso, both from the standpoint of how it implements these
+                         solutions and how Linked Data is deployed."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtDeployingLinkedDataGuide#this>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Deploying Linked Data using Virtuoso"@en;
+  schema:mainEntity :VirtDeployingLinkedDataGuide ;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:name "Deploying Linked Data using Virtuoso"@en;
+  schema:comment """Answering the question: How do I use Virtuoso to deploy Linked Data to the Web?"""@en ;
+  schema:description  """This page discusses some of the difficulties faced in exposing RDF data and in bridging
+                         the "Linked Data Web" and the traditional "Document Web". Two generic approaches to
+                         resolving these deployment challenges are described, content negotiation and URL rewriting,
+                         before looking at OpenLink Virtuoso, both from the standpoint of how it implements these
+                         solutions and how Linked Data is deployed."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtDeployingLinkedDataGuide ;
+  schema:mentions <http://virtuoso.openlinksw.com/Whitepapers/pdf/Virtuoso_SQL_to_RDF_Mapping.pdf> ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+	   				  	 <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+:VirtR2RMLQuestion
+  a schema:Question ;
+  schema:name "How do I use R2RML to map RDB to RDF with Virtuoso?"@en;
+  schema:text "How do I use R2RML to map RDB to RDF with Virtuoso?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtR2RMLAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtR2RMLAnswer
+  a schema:Answer ;
+  schema:name """How do I use R2RML to map RDB to RDF with Virtuoso -- Answer"""@en;
+  schema:text """R2RML, a W3C Recommendation, is a language for expressing customized mappings from relational
+                         databases to RDF data sets. Such mappings provide the ability to view existing relational data
+                         in the RDF data model, expressed in a structure and target vocabulary of the mapping author's
+                         choice. R2RML mappings are themselves RDF graphs written in Turtle syntax. R2RML is becoming
+                         the generic standard adopted by most vendors of tools mapping relational data to RDF, enabling
+                         the interoperability of R2RML scripts, whether created with such tools or by hand. This page
+                         discusses how to use R2RML specifically with Virtuoso."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtR2RML#this>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Using R2RML (RDB to RDF Mapping Language) with Virtuoso"@en;
+  schema:mainEntity :VirtR2RML ;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:name "Using R2RML (RDB to RDF Mapping Language) with Virtuoso"@en;
+  schema:comment """Answering the question: How do I use R2RML to map RDB to RDF with Virtuoso?"""@en ;
+  schema:description  """R2RML, a W3C Recommendation, is a language for expressing customized mappings from relational
+                         databases to RDF data sets. Such mappings provide the ability to view existing relational data
+                         in the RDF data model, expressed in a structure and target vocabulary of the mapping author's
+                         choice. R2RML mappings are themselves RDF graphs written in Turtle syntax. R2RML is becoming
+                         the generic standard adopted by most vendors of tools mapping relational data to RDF, enabling
+                         the interoperability of R2RML scripts, whether created with such tools or by hand. This page
+                         discusses how to use R2RML specifically with Virtuoso."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtR2RML ;
+  schema:mentions  <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+						  <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+:VirtRdb2RDFViewsGenerationQuestion
+  a schema:Question ;
+  schema:name """How do I use just one click on Virtuoso's HTML-based Wizard to
+                         Generate and Deploy RDF-based Linked Data from Relational Databases?"""@en;
+  schema:text """How do I use just one click on Virtuoso's HTML-based Wizard to
+                         Generate and Deploy RDF-based Linked Data from Relational Databases?"""@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtRdb2RDFViewsGenerationAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtRdb2RDFViewsGenerationAnswer
+  a schema:Answer ;
+  schema:name """How do I use just one click on Virtuoso's HTML-based Wizard to
+                         Generate and Deploy RDF-based Linked Data from Relational Databases -- Answer"""@en;
+  schema:text """See example of One-Click Linked Data Generation & Deployment of Linked
+                         Data Views over Relational Data Sources with Virtuoso."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtRdb2RDFViewsGeneration#OneClickLinkedDataGenerationAndDeployment>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Using Virtuoso's HTML-based Wizard to Generate RDF-based Linked Data from Relational Databases"@en;
+  schema:mainEntity :VirtRdb2RDFViewsGeneration ;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:name "Using Virtuoso's HTML-based Wizard to Generate RDF-based Linked Data from Relational Databases"@en;
+  schema:comment """Answering the question: How do I use just one click on Virtuoso's HTML-based Wizard to
+                         Generate and Deploy RDF-based Linked Data from Relational Databases?"""@en ;
+  schema:description  """This page provides an example of One-Click Linked Data Generation & Deployment of Linked
+                         Data Views over Relational Data Sources with Virtuoso."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtRdb2RDFViewsGeneration ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+					  	 <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+:VOSSQL2RDFQuestion
+  a schema:Question ;
+  schema:name "How do I create RDF-based Linked Data Views over Relational Data Sources?"@en;
+  schema:text "How do I create RDF-based Linked Data Views over Relational Data Sources?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VOSSQL2RDFAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VOSSQL2RDFAnswer
+  a schema:Answer ;
+  schema:name """How do I create RDF-based Linked Data Views over Relational Data Sources -- Answer"""@en;
+  schema:text """This page discusses the basics of creating RDF-based Linked Data Views over Relational Data Sources,
+                         and links to several other pages with specific guides for various local and remote (ODBC- and JDBC-
+                         accessible) data sources."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSSQL2RDF#this>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Mapping SQL Data to Linked Data Views"@en;
+  schema:mainEntity :VOSSQL2RDF ;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:name "Mapping SQL Data to Linked Data Views"@en;
+  schema:comment """Answering the question: How do I create RDF-based Linked Data Views over Relational Data Sources?"""@en ;
+  schema:description  """This page discusses the basics of creating RDF-based Linked Data Views over Relational Data Sources,
+                         and links to several other pages with specific guides for various local and remote (ODBC- and JDBC-
+                         accessible) data sources."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VOSSQL2RDF ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+ 						 <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+
+:VirtFacetBrowserInstallConfigQuestion
+  a schema:Question ;
+  schema:name "How do I install and configure the Virtuoso Faceted Browser?"@en;
+  schema:text "How do I install and configure the Virtuoso Faceted Browser?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :VirtFacetBrowserInstallConfigAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:VirtFacetBrowserInstallConfigAnswer
+  a schema:Answer ;
+  schema:name """How do I install and configure the Virtuoso Faceted Browser -- Answer"""@en;
+  schema:text """See required prerequisites, pre-installation steps, VAD package
+                           installation, post-installation steps, and example tutorials."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtFacetBrowserInstallConfig#this>
+  a schema:TechArticle ;
+  wdrs:describedby source: ;
+  schema:headline "Installing and Configuring the Virtuoso Faceted Browser"@en;
+  schema:mainEntity :VirtFacetBrowserInstallConfig ;
+  schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg>;
+  schema:name "Installing and Configuring the Virtuoso Faceted Browser"@en;
+  schema:comment """Answering the question: How do I install and configure the Virtuoso Faceted Browser?"""@en ;
+  schema:description  """This page contains required prerequisites, pre-installation steps, VAD package
+                           installation, post-installation steps, and example tutorials."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url voswiki:VirtFacetBrowserInstallConfig .
+
+:FederationStatusQuestion
+  a schema:Question ;
+  schema:name "What is the current status of development for Virtuoso federation of triple stores?"@en;
+  schema:text "What is the current status of development for Virtuoso federation of triple stores?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :FederationStatusAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:FederationStatusAnswer
+  a schema:Answer ;
+  schema:name """What is the current status of development for Virtuoso federation of triple stores -- Answer"""@en;
+  schema:text """We support SPARQL-FED, federated SPARQL has been a Virtuoso feature since the start of time."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+:FederationStatus a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:name "Virtuoso federation of triple stores"@en;
+  schema:mainEntity :FederationStatusQuestion;
+  schema:comment """Answering the question: What is the current status of development for Virtuoso federation of triple stores?"""@en ;
+  schema:description  """We support SPARQL-FED, federated SPARQL has been a Virtuoso feature since the start of time."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:FederationStatus .
+
+:FederationTripleStoreQuestion
+  a schema:Question ;
+  schema:name "When Virtuoso federation of triple stores will be available and how does it compare to clustering?"@en;
+  schema:text "When Virtuoso federation of triple stores will be available and how does it compare to clustering?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :FederationTripleStoreAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:FederationTripleStoreAnswer
+  a schema:Answer ;
+  schema:name """When Virtuoso federation of triple stores will be available and how does it compare to clustering -- Answer"""@en;
+  schema:text """We already have this. In regards to Clustering that is more to do with horizontal partitioning of the
+                         database across many machines (or virtual machines) combined with parallel execution of queries etc.
+                         You can use SPARQL-FED with a Virtuoso Cluster, just as you would a single-server setup."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:FederationTripleStore a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:name "Virtuoso federation of triple stores"@en;
+  schema:mainEntity :FederationTripleStore ;
+  schema:comment """Answering the question: When Virtuoso federation of triple stores will be available and how does it
+                         compare to clustering?"""@en ;
+  schema:description  """We already have this. In regards to Clustering that is more to do with horizontal partitioning of the
+                         database across many machines (or virtual machines) combined with parallel execution of queries etc.
+                         You can use SPARQL-FED with a Virtuoso Cluster, just as you would a single-server setup."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:FederationTripleStore .
+
+
+:ClusterConfigDifQuestion
+  a schema:Question ;
+  schema:name "What is the differences in terms of performance/scalability between 2 cluster configurations?"@en;
+  schema:text "What is the differences in terms of performance/scalability between 2 cluster configurations?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :ClusterConfigDifAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:ClusterConfigDifAnswer
+  a schema:Answer ;
+  schema:name """What is the differences in terms of performance/scalability between 2 cluster configurations -- Answer"""@en;
+  schema:text """1st configuration: 4 cluster nodes, 3 instances per cluster node (quorum), 1 instance
+                         per cluster host node, 12 cluster host nodes; 2nd configuration:  4 cluster nodes, 3
+                         instances per cluster node (quorum), 4 instances per cluster host node, 12 cluster host nodes: -- This is more
+                         to do with how many Virtuoso Server processes are running per cluster node. You will have more OS resources
+                         available as the Virtuoso instances are reduced. Ideally, you want to spread the instances over distinct
+                         machines so that you have resources pooled across those machines. One instance per cluster node will work better
+                         than Four instances per cluster node."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:ClusterConfigDif a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:mainEntity :ClusterConfigDif ;
+  schema:name "Performance/scalability between these 2 cluster configurations"@en;
+  schema:comment """Answering the question: What is the differences in terms of performance/scalability between
+                         2 cluster configurations?"""@en ;
+  schema:description  """1st configuration: 4 cluster nodes, 3 instances per cluster node (quorum), 1 instance
+                         per cluster host node, 12 cluster host nodes; 2nd configuration:  4 cluster nodes, 3
+                         instances per cluster node (quorum), 4 instances per cluster host node, 12 cluster host nodes: -- This is more
+                         to do with how many Virtuoso Server processes are running per cluster node. You will have more OS resources
+                         available as the Virtuoso instances are reduced. Ideally, you want to spread the instances over distinct
+                         machines so that you have resources pooled across those machines. One instance per cluster node will work better
+                         than Four instances per cluster node."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:ClusterConfigDif ;
+  schema:image <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtClusteringDiagrams/elastic-ha-12-hosts-4-nodes-of-3-instance-quorums.png> ,
+                         <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtClusteringDiagrams/elastic-ha-3-hosts-4-nodes-of-3-instance-quorums.png> .
+
+:HighAvailAndRecoverQuestion
+  a schema:Question ;
+  schema:name """What are the best options to offer High-Avaliability and Disaster Recovery?
+                         Is it possible to move data from one datacenter to another and how is data transferred?Are there any
+                         numbers about the speed of data replication between two datacenters and consistency of the process?"""@en;
+  schema:text """What are the best options to offer High-Avaliability and Disaster Recovery?
+                         Is it possible to move data from one datacenter to another and how is data transferred?Are there any
+                         numbers about the speed of data replication between two datacenters and consistency of the process?"""@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :HighAvailAndRecoverAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:HighAvailAndRecoverAnswer
+  a schema:Answer ;
+  schema:name """What are the best options to offer High-Avaliability and Disaster Recovery?
+                         Is it possible to move data from one datacenter to another and how is data transferred?Are there any
+                         numbers about the speed of data replication between two datacenters and consistency of the process -- Answer"""@en;
+  schema:text """You can use replication for HA across Clusters or Single-Server instances. We have transactional
+                         replication (nearly instantaneous) and its used by some of our large customers e.g., Globo of Brazil which
+                         used this Virtuoso setup for the entire World Cup 2014 without any issues."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:HighAvailAndRecover a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:mainEntity :HighAvailAndRecover ;
+  schema:name "High-Avaliability and Disaster Recovery"@en;
+  schema:comment """Answering the question: What are the best options to offer High-Avaliability and Disaster Recovery?
+                         Is it possible to move data from one datacenter to another and how is data transferred?Are there any
+                         numbers about the speed of data replication between two datacenters and consistency of the process?"""@en ;
+  schema:description  """You can use replication for HA across Clusters or Single-Server instances. We have transactional
+                         replication (nearly instantaneous) and its used by some of our large customers e.g., Globo of Brazil which
+                         used this Virtuoso setup for the entire World Cup 2014 without any issues."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:HighAvailAndRecover .
+
+:ScaleQuestion
+  a schema:Question ;
+  schema:name "What is the Virtuoso strategy to scale and how is it possible to start small and then add servers if needed?"@en;
+  schema:text "What is the Virtuoso strategy to scale and how is it possible to start small and then add servers if needed?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :ScaleAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:ScaleAnswer
+  a schema:Answer ;
+  schema:name """What is the Virtuoso strategy to scale and how is it possible to start small and then add servers if needed -- Answer"""@en;
+  schema:text """Yes, you start with single-server, enable elastic cluster option, and then add nodes as scalability demands increase."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+:Scale a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:mainEntity :ScaleQuestion  ;
+  schema:name "Scale"@en;
+  schema:comment """Answering the question: What is the Virtuoso strategy to scale and how is it possible to start small
+                         and then add servers if needed?"""@en ;
+  schema:description  """Yes, you start with single-server, enable elastic cluster option, and then add nodes as scalability
+                         demands increase."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:Scale .
+
+:ManageClusterQuestion
+  a schema:Question ;
+  schema:name "Do I have to stop the cluster to add a node or partitioning an index?"@en;
+  schema:text "Do I have to stop the cluster to add a node or partitioning an index?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :ManageClusterAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:ManageClusterAnswer
+  a schema:Answer ;
+  schema:name """Do I have to stop the cluster to add a node or partitioning an index -- Answer"""@en;
+  schema:text """Not if you enable the "elastic cluster" option from the get-go."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+
+:ManageCluster a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:mainEntity :ManageClusterQuestion;
+  schema:name "Clustering: Adding node(s) or partitioning an index"@en;
+  schema:comment """Answering the question: Do I have to stop the cluster to add a node or partitioning an index?"""@en ;
+  schema:description  """Not if you enable the "elastic cluster" option from the get-go."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:ManageCluster .
+
+:EvaluatingNoSQLDBQuestion
+  a schema:Question ;
+  schema:name "Is Virtuoso currently evaluating NoSQL database for the storage of quads?"@en;
+  schema:text "Is Virtuoso currently evaluating NoSQL database for the storage of quads?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :EvaluatingNoSQLDBAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:EvaluatingNoSQLDBAnswer
+  a schema:Answer ;
+  schema:name """Is Virtuoso currently evaluating NoSQL database for the storage of quads -- Answer"""@en;
+  schema:text "Virtuoso is a Native Hybrid DBMS (it is SQL and NoSQL combined)."@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:EvaluatingNoSQLDB a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:mainEntity :EvaluatingNoSQLDBQuestion;
+  schema:name "Evaluating NoSQL database for the storage of quads"@en;
+  schema:comment """Answering the question: Is Virtuoso currently evaluating NoSQL database for the storage of quads?"""@en ;
+  schema:description  """Virtuoso is a Native Hybrid DBMS (it is SQL and NoSQL combined)."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:EvaluatingNoSQLDB .
+
+:PlansCloudQuestion
+  a schema:Question ;
+  schema:name "Are there any Virtuoso plans for Cloud technologies (Openstack, etc..)?"@en;
+  schema:text "Are there any Virtuoso plans for Cloud technologies (Openstack, etc..)?"@en;
+  schema:answerCount "1"^^xsd:integer ;
+  schema:acceptedAnswer :PlansCloudAnswer ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated  "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:PlansCloudAnswer
+  a schema:Answer ;
+  schema:name """Are there any Virtuoso plans for Cloud technologies (Openstack, etc..) -- Answer"""@en;
+  schema:text """It is part of the LOD2 OpenStack deliverables, but this is the Open Source Edition only (i.e., no
+                         replication, clustering, fine-grained ACL based security, and virtual dbms functionality for making RDF
+                         views over SQL data sources). You can also instantiate Virtuoso instances using the Amazon AWS Cloud etc."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  wdrs:describedby  source: .
+
+:PlansCloud a schema:CreativeWork ;
+  wdrs:describedby source: ;
+  schema:mainEntity  :PlansCloud ;
+  schema:name "Virtuoso plans for Cloud technologies"@en;
+  schema:comment """Answering the question: Are there any Virtuoso plans for Cloud technologies (Openstack, etc..)?"""@en ;
+  schema:description  """It is part of the LOD2 OpenStack deliverables, but this is the Open Source Edition only (i.e., no
+                         replication, clustering, fine-grained ACL based security, and virtual dbms functionality for making RDF
+                         views over SQL data sources). You can also instantiate Virtuoso instances using the Amazon AWS Cloud etc."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-08-10T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2021-12-17T16:38:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software"@en;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:url source:PlansCloud .
+
+# <http://download.openlinksw.com/virtwiz/#VirtuosoCommercialDownload>
+#   a schema:TechArticle ;
+#   wdrs:describedby source: ;
+#   schema:name "Downloading the Commercial Edition of Virtuoso"@en;
+#   schema:comment """Answering the question: Where can I download the Commercial Edition of Virtuoso?"""@en ;
+#   schema:description  """This page provides Virtuoso component download links for: the main database server, client
+#                          connectivity kit (ODBC, JDBC, ADO.NET, XMLA, Jena, Sesame, and Redland Drivers), across
+#                          Windows, Mac OS X, Linux, and Solaris. Other platform components are available on
+#                          request."""@en ;
+#   schema:author <http://www.openlinksw.com/#this> ;
+#   schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+#   cc:attributionName "OpenLink Software"@en;
+#   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+#   schema:url <http://download.openlinksw.com/virtwiz/> ;
+#       :isPageRedirectOf  <http://virtuoso.openlinksw.com/download/> ;
+#   schema:mentions <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this> , <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+# 						 <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> , <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>  .
+#
+
+#<http://support.openlinksw.com/supportweb/InstallationGuides#VirtuosoCommercialInstall>
+#  a schema:TechArticle ;
+#  wdrs:describedby source: ;
+#  schema:name "Installing the Commercial Edition of Virtuoso"@en;
+#  schema:comment """Answering the question: How do I install the Commercial Edition of Virtuoso?"""@en ;
+#  schema:description  """This links to installation instructions for: Single-Tier "Express" Edition Drivers, Single-Tier
+#                         "Lite" Edition Drivers & Providers, Multi-Tier "Enterprise" Edition Components (both Client
+#                         & Server) and Virtuoso Components (all Editions, both Client & Server)."""@en ;
+#  schema:author <http://www.openlinksw.com/#this> ;
+#  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+#  cc:attributionName "OpenLink Software"@en;
+#  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+#  schema:url <http://support.openlinksw.com/supportweb/InstallationGuides> .
+#
+
+# <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUpgradeInstructions#this>
+#   a schema:TechArticle ;
+#   wdrs:describedby source: ;
+#   schema:name "Upgrading Virtuoso to Release 5.x"@en;
+#   schema:comment """Answering the question: How do I upgrade Virtuoso from Release 4.x or earlier?"""@en ;
+#   schema:description  """This page explains how to upgrade Virtuoso from Release 4.x or earlier to Release 5.x.
+#                          This incremental upgrade is required to upgrade Virtuoso Release 4.x or earlier, to Release 6.x
+#                          and later."""@en ;
+#   schema:author <http://www.openlinksw.com/#this> ;
+#   schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+#   cc:attributionName "OpenLink Software"@en;
+#   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+#   schema:url voswiki:VOSUpgradeInstructions ;
+#   schema:mentions voswiki:UpgradingToVOS610 .
+
+# <http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/UpgradingToVOS610#this>
+#   a schema:TechArticle ;
+#   wdrs:describedby source: ;
+#   schema:name "Upgrading Virtuoso to Release 6.1 or later"@en;
+#   schema:comment """Answering the question: How do I upgrade Virtuoso to Release 6.1 and later?"""@en ;
+#   schema:description  """This page explains how to upgrade Virtuoso from Release 5.x through 6.0.x, to Release 6.1.0 or later.
+#                          If starting with Virtuoso Release 4.x or earlier, you must first perform an incremental upgrade to
+#                          Release 5.x; then, upgrade from Release 5.x to current."""@en ;
+#   schema:author <http://www.openlinksw.com/#this> ;
+#   schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+#   cc:attributionName "OpenLink Software"@en;
+#   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+#   schema:url voswiki:UpgradingToVOS610 ;
+#   schema:mentions voswiki:VOSUpgradeInstructions .
+

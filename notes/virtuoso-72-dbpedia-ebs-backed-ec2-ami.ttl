@@ -1,0 +1,133 @@
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix schema:    <http://schema.org/> .
+@prefix oplami:    <http://www.openlinksw.com/ontology/oplami#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix :          <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-72-dbpedia-ebs-backed-ec2-ami.ttl#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-72-dbpedia-ebs-backed-ec2-ami.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/virtuoso-72-dbpedia-ebs-backed-ec2-ami.ttl> .
+@prefix dbpedia:	 <http://dbpedia.org/resource/> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "Description of Virtuoso Universal Server 7.2 (Enterprise-- Cloud PAGO Edition) Description Document -- WebDAV hosted TURTLE Document 2" ;
+   schema:comment """This document describes the Virtuoso PAGO edition EBS-backed Amazon Machine Image (AMI)
+				which is deployed via Amazon Web Services based Elastic Computing Cloud -- on a hourly
+				subscription basis."""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated "2015-08-06T17:00:00-05"^^xsd:dateTime ;
+   schema:dateModified "2015-08-06T18:00:00-05"^^xsd:dateTime ;
+   cc:attributionName  "OpenLink Software" ;
+   dcterms:format "text/turtle" ;
+   cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   owl:sameAs source: .
+
+source:
+  a schema:CreativeWork ;
+  schema:name "Description of Virtuoso Universal Server 7.2 (Enterprise-- Cloud PAGO Edition) Description Document";
+  schema:comment """This document describes the Virtuoso PAGO edition EBS-backed Amazon Machine Image (AMI)
+				which is deployed via Amazon Web Services based Elastic Computing Cloud -- on a hourly
+				subscription basis."""@en ;
+  schema:dateCreated "2015-08-06T17:00:00-05"^^xsd:dateTime ;
+  schema:dateModified "2015-08-06T18:00:00-05"^^xsd:dateTime ;
+  dcterms:subject <https://aws.amazon.com/marketplace/pp/B012DSCFEK#this>,
+				          <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-f1b1129a#this> ;
+  schema:about <https://aws.amazon.com/marketplace/pp/B012DSCFEK#this>,
+				       <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-f1b1129a#this> ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-f1b1129a#this>,
+	           			dbpedia:Amazon_Web_Services, dbpedia:Amazon_Elastic_Compute_Cloud ;
+  skos:related dbpedia:Cloud_computing ;
+  schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName  "OpenLink Software" ;
+  dcterms:format "text/turtle" ;
+  cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:creator <http://www.openlinksw.com/#this> .
+
+## Virtuoso's Amazon Marketplace Page Description
+
+
+<https://aws.amazon.com/marketplace/pp/B012DSCFEK#this>
+  a schema:WebPage, schema:TechArticle ;
+  schema:name "DBpedia 2015 PAGO Edition Description Document" ;
+  schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-f1b1129a#this> ;
+  schema:image <https://s-media-cache-ak0.pinimg.com/originals/3f/18/59/3f18594dae1f30dc13b9160af47b3500.png> ;
+  schema:mentions <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-c04220a8#this> ;
+  schema:url <https://aws.amazon.com/marketplace/pp/B012DSCFEK> ;
+  schema:description """
+				One-click installation edition of a preconfigured and pre-loaded DBpedia 2015 Database deployed using
+				a preconfigured Virtuoso DBMS instance. This particular deployment is available on a Pay-As-You-Go (PAGO) subscription model
+				basis via the Amazon Web Services (AWS) Cloud's marketplace.
+			 """@en ;
+  schema:comment  """
+				Following AMI instantiation (which can take approximately 5 minutes to complete) and initial Virtuoso DBMS server
+				startup, you have a fully configured DBpedia instance ready for personal, enterprise, or service-specific use.
+			  """@en ;
+  skos:related
+      <http://dbpedia.org/resource/Category:Cloud_platforms>,
+			<http://dbpedia.org/resource/Amazon_Web_Services>,
+			<http://data.openlinksw.com/oplweb/glossary-term/DBpedia#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/NoSQL#this>,
+			<http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  wdrs:describedby <>  .
+
+
+## AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-f1b1129a#this>
+  a oplami:AmazonEC2EBSBackedAMI, oplami:CloudHostedVirtualMachine ;
+  skos:prefLabel "DBpedia 2015 + Virtuoso 7.2 (Cloud PAGO Edition)" ;
+  schema:name "DBpedia 2015 (Cloud PAGO Edition)" ;
+  schema:image <https://s-media-cache-ak0.pinimg.com/originals/57/30/42/5730420b6578759d107a024d5fdb3df8.png> ;
+  schema:description """
+						This AMI contains a pre-configured instance of the DBpedia Database served up via a Virtuoso 7.2 DBMS
+						that includes a 10 DB Sessions and 4 CPU Affinity license.
+			 		"""@en;
+  dcterms:identifier "Virtuoso-ami-f1b1129a" ;
+  oplami:ec2AMI-ID "ami-f1b1129a" ;
+  oplami:ec2OwnerID "545314153384" ;
+  oplami:ec2Status "available" ;
+  oplami:ec2StateReason "-" ;
+  oplami:ec2Platform "Other Linux" ;
+  oplami:ec2Architecture "x86_64" ;
+  oplami:ec2ImageType "machine" ;
+  oplami:ec2VirtualizationType "hvm" ;
+  oplami:ec2RootDeviceName "/dev/sda1" ;
+  oplami:hasBlockDevices "/dev/sda1=snap-107db372:120:true:gp2" ;
+  oplami:hasRootDeviceType "ebs" ;
+  oplami:hasProductCodes "marketplace: ub2p3fnrrxyl2nt481z5g131,marketplace: ub2p3fnrrxyl2nt481z5g131" ;
+  oplami:hasAMIName "DBpedia-2015-Virtuoso-72-PAGO-2015-08-04" ;
+  schema:isPartOf <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+  wdrs:describedby <> ;
+  skos:related
+      <http://dbpedia.org/resource/Category:Cloud_platforms>,
+			<http://dbpedia.org/resource/Amazon_Web_Services>,
+			<http://data.openlinksw.com/oplweb/glossary-term/DBpedia#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/NoSQL#this>,
+			<http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtEBSBackedBYOLAMI> a schema:WebPage;
+  wdrs:describedby source: ;
+  schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-f1b1129a#this> ;
+  schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtEBSBackedBYOLAMI> ;
+  schema:name "Deploying the EBS-backed BYOL Virtuoso EC2 AMI" .

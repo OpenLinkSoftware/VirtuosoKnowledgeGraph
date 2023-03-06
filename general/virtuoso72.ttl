@@ -1,0 +1,374 @@
+@prefix schema:     <http://schema.org/> .
+@prefix sioc:       <http://rdfs.org/sioc/ns#> .
+@prefix xhv:        <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:         <http://purl.org/goodrelations/v1#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix wdrs:       <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:      <http://rdfs.org/sioc/services#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:         <http://creativecommons.org/ns#> .
+@prefix bibo:       <http://purl.org/ontology/bibo/> .
+@prefix oplpro:     <http://www.openlinksw.com/ontology/products#> .
+@prefix oplben:     <http://www.openlinksw.com/ontology/benefits#> .
+@prefix oplfea:     <http://www.openlinksw.com/ontology/features#> .
+@prefix oplweb:     <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix ldp:        <http://www.w3.org/ns/ldp> .
+@prefix awol:       <http://bblfish.net/work/atom-owl/2006-06-06/#> .
+@prefix :           <#> .
+@prefix source:     <http://virtuoso.openlinksw.com/data/turtle/general/virtuoso72.ttl> .
+@prefix sourceDAV:  <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/virtuoso72.ttl> .
+
+## Turtle Document That Describes Virtuoso Release 7.2 ##
+
+
+sourceDAV:
+  a schema:CreativeWork ;
+    schema:name """Virtuoso 7.2 Features & Benefits Description Document"""^^xsd:string ;
+    schema:comment """This document describes Virtuoso 7.2 features and associated benefits."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  owl:sameAs source: .
+
+
+source:
+  a schema:CreativeWork ;
+  schema:name "Virtuoso 7.2 New Features Description Document";
+  schema:comment """Description of important new features introduced in the 7.2 release of Virtuoso."""@en ;
+  schema:dateCreated "2015-02-06T13:09:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2015-02-25T08:33:00-05:00"^^xsd:dateTime ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+  dcterms:subject  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ,
+               <http://data.openlinksw.com/oplweb/product_feature/SparlLoadServiceData#this>,
+               <http://data.openlinksw.com/oplweb/product_feature/ImprovedLDPSupport#this>,
+               <http://data.openlinksw.com/oplweb/product_feature/LooselyCoupledTLS#this>,
+				       <http://data.openlinksw.com/oplweb/product_feature/MountAndUmounting3rdPartyStorage#this>,
+				       <http://data.openlinksw.com/oplweb/product_feature/FileHostedVirtualTables#this>,
+				       <http://data.openlinksw.com/oplweb/product_feature/LooserCoupledSpongerMiddleware#this>,
+				       <http://data.openlinksw.com/oplweb/product_feature/NanotationProcessor#this>,
+				       <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this>,
+				       <http://data.openlinksw.com/oplweb/product_feature/SPARQLParallelismEnhancement#this> .
+
+
+## Document and Features Mapping
+
+<http://kidehen.blogspot.com/2015/02/open-data-access-changed-forever-via.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Open Data Access Changed Forever, via Linked Open Data" ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2015/02/open-data-access-changed-forever-via.html> .
+
+<http://kidehen.blogspot.com/2015/01/from-open-database-connectivity-to.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "From Open Database Connectivity to Open Data Connectivity" ;
+  schema:comment """About the effect of upgrading the focus of data access and integration from
+                Open Database Connectivity [SQL RDBMS hosted data focus] to Open Data Connectivity [Generic Data Focus].
+				This blog post uses a comparison of ODBC Data Sources Names [DSNs] and HTTP URIs [Hyperlinks] to demonstrate
+				the profound enhancements [totally agnostic data access & connectivity] enabled by the latter. """@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	          		<http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this>,
+	         		<http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2015/01/from-open-database-connectivity-to.html>.
+
+
+<http://kidehen.blogspot.com/2015/01/review-publishing-for-everyone.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Review Publishing for Everyone!" ;
+  schema:comment """This blog post demonstrates a variety [as opposed to single] method for publishing reviews
+	  			to the World Wide Web. It uses a common example to demonstrate review production using:
+				HTML+JSON-LD, HTML+TURTLE, JSON-LD, TURTLE, and Nanotation [Micro TURTLE that can be embedded wherever
+				plain text input is supported]."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/FileServerHTTP#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this>,
+			         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSpongerCartridges#this> ;
+  schema:url <http://kidehen.blogspot.com/2015/01/review-publishing-for-everyone.html> .
+
+
+<http://kidehen.blogspot.com/2015/01/social-networking-profiles-for-everyone.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Personal Profile Publication for Everyone!" ;
+  schema:comment """This blog post demonstrates a variety [as opposed to single] method for publishing personal profile
+				information to the World Wide Web. It uses a common example to demonstrate review production using:
+				HTML+JSON-LD, HTML+TURTLE, JSON-LD, TURTLE, and Nanotation [Micro TURTLE that can be embedded wherever
+				plain text input is supported]."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/FileServerHTTP#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this>,
+			         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSpongerCartridges#this> ;
+  schema:url <http://kidehen.blogspot.com/2015/01/social-networking-profiles-for-everyone.html>.
+
+<http://kidehen.blogspot.com/2015/01/loosely-coupling-database-document.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Loosely-coupling a Database Document & Database Management System -- Part 1 of 2" ;
+  schema:comment """Showcases [using a CSV document] how a Relational Database Management Systems (RDBMS) and
+	 			actual Database Documents can be loosely-coupled."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2015/01/loosely-coupling-database-document.html> .
+
+<http://kidehen.blogspot.com/2014/12/deceptively-simple-conceptual-data.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Deceptively Simple Conceptual Data Virtualization" ;
+  schema:comment """Generating a machine comprehensible vocabulary of terms from a SQL RDBMS which is then used [automatically]
+	 			to drive conceptual data views [fully materialized or transient] over tables hosted by single or multiple
+				RDBMS systems. """@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/12/deceptively-simple-conceptual-data.html> .
+
+<http://kidehen.blogspot.com/2014/10/progress-78910-andor-openedge-data-de.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Progress (7,8,9,10) and/or OpenEdge SQL RDBMS Data De-Silo-Fication" ;
+  schema:comment """Showcases improved access to Progress (OpenEdge) SQL RDBMS hosted data via the combined effects
+                of dynamically generated conceptual views [materialized or transient]. These views are basically
+				relations represented in property/predicate graph form, based on Linked Open Data standards.
+				Net effect, massively improved data access and exchange capabilities where Hyperlinks [HTTP URIs]
+				function as Super Keys that resolve to actual data -- from any HTTP client (e.g., Browser) as opposed
+				to ODBC, JDBC, and/or native Progress applications, solely.
+			"""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/10/progress-78910-andor-openedge-data-de.html> .
+
+<http://kidehen.blogspot.com/2014/08/db2-sql-rdbms-data-de-silo-fication.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "IBM DB2 SQL RDBMS Data De-Silo-Fication" ;
+  schema:comment """Showcases improved access to IBM DB2 SQL RDBMS hosted data via the combined effects
+                of dynamically generated conceptual views [materialized or transient]. These views are basically
+				relations represented in property/predicate graph form, based on Linked Open Data standards.
+				Net effect, massively improved data access and exchange capabilities where Hyperlinks [HTTP URIs]
+				function as Super Keys that resolve to actual data -- from any HTTP client (e.g., Browser) as opposed
+				to ODBC, JDBC, and/or native DB2 applications, solely.
+			"""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/08/db2-sql-rdbms-data-de-silo-fication.html>.
+
+<http://kidehen.blogspot.com/2014/04/oracle-data-de-silo-fication-using-rdf.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Oracle SQL RDBMS Data De-Silo-Fication" ;
+  schema:comment """Showcases improved access to Oracle SQL RDBMS hosted data via the combined effects
+                of dynamically generated conceptual views [materialized or transient]. These views are basically
+				relations represented in property/predicate graph form, based on Linked Open Data standards.
+				Net effect, massively improved data access and exchange capabilities where Hyperlinks [HTTP URIs]
+				function as Super Keys that resolve to actual data -- from any HTTP client (e.g., Browser) as opposed
+				to ODBC, JDBC, and/or native Oracle applications, solely.
+			"""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/04/oracle-data-de-silo-fication-using-rdf.html>.
+
+<http://kidehen.blogspot.com/2014/06/sql-server-data-de-silo-fication-using.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Microsoft SQL Server RDBMS Data De-Silo-Fication" ;
+  schema:comment """Showcases improved access to Microsoft SQL Server RDBMS hosted data via the combined effects
+                of dynamically generated conceptual views [materialized or transient]. These views are basically
+				relations represented in property/predicate graph form, based on Linked Open Data standards.
+				Net effect, massively improved data access and exchange capabilities where Hyperlinks [HTTP URIs]
+				function as Super Keys that resolve to actual data -- from any HTTP client (e.g., Browser) as opposed
+				to ODBC, JDBC, and/or native SQL Server applications, solely.
+			"""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/06/sql-server-data-de-silo-fication-using.html>.
+
+<http://kidehen.blogspot.com/2014/09/linked-open-data-enterprise.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Linked Open Data & The Enterprise" ;
+  schema:comment """Covers Linked Open Data's value proposition for enterprises."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/09/linked-open-data-enterprise.html> .
+
+<http://kidehen.blogspot.com/2014/08/linked-local-data-lld-and-linked-open.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Linked Local Data versus Linked Open Data" ;
+  schema:comment """Showcases how different kinds of hyperlinks affect data access and inevitable data integration challenges."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>,
+	 		         <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+			         <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/08/linked-local-data-lld-and-linked-open.html> .
+
+<http://kidehen.blogspot.com/2014/03/preloaded-preconfigured-dbpedia.html#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "Preloaded & Preconfigured Virtuoso & DBpedia Instance" ;
+  schema:comment """Covers instantiation of preloaded and preconfigured Virtuoso instances in the Amazon EC2 Cloud. This includes
+				commissioning of Virtuoso instances that already have DBpedia loaded and configured."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/03/preloaded-preconfigured-dbpedia.html> .
+
+<http://virtuoso.openlinksw.com/whitepapers/LOD2_D2.1.5_LOD_Cloud_Hosted_On_The_LOD2_Knowledge_Store_Cluster_500B_Triples.pdf#this>
+  a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+  schema:name "LOD2 500 Billion RDF Triples Showcase" ;
+  schema:comment """White Paper covering the construction and benchmarking of a Virtuso Cluster Edition instance that hosts 500 Billion RDF Triples."""@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  schema:url <http://virtuoso.openlinksw.com/whitepapers/LOD2_D2.1.5_LOD_Cloud_Hosted_On_The_LOD2_Knowledge_Store_Cluster_500B_Triples.pdf>  .
+
+## Virutoso 7.2 Features Details ##
+<http://data.openlinksw.com/oplweb/product_feature/SparlLoadServiceData#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Load Service Data ROLE";
+  schema:comment """Adds SPARQL endpoint deduction capability to SPARQL-FED. Usage requires granting a new ROLE to SPARQL user account.
+				Once granted, Virtuoso makes a best-attempt to determine the capabilities of a SPARQL endpoint by looking up its SPARQL
+				Service Description Document, if available, and/or executing a series of SPARQL test queries (e.g., testing whether SPARQL
+				Query results may be returned in all formats outlined by the W3C SPARQL spec).
+			"""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/ImprovedLDPSupport#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Improved LDP Support" ;
+  schema:comment """Linked Data Platform protocol support has been enhanced, as an extension to existing WebDAV protocol support.
+				You can now designate specific WebDAV folders as LDP Containers, and once this designation has been made, LDP-aware
+				user agents will be able to deductively interact with WebDAV Folders and the documents they contain, using entity
+				relations embedded in both header and body of HTTP responses.
+			"""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/FileServerLDP#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/LooselyCoupledTLS#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Loosely-coupled SSL/TLS";
+  schema:comment """SSL/TLS version and associated cipher selection is now configurable. Net effect, you can now explicitly disable
+				the use of specific SSL/TLS versions (e.g., SSL/TLS 3.0, which is susceptible to the POODLE exploit)."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_feature/MountAndUmounting3rdPartyStorage#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Mounting and Umounting 3rd Party Storage Services to WebDAV" ;
+  schema:comment """3rd Party Storage Services (e.g., Dropbox, Amazon S3, Microsoft OneDrive, Google Drive, Box, Rackspace, etc.)
+				are mountable and un-mountable using an asynchronous operation (in prior releases, this was a synchronous operation).
+				Once mounted, these 3rd party folders function like any other WebDAV resource. This kind of WebDAV collection
+				(a "Dynamic Extension Resource Type" or "DET" for short) can also be designated as an LDP Container, making Virtuoso
+					WebDAV a powerful LDP proxy mechanism for storage services that do not currently support LDP.
+			  """@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/FileServerHTTP#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_feature/FileHostedVirtualTables#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Filesystem Hosted Virtual Tables" ;
+  schema:comment """Enables Virtuoso instances to attach to CSV documents hosted by the File System. Once attached,
+				VIEWs of these documents can be represented as SQL Relational Tables (by default) and/or
+				RDF Property/Predicate graphs (via RDF Views functionality). This includes enhanced support for
+				composite and compound primary keys which can be generated manually (as part of declaration) or
+				automcatically based on document content analysis.
+			 """@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngine#this>,
+                <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this> ;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/ConceptualViewsOverTabularData#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/LooserCoupledSpongerMiddleware#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Loosely-Coupled Sponger Middleware Services" ;
+  schema:comment """Built-in RDF document transformation middleware is now loosely-coupled to its host Virtuoso
+				database server instance. As a result, you can now use the POST method to request
+				asynchronous data transformation services from a Sponger instance, with the transformed
+				data returned as part of an HTTP response payload.
+			"""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_feature/NanotationProcessor#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "In-built Nanotation Processor" ;
+  schema:comment """Enables automatic transformation of TURTLE statements embedded in Email Messages, Online Discussion
+				Posts, Tweets, Social Media Posts (Facebook, LinkedIn, Google+), HTML Body, and Plain Text documents
+				into RDF-based Linked Open Data, which is then stored in the host Virtuoso instance.
+				You now have the freedom, power, and flexibility to create data wherever and whenever -- as long as the
+				target destination in a content input control that supports plain/text.
+				"""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "Geo-Spatial SPARQL Extensions" ;
+  schema:comments """Enhanced Geo-Spatial extensions to SPARQL enable high-performance and scalable query of data constructed using
+				 spatially-oriented relations. New supported geometric datatypes include polygons, polygons with holes, multi-polygons,
+				 geometric collections, multi-points, line strings, multi-line strings, and various geometric functions.
+			  """@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/SPARQLParallelismEnhancement#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby  source:  ;
+  schema:name "SPARQL Query Processing Parallelism Enhancements" ;
+  schema:comment """10x throughput gain for multi-user applications and services that utilize complex lookup queries in SPARQL query patterns."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> .
+
+
+
+## Cleaner labelling for rdfs:Resource and ldp:Resource
+
+ldp:Resource skos:prefLabel "LDP Resource".
+
+rdfs:Resource skos:preflabel "RDF Schema Resource".
+
+
+<http://kidehen.blogspot.com/2015/01/loosely-coupling-database-document.html> a schema:WebPage;
+  wdrs:describedby source: ;
+  schema:about <http://data.openlinksw.com/oplweb/product_feature/FileHostedVirtualTables#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product_feature/FileHostedVirtualTables#this> ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product_feature/FileHostedVirtualTables#this> ;
+  schema:url <http://kidehen.blogspot.com/2015/01/loosely-coupling-database-document.html> ;
+  schema:name "Loosely coupling database" .
+
+<http://kidehen.blogspot.com/2014/07/nanotation.html> a schema:WebPage;
+  wdrs:describedby source: ;
+  schema:about <http://data.openlinksw.com/oplweb/product_feature/NanotationProcessor#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product_feature/NanotationProcessor#this> ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product_feature/NanotationProcessor#this> ;
+  schema:url <http://kidehen.blogspot.com/2014/07/nanotation.html> ;
+  schema:name "Nanotation" .
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtGeoSPARQLEnhancementDocs> a schema:WebPage;
+  wdrs:describedby source: ;
+  schema:about <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this> ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this> ;
+  schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtGeoSPARQLEnhancementDocs> ;
+  schema:name "Nanotation" .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_11/SPARQL_Tutorials_Part_11.html> a schema:WebPage;
+  wdrs:describedby source: ;
+  schema:about <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this> ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this> ;
+  schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_11/SPARQL_Tutorials_Part_11.html> ;
+  schema:name "Nanotation" .
+

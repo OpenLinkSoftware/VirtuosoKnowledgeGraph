@@ -1,0 +1,380 @@
+@prefix schema:      <http://schema.org/> .
+@prefix oplben:      <http://www.openlinksw.com/ontology/benefits#> .
+@prefix oplpro:      <http://www.openlinksw.com/ontology/products#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix oplben:      <http://www.openlinksw.com/ontology/benefits#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdrs:        <http://www.w3.org/2007/05/powder-s#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml:         <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix attr:        <http://www.openlinksw.com/schema/attribution#> .
+@prefix xhv:         <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:          <http://creativecommons.org/ns#> .
+@prefix :            <#> .
+@prefix source:      <http://www.openlinksw.com/data/turtle/oplweb/ProductBenefits.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/oplweb/ProductBenefits.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:name "OpenLink Software Product Benefits -- WebDAV hosted TURTLE Document"^^xsd:string ;
+   dcterms:format "text/turtle" ;
+   schema:dateCreated "2013-01-01T13:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2018-04-09T13:38:00-05:00"^^xsd:dateTime ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName  "OpenLink Software" ;
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name """OpenLink Product Benefits"""^^xsd:string ;
+   schema:dateCreated "2013-01-01T13:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2018-04-09T13:38:00-05:00"^^xsd:dateTime ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName  "OpenLink Software" ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Product Benefits"""@en ;
+   schema:about
+              <http://data.openlinksw.com/oplweb/product_benefit/NoNeedSpendTimeForInstallAndConfigAMI#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/AllToolsUnifiedFromMulitpleSources#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/virtuoso-client-connectivityFeatureBenefitODBCToWeb#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/DataDrivenEnterpriseAgility#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/Cost-Savings#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/ControlledAccesstoDataAssets#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/SophisticatedApplicationFunctionality#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/TransactionRecoverability#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/ITInfrastructureInvestmentPreservation#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/InformationandKnowledgeWorkerEmpowerment#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/DataDurability#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/Role_PolicyBasedRow-LevelSecurity#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/SeparationofApplicationLogicandDataStorage#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/TransactionIsolation#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/DatatypeExtensibility#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/IndustryStandardsCompliance#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/ApplicationDevelopmentCostsReduction#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/NewMarketOpportunities#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/ChangeOSWithoutAdditionalCosts#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/UDASTAnyOSForSpecificDBMSEnginesVersionsCosts#this> ,
+              # <http://data.openlinksw.com/oplweb/product_benefit/UDASTAnyOSDBMSVersionsIndependentCosts#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/UDAMTAnyOSDBMSVersionsIndependentCosts#this> ,
+              # <http://data.openlinksw.com/oplweb/product_benefit/UDAMTAnyOSDBMSVersionsDependentCosts#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/VirtuosoChangeOSWithNoCosts#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/CostEffective#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/SophisticatedDistributedSecurity#this> ,
+              <http://data.openlinksw.com/oplweb/product_benefit/PowerfulDataAnalytics#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/UDASTAnyOSForSpecificDBMSEnginesVersionsCosts#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "UDA (Single-Tier Edition) license for any OS and DBMS engine version combination" ;
+    schema:name "UDASTAnyOSForSpecificDBMSEnginesVersionsCosts" ;
+    schema:description """Offer includes a collection of OS-independent licenses for a specific supported DBMS version. Thus,
+    you end up with licenses that cover current and future needs across combinations of operating systems and one version of
+    a database management system."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+# <http://data.openlinksw.com/oplweb/product_benefit/UDASTAnyOSDBMSVersionsIndependentCosts#this> a oplben:ProductBenefit ;
+#     wdrs:describedby source: ;
+#     skos:prefLabel "UDA (Single-Tier Edition) license for a supported DBMS family, across any supported Operating System" ;
+#     schema:name "UDASTAnyOSDBMSVersionsIndependentCosts" ;
+#     schema:description """Offer includes a collection of OS-independent licenses for all supported DBMS versions for a given DBMS Family.
+#     Thus, you end up with licenses that cover current and future needs across combinations of operating systems and all supported
+#     versions of a database management system."""@en ;
+#     oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/UDAMTAnyOSDBMSVersionsIndependentCosts#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "UDA (Multi-Tier Edition) license for a supported DBMS family, across any supported Operating System" ;
+    schema:name "UDAMTAnyOSDBMSVersionsIndependentCosts" ;
+    schema:description """Offer includes a collection of OS-independent licenses for all supported DBMS versions for a given DBMS Family.
+    Thus, you end up with licenses that cover current and future needs across combinations of operating systems and all supported
+    versions of a database management system."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+# <http://data.openlinksw.com/oplweb/product_benefit/UDAMTAnyOSDBMSVersionsDependentCosts#this> a oplben:ProductBenefit ;
+#     wdrs:describedby source: ;
+#     skos:prefLabel "UDA (Multi-Tier Edition) licence for any OS and specific DBMS engine version combination" ;
+#     schema:name "UDAMTAnyOSDBMSVersionsDependentCosts" ;
+#     schema:description """Offer includes a collection of OS-independent licenses for specific DBMS versions. Thus, you end
+#     up with licenses that cover current and future needs across combinations of operating systems and all supported versions
+#     of a database management system family"""@en ;
+#     oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_benefit/VirtuosoChangeOSWithNoCosts#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Ability to change operating systems without incurring additional costs." ;
+    schema:name "VirtuosoChangeOSWithNoCosts" ;
+    schema:description """Ability to change operating systems without incurring additional costs."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_benefit/ApplicationDevelopmentCostsReduction#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Application Development Costs Reduction" ;
+    schema:name "ApplicationDevelopmentCostsReduction" ;
+    schema:description """Application Development Costs Reduction"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/ControlledAccesstoDataAssets#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Controlled Access to Data Assets" ;
+    schema:name "ControlledAccesstoDataAssets" ;
+    schema:description """Controlled Access to Data Assets"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/Cost-Savings#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Cost-Savings" ;
+    schema:name "Cost-Savings" ;
+    schema:description """Cost-Savings"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_benefit/virtuoso-client-connectivityFeatureBenefitODBCToWeb#this>
+    a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Broad Heterogeneous Data Access (Relational Tables & RDF Predicate/Property Graphs)" ;
+    schema:image <https://s-media-cache-ak0.pinimg.com/originals/de/d2/30/ded2308b895f8038a6e8acfac946cbeb.jpg> ;
+    schema:description """Rather than being confined to data held captive by a SQL RDBMS, you now have
+                access to the World Wide Web and/or the burgeoning Linked Open Data (LOD) Cloud,
+                from any ODBC compliant client application. Net effect, cost-effective broad access to heterogeously-shaped and
+                disparately-located big, small, and smart data sources. Typical examples include: Plain Text,
+                HTML (with or without embedded Microdata, JSON-LD, TURTLE based structured data islands), Social Media
+                (RSS & Atom based Blogs, Facebook, Twitter, LinkedIn, GooglePlus, Disqus etc..), CSV, Various Web Service Endpooint
+                Documents (Amazon, eBay, BestBuy, Crunchbase, AngelList, Stack Overflow, Github etc..  ), and RDF (TURTLE, JSON-LD, RDF/XML)
+                documents."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> ;
+    attr:mentions <http://data.openlinksw.com/oplweb/glossary-term/JSONLD#this>,
+                  <http://data.openlinksw.com/oplweb/glossary-term/Turtle#this>,
+                  <http://data.openlinksw.com/oplweb/glossary-term/Microdata#this> ;
+    xhv:related
+            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this>,
+            <http://linkeddata.uriburner.com/c/9BPD2G5J>,
+            <http://data.openlinksw.com/oplweb/offer/Offer-2014-02-LOD-personal-client-access-basic-http#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/DataDrivenEnterpriseAgility#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Data Driven Enterprise Agility" ;
+    schema:name "DataDrivenEnterpriseAgility" ;
+    schema:description """Data Driven Enterprise Agility"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/DataDurability#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Data Durability" ;
+    schema:name "DataDurability" ;
+    schema:description """Data Durability"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/DatatypeExtensibility#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Datatype Extensibility" ;
+    schema:name "DatatypeExtensibility" ;
+    schema:description """Datatype Extensibility"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Ease of Integration" ;
+    schema:name "EaseofIntegration" ;
+    schema:description """Ease of Integration"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "High Performance" ;
+    schema:name "HighPerformance" ;
+    schema:description """High Performance"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/ITInfrastructureInvestmentPreservation#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "IT Infrastructure Investment Preservation" ;
+    schema:name "ITInfrastructureInvestmentPreservation" ;
+    schema:description """IT Infrastructure Investment Preservation"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/IndustryStandardsCompliance#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Industry Standards Compliance" ;
+    schema:name "IndustryStandardsCompliance" ;
+    schema:description """Industry Standards Compliance"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/InformationandKnowledgeWorkerEmpowerment#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Information and Knowledge Worker Empowerment" ;
+    schema:name "InformationandKnowledgeWorkerEmpowerment" ;
+    schema:description """Information and Knowledge Worker Empowerment"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/NewMarketOpportunities#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "New Market Opportunities" ;
+    schema:name "NewMarketOpportunities" ;
+    schema:description """New Market Opportunities"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/Role_PolicyBasedRow-LevelSecurity#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Role & Policy Based Row-Level Security" ;
+    schema:name "Role_PolicyBasedRow-LevelSecurity" ;
+    schema:description """Role & Policy Based Row-Level Security"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Scalability" ;
+    schema:name "Scalability" ;
+    schema:description """Scalability"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/SeparationofApplicationLogicandDataStorage#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Separation of Application Logic and Data Storage" ;
+    schema:name "SeparationofApplicationLogicandDataStorage" ;
+    schema:description """Separation of Application Logic and Data Storage"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/SophisticatedApplicationFunctionality#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Sophisticated Application Functionality" ;
+    schema:name "SophisticatedApplicationFunctionality" ;
+    schema:description """Sophisticated Application Functionality"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Technical#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/TransactionIsolation#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Transaction Isolation" ;
+    schema:name "TransactionIsolation" ;
+    schema:description """Transaction Isolation"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/TransactionRecoverability#this> a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Transaction Recoverability" ;
+    schema:name "TransactionRecoverability" ;
+    schema:description """Transaction Recoverability"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/ChangeOSWithoutAdditionalCosts#this> a oplben:LicenseOfferBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Ability to change operating systems without acquiring additional costs." ;
+    schema:name "ChangeOSWithoutAdditionalCosts" ;
+    schema:description """Ability to change operating systems without acquiring additional costs."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_benefit/CostEffective#this>
+    a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Cost Effective" ;
+    schema:description """Cost effective reuse existing knowledge and infrastructure."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> ;
+    xhv:related
+            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LOD#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+					  <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/OLEDB#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/ADONet#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+						<http://data.openlinksw.com/oplweb/glossary-term/Database#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SQL#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/SophisticatedDistributedSecurity#this>
+    a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Sophisticated Distributed Security" ;
+    schema:description """Built-in support for advanced data access control lists (ACLs) and policies that leverage Public
+    Key Infrastructure (PKI), RDF-based entity relationship semantics, and Linked Data driven entity relationship graphs."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> ;
+    xhv:related
+            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LOD#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+					  <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/OLEDB#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/ADONet#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+						<http://data.openlinksw.com/oplweb/glossary-term/Database#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SQL#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/PowerfulDataAnalytics#this>
+    a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "Powerful Data Analytics" ;
+    schema:description """Examining heterogeneously-shaped data across disparate data locations, locally and across the Web/Internet."""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> ;
+    xhv:related
+            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LOD#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+					  <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/OLEDB#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/ADONet#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+						<http://data.openlinksw.com/oplweb/glossary-term/Database#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
+						<http://data.openlinksw.com/oplweb/glossary-term/SQL#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_benefit/NoNeedSpendTimeForInstallAndConfigAMI#this>
+    a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "No need to spend time installing and configuring Virtuoso to conform to your chosen AMI!" ;
+    schema:image <https://s-media-cache-ak0.pinimg.com/originals/de/d2/30/ded2308b895f8038a6e8acfac946cbeb.jpg> ;
+    schema:description """No need to spend time installing and configuring Virtuoso to conform to your chosen AMI!"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> ;
+    xhv:related
+            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this>,
+            <http://linkeddata.uriburner.com/c/9BPD2G5J>,
+            <http://data.openlinksw.com/oplweb/offer/Offer-2014-02-LOD-personal-client-access-basic-http#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_benefit/AllToolsUnifiedFromMulitpleSources#this>
+    a oplben:ProductBenefit ;
+    wdrs:describedby source: ;
+    skos:prefLabel "All your favorite productivity tools, report formats, and standard data access mechanisms can be used with data unified and blended from multiple sources!" ;
+    schema:image <https://s-media-cache-ak0.pinimg.com/originals/de/d2/30/ded2308b895f8038a6e8acfac946cbeb.jpg> ;
+    schema:description """All your favorite productivity tools, report formats, and standard data access mechanisms can be used with data unified and blended from multiple sources!"""@en ;
+    oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_benefit_category/Business#this> ;
+    xhv:related
+            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this>,
+            <http://linkeddata.uriburner.com/c/9BPD2G5J>,
+            <http://data.openlinksw.com/oplweb/offer/Offer-2014-02-LOD-personal-client-access-basic-http#this> .

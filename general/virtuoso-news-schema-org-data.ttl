@@ -1,0 +1,46 @@
+@prefix schema:	<http://schema.org/> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://virtuoso.openlinksw.com/news/>
+	schema:about	<https://community.openlinksw.com/t/virtuoso-open-source-7-2-8-release-notes/3408> , <https://community.openlinksw.com/t/virtuoso-08-03-3323-release-notes/3122> , <https://community.openlinksw.com/t/virtuoso-open-source-7-2-7-release-notes/3143> , <https://medium.com/virtuoso-blog/introducing-native-graphql-support-in-virtuoso-849edef6d208?source=rss----f99cc4bb2945---4> , <https://medium.com/virtuoso-blog/what-graphql-brings-to-data-access-ae6eaa4ded2d?source=rss----f99cc4bb2945---4> , <https://community.openlinksw.com/t/virtuoso-08-03-3326-release-notes/3376> , <https://medium.com/virtuoso-blog/adding-virtuoso-sparql-results-to-a-neo4j-property-graph-e73786cff87e?source=rss----f99cc4bb2945---4> , <https://medium.com/virtuoso-blog/connecting-to-amazon-neptune-with-odbc-694abcff7d0e?source=rss----f99cc4bb2945---4> , <https://community.openlinksw.com/t/virtuoso-open-source-7-2-6-release/2621> , <https://medium.com/virtuoso-blog/linked-data-ontologies-and-knowledge-graphs-a3d0ad6d6f66?source=rss----f99cc4bb2945---4> ;
+	rdf:type	schema:WebPage .
+<https://community.openlinksw.com/t/virtuoso-open-source-7-2-8-release-notes/3408>
+	schema:title	"Virtuoso Open Source 7.2.8 Release Notes" ;
+	schema:dateModified	"2022-10-18" ;
+	rdf:type	schema:NewsArticle .
+<https://community.openlinksw.com/t/virtuoso-08-03-3323-release-notes/3122>
+	schema:title	"Virtuoso 08.03.3323 Release Notes" ;
+	schema:dateModified	"2022-04-26" ;
+	rdf:type	schema:NewsArticle .
+<https://community.openlinksw.com/t/virtuoso-open-source-7-2-7-release-notes/3143>
+	schema:title	"Virtuoso Open Source 7.2.7 Release Notes" ;
+	schema:dateModified	"2022-05-10" ;
+	rdf:type	schema:NewsArticle .
+<https://medium.com/virtuoso-blog/introducing-native-graphql-support-in-virtuoso-849edef6d208?source=rss----f99cc4bb2945---4>
+	schema:title	"Native GraphQL Support in Virtuoso \u2014 The Basics" ;
+	schema:dateModified	"2022-10-11" ;
+	rdf:type	schema:NewsArticle .
+<https://medium.com/virtuoso-blog/what-graphql-brings-to-data-access-ae6eaa4ded2d?source=rss----f99cc4bb2945---4>
+	schema:title	"What GraphQL Brings To Data Access" ;
+	schema:dateModified	"2022-10-05" ;
+	rdf:type	schema:NewsArticle .
+<https://community.openlinksw.com/t/virtuoso-08-03-3326-release-notes/3376>
+	schema:title	"Virtuoso 08.03.3326 Release Notes" ;
+	schema:dateModified	"2022-09-27" ;
+	rdf:type	schema:NewsArticle .
+<https://medium.com/virtuoso-blog/adding-virtuoso-sparql-results-to-a-neo4j-property-graph-e73786cff87e?source=rss----f99cc4bb2945---4>
+	schema:title	"Adding Virtuoso SPARQL results to a Neo4j Property Graph" ;
+	schema:dateModified	"2021-02-23" ;
+	rdf:type	schema:NewsArticle .
+<https://medium.com/virtuoso-blog/connecting-to-amazon-neptune-with-odbc-694abcff7d0e?source=rss----f99cc4bb2945---4>
+	schema:title	"Connecting to Amazon Neptune with ODBC" ;
+	schema:dateModified	"2021-03-09" ;
+	rdf:type	schema:NewsArticle .
+<https://community.openlinksw.com/t/virtuoso-open-source-7-2-6-release/2621>
+	schema:title	"Virtuoso Open Source 7.2.6 Release" ;
+	schema:dateModified	"2021-06-23" ;
+	rdf:type	schema:NewsArticle .
+<https://medium.com/virtuoso-blog/linked-data-ontologies-and-knowledge-graphs-a3d0ad6d6f66?source=rss----f99cc4bb2945---4>
+	schema:title	"Linked Data, Ontologies, and Knowledge Graphs" ;
+	schema:dateModified	"2020-07-17" ;
+	rdf:type	schema:NewsArticle .

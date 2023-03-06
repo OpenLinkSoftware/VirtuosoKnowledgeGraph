@@ -1,0 +1,262 @@
+@prefix schema: <http://schema.org/> . 
+@prefix dbpedia: <http://dbpedia.org/resource/> . 
+@prefix benefit: <http://www.openlinksw.com/ontology/benefits#> .
+@prefix feature: <http://www.openlinksw.com/ontology/features#> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix schema:    <http://schema.org/> .
+@prefix ami:       <http://www.openlinksw.com/ontology/oplami#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix :          <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-8-press-release-notes.ttl#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-8-press-release-notes.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/virtuoso-8-press-release-notes.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork, schema:WebPage ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "Description of Virtuoso 8.0 Press Release" ;
+   schema:comment """Description of Virtuoso 8.0 Press Release"""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated  "2017-10-29T13:040:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2017-10-29T13:50:00-05:00"^^xsd:dateTime ;
+   cc:attributionName  "OpenLink Software" ;
+   dcterms:format "text/turtle" ;
+   cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   owl:sameAs source: .
+
+source:
+    a schema:CreativeWork, schema:WebPage ;
+    schema:name "Description of Virtuoso 8.0 Press Release" ;
+    schema:dateCreated  "2017-10-29T13:040:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2017-10-29T13:50:00-05:00"^^xsd:dateTime ;
+    dcterms:subject :20170921PressRelease ;
+    schema:about 
+<https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef>, <#CognitiveAgility>, 
+	 		<#CognitiveSecurity>, <#AttibuteBasedAccessControls>,  <#EnhancedRelationMapping>, benefit:StandardsCompliance ;
+    schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    cc:attributionName  "OpenLink Software" ;
+    dcterms:format "text/turtle" ;
+    cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+    schema:comment """Description of Virtuoso 8.0 Press Release """@en;
+    schema:creator <http://www.openlinksw.com/#this> ;
+	schema:mainEntity        <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+	schema:mentions          <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ,
+	                         <http://dbpedia.org/resource/Hypertext_Transfer_Protocol> ,
+	                         <http://dbpedia.org/resource/SPARQL> ,
+	                         <http://dbpedia.org/resource/SQL> ,
+	                         <http://dbpedia.org/resource/Open_Database_Connectivity> ,
+	                         <http://dbpedia.org/resource/Java_Database_Connectivity> ,
+	                         <http://dbpedia.org/resource/ADO.NET> ,
+							 <#CognitiveAgility>, <#CognitiveSecurity>, benefit:StandardsCompliance,
+							 <#AttibuteBasedAccessControls>, <#CustomInferenceRules>, <#EnhancedRelationMapping>, 
+	                         [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
+	                         [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfRecord&distinct=1>] ,
+	                         [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfEngagement&distinct=1>] ;
+
+	schema:relatedLInk <https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef> ,
+	                   <https://medium.com/virtuoso-blog/web-logic-sentences-and-the-magic-of-being-you-e2a719d01f73> ,
+	                   <https://medium.com/openlink-software-blog/simple-youid-browser-extension-usage-exercise-57fa3ff6c6b7> ,
+	                   <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf> ,                                                <https://medium.com/openlink-software-blog/using-linked-data-to-enhance-odbc-jdbc-ado-net-ole-db-data-sources-e152aed3b60> ,
+	                         <http://virtuoso.openlinksw.com/> ,
+	                         <http://uda.openlinksw.com/> ,
+	                         <http://www.openlinksw.com/> ; 
+	schema:url               <https://virtuoso.openlinksw.com/news/virtuoso-v80-press-release/> ;
+	schema:author            <http://www.openlinksw.com/dataspace/organization/openlink#this>   ;
+	schema:description   """Virtuoso Transforms Digital Business with Fusion of Artificial 
+	                         Intelligence & Multi-Model Relational Database Technology
+	                     """@en ; 
+	schema:text """
+	BURLINGTON, MA. September 20, OpenLink Software, Inc., today unveiled the latest edition of Virtuoso, its modern multi-model relational database management and conceptual data virtualization platform, that provides a secure, cross-platform, high-performance, massively-scalable, and cost-effective solution for cognitive management, integration, and creation of public and/or private semantic webs of linked data (i.e., conceptual entity relationship graphs over disparate data sources).
+
+	This major upgrade delivers key innovations aimed at the natural fusion of artificial intelligence with data diversity, with particular focus on Digital Transformation to leverage Data Analytics, Data Virtualization, Data Flow, and Sophisticated Data Security.
+
+	Accelerating Digital Transformation through Fusion of Artificial Intelligence and Multi-Model Database Management
+
+	Enterprises are looking to increase the degree to which Artificial Intelligence informs Digital Transformation strategy. Digitized cognition is increasingly being applied to the perennial challenge of conceptually integrating and harnessing data that's been spread across DBMS-backed Systems of Record, Engagement, and Intelligence.
+
+	Rather than requiring that users 'rip and replace' their legacy technology investments, Virtuoso's new Custom Reasoning & Inference module infuses Artificial Intelligence into native and virtualized data that's accessible by existing applications and services using existing open standards such as HTTP, SPARQL, SQL, ODBC, JDBC, and ADO.NET.
+
+	Using Cognitive Attribute-based Access Controls (ABAC) to drive Data Privacy and Security
+
+	Data virtualization across disparate systems requires a loosely-coupled conceptualization of identity, identification, authentication, and data access.
+
+	Virtuoso 8.0 provides a unique and scalable solution, based on a combination of rules and cognition, that addresses contemporary challenges associated with data access control, at massive scales. Rather than reusing outdated Role-based security and coarse-grained User Identity, this latest release of Virtuoso exploits fine-grained attributes such as distinct User, Application, and Relationship Type Identity to construct access controls (rules) that inform data access privileges.
+
+	Technology Leadership via Pragmatic Innovation
+
+	'Even in recent times, the urge to accelerate digital transformation through exploitation of artificial intelligence, cognitive computing, and machine learning remains challenged by the perennial hurdles presented by disparate data virtualization and data access security,'said Kingsley Idehen, Founder & CEO of OpenLink Software.
+
+	'Consistent with our technological leadership and pedigree of innovation, Virtuoso 8.0 transforms these challenges into massive opportunities for agility enhancement, aimed at individuals and enterprises alike, without introducing undue complexity, expense, or privacy compromises, and without disrupting existing data access, management, or integration infrastructure'  he added.
+	"""@en .
+
+<http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1>
+a schema:WebPage ;
+schema:name "About Systems of Intelligence (SOI)".
+
+<http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfRecord&distinct=1>
+a schema:WebPage ;
+schema:name "About Systems of Intelligence (SOR)". 
+
+<http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfEngagement&distinct=1>
+a schema:WebPage ;
+schema:name "About Systems of Intelligence (SOE)". 
+
+<https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef> 
+a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+schema:name "Creating Custom Inference Rules using the SPIN Vocabulary and Virtuoso 8.0"@en ;
+schema:description """
+					Blog post about how to create and use Custom Reasoning and Inference Rules using Virtuoso 8.0. This post covers 
+					(with live examples) all the steps required for deploying and using Custom Inference Rules created using terms from 
+					the SPIN vocabulary i.e., using SPARQL as a contemporary Rules Language that address the same problem space as Prolog 
+					and Datalog of yore.
+				   """@en ;
+schema:mainEntity <http://virtuoso.openlinksw.com/#this> ;
+schema:about dbpedia:Virtuoso_Universal_Server, dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://spinrdf.org/#this> .
+
+## Benefits ##
+
+<#CognitiveAgility>
+a benefit:CompanyBenefit, benefit:TechnicalManagementBenefit ;
+schema:name "Cognitive Agility"; 
+schema:description """
+					Use of declarative reasoning and inference to drive enterprise agility. This is achieved by incorporating solutions 
+					associated with cognitive computing into existing (and emerging) systems of intelligence. For instance, rules can be 
+					used to dynamically inform data virtualization (that manifests as a Semantic Web of Linked Data) across disprate systems 
+					of record and engagement.
+					"""@en ;
+benefit:isBenefitOf <#CustomInferenceRules> ;
+skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing,
+ 			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <http://spinrdf.org/#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this>, [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
+                                                 [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfRecord&distinct=1>] ,
+                                                 [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfEngagement&distinct=1>] .
+												 
+												 
+<#CognitiveSecurity>
+a benefit:CompanyBenefit, benefit:TechnicalManagementBenefit ;
+schema:name "Cognitive Security"; 
+schema:description """
+					Use of declarative reasoning and inference to drive enterprise security using fine-grained attribute-based access controls.
+					This approach to security, via a Semantic Web of Linked Data, enables the development and deployment of adaptive security
+					solutions that scale to the Web and Internet.
+				   """@en ;
+benefit:isBenefitOf <#AttibuteBasedAccessControls> ;
+skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, dbpedia:Attribute-based_access_control,
+ 			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <http://spinrdf.org/#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this>, [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
+                                                 [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfRecord&distinct=1>] ,
+                                                 [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfEngagement&distinct=1>] .
+
+## Features ##
+
+<#CustomInferenceRules> 
+a feature:ProductFeature ;
+schema:name "Custom Inference Rules"@en ;
+benefit:hasBenefit <#CognitiveAgility> ;
+schema:description """
+					System that uses rules to inform Dynamic manifestations of new Entity Relationships. For instance, custom reasoning and
+					inference rules remove the tedium associated with  manually logging the state transitions of an entity across states such as:
+					suspects, prospects, leads, or customer. The same applies to the transient state of individual access to sensitive data. 
+					"""@en ;
+skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, dbpedia:Attribute-based_access_control,
+ 			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <http://spinrdf.org/#this> .
+			 
+<#AttibuteBasedAccessControls>
+a feature:ProductFeature ;
+schema:name "Attribute-base Access Controls"@en ;
+skos:altLabel "ABAC";
+benefit:hasBenefit <#CognitiveAgility> ;
+schema:description """
+					Using the attributes of the complete range of actors (humans, machines, software applications etc.) to construct a Semantic
+					Web of Linked Data that's used to provide the flexibility required to handle the mercurial nature of privacy and security in
+					general. 
+					"""@en ;
+skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, dbpedia:Attribute-based_access_control,
+ 			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <http://spinrdf.org/#this>, <http://data.openlinksw.com/oplweb/product_release_feature/FineGrainedNamedGraphACLs#this> .
+			 
+
+<#EnhancedRelationMapping>
+a feature:ProductFeature ;
+schema:name "Enhanced Relational Mapping"@en ;
+benefit:hasBenefit benefit:StandardsCompliance ;
+schema:description """
+				   Ability to derive relations (entity relationship types) in a variety of forms. For instance, using mapping rules (via standards
+				   such as W3C's R2RML) to inform transformation of relations represented as Tables in a SQL RSDBMS into fine-grained RDF
+				   sentence/statement (depictable and queryable as entity relationship grpahs). Likewise, the use of SPARQL (a W3C open standard)
+				   to extend SQL (an ANSI open standar). This form of dynamnic relations mapping enables use of existing ODBC, JDBC, ADO.NET, OLE
+				   DB, and XMLA compliant applications to exploit powerful a Semantic Web of Linked Data (public and/or private), without ripping
+				   and replacing legacy systems. 
+				   """@en ;
+skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <https://www.w3.org/TR/r2rml/#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>, 
+			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .			
+
+## Related Blog Posts ##
+
+<https://medium.com/virtuoso-blog/web-logic-sentences-and-the-magic-of-being-you-e2a719d01f73> 
+a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+schema:name "Web, Logic, Sentences, and the Magic of Being You!"@en ;
+schema:description """
+					Blog post about addressing privacy and security (at Web-scale) using Hyperlinks that identify agents (WebIDs), TLS, HTTPS,
+					Logic, RDF Language sentences, and Cognition.
+				   """@en ;
+schema:mainEntity <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+schema:about dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> .
+
+<https://medium.com/openlink-software-blog/simple-youid-browser-extension-usage-exercise-57fa3ff6c6b7> 
+a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+schema:name "Simple WebID Exploitation Exercise via YouID Browser Extension"@en ;
+schema:description """
+					Practical exercise (using the YouID Browser extension) demonstrating effective privacy and security (at Web-scale) using
+					Hyperlinks that identify agents (WebIDs), TLS, HTTPS, Logic, RDF Language sentences, and Cognition. 
+				   """@en ;
+schema:mainEntity <http://youid.openlinksw.com/#this> ;
+schema:about dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://data.openlinksw.com/oplweb/glossary-term/WebID#this>, <http://youid.openlinksw.com/#this> .
+
+                                           <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf> 
+a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+schema:name "Getting from Open Data to a Semantic Web of Linked Data, with Virtuoso"@en ;
+schema:description """
+				Blog post about how to create and use Custom Reasoning and Inference Rules to guide Virtuoso 8.0 through the process of
+				transforming existing Open Data (e.g. from CSV documents) into 5-Star Linked Open Data. 
+			   """@en ;
+schema:mainEntity <http://virtuoso.openlinksw.com/#this> ;
+schema:about dbpedia:Virtuoso_Universal_Server, dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://spinrdf.org/#this> .
+										                                                  <https://medium.com/openlink-software-blog/using-linked-data-to-enhance-odbc-jdbc-ado-net-ole-db-data-sources-e152aed3b60> 
+a schema:WebPage, schema:BlogPosting, schema:TechArticle ;
+schema:name "Using RDF & Linked Data to Enhance ODBC, JDBC, ADO.NET, & OLE DB Data Sources"@en ;
+schema:description """
+					This blog post highlights Virtuoso's use of SPARQL (one open standard) as an extension to SQL (another open standard) to infuse
+					existing ODBC, JDBC, ADO.NET, and OLE DB applications with 5-Star Linked Open Data by using Hyperlinks (dynamically derived
+					from SQL Primaary and Foreign Keys) as Super Keys. 
+					
+					Fundamentally, this post demonstrates the powerful effects of turning exising Business Intelligence, Analytics, Report
+					Writing, Spreadsheet, and other productivity tools and services into Semantic Web of Linked Data exploration launch points. 
+		   		   """@en ;
+schema:mainEntity <http://virtuoso.openlinksw.com/#this> ;
+schema:about dbpedia:Virtuoso_Universal_Server, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>, <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>, <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .

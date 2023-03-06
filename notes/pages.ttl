@@ -1,0 +1,1850 @@
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix schema:    <http://schema.org/> .
+@prefix umbel:     <http://umbel.org/umbel#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix :          <#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/notes/pages.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/pages.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "OpenLink Virtuoso Web Site Pages -- WebDAV hosted TURTLE Document" ;
+   schema:comment """RDF based Linked Data document that describes the OpenLink Web Sites HTML Pages."""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated  "2014-03-30T18:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2021-09-09T13:38:00-05:00"^^xsd:dateTime ;
+   cc:attributionName  "OpenLink Software" ;
+   dcterms:format "text/turtle" ;
+   cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   owl:sameAs source: .
+
+source:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "OpenLink Virtuoso Web Site Pages -- WebDAV hosted TURTLE Document" ;
+   schema:comment """RDF based Linked Data document that describes the OpenLink Web Sites HTML Pages."""@en ;
+   schema:dateCreated  "2014-03-30T18:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2021-09-09T13:38:00-05:00"^^xsd:dateTime ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName  "OpenLink Software" ;
+   dcterms:format "text/turtle" ;
+   owl:sameAs sourceDAV: ;
+   cc:attributionURL  <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   dcterms:subject <http://virtuoso.openlinksw.com/application-developer-benefits/> ,
+              <http://virtuoso.openlinksw.com/application-integration-benefits/> ,
+              <http://virtuoso.openlinksw.com/application-integration-webservices-soa/> ,
+              <http://virtuoso.openlinksw.com/articles/> ,
+              <http://virtuoso.openlinksw.com/bpel-benefits/> ,
+              <http://virtuoso.openlinksw.com/bpel/> ,
+              <http://virtuoso.openlinksw.com/bs/bs-sparql-results-04-04-2013/> ,
+              <http://virtuoso.openlinksw.com/cloud-computing-benefits/> ,
+              <http://virtuoso.openlinksw.com/data-management-benefits/> ,
+              <http://virtuoso.openlinksw.com/data-management/> ,
+              <http://virtuoso.openlinksw.com/database-admin-benefits/> ,
+              <http://virtuoso.openlinksw.com/dbms-engine/> ,
+              <http://virtuoso.openlinksw.com/distributed-collaboration-benefits/> ,
+              <http://virtuoso.openlinksw.com/distributed-collaborative-applications/> ,
+              <http://virtuoso.openlinksw.com/download/> ,
+              <http://virtuoso.openlinksw.com/features-and-benefits/> ,
+              <http://virtuoso.openlinksw.com/offers/> ,
+              <http://virtuoso.openlinksw.com/features-comparison-matrix/> ,
+              <http://virtuoso.openlinksw.com/history/> ,
+              <http://virtuoso.openlinksw.com/howto/> ,
+              <http://virtuoso.openlinksw.com/index/> ,
+              <http://virtuoso.openlinksw.com/information-and-knowledge-worker-benefits/> ,
+              <http://virtuoso.openlinksw.com/interop/> ,
+              <http://virtuoso.openlinksw.com/licenses/> ,
+              <http://virtuoso.openlinksw.com/licenses/virtapp/> ,
+              <http://virtuoso.openlinksw.com/licenses/virtcli/> ,
+              <http://virtuoso.openlinksw.com/linked-data/> ,
+              <http://virtuoso.openlinksw.com/mail/> ,
+              <http://virtuoso.openlinksw.com/main/> ,
+              <http://virtuoso.openlinksw.com/middleware/> ,
+              <http://virtuoso.openlinksw.com/n/> ,
+              <http://virtuoso.openlinksw.com/native-app-server/> ,
+              <http://virtuoso.openlinksw.com/news/> ,
+              <http://virtuoso.openlinksw.com/news/OpenLinkSindicePartnership2011/> ,
+              <http://virtuoso.openlinksw.com/news/VOSPressRelease/> ,
+              <http://virtuoso.openlinksw.com/news/from-odbc-to-odc/> ,
+              <http://virtuoso.openlinksw.com/news/netprov/> ,
+              <http://virtuoso.openlinksw.com/news/oat_21_rel/> ,
+              <http://virtuoso.openlinksw.com/news/openlink-swc-partnership-20130514/> ,
+              <http://virtuoso.openlinksw.com/news/utils/> ,
+              <http://virtuoso.openlinksw.com/news/virt32_wwdc1/> ,
+              <http://virtuoso.openlinksw.com/news/virt32rel/> ,
+              <http://virtuoso.openlinksw.com/news/virt35rel/> ,
+              <http://virtuoso.openlinksw.com/news/virt3beta/> ,
+              <http://virtuoso.openlinksw.com/news/virt3comm/> ,
+              <http://virtuoso.openlinksw.com/news/virt3rel/> ,
+              <http://virtuoso.openlinksw.com/news/virt_501/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v61-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v62-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v64-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v7-press-release-20130423/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/> ,
+              <http://virtuoso.openlinksw.com/nntp/> ,
+              <http://virtuoso.openlinksw.com/object-relational/> ,
+              <http://virtuoso.openlinksw.com/offers-glossary/> ,
+              <http://virtuoso.openlinksw.com/offers-terms/> ,
+              <http://virtuoso.openlinksw.com/partners/> ,
+              <http://virtuoso.openlinksw.com/process-integration/> ,
+              <http://virtuoso.openlinksw.com/product-value-proposition/> ,
+              <http://virtuoso.openlinksw.com/professional-services/> ,
+              <http://virtuoso.openlinksw.com/rdbms-engine/> ,
+              <http://virtuoso.openlinksw.com/rdf-quad-store/> ,
+              <http://virtuoso.openlinksw.com/rdf/> ,
+              <http://virtuoso.openlinksw.com/replication-synchronization/> ,
+              <http://virtuoso.openlinksw.com/runtime-hosting/> ,
+              <http://virtuoso.openlinksw.com/sales/> ,
+              <http://virtuoso.openlinksw.com/screencasts/> ,
+              <http://virtuoso.openlinksw.com/systems-integrator-benefits/> ,
+              <http://virtuoso.openlinksw.com/template_page2/> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_1/SPARQL_Tutorials_Part_1.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_10/SPARQL_Tutorials_Part_10.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_11/SPARQL_Tutorials_Part_11.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_12/SPARQL_Tutorials_Part_12.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_2/SPARQL_Tutorials_Part_2.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_3/SPARQL_Tutorials_Part_3.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_4/SPARQL_Tutorials_Part_4.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_5/SPARQL_Tutorials_Part_5.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_6/SPARQL_Tutorials_Part_6.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_7/SPARQL_Tutorials_Part_7.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_9/SPARQL_Tutorials_Part_9.html> ,
+              <http://virtuoso.openlinksw.com/universal-server/> ,
+              <http://virtuoso.openlinksw.com/v62/> ,
+              <http://virtuoso.openlinksw.com/vdb-conceptual-architecture/> ,
+              <http://virtuoso.openlinksw.com/virt_faq/> ,
+              <http://virtuoso.openlinksw.com/virtual-database/> ,
+              <http://virtuoso.openlinksw.com/virtuoso-application-server/> ,
+              <http://virtuoso.openlinksw.com/virtuoso-conceptual-architecture/> ,
+              <http://virtuoso.openlinksw.com/virtuoso-technical-architecture/> ,
+              <http://virtuoso.openlinksw.com/web-application-server/> ,
+              <http://virtuoso.openlinksw.com/web-services-platform/> ,
+              <http://virtuoso.openlinksw.com/whats-new/> ,
+              <http://virtuoso.openlinksw.com/white-papers/> ,
+              <http://virtuoso.openlinksw.com/whitepapers/150_Billion_Triple_dataset_hosted_on_the_LOD2_Knowledge_Store_Cluster.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/A%20Super%20Platform.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/API%20exposure%20for%20integration.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/BPEL%20process%20orchestration.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Business%20Intelligence%20Extensions%20for%20SPARQL.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Configuring%20Virtuoso%20for%20Scale.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/LUBM%20and%20Virtuoso.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Mapping%20Relational%20Data%20to%20RDF.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Open%20Sources%20and%20Relational%20Data.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SOA%20comes%20of%20age.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20RDF%20Store%20using%20SQL-ORDBMS.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference%20on%20Demand.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/TPC%20H%20As%20Linked%20Data.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Text%20and%20XML%20Indexing.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20Sponger.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20and%20Database%20Scalability.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20as%20Application%20Server-PHP.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso_a_Hybrid_RDBMS_Graph_Column_Store.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/composite%20services.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/data%20integration.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/deploying%20linked%20data.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/open%20conceptual%20data%20models.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/rdf%20linked%20data%20dotNET%20LINQ.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/relational%20rdf%20views%20mapping.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/row-level%20security.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/sponger%20cartridge%20programmers%20guide%20rdf%20middleware.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20replication%20synchronization.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20social%20networks%20blogosphere.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20virtual%20database%20vdb.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virutoso%20web%20services.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Web-Scale%20RDF.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/xml%20and%20sqlx.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/xml%20and%20xquery.html> ,
+              <http://virtuoso.openlinksw.com/xml-database/> ,
+              <http://virtuoso.openlinksw.com/xml-functionality/>,
+              <http://virtuoso.openlinksw.com/pricing/>,
+              <http://virtuoso.openlinksw.com/aws-pricing/>,
+              <http://virtuoso.openlinksw.com/azure-pricing/>,
+              <http://virtuoso.openlinksw.com/lod-driver-pricing/> ;
+   schema:about <http://virtuoso.openlinksw.com/application-developer-benefits/> ,
+              <http://virtuoso.openlinksw.com/application-integration-benefits/> ,
+              <http://virtuoso.openlinksw.com/application-integration-webservices-soa/> ,
+              <http://virtuoso.openlinksw.com/articles/> ,
+              <http://virtuoso.openlinksw.com/bpel-benefits/> ,
+              <http://virtuoso.openlinksw.com/bpel/> ,
+              <http://virtuoso.openlinksw.com/bs/bs-sparql-results-04-04-2013/> ,
+              <http://virtuoso.openlinksw.com/cloud-computing-benefits/> ,
+              <http://virtuoso.openlinksw.com/data-management-benefits/> ,
+              <http://virtuoso.openlinksw.com/data-management/> ,
+              <http://virtuoso.openlinksw.com/database-admin-benefits/> ,
+              <http://virtuoso.openlinksw.com/dbms-engine/> ,
+              <http://virtuoso.openlinksw.com/distributed-collaboration-benefits/> ,
+              <http://virtuoso.openlinksw.com/distributed-collaborative-applications/> ,
+              <http://virtuoso.openlinksw.com/download/> ,
+              <http://virtuoso.openlinksw.com/features-and-benefits/> ,
+              <http://virtuoso.openlinksw.com/offers/> ,
+              <http://virtuoso.openlinksw.com/features-comparison-matrix/> ,
+              <http://virtuoso.openlinksw.com/history/> ,
+              <http://virtuoso.openlinksw.com/howto/> ,
+              <http://virtuoso.openlinksw.com/index/> ,
+              <http://virtuoso.openlinksw.com/information-and-knowledge-worker-benefits/> ,
+              <http://virtuoso.openlinksw.com/interop/> ,
+              <http://virtuoso.openlinksw.com/licenses/> ,
+              <http://virtuoso.openlinksw.com/licenses/virtapp/> ,
+              <http://virtuoso.openlinksw.com/licenses/virtcli/> ,
+              <http://virtuoso.openlinksw.com/linked-data/> ,
+              <http://virtuoso.openlinksw.com/mail/> ,
+              <http://virtuoso.openlinksw.com/main/> ,
+              <http://virtuoso.openlinksw.com/middleware/> ,
+              <http://virtuoso.openlinksw.com/n/> ,
+              <http://virtuoso.openlinksw.com/native-app-server/> ,
+              <http://virtuoso.openlinksw.com/news/> ,
+              <http://virtuoso.openlinksw.com/news/OpenLinkSindicePartnership2011/> ,
+              <http://virtuoso.openlinksw.com/news/VOSPressRelease/> ,
+              <http://virtuoso.openlinksw.com/news/from-odbc-to-odc/> ,
+              <http://virtuoso.openlinksw.com/news/netprov/> ,
+              <http://virtuoso.openlinksw.com/news/oat_21_rel/> ,
+              <http://virtuoso.openlinksw.com/news/openlink-swc-partnership-20130514/> ,
+              <http://virtuoso.openlinksw.com/news/utils/> ,
+              <http://virtuoso.openlinksw.com/news/virt32_wwdc1/> ,
+              <http://virtuoso.openlinksw.com/news/virt32rel/> ,
+              <http://virtuoso.openlinksw.com/news/virt35rel/> ,
+              <http://virtuoso.openlinksw.com/news/virt3beta/> ,
+              <http://virtuoso.openlinksw.com/news/virt3comm/> ,
+              <http://virtuoso.openlinksw.com/news/virt3rel/> ,
+              <http://virtuoso.openlinksw.com/news/virt_501/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v61-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v62-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v64-press-release/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v7-press-release-20130423/> ,
+              <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/> ,
+              <http://virtuoso.openlinksw.com/nntp/> ,
+              <http://virtuoso.openlinksw.com/object-relational/> ,
+              <http://virtuoso.openlinksw.com/offers-glossary/> ,
+              <http://virtuoso.openlinksw.com/offers-terms/> ,
+              <http://virtuoso.openlinksw.com/partners/> ,
+              <http://virtuoso.openlinksw.com/process-integration/> ,
+              <http://virtuoso.openlinksw.com/product-value-proposition/> ,
+              <http://virtuoso.openlinksw.com/professional-services/> ,
+              <http://virtuoso.openlinksw.com/rdbms-engine/> ,
+              <http://virtuoso.openlinksw.com/rdf-quad-store/> ,
+              <http://virtuoso.openlinksw.com/rdf/> ,
+              <http://virtuoso.openlinksw.com/replication-synchronization/> ,
+              <http://virtuoso.openlinksw.com/runtime-hosting/> ,
+              <http://virtuoso.openlinksw.com/sales/> ,
+              <http://virtuoso.openlinksw.com/screencasts/> ,
+              <http://virtuoso.openlinksw.com/systems-integrator-benefits/> ,
+              <http://virtuoso.openlinksw.com/template_page2/> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_1/SPARQL_Tutorials_Part_1.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_10/SPARQL_Tutorials_Part_10.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_11/SPARQL_Tutorials_Part_11.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_12/SPARQL_Tutorials_Part_12.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_2/SPARQL_Tutorials_Part_2.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_3/SPARQL_Tutorials_Part_3.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_4/SPARQL_Tutorials_Part_4.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_5/SPARQL_Tutorials_Part_5.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_6/SPARQL_Tutorials_Part_6.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_7/SPARQL_Tutorials_Part_7.html> ,
+              <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_9/SPARQL_Tutorials_Part_9.html> ,
+              <http://virtuoso.openlinksw.com/universal-server/> ,
+              <http://virtuoso.openlinksw.com/v62/> ,
+              <http://virtuoso.openlinksw.com/vdb-conceptual-architecture/> ,
+              <http://virtuoso.openlinksw.com/virt_faq/> ,
+              <http://virtuoso.openlinksw.com/virtual-database/> ,
+              <http://virtuoso.openlinksw.com/virtuoso-application-server/> ,
+              <http://virtuoso.openlinksw.com/virtuoso-conceptual-architecture/> ,
+              <http://virtuoso.openlinksw.com/virtuoso-technical-architecture/> ,
+              <http://virtuoso.openlinksw.com/web-application-server/> ,
+              <http://virtuoso.openlinksw.com/web-services-platform/> ,
+              <http://virtuoso.openlinksw.com/whats-new/> ,
+              <http://virtuoso.openlinksw.com/white-papers/> ,
+              <http://virtuoso.openlinksw.com/whitepapers/150_Billion_Triple_dataset_hosted_on_the_LOD2_Knowledge_Store_Cluster.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/A%20Super%20Platform.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/API%20exposure%20for%20integration.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/BPEL%20process%20orchestration.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Business%20Intelligence%20Extensions%20for%20SPARQL.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Configuring%20Virtuoso%20for%20Scale.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/LUBM%20and%20Virtuoso.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Mapping%20Relational%20Data%20to%20RDF.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Open%20Sources%20and%20Relational%20Data.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SOA%20comes%20of%20age.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20RDF%20Store%20using%20SQL-ORDBMS.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference%20on%20Demand.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/TPC%20H%20As%20Linked%20Data.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Text%20and%20XML%20Indexing.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20Sponger.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20and%20Database%20Scalability.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20as%20Application%20Server-PHP.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Virtuoso_a_Hybrid_RDBMS_Graph_Column_Store.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/composite%20services.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/data%20integration.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/deploying%20linked%20data.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/open%20conceptual%20data%20models.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/rdf%20linked%20data%20dotNET%20LINQ.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/relational%20rdf%20views%20mapping.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/row-level%20security.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/sponger%20cartridge%20programmers%20guide%20rdf%20middleware.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20replication%20synchronization.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20social%20networks%20blogosphere.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20virtual%20database%20vdb.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/virutoso%20web%20services.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/Web-Scale%20RDF.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/xml%20and%20sqlx.html> ,
+              <http://virtuoso.openlinksw.com/whitepapers/xml%20and%20xquery.html> ,
+              <http://virtuoso.openlinksw.com/xml-database/> ,
+              <http://virtuoso.openlinksw.com/xml-functionality/> ,              
+              <http://virtuoso.openlinksw.com/pricing/>,
+              <http://virtuoso.openlinksw.com/aws-pricing/>,
+              <http://virtuoso.openlinksw.com/azure-pricing/>,
+              <http://virtuoso.openlinksw.com/lod-driver-pricing/>,
+              <https://virtuoso.openlinksw.com/linkeddata/>, 
+              <https://virtuoso.openlinksw.com/knowledgegraph/> .
+
+
+<http://virtuoso.openlinksw.com/pricing/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Offers & Pricing Page" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    # schema:url <http://virtuoso.openlinksw.com/application-developer-benefits/> ;
+    wdrs:describedby source: ;
+    schema:about    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/aws-pricing/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Offers & Pricing Page for the Amazon AWS Cloud" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    # schema:url <http://virtuoso.openlinksw.com/application-developer-benefits/> ;
+    wdrs:describedby source: ;
+    schema:about    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/azure-pricing/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Offers & Pricing Page for the Microsoft Azure Cloud" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    # schema:url <http://virtuoso.openlinksw.com/application-developer-benefits/> ;
+    wdrs:describedby source: ;
+    schema:about    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-Azure-Cloud-30-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-Azure-Personal-PAGO-Ubuntu-Bionic#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-Azure-Project-PAGO-Ubuntu-Bionic#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/lod-driver-pricing/> 
+    a schema:WebPage ;
+    schema:name "LOD Clound Knowledge Graph Connectors Offers & Pricing Page" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    # schema:url <http://virtuoso.openlinksw.com/application-developer-benefits/> ;
+    wdrs:describedby source: ;
+    schema:about    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-personal-client-access-30-day-sql#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-personal-client-access-90-day-sql#this>,
+                    <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-personal-client-access-365-day-sql#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/application-developer-benefits/>
+    a schema:WebPage ;
+    schema:name "Application Developer Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/application-developer-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/application-integration-benefits/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Application Integration Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/application-integration-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/application-integration-webservices-soa/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Application Integration (Web Services and SOA)" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/application-integration-webservices-soa/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/articles/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Articles" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/articles/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/bpel-benefits/>
+    a schema:WebPage ;
+    schema:name "Virtuoso BPEL Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/bpel-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/bpel/>
+    a schema:WebPage ;
+    schema:name "Virtuoso BPEL4WS" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/bpel/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/bs/bs-sparql-results-04-04-2013/>
+    a schema:WebPage ;
+    schema:name "Berlin SPARQL Benchmark Results - 04/04/2013" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/bs/bs-sparql-results-04-04-2013/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/cloud-computing-benefits/>
+    a schema:WebPage ;
+    schema:name "Cloud Computing Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/cloud-computing-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/data-management-benefits/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Data Management Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/data-management-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/data-management/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Data Management" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/data-management/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/database-admin-benefits/>
+    a schema:WebPage ;
+    schema:name "Database-Administration Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/database-admin-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/dbms-engine/>
+    a schema:WebPage ;
+    schema:name "Virtuoso DBMS Engine" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/dbms-engine/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/distributed-collaboration-benefits/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Distributed Collaboration Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/distributed-collaboration-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/distributed-collaborative-applications/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Distributed Collaborative Applications" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/distributed-collaborative-applications/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/download/>
+    a schema:WebPage ;
+    schema:name "OpenLink Virtuoso Download" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/download/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/features-and-benefits/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Features and Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/features-and-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/features-comparison-matrix/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Commercial and Open-Source Version Comparison" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/features-comparison-matrix/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/history/>
+    a schema:WebPage ;
+    schema:name "History of OpenLink Software" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/history/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/howto/>
+    a schema:WebPage ;
+    schema:name "Virtuoso HOWTO documentation" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/howto/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/index/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Universal Server Home Page" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/index/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/information-and-knowledge-worker-benefits/>
+    a schema:WebPage ;
+    schema:name "Information / Knowledge-worker benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/information-and-knowledge-worker-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/interop/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Universal Server Interoperability" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/interop/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/licenses/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Virtuoso Licenses" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/licenses/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/licenses/virtapp/>
+    a schema:WebPage ;
+    schema:name "OpenLink License Agreement - Virtuoso Application Server Edition" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/licenses/virtapp/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/licenses/virtcli/>
+    a schema:WebPage ;
+    schema:name "OpenLink License Agreement - Virtuoso Client Server Edition" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/licenses/virtcli/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/linked-data/>
+    a schema:WebPage ;
+    schema:name "Virtuoso and Linked Data" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/linked-data/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/mail/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Mail Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/mail/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/main/>
+    a schema:WebPage ;
+    schema:name "Virtuoso -- standards-based single server solution for Web Services, XML and Database application integration, development and deployment" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/main/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/middleware/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Data-Access / Integration Middleware" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/middleware/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/n/>
+    a schema:WebPage ;
+    schema:name "Secure, High-Performance, Data Access, Integration, and Data Management Without Compromis" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/n/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/native-app-server/>
+    a schema:WebPage ;
+    schema:name "Native Application Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/native-app-server/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/>
+    a schema:WebPage ;
+    schema:name "News Articles" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/OpenLinkSindicePartnership2011/>
+    a schema:WebPage ;
+    schema:name "Press Release: Partnership between OpenLink Software and Sindice" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/OpenLinkSindicePartnership2011/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/VOSPressRelease/>
+    a schema:WebPage ;
+    schema:name "Open Source Edition of OpenLink Virtuoso Unleashed" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/VOSPressRelease/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/from-odbc-to-odc/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Unleashes Powerful Client Connectivity Kit for Big Data" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/from-odbc-to-odc/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/netprov/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Releases High-Performance, Fully Managed .NET Data Providers for major databases" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/netprov/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/oat_21_rel/>
+    a schema:WebPage ;
+    schema:name "Announcing OpenLink AJAX Toolkit OAT v2.1" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/oat_21_rel/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/openlink-swc-partnership-20130514/>
+    a schema:WebPage ;
+    schema:name "Semantic Web Company and OpenLink partner to advance Enterprise Linked Data Integration" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/openlink-swc-partnership-20130514/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/utils/>
+    a schema:WebPage ;
+    schema:name "OpenLink Simplifies Data Access Driver and Database Engine Benchmarking" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/utils/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt32_wwdc1/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Announces Virtuoso 3.2 Beta" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt32_wwdc1/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt32rel/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Delivers Virtuoso 3.2 with Updated .NET CLR integration, XML features, and Web Services Functionality" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt32rel/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt35rel/>
+    a schema:WebPage ;
+    schema:name "OpenLink Releases Universal Server Platform" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt35rel/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt3beta/>
+    a schema:WebPage ;
+    schema:name "OpenLink Uses Microsoft .NET and Mono to Extend Virtuoso" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt3beta/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt3comm/>
+    a schema:WebPage ;
+    schema:name "Universal Server upgrade provides disparate Data Source and disparate Application Logic integration via cross platform .NET integration" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt3comm/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt3rel/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Unleashes Virtuoso 3.0" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt3rel/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virt_501/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software Releases Virtuoso Universal Server 5.0.1" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virt_501/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/>
+    a schema:WebPage ;
+    schema:name "OpenLink Unleashes New ODBC, JDBC, ADO.NET, and OLE DB Drivers for the World Wide Web" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virtuoso-v61-press-release/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Univeral Server 6.1 Unleashed" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virtuoso-v61-press-release/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virtuoso-v62-press-release/>
+    a schema:WebPage ;
+    schema:name "OpenLink Unleashes Linked-Data-Driven Platform for Semantically Enhanced Data Virtualization" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virtuoso-v62-press-release/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virtuoso-v64-press-release/>
+    a schema:WebPage ;
+    schema:name "Openlink delivers enterprise-grade Web-Scale Data Virtualization for big data clouds" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virtuoso-v64-press-release/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virtuoso-v7-press-release-20130423/>
+    a schema:WebPage ;
+    schema:name "OpenLink Unleashes Semantically-Aware Column-Store for Handling Big Data Challenges" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virtuoso-v7-press-release-20130423/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/>
+    a schema:WebPage ;
+    schema:name "OpenLink Unleashes Semantically-Aware Column-Store for Handling Big Data Challenges" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/nntp/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Discussion and Weblog Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/nntp/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/object-relational/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Object-Relational Database" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/object-relational/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/offers-glossary/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Pricing and Offers Glossary" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/offers-glossary/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/offers-terms/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Pricing and Offers Glossary" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/offers-terms/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/offers/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Offers" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/offers/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/partners/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Partners" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/partners/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/process-integration/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Process Management and Integration (BPEL)" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/process-integration/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/product-value-proposition/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Product Value Proposition" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/product-value-proposition/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/professional-services/>
+    a schema:WebPage ;
+    schema:name "Professional Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/professional-services/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/rdbms-engine/>
+    a schema:WebPage ;
+    schema:name "Virtuoso RDBMS Engine" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/rdbms-engine/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/rdf-quad-store/>
+    a schema:WebPage ;
+    schema:name "Virtuoso RDF Quad-Store" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/rdf-quad-store/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/rdf/>
+    a schema:WebPage ;
+    schema:name "Virtuoso RDF Triple Store" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/rdf/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/replication-synchronization/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Replication and Synchronization Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/replication-synchronization/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/runtime-hosting/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Runtime Hosting" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/runtime-hosting/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/sales/>
+    a schema:WebPage ;
+    schema:name "Sales Information" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/sales/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/screencasts/>
+    a schema:WebPage ;
+    schema:name "Virtuoso screencasts" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/screencasts/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/systems-integrator-benefits/>
+    a schema:WebPage ;
+    schema:name "Systems Integrator Benefits" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/systems-integrator-benefits/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/template_page2/>
+    a schema:WebPage ;
+    schema:name "OpenLink Software:" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/template_page2/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Data Spaces, SIOC and SPARQL Guide" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II.html>
+    a schema:WebPage ;
+    schema:name "Proposed SPARQL Extensions for SPARQL 2.0 WG" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_II.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Billion Triple Demo queries" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_III.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_1/SPARQL_Tutorials_Part_1.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial I: SIOC Ontology Examples for Linked Data Spaces" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_1/SPARQL_Tutorials_Part_1.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_10/SPARQL_Tutorials_Part_10.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial X: Covers SPARQL Extensions for Geo Spatials and Geography" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_10/SPARQL_Tutorials_Part_10.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_11/SPARQL_Tutorials_Part_11.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial XI: SPARQL Geo Spatials and Geography PivotViewer Examples" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_11/SPARQL_Tutorials_Part_11.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_12/SPARQL_Tutorials_Part_12.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial XII: SPARQL-BI Examples" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_12/SPARQL_Tutorials_Part_12.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_2/SPARQL_Tutorials_Part_2.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial II: Linked Data Examples based on FOAF, Atom OWL Annotea and SKOS" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_2/SPARQL_Tutorials_Part_2.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_3/SPARQL_Tutorials_Part_3.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial III: Examples based on BBC Linked Data Spaces" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_3/SPARQL_Tutorials_Part_3.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_4/SPARQL_Tutorials_Part_4.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial IV: Business Intelligence and Enterprise oriented SPARQL Examples using GoodRelations and eCRM Ontologies" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_4/SPARQL_Tutorials_Part_4.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_5/SPARQL_Tutorials_Part_5.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial V: Covers SPARQL Extensions for: Aggregates, Date Arithmetic, Updates, Deletes, Sub-queries, Path Expressions and Inference Rules" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_5/SPARQL_Tutorials_Part_5.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_6/SPARQL_Tutorials_Part_6.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial VI: Covers SPARQL Extensions for Social Media Analytics" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_6/SPARQL_Tutorials_Part_6.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_7/SPARQL_Tutorials_Part_7.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial VII: Linked Data (SPARQL FROM CLAUSE and Sponger Middleware Pragmas)" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_7/SPARQL_Tutorials_Part_7.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_9/SPARQL_Tutorials_Part_9.html>
+    a schema:WebPage ;
+    schema:name "OpenLink Tutorial IX: SPARQL 1.1 Supported Features" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/tutorials/sparql/SPARQL_Tutorials_Part_9/SPARQL_Tutorials_Part_9.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/universal-server/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Universal Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/universal-server/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/v62/>
+    a schema:WebPage ;
+    schema:name "Virtuoso 6.2 -- New Features" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/v62/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/vdb-conceptual-architecture/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Virtual Database Conceptual Architecture" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/vdb-conceptual-architecture/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/virt_faq/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Frequently Asked Questions" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/virt_faq/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/virtual-database/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Virtual Database" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/virtual-database/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/virtuoso-application-server/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Web Application Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/virtuoso-application-server/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/virtuoso-conceptual-architecture/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Conceptual Architecture" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/virtuoso-conceptual-architecture/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/virtuoso-technical-architecture/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Technical Architecture" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/virtuoso-technical-architecture/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/web-application-server/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Web Application Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/web-application-server/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/web-services-platform/>
+    a schema:WebPage ;
+    schema:name "Virtuoso Web Services Platform" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/web-services-platform/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whats-new/>
+    a schema:WebPage ;
+    schema:name "Virtuoso: New Features" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whats-new/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/white-papers/>
+    a schema:WebPage ;
+    schema:name "Virtuoso White Papers" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/white-papers/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/150_Billion_Triple_dataset_hosted_on_the_LOD2_Knowledge_Store_Cluster.html>
+    a schema:WebPage ;
+    schema:name "150 Billion Triple dataset hosted on the LOD2 Knowledge Store Cluster" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/150_Billion_Triple_dataset_hosted_on_the_LOD2_Knowledge_Store_Cluster.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/A%20Super%20Platform.html>
+    a schema:WebPage ;
+    schema:name "A Super- Platform for Data Integration and Business Process Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/A%20Super%20Platform.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/API%20exposure%20for%20integration.html>
+    a schema:WebPage ;
+    schema:name "API Exposure for Integration" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/API%20exposure%20for%20integration.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/BPEL%20process%20orchestration.html>
+    a schema:WebPage ;
+    schema:name "Process Orchestration" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/BPEL%20process%20orchestration.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Business%20Intelligence%20Extensions%20for%20SPARQL.html>
+    a schema:WebPage ;
+    schema:name "Business Intelligence Extensions for SPARQL" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Business%20Intelligence%20Extensions%20for%20SPARQL.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Configuring%20Virtuoso%20for%20Scale.html>
+    a schema:WebPage ;
+    schema:name "Configuring Virtuoso for Scale" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Configuring%20Virtuoso%20for%20Scale.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/LUBM%20and%20Virtuoso.html>
+    a schema:WebPage ;
+    schema:name "LUBM and Virtuoso" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/LUBM%20and%20Virtuoso.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Mapping%20Relational%20Data%20to%20RDF.html>
+    a schema:WebPage ;
+    schema:name "Mapping Relational Data to RDF in Virtuoso" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Mapping%20Relational%20Data%20to%20RDF.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Open%20Sources%20and%20Relational%20Data.html>
+    a schema:WebPage ;
+    schema:name "Integrating Open Sources and Relational Data with SPARQL" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Open%20Sources%20and%20Relational%20Data.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/SOA%20comes%20of%20age.html>
+    a schema:WebPage ;
+    schema:name "Service Oriented Architecture Comes of Age" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/SOA%20comes%20of%20age.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/SPARQL%20RDF%20Store%20using%20SQL-ORDBMS.html>
+    a schema:WebPage ;
+    schema:name "Main.VOSRDFWP" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20RDF%20Store%20using%20SQL-ORDBMS.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference%20on%20Demand.html>
+    a schema:WebPage ;
+    schema:name "Main.VOSScalableInference" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference%20on%20Demand.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference.html>
+    a schema:WebPage ;
+    schema:name "Main.VOSScalableInference" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/SPARQL%20and%20Scalable%20Inference.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/TPC%20H%20As%20Linked%20Data.html>
+    a schema:WebPage ;
+    schema:name "TPC H As Linked Data" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/TPC%20H%20As%20Linked%20Data.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Text%20and%20XML%20Indexing.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso Text and XML Indexing" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Text%20and%20XML%20Indexing.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20Sponger.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso Sponger" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20Sponger.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20and%20Database%20Scalability.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso and Database Scalability" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20and%20Database%20Scalability.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20as%20Application%20Server-PHP.html>
+    a schema:WebPage ;
+    schema:name "Deploying PHP applications using Virtuoso as Application Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20as%20Application%20Server-PHP.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Virtuoso_a_Hybrid_RDBMS_Graph_Column_Store.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso, a Hybrid RDBMS/Graph Column Store" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Virtuoso_a_Hybrid_RDBMS_Graph_Column_Store.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/Web-Scale%20RDF.html>
+    a schema:WebPage ;
+    schema:name "Towards Web-Scale RDF" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/Web-Scale%20RDF.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/composite%20services.html>
+    a schema:WebPage ;
+    schema:name "Composite Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/composite%20services.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/data%20integration.html>
+    a schema:WebPage ;
+    schema:name "Data Integration" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/data%20integration.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/deploying%20linked%20data.html>
+    a schema:WebPage ;
+    schema:name "Deploying Linked Data" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/deploying%20linked%20data.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/open%20conceptual%20data%20models.html>
+    a schema:WebPage ;
+    schema:name "Open Conceptual Data Models" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/open%20conceptual%20data%20models.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/rdf%20linked%20data%20dotNET%20LINQ.html>
+    a schema:WebPage ;
+    schema:name "Exploiting the RDF-based Linked Data Web using .NET via LINQ" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/rdf%20linked%20data%20dotNET%20LINQ.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/relational%20rdf%20views%20mapping.html>
+    a schema:WebPage ;
+    schema:name "Mapping Relation Data to RDF with" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/relational%20rdf%20views%20mapping.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/row-level%20security.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso Row Level Security" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/row-level%20security.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/sponger%20cartridge%20programmers%20guide%20rdf%20middleware.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso Sponger Cartridge" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/sponger%20cartridge%20programmers%20guide%20rdf%20middleware.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/virtuoso%20replication%20synchronization.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso Replication and Synchronization Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20replication%20synchronization.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/virtuoso%20social%20networks%20blogosphere.html>
+    a schema:WebPage ;
+    schema:name "Social Networks, Blogosphere, and Virtuoso Universal Server" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20social%20networks%20blogosphere.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/virtuoso%20virtual%20database%20vdb.html>
+    a schema:WebPage ;
+    schema:name "Virtuoso Virtual Database" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/virtuoso%20virtual%20database%20vdb.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/virutoso%20web%20services.html>
+    a schema:WebPage ;
+    schema:name "Introduction to Virtuoso Web Services" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/virutoso%20web%20services.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/xml%20and%20sqlx.html>
+    a schema:WebPage ;
+    schema:name "XML with Virtuoso and SQLX" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/xml%20and%20sqlx.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/whitepapers/xml%20and%20xquery.html>
+    a schema:WebPage ;
+    schema:name "XML with Virtuoso and XQuery" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/whitepapers/xml%20and%20xquery.html> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/xml-database/>
+    a schema:WebPage ;
+    schema:name "Virtuoso XML Database" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/xml-database/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<http://virtuoso.openlinksw.com/xml-functionality/>
+    a schema:WebPage ;
+    schema:name "Virtuoso XML Functionality" ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:url <http://virtuoso.openlinksw.com/xml-functionality/> ;
+    wdrs:describedby source: ;
+    schema:mainEntity  <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<https://virtuoso.openlinksw.com/linkeddata/>
+    a schema:WebPage ;
+    schema:name "Linked Data related Articles Collection" ;
+    schema:title "Linked Data related Articles Collection" ;
+    schema:description """Portal into a collection of Articles (technical and non-technical) related to
+                          the Virtuoso Universal Server platform and practical Linked Data usage and solutions."""@en ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords "Linked Data, Linked Open Data, Virtuoso, Semantic Web, RDF, Knowledge Graph, Knowledge Graphs" ;
+    wdrs:describedby source: ;
+    schema:creator <http://www.openlinksw.com/#this> .
+
+<https://virtuoso.openlinksw.com/knowledgegraph/> 
+    a schema:WebPage ;
+    schema:name "Knowledge Graph related Articles Collection" ;
+    schema:title "Knowledge Graph related Articles Collection" ;
+    schema:description """Portal into a collection of Articles (technical and non-technical) related to
+                          the Virtuoso Universal Server platform and practical Knowledge Graph usage and solutions."""@en ;
+    schema:fileFormat "text/html" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords "Knowledge Graph, Knowledge Graphs, Linked Data, Linked Open Data, RDF, Semantic Web, Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:creator <http://www.openlinksw.com/#this> .

@@ -1,0 +1,363 @@
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix oplinst:   <http://www.openlinksw.com/ontology/installers#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix schema:    <http://schema.org/> .
+@prefix umbel:     <http://umbel.org/umbel#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix :          <#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/notes/doc.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/doc.ttl> .
+
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "OpenLink Virtuoso Documentation Pages -- WebDAV hosted TURTLE Document" ;
+   schema:description """RDF based Linked Data document that describes the OpenLink Virtuoso Documentation Pages."""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated  "2016-06-14T18:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2016-06-14T18:00:00-05:00"^^xsd:dateTime ;
+   dcterms:format "text/turtle" ;
+   owl:sameAs source: .
+
+source:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this> ;
+   schema:name "OpenLink Virtuoso Documentation Pages -- WebDAV hosted TURTLE Document" ;
+   schema:comment """RDF based Linked Data document that describes the OpenLink Virtuoso Documentation Pages."""@en ;
+   schema:dateCreated  "2016-06-14T18:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2016-06-14T18:00:00-05:00"^^xsd:dateTime ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   dcterms:format "text/turtle" ;
+   dcterms:subject
+        <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/MacODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/UnixODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> ;
+   schema:about
+        <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/UnixODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/MacODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> .
+
+
+# Virtuoso Universal Server
+# Mac
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Installing the Virtuoso Universal Server on Mac OS X""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac#this> ,
+                 <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/MacODBCtoVirt#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveMacOSX#this>,
+                     <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this> ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/universal-apple-macosx10.7-32#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX .
+
+
+#Unix
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Installing the Virtuoso Universal Server on Unix-like OS (AIX, HP-UX, Linux, Solaris, etc.) """ ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE#this> ,
+                 <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/UnixODBCtoVirt#this>;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ,
+                      <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelqvpLinux#this> ,
+                      <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelrvpLinux#this>  ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-linux-glibc217-64#this> ,
+                              <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-linux-glibc23-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux , oplsof:Solaris, oplsof:AIX , oplsof:HPUX .
+
+#Windows
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Installing the Virtuoso Universal Server on Windows""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveWindows#this> ,
+        <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+        <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this> ,
+        <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-win-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows .
+
+
+# Virtuoso Client Connectivity Suite
+#Mac
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Installing the Virtuoso Client Connectivity Suite on Mac OS X""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>,
+	                    <http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this>,
+	                    <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ,
+	                    <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveMacOSX#this> ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/universal-apple-macosx10.7-32#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX .
+
+#Windows
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Installing the Virtuoso Client Connectivity Suite on Windows""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin#this> ,
+                 <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt#this> ,
+                 <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> ,
+                 <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> ,
+                 <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                      <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this> ,
+  				            <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this>  ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-win-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows .
+
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage ;
+    dcterms:format "text/html" ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> ,
+        <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Virtuoso Wiki Web" ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    schema:name """Virtuoso Universal Server Wiki Web""" ;
+    schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/> ;
+    wdrs:describedby source: .
+
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Configuring the Virtuoso Client ODBC Driver on Windows""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinODBCtoVirt#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                      <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this> ,
+  				            <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this>  ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-win-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows .
+
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """JDBC Data Access Providers (Windows Client)""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinJDBCtoVirt#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                      <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this> ,
+  				            <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this>  ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-win-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows .
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Configuring and Testing the OLE DB Provider for Virtuoso""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/WinOLEDBtoVirt#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                      <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this> ,
+  				            <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this>  ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-win-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows .
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Virtuoso Client ADO.NET 3.5 (and later) Data Provider""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                      <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this> ,
+  				            <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this>  ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-win-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows .
+
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/MacODBCtoVirt#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """Configuring the Virtuoso Client ODBC Driver on Mac""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/MacODBCtoVirt> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/MacODBCtoVirt#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                      <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveMacOSX#this>,
+                      <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this> ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/universal-apple-macosx10.7-32#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX .
+
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/UnixODBCtoVirt#this> a schema:Article,
+        schema:TechArticle,
+        schema:WebPage,
+        oplinst:ConfigurationUsageGuideArticle,
+        oplinst:InstallationGuideArticle ;
+    dcterms:format "text/html" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:creator <http://www.openlinksw.com/#this> ;
+    schema:genre "Installation and Configuration Usage Guide" ;
+    schema:isPartOf <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main#this> ;
+    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    wdrs:describedby source: ;
+    schema:name """ODBC Data Access Drivers (Unix Client)""" ;
+    schema:url <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/UnixODBCtoVirt> ;
+    schema:about <http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/UnixODBCtoVirt#this> ;
+    schema:mainEntity <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ,
+                      <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelqvpLinux#this> ,
+                      <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelrvpLinux#this> ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-linux-glibc217-64#this> ,
+                              <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-linux-glibc23-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux , oplsof:Solaris, oplsof:AIX , oplsof:HPUX .
+
+# add the rest from:
+# http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallConfig
+# -- Testing Data Access Connectivity
+
+# add the rest from:
+# -- http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtAdoNet35Provider

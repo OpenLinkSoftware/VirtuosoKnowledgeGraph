@@ -1,0 +1,513 @@
+@prefix schema:    <http://schema.org/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix bibo:      <http://purl.org/ontology/bibo/> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix oplben:    <http://www.openlinksw.com/ontology/benefits#> .
+@prefix oplfea:    <http://www.openlinksw.com/ontology/features#> .
+@prefix oplweb:    <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix awol:      <http://bblfish.net/work/atom-owl/2006-06-06/#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/virtuoso71.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/virtuoso71.ttl> .
+
+@prefix oplsof:  <http://www.openlinksw.com/ontology/software#> .
+
+@prefix :          <#> .
+
+## Turtle Document That Describes Virtuoso Release 7.1 ##
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:name """Virtuoso 7.1 Features & Benefits Description Document"""^^xsd:string ;
+  schema:comment """This document describes Virtuoso 7.1 features and associated benefits."""@en;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  owl:sameAs source: .
+
+
+source:
+  a schema:CreativeWork ;
+  schema:name "Virtuoso 7.1 Features & Benefits Description Document" ;
+  schema:comment """This document describes Virtuoso 7.1 features and associated benefits."""@en ;
+  schema:dateCreated "2014-01-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
+  schema:dateModified "2014-07-27"^^<http://www.w3.org/2001/XMLSchema#date> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  <http://creativecommons.org/ns#attributionName> "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ;
+  schema:about    <http://virtuoso.openlinksw.com/download>,
+								  <http://bit.ly/1mu0XsR>,
+								  <http://data.openlinksw.com/oplweb/product_benefit/Stability#this> ,
+								  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ,
+								  <http://data.openlinksw.com/oplweb/product_benefit/ControlledDataAccess#this> ,
+								  <http://data.openlinksw.com/oplweb/product_benefit/NoServiceDisruption#this> ,
+                  <http://data.openlinksw.com/oplweb/product_benefit/ConceptualViewsOverTabularData#this> ,
+                  <http://data.openlinksw.com/oplweb/product_benefit/HighPerformanceConceptualViews#this> ,
+                  <http://data.openlinksw.com/oplweb/product_benefit/HighPerformanceConceptualViewQuerying#this> ,
+
+								  <http://data.openlinksw.com/oplweb/product_release_feature/EnhancedCheckPointing#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_feature/VDBSupportForCSV#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_feature/EnhancedRDFViewsGeneration#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_feature/EnhancedSPARQLOverRDFViews#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_feature/FineGrainedNamedGraphACLs#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_feature/EnhancedStability#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_feature/EnhancedSPARQL11Support#this>,
+								  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this>,
+
+
+                  <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this> ,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/DocumentDBMSEngine#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/FileServer#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/FileServerHTTP#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/FileServerLDP#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngine#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this>,
+								  <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSpongerCartridges#this>,
+
+                  <http://data.openlinksw.com/oplweb/category/ClientConnectivity#this>,
+
+								  <http://boards.openlinksw.com/support/viewforum.php?f=25#this>,
+								  <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this> .
+
+
+
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this>
+  a oplpro:ProductRelease, <http://purl.org/dc/dcmitype/Software> ;
+  wdrs:describedby  source: ;
+  schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:name "Virtuoso 7.1" ;
+  skos:prefLabel "Virtuoso Release 7.x" ;
+  schema:comment """Latest edition of the Virtuoso Hybrid Data Server for Data Access, Integration, and Management (Relational Tables and Entity Relation/Property Graphs)."""@en ;
+  schema:description """<body>
+   <p>Includes the following enhancements and new features:</p>
+   <p>1. Improved I/O and checkpoint handling -- eliminitating the disruption of periodic DBMS checkpoints especially for
+   applications deployed to the World Wide Web.</p>
+   <p>2. CSV File Attachments -- Virtual Database (VDB) Layer now supports attachment of CSV files as it already does in regards to
+   ODBC/JDBC accessible Tables from remote 3rd party ODBC/JDBC accessible RDBMS data sources.</p>
+   <p>3. Enhanced VDB Layer with Vectorized data transmission -- as is the case with the advanced DBMS engine, all I/O operations
+   within the VDB layer are now vectorized thereby leveraging fine-grain thread affinity provided by the Virtuoso installation's
+   host operating system.</p>
+	 <p>4. Enhanced performance of SPARQL and SQL queries over RDF Views -- significantly faster generation of RDF based Linked Data
+	 views over remote 3rd party ODBC/JDBC accessible RDBMS data sources.</p>
+	 <p>5. Enhanced persistence of RDF Views -- faster generation of persistent RDF based Linked Data views derived from Extract,
+	 Transform, and Load (ETL) outputs from remote 3rd party ODBC/JDBC accessible RDBMS data sources.</p>
+	 <p>6. Scalable Fine-grained Access Control Lists (ACLs) and Data Access Policies scoped to Web Services and/or Named Graphs
+	 supporting various authentication protocols (OAuth, OpenID, WebID + TLS, basic PKI).</p></body>
+  """@en ;
+  foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
+  oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_release_feature/EnhancedCheckPointing#this>,
+										<http://data.openlinksw.com/oplweb/product_release_feature/VDBSupportForCSV#this>,
+										<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedRDFViewsGeneration#this>,
+										<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedSPARQLOverRDFViews#this>,
+										<http://data.openlinksw.com/oplweb/product_release_feature/FineGrainedNamedGraphACLs#this>,
+										<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedStability#this>,
+										<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedSPARQL11Support#this> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/virtuoso-uim-unisvr-ent#this>;
+  oplpro:upgradeOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ,
+                   <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this>,
+                   <http://data.openlinksw.com/oplweb/product_release/virtuoso-uim-unisvr-ent/5.0/x86_64-generic-linux-glibc24-64/virt50#this> ;
+  dcterms:isReferencedBy <http://www.openlinksw.com/dataspace/oerling/weblog/Orri%20Erling%27s%20Blog/1769>,
+	   		  							  <http://www.openlinksw.com/dataspace/oerling/weblog/Orri%20Erling%27s%20Blog/1767>,
+			  	  						  <http://www.openlinksw.com/dataspace/oerling/weblog/Orri%20Erling%27s%20Blog/1765>,
+						    				  <http://bit.ly/14ULX2F> ;
+  schema:mentions <http://bit.ly/1mu0XsR>,
+							 <http://virtuoso.openlinksw.com/download>,
+							 <http://boards.openlinksw.com/support/viewforum.php?f=25#this>,
+							 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this> .
+
+## Support Forum
+
+<http://boards.openlinksw.com/support/viewforum.php?f=25#this>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:name "Support Forum" ;
+  schema:comment """Virtuoso public forum for product support and other discussion items."""@en ;
+  schema:url <http://boards.openlinksw.com/support/viewforum.php?f=25> ;
+  schema:mentions <http://boards.openlinksw.com/support/rss.php> .
+
+## Open Source Edition
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:name "Virtuoso Open Source Edition" ;
+  schema:comment """General information page relating to the open source edition, howto guides, and various tips & tricks notes."""@en ;
+  schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/>;
+  schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/>,
+											   <http://sourceforge.net/p/virtuoso/mailman/virtuoso-users/>,
+											   <http://sourceforge.net/p/virtuoso/mailman/virtuoso-devel/>,
+											   <https://github.com/openlink/virtuoso-opensource> .
+## Blog Posts
+<http://www.openlinksw.com/dataspace/oerling/weblog/Orri%20Erling%27s%20Blog/1769>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:author <http://www.openlinksw.com/dataspace/person/oerling#this> ;
+  schema:name "Meeting the Challenges of Linked Data in the Enterprise" ;
+  schema:comment """Blog post by Orri Erling (Virtuoso Program Manager) that explains -- using TPC-H-like benchmark
+  results -- to showcase the effects of bubbling up the new core database engine functionality to the Virtual Database layer."""@en .
+
+<http://www.openlinksw.com/dataspace/oerling/weblog/Orri%20Erling%27s%20Blog/1767>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:author <http://www.openlinksw.com/dataspace/person/oerling#this> ;
+  schema:name "Virtuoso 500 Billion RDF Statements (Triples) Bulk Load Experiment" ;
+  schema:comment """Blog post by Orri Erling (Virtuoso Program Manager) that describes throughput rates achieved
+  while setting up an experiment to load 500 RDF statements (triples) representing entity relationships
+  culled from a myriad of data sources."""@en .
+
+<http://www.openlinksw.com/dataspace/oerling/weblog/Orri%20Erling%27s%20Blog/1765>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:author <http://www.openlinksw.com/dataspace/person/oerling#this> ;
+  schema:name "RDF based Linked Data & Security" ;
+  schema:comment """Blog post by Orri Erling (Virtuoso Program Manager) about challenges associated with fine-grained
+  access control lists (acls) and data access policies when applied to data partitioned across millions of internal
+  documents denoted by named graph IRIs. This particular post showcases new Virtuoso 7.1 functionality aimed at
+  surmounting these challenges."""@en .
+
+<http://bit.ly/14ULX2F>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:author <http://www.openlinksw.com/dataspace/person/oerling#this> ;
+  schema:name "150 Billion RDF Triples based BSBM Benchmark Report" ;
+  schema:comment """150 Billion RDF based entity relationships Benchmark report delivered as part of the EU co-sponsored Linked Open Data 2 (LOD2) project."""@en .
+
+
+## Virtuoso 7 License Offers by Operating System Family
+
+<http://bit.ly/1mu0XsR>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:name "Virtuoso 7 License Offers by Operating System Family" ;
+  schema:comment """A faceted browsing page that enables pivoting over the relationships between
+  Virtuoso License Offers and Operating System Families, by default. You can alter your views by
+  pivot across different entity relationship types (or relations). Note: click on the "Goto" or
+  hyperlink that anchors the text following "About:" to view the actual document described by this page."""@en .
+
+
+## Download Page Description ##
+<http://virtuoso.openlinksw.com/download>
+  a schema:WebPage, schema:CreativeWork, schema:Article, schema:TechArticle ;
+  schema:name "Virtuoso Software Download Page" ;
+  schema:comment """Page that provides Virtuoso component download links for: the main database server, client connectivity
+  kit (ODBC, JDBC, ADO.NET, XMLA, Jena, Sesame, and Redland Drivers), across Windows, Mac OS X, Linux, and Solaris. Other
+  platform components are available on request. """@en ;
+  schema:mentions <http://download.openlinksw.com/solwiz/wizard.php> .
+
+
+## Virutoso 7.1 Features Details ##
+<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedCheckPointing#this>
+  a oplweb:ProductReleaseFeature,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "Enhanced Checkpointing" ;
+  schema:comment """Non disruptive checkpoint operation that eliminates latency during syncs from cache to permanent storage. """@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> ;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/NoServiceDisruption#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_release_feature/VDBSupportForCSV#this>
+  a oplweb:ProductReleaseFeature,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "CSV File Attachment Support" ;
+  schema:comment """Attachments of CSV files to Virtuoso that are then treated as Virtuoso relational tables which
+  (like any other Virtuoso table) provide the foundation for generating conceptual RDF based Linked Data views (transient or materialized)."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngine#this>, <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/ConceptualViewsOverTabularData#this> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#CSV> .
+
+
+<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedRDFViewsGeneration#this>
+  a oplweb:ProductReleaseFeature,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "Faster Conceptual Views Generation" ;
+  schema:comment """Significant performance enhancement in regards to the time taken to complete RDF based Linked
+  Data Views generation using  local (native) or remote (3rd party) ODBC/JDBC data sources."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>, <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngine#this> ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/HighPerformanceConceptualViews#this> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> .
+
+
+<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedSPARQLOverRDFViews#this>
+  a oplweb:ProductReleaseFeature ,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "Faster SPARQL Querying Over Linked Data Views" ;
+  schema:comment """Significant performance enhancement in regards direct execution of SPARQL queries against remote
+  3rd party ODBC/JDBC accessible data sources."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>, <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngine#this> ;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/HighPerformanceConceptualViewQuerying#this> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#R2RML> ;
+  dcterms:isReferencedBy  <https://plus.google.com/+KingsleyIdehen/posts/LwEb8ccs8on> .
+
+<http://data.openlinksw.com/oplweb/product_release_feature/FineGrainedNamedGraphACLs#this>
+  a oplweb:ProductReleaseFeature,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "Fine-grained Access Control Lists (ACLs) & Data Access Policies" ;
+  schema:comment """Sophisticated, High-Performance ACLs and Data Access policies that enable fine-grained control over
+  access to HTTP services and actual data stored across DBMS hosted documents (or named graphs). For instance its now
+  possible to map data access policies to a combination of authenticated identities (external or internal) to millions
+  of documents identifiers (or named graphs and graph groups), in scalable fashion that only has host operating computing
+  resources (e.g., memory and disk) as its limitations."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/ControlledDataAccess#this> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> .
+
+<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedStability#this>
+  a oplweb:ProductReleaseFeature,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "Enhanced Stability" ;
+  schema:comment """Across the board stability improvements over the initial 7.0 release."""@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this> ;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/Stability#this> .
+
+<http://data.openlinksw.com/oplweb/product_release_feature/EnhancedSPARQL11Support#this>
+  a oplweb:ProductReleaseFeature ,
+  oplfea:ProductFeature ;
+  wdrs:describedby  source: ;
+  schema:name "Enhanced SPARQL 1.1 Compliance" ;
+  schema:comment """Across the board SPARQL 1.1 improvements over the initial 7.0 release. Likewise, closure of
+  SPARQL 1.1 regressions relative to the 6.0 release. """@en ;
+  oplfea:hasScope <http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this> ;
+  oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> .
+
+
+## Functionality Realms to which features are scoped via hasScope relation
+
+
+<http://data.openlinksw.com/oplweb/product_release_realm/CoreDBMSEngine#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "Core Database Engine" ;
+  skos:altLabel "Core DB Engine" ;
+  schema:comment """Core SQL RDBMS functionality."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDBMS>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBMS>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NewSQL> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/DocumentDBMSEngine#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  schema:name "Document Database Engine" ;
+  wdrs:describedby  source: ;
+  schema:comment """Functionality scoped to the document database engine."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQL> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/FileServer#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "File (Document) Server" ;
+  schema:comment """File management services that supports a variety of protocols based on open standards."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#WebDAV>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTP> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/FileServerHTTP#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "HTTP Document Server" ;
+  schema:comment """Document management services exposed via the HTTP protocol."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#WebDAV>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTP> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/FileServerWebDAV#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "WebDAV Document Server" ;
+  schema:comment """Document management services exposed via the WebDAV extensions to the HTTP protocol."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#WebDAV>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTP> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/FileServerLDP#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "LDP Document Server" ;
+  schema:comment """Document management services exposed via the Linked Data Platform extensions to the HTTP protocol."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#WebDAV>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTP> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/RDFDBMSEngine#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "Core RDF Database Engine" ;
+  skos:altLabel "RDF Quad Store" ;
+  schema:comment """Core database engine specific functionality."""@en .
+
+
+<http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngine#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "Virtual Database Engine" ;
+  skos:altLabel "VDB" ;
+  schema:comment """SQL & RDF virtual database engine specific functionality."""@en ;
+schema:image <http://media-cache-ak0.pinimg.com/originals/f5/8a/2e/f58a2ea40fdb9fc2ca08976b4cb26750.jpg> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineSQLViews#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "SQL Virtual Database Engine" ;
+  skos:altLabel "SQL VDB" ;
+  schema:comment """Virtual Database Engine component for constructing transient and/or materialized views over
+  ODBC/JDBC data source names (DSNs) that reference remote 3rd party relational databases and CSV files (local
+  or HTTP accessible). The resulting views, like native Virtuoso tables/views, are then accessible for SQL and
+  SPARQL based query access using HTTP, ODBC, JDBC, OLE-DB, ADO.NET, and XMLA."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#CSV>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURI>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURL>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLQueryLanguage>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLProtocol>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ODBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#JDBC>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OLEDB>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLFederatedQuery>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ADONet> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViews#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "RDF Data Virtualization Engine" ;
+  skos:altLabel "RDF Views" ;
+  schema:comment """Virtual Database Engine component for constructing transient and/or materialized Linked Data views
+  over external RDF data sources -- this includes in-built middleware (aka. "Sponger") for turning basic RDF into 5-Star
+  RDF based Linked Data. Naturally, these views function like native Virtuoso RDF store documents (named graphs) which
+  are then accessible for SQL, SPARQL, and SPASQL based query access using HTTP, ODBC, JDBC, OLE-DB, ADO.NET, and XMLA."""@en ;
+  schema:hasPart <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURI>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURL>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLQueryLanguage>,
+								    <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ODBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>,
+									  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#JDBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OLEDB>,
+								    <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ADONet>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLFederatedQuery> .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSponger#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "RDF Transformation Middleware" ;
+  skos:altLabel "RDF Mapper" ;
+  schema:comment """Extract, Load, and Transform (ETL) middleware for turning data from a variety of data sources into
+  5-Star RDF based Linked Data. Naturally, these views function like native Virtuoso RDF store documents (named graphs)
+  which are then accessible for SQL, SPARQL, and SPASQL based query access using HTTP, ODBC, JDBC, OLE-DB, ADO.NET, and XMLA."""@en ;
+  schema:hasPart <http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSpongerCartridges#this> ;
+  schema:image <http://virtuoso.openlinksw.com/whitepapers/Virtuoso%20Sponger_files/linked_data_gen_opts3a.png> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURI>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURL>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLQueryLanguage>,
+							      <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ODBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#JDBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OLEDB>,
+							      <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ADONet>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLFederatedQuery>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDFMapper>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud>  .
+
+<http://data.openlinksw.com/oplweb/product_release_realm/VirtualDBMSEngineRDFViewsSpongerCartridges#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "RDF Transformation Cartridges" ;
+  skos:altLabel "Sponger Cartridges" ;
+  schema:comment """Data access providers (or drivers) that provide actual load, extraction, and transformation services
+  built atop 3rd party data access APIs."""@en ;
+  schema:mentions <http://www.openlinksw.com/data/turtle/cartridge_descriptions/> ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURI>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURL>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLQueryLanguage>,
+							      <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ODBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#JDBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OLEDB>,
+							      <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ADONet>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDFMapper>,
+								  <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud>  .
+
+## Client Connectivity Kit
+
+<http://data.openlinksw.com/oplweb/category/ClientConnectivity#this>
+  a oplfea:VirtuosoProductFunctionalityRealm ;
+  wdrs:describedby  source: ;
+  schema:name "Client Connectivity" ;
+  skos:altLabel "Data Access Drivers" ;
+  schema:comment """Client Connectivity Kit covering ODBC, JDBC, ADO.NET, OLE-DB, XMLA, Jena, Sesame, Redland providers."""@en ;
+  dcterms:references <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURI>,
+	                   <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#HTTPURL>,
+								     <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SPARQLQueryLanguage>,
+							       <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ODBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SQL>,
+								     <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#JDBC>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OLEDB>,
+							       <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#ADONet>, <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> .
+
+## Benefits
+<http://data.openlinksw.com/oplweb/product_benefit/NoServiceDisruption#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  wdrs:describedby  source: ;
+  schema:name "Uninterrupted Database Engine Access" ;
+  schema:comment """Enables development and deployment of resilient always on data driven solutions."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/ConceptualViewsOverTabularData#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  wdrs:describedby  source: ;
+  schema:name "Conceptual Views construction over CSV based Tabular Data Sources" ;
+  schema:comment """Broad data virtualization through support for attachment of CSV files that are then treated like any other native or ODBC/JDBC accessible relational database tables -- especially as CSV is are a widely supported open standard for tabular data interchange."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/HighPerformanceConceptualViews#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  wdrs:describedby  source: ;
+  schema:name "High-Performance Conceptual Views Construction" ;
+  schema:comment """Enabling creation of conceptual views across heterogeneous data sources that aren't compromised by scalability challenges that arise when large data warehouses are an integral part of the data virtualization effort."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/HighPerformanceConceptualViewQuerying#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  wdrs:describedby  source: ;
+  schema:name "High-Performance Querying over Conceptual Views" ;
+  schema:comment """Enables fast and powerful querying over conceptual views using declarative query languages such as SPARQL, SQL, or SPASQL (SPARQL from within SQL)."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/ControlledDataAccess#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  wdrs:describedby  source: ;
+  schema:name "Controlled & Secure Data Access" ;
+  schema:comment """Use of sophisticated access control lists and data access policies to controll access to data that comply with internal policies and/or public regulations."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/Stability#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  schema:name "Stability" ;
+  wdrs:describedby  source: ;
+  schema:comment """Resilient data access, integration, and management services."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this>
+  a oplben:Benefit,
+	  oplben:ProductBenefit ,
+		oplben:GeneralManagementBenefit,
+		oplben:TechnicalManagementBenefit ;
+  schema:name "Standards Compliant" ;
+  wdrs:describedby  source: ;
+  schema:comment """Open standards based query language support that ensures interoperability and longevity of systems."""@en .
+
+## Statement Property (Predicate) Descriptions ##
+
+<http://bblfish.net/work/atom-owl/2006-06-06/#content>
+  a rdf:Property ;
+  schema:name "Marked-Up Content" ;
+  schema:comment """The object of this relation is marked-up (HTML, (X)HTML, Atom, RSS etc.) content that a user agent might post-process, subject to its markup processing capabilities."""@en .
+
+## Turtle End ##
+

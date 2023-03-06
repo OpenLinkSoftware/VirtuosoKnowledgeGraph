@@ -1,0 +1,471 @@
+@prefix schema:    <http://schema.org/> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oplfea:    <http://www.openlinksw.com/ontology/features#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix oplben:    <http://www.openlinksw.com/ontology/benefits#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix org:       <http://www.w3.org/ns/org#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix vcard:     <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/VirtuosoFeaturesBenefitsByVersion.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/VirtuosoFeaturesBenefitsByVersion.ttl> .
+@prefix :          <#> .
+
+
+# Document Metadata which includes Content Licensing i.e., CC-BY-SA 4.0 (International)
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:name """Virtuoso Product Features & Benefits Overview"""^^xsd:string ;
+  schema:comment """Description of features and benefits associated with the Virtuoso product family."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  owl:sameAs source: .
+
+source:
+  a schema:CreativeWork ;
+  schema:name """Virtuoso Product Features & Benefits Overview"""^^xsd:string ;
+  schema:comment """Description of features and benefits associated with the Virtuoso product family."""@en ;
+  schema:dateCreated "2014-07-01"^^xsd:date ;
+  schema:dateModified "2014-07-28"^^xsd:date ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/product_category/dynamic-data-exchange-data-replication#this> ,
+             <http://data.openlinksw.com/oplweb/product_category/security#this> ,
+             <http://data.openlinksw.com/oplweb/product_category/data-virtualization#this> ,
+             <http://data.openlinksw.com/oplweb/product_category/linked-data-middleware#this> ,
+             <http://data.openlinksw.com/oplweb/product_category/linked-data-deployment#this> ,
+             <http://data.openlinksw.com/oplweb/product_category/linked-data-middleware-sponger#this> ,
+             <http://data.openlinksw.com/oplweb/product_category/core-database-engine#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/fingerpoint#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/webfinger#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/webid-support-at-the-dbms-core#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/pubsubhubbub-support#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/delta-engine#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/quad-store-to-quad-store-replication#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/transparent-data-access-binding#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/csv-to-rdf-transformation#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/materialized-rdf-views#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/support-for-odata-json-rdfa#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/automatic-subject-identifier-generation#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/new-descriptor-pages#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/new-sponger-cartridges#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/hammer-stack-auto-discovery-patterns#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/html-metadata-embedding#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/http-metadata-enhancements#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/automatic-deployment#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/vectored-execution#this> ,
+             <http://data.openlinksw.com/oplweb/product_feature/data-compression#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/handcrafted-url-rewrite-rules-are-no-longer-necessary#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-http-oriented-tools-to-work-with-such-relationships-and-other-metadata#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-html-oriented-tools-to-work-with-such-relationships-and-other-metadata#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-humans-and-machines-to-easily-distinguish-between-descriptor-resources-and-their-subjects-irrespective-of-uri-scheme#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enable-users-and-user-agents-to-deal-with-the-sponged-data-spaces-as-though-they-were-named-graphs-in-a-quad-store-or-tables-in-an-rdbms#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/descriptor-subjects-and-the-constellation-of-navigable-attribute-and-value-pairs-that-constitute-their-descriptive-representation-are-clearly-identified#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/removes-tedium-and-risk-of-error-associated-with-nuance-laced-manual-construction-of-identifiers#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-high-performance-faceted-browsing-while-remaining-sensitive-to-changes-in-the-rdbms-data-sources#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/speeds-deployment-of-data-which-may-only-exist-in-csv-form-as-linked-data#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-desktop-productivity-tools-to-transparently-work-with-any-blend-of-rdbms-and-rdf-data-sources#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-a-wide-variety-of-deployment-topologies#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/brings-rdf-replication-on-par-with-sql-replication#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-push-based-data-replication-across-a-variety-of-topologies#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-application-of-sophisticated-security-and-data-access-policies-to-web-services-eg-sparql-endpoint-and-actual-dbms-objects#this> ,
+             <http://data.openlinksw.com/oplweb/product_benefit/enables-more-intuitive-identification-of-people-and-organizations#this> ,
+             <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Column-wise Data Storage" ;
+	schema:name "column-wise-data-storage" ;
+  oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> ;
+	schema:comment """data is stored column-wise inline with DBMS technology advances aimed at large scale analytics and decision support"""@en .
+
+<http://data.openlinksw.com/oplweb/product_category/core-database-engine#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "core-database-engine" ;
+	skos:altLabel "Core Database Engine" .
+
+<http://data.openlinksw.com/oplweb/product_feature/vectored-execution#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Vectored Execution" ;
+	schema:name "vectored-execution" ;
+	schema:comment """parallel execution of multiple query commands with fined-grained scoping to CPU cores i.e., for a given core that are massive numbers of parallel command execution per threads handled by said core"""@en ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/data-compression#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Data Compression" ;
+	schema:name "data-compression" ;
+	schema:comment """enables much more compact working sets in hot cache and an overall more compact database"""@en ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Elastic Cluster" ;
+	schema:name "elastic-cluster" ;
+	schema:comment """no need for wholesale data reloads following evolution of cluster configuration e.g., moving from a 4-node cluster to an 8-node cluster"""@en ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "New extractor cartridges" ;
+	schema:name "new-extractor-cartridges" ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> ;
+	schema:comment """HTML (and variants), USA.GOV, BioPortal, DP.LA, Certificates, Bitbucket, We The People, Shodan, Xing, License, Code Google, Federal Register, CVE Security, Hotels.com, yfrog, Mail Signature, JRD, CKAN, Factual, W3C Issue Tracker Cartridge, GoPollGo, Image-Net, Yahoo Query Language (YQL), OPML, Twitpic, EML, OMIM"""@en .
+
+# <#new-extractor-cartridges> schema:comment """LinkedIn, Google+, Google Knowledge Graph, Instagr.am Photos, Flattr, CLF (webserver logs), GovTrack.US, Freebase Query Editor, BBC Music, Yahoo! Weather, Disqus, Google KML, Google Fusion Tables, Github, Wolfram Alpha, Stack Overflow, AngelList, New York Times Article Search, HTML Table" .
+
+<http://data.openlinksw.com/oplweb/product_category/linked-data-middleware-sponger#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "linked-data-middleware-sponger" ;
+	skos:altLabel """Linked Data Middleware ("Sponger")"""^^xsd:string .
+
+
+<http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "New meta cartridges" ;
+	schema:name "new-meta-cartridges" ;
+	schema:comment """Shodan, Influence Explorer, Hotels, Scoop.it, CityGrid Media, Factual, GlassPockets, Twitter Handles, Spaziodati, Hashtags, MapIt, Disqus"""@en ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ,
+                     <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this> ,
+                     <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this>  .
+
+# <#new-meta-cartridges> schema:comment """DBpedia Spotlight, Alchemy, Pingar, Flattr, Google Places, L.E.D., National Digital Forecast Database, Yahoo Music, Wolfram Alpha, Yahoo Content Analysis"""@en ;
+
+
+<http://data.openlinksw.com/oplweb/product_feature/automatic-deployment#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Automatic Deployment " ;
+	schema:name "automatic-deployment" ;
+	oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/handcrafted-url-rewrite-rules-are-no-longer-necessary#this> ;
+  oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Linked Data Pages are now automatically published for every Virtuoso Data Object; users need only load their data into the RDF Quad Store."""@en .
+
+<http://data.openlinksw.com/oplweb/product_category/linked-data-deployment#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "linked-data-deployment" ;
+	skos:altLabel "Linked Data Deployment" .
+
+<http://data.openlinksw.com/oplweb/product_benefit/handcrafted-url-rewrite-rules-are-no-longer-necessary#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "handcrafted-url-rewrite-rules-are-no-longer-necessary" ;
+	skos:altLabel "Handcrafted URL-Rewrite Rules are no longer necessary." .
+
+<http://data.openlinksw.com/oplweb/product_feature/http-metadata-enhancements#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "HTTP Metadata Enhancements " ;
+	schema:name "http-metadata-enhancements" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-http-oriented-tools-to-work-with-such-relationships-and-other-metadata#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """HTTP Link: header is used to transfer vital metadata (e.g., relationships between a Descriptor Resource and its Subject) from HTTP Servers to User Agents."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-http-oriented-tools-to-work-with-such-relationships-and-other-metadata#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-http-oriented-tools-to-work-with-such-relationships-and-other-metadata" ;
+	skos:altLabel "Enables HTTP-oriented tools to work with such relationships and other metadata." .
+
+<http://data.openlinksw.com/oplweb/product_feature/html-metadata-embedding#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "HTML Metadata Embedding " ;
+	schema:name "html-metadata-embedding" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-html-oriented-tools-to-work-with-such-relationships-and-other-metadata#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """HTML resource <head/> and <link/> elements and their @rel attributes are used to transfer vital metadata (e.g., relationships between a Descriptor Resource and its Subject) from HTTP Servers to User Agents"""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-html-oriented-tools-to-work-with-such-relationships-and-other-metadata#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-html-oriented-tools-to-work-with-such-relationships-and-other-metadata" ;
+	skos:altLabel "Enables HTML-oriented tools to work with such relationships and other metadata." .
+
+<http://data.openlinksw.com/oplweb/product_feature/hammer-stack-auto-discovery-patterns#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Hammer Stack Auto-Discovery Patterns " ;
+	schema:name "hammer-stack-auto-discovery-patterns" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-humans-and-machines-to-easily-distinguish-between-descriptor-resources-and-their-subjects-irrespective-of-uri-scheme#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """HTML resource <head/> section and <link/> elements, the HTTP Link: header, and XRD-based \"host-meta\" resources collectively provide structured metadata about Virtuoso hosts, associated Linked Data Spaces, and specific Data Items (Entities)."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-humans-and-machines-to-easily-distinguish-between-descriptor-resources-and-their-subjects-irrespective-of-uri-scheme#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-humans-and-machines-to-easily-distinguish-between-descriptor-resources-and-their-subjects-irrespective-of-uri-scheme" ;
+	skos:altLabel "Enables humans and machines to easily distinguish between Descriptor Resources and their Subjects, irrespective of URI scheme." .
+
+<http://data.openlinksw.com/oplweb/product_feature/new-sponger-cartridges#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "New Sponger Cartridges" ;
+	schema:name "new-sponger-cartridges" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enable-users-and-user-agents-to-deal-with-the-sponged-data-spaces-as-though-they-were-named-graphs-in-a-quad-store-or-tables-in-an-rdbms#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """New cartridges (data access and transformation drivers) for Twitter, Facebook, Amazon, eBay, LinkedIn, and others."""@en .
+
+<http://data.openlinksw.com/oplweb/product_category/linked-data-middleware#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "linked-data-middleware" ;
+	skos:altLabel "Linked Data Middleware" .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enable-users-and-user-agents-to-deal-with-the-sponged-data-spaces-as-though-they-were-named-graphs-in-a-quad-store-or-tables-in-an-rdbms#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enable-users-and-user-agents-to-deal-with-the-sponged-data-spaces-as-though-they-were-named-graphs-in-a-quad-store-or-tables-in-an-rdbms" ;
+	skos:altLabel "Enable users and user agents to deal with the Sponged data spaces as though they were named graphs in a quad store, or tables in an RDBMS." .
+
+<http://data.openlinksw.com/oplweb/product_feature/new-descriptor-pages#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "New Descriptor Pages" ;
+	schema:name "new-descriptor-pages" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/descriptor-subjects-and-the-constellation-of-navigable-attribute-and-value-pairs-that-constitute-their-descriptive-representation-are-clearly-identified#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """HTML-based descriptor pages are automatically generated."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/descriptor-subjects-and-the-constellation-of-navigable-attribute-and-value-pairs-that-constitute-their-descriptive-representation-are-clearly-identified#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "descriptor-subjects-and-the-constellation-of-navigable-attribute-and-value-pairs-that-constitute-their-descriptive-representation-are-clearly-identified" ;
+	skos:altLabel "Descriptor subjects, and the constellation of navigable attribute-and-value pairs that constitute their descriptive representation, are clearly identified." .
+
+<http://data.openlinksw.com/oplweb/product_feature/automatic-subject-identifier-generation#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Automatic Subject Identifier Generation" ;
+	schema:name "automatic-subject-identifier-generation" ;
+	schema:comment """De-referenceable data object identifiers are automatically created."""@en ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/removes-tedium-and-risk-of-error-associated-with-nuance-laced-manual-construction-of-identifiers#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> .
+
+<http://data.openlinksw.com/oplweb/product_benefit/removes-tedium-and-risk-of-error-associated-with-nuance-laced-manual-construction-of-identifiers#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "removes-tedium-and-risk-of-error-associated-with-nuance-laced-manual-construction-of-identifiers" ;
+	skos:altLabel "Removes tedium and risk of error associated with nuance-laced manual construction of identifiers." .
+
+<http://data.openlinksw.com/oplweb/product_feature/support-for-odata-json-rdfa#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Support for OData, JSON, RDFa" ;
+	schema:name "support-for-odata-json-rdfa" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Additional data representation and serialization formats associated with Linked Data."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "increases-flexibility-and-interoperability" ;
+	skos:altLabel "Increases flexibility and interoperability." .
+
+<http://data.openlinksw.com/oplweb/product_feature/materialized-rdf-views#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Materialized RDF Views" ;
+	schema:name "materialized-rdf-views" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-high-performance-faceted-browsing-while-remaining-sensitive-to-changes-in-the-rdbms-data-sources#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """RDF Views over ODBC/JDBC Data Sources can now (optionally) keep the Quad Store in sync with the RDBMS data source."""@en .
+
+<http://data.openlinksw.com/oplweb/product_category/data-virtualization#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "data-virtualization" ;
+	skos:altLabel "Data Virtualization" .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-high-performance-faceted-browsing-while-remaining-sensitive-to-changes-in-the-rdbms-data-sources#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-high-performance-faceted-browsing-while-remaining-sensitive-to-changes-in-the-rdbms-data-sources" ;
+	skos:altLabel "Enables high-performance Faceted Browsing while remaining sensitive to changes in the RDBMS data sources." .
+
+<http://data.openlinksw.com/oplweb/product_feature/csv-to-rdf-transformation#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "CSV-to-RDF Transformation" ;
+	schema:name "csv-to-rdf-transformation" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/speeds-deployment-of-data-which-may-only-exist-in-csv-form-as-linked-data#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Wizard-based generation of RDF Linked Data from CSV files."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/speeds-deployment-of-data-which-may-only-exist-in-csv-form-as-linked-data#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "speeds-deployment-of-data-which-may-only-exist-in-csv-form-as-linked-data" ;
+	skos:altLabel "Speeds deployment of data which may only exist in CSV form as Linked Data." .
+
+<http://data.openlinksw.com/oplweb/product_feature/transparent-data-access-binding#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Transparent Data Access Binding" ;
+	schema:name "transparent-data-access-binding" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-desktop-productivity-tools-to-transparently-work-with-any-blend-of-rdbms-and-rdf-data-sources#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """SPASQL (SPARQL Query Language integrated into SQL) is usable over ODBC, JDBC, ADO.NET, OLEDB, or XMLA connections."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-desktop-productivity-tools-to-transparently-work-with-any-blend-of-rdbms-and-rdf-data-sources#this>
+  a oplben:Benefit;
+  wdrs:describedby source: ;
+  schema:name "enables-desktop-productivity-tools-to-transparently-work-with-any-blend-of-rdbms-and-rdf-data-sources" ;
+	skos:altLabel "Enables Desktop Productivity Tools to transparently work with any blend of RDBMS and RDF data sources." .
+
+<http://data.openlinksw.com/oplweb/product_feature/quad-store-to-quad-store-replication#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-a-wide-variety-of-deployment-topologies#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	skos:altLabel "Quad Store to Quad Store Replication" ;
+	schema:name "quad-store-to-quad-store-replication" ;
+	schema:comment """High-fidelity graph-data replication between one or more database instances."""@en .
+
+<http://data.openlinksw.com/oplweb/product_category/dynamic-data-exchange-data-replication#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "dynamic-data-exchange-data-replication" ;
+	skos:altLabel "Dynamic Data Exchange & Data Replication" .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-a-wide-variety-of-deployment-topologies#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-a-wide-variety-of-deployment-topologies" ;
+	skos:altLabel "Enables a wide variety of deployment topologies." .
+
+<http://data.openlinksw.com/oplweb/product_feature/delta-engine#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Delta Engine" ;
+	schema:name "delta-engine" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/brings-rdf-replication-on-par-with-sql-replication#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Automated generation of deltas at the named-graph-level, matches transactional replication offered by the Virtuoso SQL engine."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/brings-rdf-replication-on-par-with-sql-replication#this>
+  a oplben:Benefit;
+  wdrs:describedby source: ;
+  schema:name "brings-rdf-replication-on-par-with-sql-replication" ;
+	skos:altLabel "Brings RDF replication on par with SQL replication." .
+
+<http://data.openlinksw.com/oplweb/product_feature/pubsubhubbub-support#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "PubSubHubbub Support" ;
+	schema:name "pubsubhubbub-support" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-push-based-data-replication-across-a-variety-of-topologies#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Deep integration within Quad Store as an optional mechanism for shipping deltas."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-push-based-data-replication-across-a-variety-of-topologies#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-push-based-data-replication-across-a-variety-of-topologies" ;
+	skos:altLabel "Enables push-based data replication across a variety of topologies." .
+
+<http://data.openlinksw.com/oplweb/product_feature/webid-support-at-the-dbms-core#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "WebID support at the DBMS core" ;
+	schema:name "webid-support-at-the-dbms-core" ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-application-of-sophisticated-security-and-data-access-policies-to-web-services-eg-sparql-endpoint-and-actual-dbms-objects#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Use WebID protocol for low-level ACL-based protection of database objects (RDF or Relational) and Web Services."""@en .
+
+<http://data.openlinksw.com/oplweb/product_category/security#this>
+  a oplfea:Category ;
+  wdrs:describedby source: ;
+  schema:name "security" ;
+	skos:altLabel "Security" .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-application-of-sophisticated-security-and-data-access-policies-to-web-services-eg-sparql-endpoint-and-actual-dbms-objects#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-application-of-sophisticated-security-and-data-access-policies-to-web-services-eg-sparql-endpoint-and-actual-dbms-objects" ;
+	skos:altLabel "Enables application of sophisticated security and data access policies to Web Services (e.g., SPARQL endpoint) and actual DBMS objects." .
+
+<http://data.openlinksw.com/oplweb/product_feature/webfinger#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Webfinger" ;
+	schema:name "webfinger" ;
+	oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-more-intuitive-identification-of-people-and-organizations#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> ;
+	schema:comment """Supports using mailto: and acct: URIs in the context of WebID and other mechanisms, when domain holders have published necessary XRDS resources."""@en .
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-more-intuitive-identification-of-people-and-organizations#this>
+  a oplben:Benefit ;
+  wdrs:describedby source: ;
+  schema:name "enables-more-intuitive-identification-of-people-and-organizations" ;
+	skos:altLabel "Enables more intuitive identification of people and organizations." .
+
+<http://data.openlinksw.com/oplweb/product_feature/fingerpoint#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Fingerpoint" ;
+	schema:name "fingerpoint" ;
+	schema:comment """Similar to Webfinger but does not require XRDS resources; instea,d it works directly with SPARQL endpoints exposed using auto-discovery patterns in the <head /> section of HTML documents."""@en ;
+	oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/enables-more-intuitive-identification-of-people-and-organizations#this> ;
+	oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this> .
+
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease62x#this>
+  a oplpro:ProductRelease,
+    <http://purl.org/dc/dcmitype/Software> ,
+    schema:Product ;
+  schema:version "6.2"^^xsd:decimal ;
+  oplpro:versionText "6.2"^^xsd:string ;
+  schema:name "Virtuoso Universal Server Version 6.2"^^xsd:string ;
+  wdrs:describedby  source: ;
+  foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
+  oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/automatic-deployment#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/http-metadata-enhancements#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/html-metadata-embedding#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/hammer-stack-auto-discovery-patterns#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/new-sponger-cartridges#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/new-descriptor-pages#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/automatic-subject-identifier-generation#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/support-for-odata-json-rdfa#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/materialized-rdf-views#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/csv-to-rdf-transformation#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/transparent-data-access-binding#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/quad-store-to-quad-store-replication#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/delta-engine#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/pubsubhubbub-support#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/webid-support-at-the-dbms-core#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/webfinger#this> ,
+                    <http://data.openlinksw.com/oplweb/product_feature/fingerpoint#this> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:mentions <http://bit.ly/1mu0XsR>,
+							 <http://virtuoso.openlinksw.com/download>,
+							 <http://boards.openlinksw.com/support/viewforum.php?f=25#this>,
+							 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this> .

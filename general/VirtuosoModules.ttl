@@ -1,0 +1,293 @@
+@prefix schema:    <http://schema.org/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix oplweb:    <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix prodont:   <http://www.productontology.org/id/> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplcont:   <http://www.openlinksw.com/ontology/contracts#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix vocab:     <http://open.vocab.org/terms/> .
+@prefix oplfea:    <http://www.openlinksw.com/ontology/features#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix doap:      <http://usefulinc.com/ns/doap#> .
+@prefix oplvad:    <http://www.openlinksw.com/ontology/vad#> .
+@prefix oplcomp:   <http://www.openlinksw.com/ontology/components#> .
+@prefix :          <#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/VirtuosoModules.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/VirtuosoModules.ttl> .
+@prefix comp:      <http://virtuoso.openlinksw.com/data/turtle/utilities/apps-and-services.ttl#> .
+
+source: a schema:CreativeWork ;
+  schema:name """OpenLink Software Virtuoso Modules Document"""^^xsd:string ;
+  schema:comment """Description of OpenLink Software Virtuoso Modules."""@en ;
+  schema:dateCreated "2014-09-17"^^xsd:date ;
+  schema:dateModified "2014-09-17"^^xsd:date ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this> ,
+             <http://data.openlinksw.com/oplweb/module/VAL#this> ,
+             <http://data.openlinksw.com/oplweb/module/ABACACLs#this> ,
+             <http://data.openlinksw.com/oplweb/module/Replication#this> ,
+             <http://data.openlinksw.com/oplweb/module/VDB#this> ,
+             <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> ,
+             <http://data.openlinksw.com/oplweb/module/ODS#this> ,
+             <http://data.openlinksw.com/oplweb/component/AddressBook#this> ,
+             <http://data.openlinksw.com/oplweb/component/Bookmarks#this> ,
+             <http://data.openlinksw.com/oplweb/component/Calendar#this> ,
+             <http://data.openlinksw.com/oplweb/component/Discussion#this> ,
+             <http://data.openlinksw.com/oplweb/component/Weblog#this> ,
+             <http://data.openlinksw.com/oplweb/component/FeedManager#this> ,
+             <http://data.openlinksw.com/oplweb/component/Briefcase#this> ,
+             <http://data.openlinksw.com/oplweb/component/Webmail#this> ,
+             <http://data.openlinksw.com/oplweb/component/Wiki#this> .
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:name """OpenLink Software Virtuoso Modules Document"""^^xsd:string ;
+  schema:comment """Description of OpenLink Software Virtuoso Modules."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  owl:sameAs source: .
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso>
+  a schema:CreativeWork ;
+  schema:name "Virtuoso Product Description Document" ;
+  vocab:describes <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+
+vocab:describes owl:inverseOf wdrs:describedby .
+xhv:describes owl:equivalentProperty vocab:describes .
+
+## Virtuoso Modules ##
+
+# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>
+#   a schema:ProductModule , opllic:Module ;
+#   opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2017-10-virtuoso-8-systems-integration-WKSSVR-ANY#this>,
+# 					<http://data.openlinksw.com/oplweb/license/License-2017-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+# 					<http://data.openlinksw.com/oplweb/license/License-2017-10-virtuoso-8-late-stage-combo-WKS-ANY#this> ,
+# 					<http://data.openlinksw.com/oplweb/license/License-2017-10-virtuoso-8-late-stage-WKS-ANY#this> ,
+# 					<http://data.openlinksw.com/oplweb/license/License-2017-10-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+#  opllic:hasModuleCode "SPONGER" ;
+#  schema:image <https://s-media-cache-ak0.pinimg.com/originals/32/83/94/328394842d25b3762fa8c518b251b44e.jpg> ;
+#  schema:comment """Virtuoso Module that enables generation of RDF based Linked Data views over data sources exposed via Web Services (SOAP or RESTful) and/or 
+# SOA (Service Oriented Architecture) Services."""@en ;
+#  schema:description """Virtuoso Sponger"""@en ;
+#  schema:name "VirtuosoSpongerModule"^^xsd:string ;
+#  skos:altLabel "Sponger Middleware Module" ;
+#  skos:prefLabel "Linked Data Middleware Module"^^xsd:string ;
+#  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/VAL#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  opllic:hasModuleCode "VAL" ;
+  schema:description """VAL"""@en ;
+  schema:name "VAL Module"^^xsd:string ;
+  skos:prefLabel "Virtuoso Authentication Layer"^^xsd:string ;
+  schema:comment """An extensible Virtualized Authentication Layer that provides Single-Sign-On (SSO) functionality across a variety of Identifier and Authentication Protocol combinations. Identifier support includes: NetIDs, WebIDs, and Webfinger IDs. Authentication protocol support includes: TLS, WebID-TLS, NetID-TLS, OAuth, OpenID, and Persona."""@en ;
+  wdrs:describedby source: .
+# xhv:related <{OpenLinkGlossaryURIFor}WebID>, <{OpenLinkGlossaryURIFor}NetID>, <{OpenLinkGlossaryURIFor}WebID>, <{OpenLinkGlossaryURIFor}Oauth>, <{OpenLinkGlossaryURIFor}OpenID> .
+
+<http://data.openlinksw.com/oplweb/module/ABACACLs#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  opllic:hasModuleCode "ABAC" ;
+  schema:comment """Virtuoso Module that provides Attribute Based Access Control (ABAC) functionality as a basis for fine-grained data access controls and policies."""@en ;
+  schema:description """ABAC ACLs"""@en ;
+  schema:name "ABAC Module" ;
+  skos:prefLabel "Attribute Based Access Controls Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/Replication#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  opllic:hasModuleCode "REPL" ;
+  schema:comment """Virtuoso Module that provides High Availability data replication (various topologies) services across SQL Tables and/or RDF relational property graphs"""@en ;
+  schema:description """Virtuoso Replication."""@en ;
+  schema:name "Replication Module"^^xsd:string ;
+  skos:prefLabel "Virtuoso 8.x Replication Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/VDB#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  opllic:hasModuleCode "VDB" ;
+  schema:comment """Virtuoso Module that provides data virtualization across SQL relational data sources. This is also the module the enables generation of RDF based Linked Data Views (Materialized or Transient) over ODBC or JDBC accessible SQL data sources."""@en ;
+  schema:description """VDB"""@en ;
+  schema:name "VDB Module"^^xsd:string ;
+  skos:prefLabel "Virtual Database Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  opllic:hasModuleCode "BI" ;
+  schema:comment """Virtuoso Module that provides additional performance enhancements aimed at Big Data oriented Business Intelligence Analytics."""@en ;
+  schema:description """Virtuoso Business Analytics."""@en ;
+  schema:name "Business Analytics Module"^^xsd:string ;
+  skos:prefLabel "Virtuoso 8.x Business Analytics Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+
+ <http://data.openlinksw.com/oplweb/module/SPIN#this> 
+ a schema:ProductModule, opllic:Module  ;
+ opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+ opllic:hasModuleCode "SPIN" ;
+ schema:comment "Virtuoso Module that provides Custom Reasoning & Inference Rules functionality as a basis for dynamic generation of entity relationship types (relations)."@en ;
+ schema:description "Custom Reasoning & Inference Rules"@en ;
+ schema:name "Custom Reasoning & Inference  Module" ;
+ skos:prefLabel "Virtuoso 8.x Custom Reasoning & Inference Rules Module"^^xsd:strting ;
+ wdrs:desribedby source:  . 
+
+## Virtuoso Modules End ##
+
+<http://data.openlinksw.com/oplweb/module/ODS#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  oplcomp:hasComponent <http://data.openlinksw.com/oplweb/component/AddressBook#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Bookmarks#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Calendar#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Discussion#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Weblog#this> ,
+                       <http://data.openlinksw.com/oplweb/component/FeedManager#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Briefcase#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Webmail#this> ,
+                       <http://data.openlinksw.com/oplweb/component/Wiki#this> ;
+  opllic:hasModuleCode "ODS" ;
+  schema:comment """Virtuoso Module that provides Read-Write collaboration services across a variety of data spaces, such as:
+  Briefcase (File Manager), Calendar, Address Book, RSS Feeds, Weblogs, Bookmarks, Wikis, Email, and others."""@en ;
+  schema:description """Virtuoso ODS Data Spaces."""@en ;
+  schema:name "OpenLink Data Spaces Module"^^xsd:string ;
+  skos:prefLabel "Virtuoso 8.x ODS Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+
+<http://data.openlinksw.com/oplweb/component/AddressBook#this>
+  a oplcomp:Component;
+  schema:comment """ODS AddressBook Component"""@en ;
+  schema:description """ODS AddressBook"""@en ;
+  schema:name "AddressBook"^^xsd:string ;
+  skos:prefLabel "ODS AddressBook"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Bookmarks#this>
+  a oplcomp:Component;
+  schema:comment """ODS Bookmarks Component"""@en ;
+  schema:description """ODS Bookmarks"""@en ;
+  schema:name "Bookmarks"^^xsd:string ;
+  skos:prefLabel "ODS Bookmarks"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Calendar#this>
+  a oplcomp:Component;
+  schema:comment """ODS Calendar Component"""@en ;
+  schema:description """ODS Calendar"""@en ;
+  schema:name "Calendar"^^xsd:string ;
+  skos:prefLabel "ODS Calendar"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Discussion#this>
+  a oplcomp:Component;
+  schema:comment """ODS Discussion Component"""@en ;
+  schema:description """ODS Discussion"""@en ;
+  schema:name "Discussion"^^xsd:string ;
+  skos:prefLabel "ODS Discussion"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Weblog#this>
+  a oplcomp:Component;
+  schema:comment """ODS Weblog Component"""@en ;
+  schema:description """ODS Weblog"""@en ;
+  schema:name "Weblog"^^xsd:string ;
+  skos:prefLabel "ODS Weblog"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/FeedManager#this>
+  a oplcomp:Component;
+  schema:comment """ODS Feed Manager Component"""@en ;
+  schema:description """ODS Feed Manager"""@en ;
+  schema:name "FeedManager"^^xsd:string ;
+  skos:prefLabel "ODS Feed Manager"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Briefcase#this>
+  a oplcomp:Component;
+  schema:comment """ODS Briefcase Component"""@en ;
+  schema:description """ODS Briefcase"""@en ;
+  schema:name "Briefcase"^^xsd:string ;
+  skos:prefLabel "ODS Briefcase"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Webmail#this>
+  a oplcomp:Component;
+  schema:comment """ODS Webmail Component"""@en ;
+  schema:description """ODS Webmail"""@en ;
+  schema:name "Webmail"^^xsd:string ;
+  skos:prefLabel "ODS Webmail"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Wiki#this>
+  a oplcomp:Component;
+  schema:comment """ODS Wiki Component"""@en ;
+  schema:description """ODS Wiki"""@en ;
+  schema:name "Wiki"^^xsd:string ;
+  skos:prefLabel "ODS Wiki"^^xsd:string ;
+  wdrs:describedby source: .
+
+
+
+# the below should be really in the http://www.openlinksw.com/data/turtle/cartridge_descriptions/ ttl files descriptions
+
+<http://data.openlinksw.com/oplweb/component/Twitter#this>
+  a oplcomp:Component;
+  schema:comment """Virtuoso Sponger Twitter Cartridge"""@en ;
+  schema:description """Virtuoso Sponger Twitter Cartridge"""@en ;
+  schema:name "Twitter"^^xsd:string ;
+  skos:prefLabel "Virtuoso Sponger Twitter Cartridge"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/StackOverflow#this>
+  a oplcomp:Component;
+  schema:comment """Virtuoso Sponger Stack Overflow Cartridge"""@en ;
+  schema:description """Virtuoso Sponger Stack Overflow Cartridge"""@en ;
+  schema:name "StackOverflow"^^xsd:string ;
+  skos:prefLabel "Virtuoso Sponger Stack Overflow Cartridge"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/Wikipedia#this>
+  a oplcomp:Component;
+  schema:comment """Virtuoso Sponger Wikipedia Cartridge"""@en ;
+  schema:description """Virtuoso Sponger Wikipedia Cartridge"""@en ;
+  schema:name "Wikipedia"^^xsd:string ;
+  skos:prefLabel "Virtuoso Sponger Wikipedia Cartridge"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/MixCloud#this>
+  a oplcomp:Component;
+  schema:comment """Virtuoso Sponger Mix Cloud Cartridge"""@en ;
+  schema:description """Virtuoso Sponger Mix Cloud Cartridge"""@en ;
+  schema:name "MixCloud"^^xsd:string ;
+  skos:prefLabel "Virtuoso Sponger Mix Cloud Cartridge"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/component/LinkedIn#this>
+  a oplcomp:Component;
+  schema:comment """Virtuoso Sponger LinkedIn Cartridge"""@en ;
+  schema:description """Virtuoso Sponger LinkedInCartridge"""@en ;
+  schema:name "LinkedIn"^^xsd:string ;
+  skos:prefLabel "Virtuoso Sponger LinkedIn Cartridge"^^xsd:string ;
+  wdrs:describedby source: .
