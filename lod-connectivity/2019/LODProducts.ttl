@@ -1,0 +1,91 @@
+@prefix schema:      <http://schema.org/> .
+@prefix cc:          <http://creativecommons.org/ns#> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#> .
+@prefix xhv:         <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:          <http://purl.org/goodrelations/v1#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:        <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:       <http://rdfs.org/sioc/services#> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix opllic:      <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplfea:      <http://www.openlinksw.com/ontology/features#> .
+@prefix oplpro:      <http://www.openlinksw.com/ontology/products#> .
+@prefix r:           <LODProductsReleases.ttl#> .
+@prefix b:           <LODBuyServices.ttl#> .
+@prefix :            <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODProducts.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/lod-connectivity/LODProducts.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "OpenLink LOD Cloud Products Related Information Document" ;
+   schema:description """This document is a launch point for discovering routes to various information sources associated with OpenLink LOD Cloud Products."""^^xsd:string ;
+   schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, LOD Cloud, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB""" ;
+   schema:about <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+   owl:sameAs source: .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink LOD Products"^^xsd:string ;
+   schema:description """This is a turtle document that uses Linked Data oriented content to describe OpenLink LOD Products"""^^xsd:string ;
+   schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, LOD Cloud, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB""" ;
+   schema:author <http://www.openlinksw.com/#this>  ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:about <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+   sioc:sibling <LODProductsReleases.ttl> ,
+                <LODOffersPrices.ttl> ,
+                <LODOffers.ttl> ,
+                <LODLicenses.ttl> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   skos:related  <http://uda.openlinksw.com/data/turtle/multi-tier/UDAMTProducts.ttl> ,
+                 <http://uda.openlinksw.com/data/turtle/single-tier/UDASTProducts.ttl> ;
+   schema:author <http://www.openlinksw.com/#this> .
+
+
+<http://data.openlinksw.com/oplweb/product/DaaS#this>
+      a schema:SoftwareApplication ,
+        oplpro:Product ,
+        schema:CreativeWork ,
+        <http://sw.opencyc.org/concept/Mx4rvcUMxZwpEbGdrcN5Y29ycA> ;
+      oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+      oplpro:hasRelease <http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> ;
+      schema:description "Daas";
+      schema:comment "Daas";
+      schema:category <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+      schema:applicationSubCategory "Software > Computer Software > Business & Productivity Software"^^xsd:string ;
+      schema:image <http://virtuoso.openlinksw.com/images/lodcompapp.jpg> ;
+      schema:applicationCategory schema:BusinessApplication ;
+      schema:applicationSuite "Virtuoso" ;
+      schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, LOD Cloud, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB""" ;
+      skos:prefLabel "Daas"^^xsd:string ;
+      schema:operatingSystem "Windows, Linux, MacOSX, Unix, Solaris" ;
+      schema:name "Daas"^^xsd:string ;
+      schema:author <http://www.openlinksw.com/#this> ;
+      wdrs:describedby source: ;
+      schema:manufacturer <http://www.openlinksw.com/dataspace/organization/openlink#this> .
+
+
+<http://data.openlinksw.com/oplweb/product/DaaS#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-LOD-personal-client-access-basic-sql#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-WWW-eval-personal-client-access-basic-sql#this> .

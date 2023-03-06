@@ -1,0 +1,2592 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-department-SRV-LIN#> .
+@prefix ns2:	<http://www.openlinksw.com/ontology/licenses#> .
+ns1:this	rdf:type	ns2:Virtuoso8License .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+@prefix ns4:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/entity/urn/webdev:> .
+ns1:this	wdrs:describedby	ns4:virtuoso .
+@prefix ns5:	<https://www.openlinksw.com/about/id/entity/urn/webdev:> .
+ns1:this	wdrs:describedby	ns5:virtuoso .
+@prefix schema:	<http://schema.org/> .
+ns1:this	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> .
+@prefix ns7:	<http://www.openlinksw.com/ontology/software#> .
+ns1:this	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS .
+@prefix ns8:	<http://data.openlinksw.com/oplweb/license/License-Duration#> .
+ns1:this	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	75 .
+@prefix ns9:	<http://data.openlinksw.com/oplweb/module/ABACACLs#> .
+ns1:this	ns2:hasLicenseModule	ns9:this .
+@prefix ns10:	<http://data.openlinksw.com/oplweb/module/VAL#> .
+ns1:this	ns2:hasLicenseModule	ns10:this .
+@prefix ns11:	<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#> .
+ns1:this	ns2:hasLicenseModule	ns11:this .
+@prefix ns12:	<http://data.openlinksw.com/oplweb/module/Replication#> .
+ns1:this	ns2:hasLicenseModule	ns12:this .
+@prefix ns13:	<http://data.openlinksw.com/oplweb/module/VDB#> .
+ns1:this	ns2:hasLicenseModule	ns13:this .
+@prefix ns14:	<http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#> .
+ns1:this	ns2:hasLicenseModule	ns14:this .
+@prefix ns15:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-department-SRV-MAC#> .
+ns15:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	75 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns16:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-department-SRV-WIN#> .
+ns16:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	75 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns17:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN#> .
+ns17:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	25 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns18:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC#> .
+ns18:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX .
+@prefix ns19:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC#> .
+ns18:this	ns2:partOf	ns19:this ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	25 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns20:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#> .
+ns20:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	25 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns21:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-LIN#> .
+ns21:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns22:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-MAC#> .
+ns22:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns23:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-WIN#> .
+ns23:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns7:hasOperatingSystemType	ns7:serverWorkstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns24:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-personal-WKS-LIN#> .
+ns24:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	ns2:hasMaximumProcessorCores	48 ;
+	ns7:hasOperatingSystemType	ns7:workstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this .
+@prefix ns25:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-personal-WKS-MAC#> .
+ns25:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX ;
+	ns2:hasMaximumProcessorCores	48 ;
+	ns7:hasOperatingSystemType	ns7:workstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this .
+@prefix ns26:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-personal-WKS-WIN#> .
+ns26:this	rdf:type	ns2:Virtuoso8License ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	ns2:hasMaximumProcessorCores	48 ;
+	ns7:hasOperatingSystemType	ns7:workstationOS ;
+	ns2:hasDuration	ns8:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this .
+@prefix opl:	<http://www.openlinksw.com/schema/attribution#> .
+rdf:	rdf:type	opl:DataSource ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso .
+@prefix ns28:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/urn/webdev:> .
+rdf:	wdrs:describedby	ns28:virtuoso ;
+	opl:hasNamespacePrefix	"rdf" .
+@prefix ns29:	<urn:webdev:> .
+ns29:virtuoso	rdf:type	schema:CreativeWork .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix ns31:	<urn:webdev:virtuoso#> .
+ns29:virtuoso	owl:sameAs	ns31:this ;
+	wdrs:describedby	ns28:virtuoso .
+@prefix void:	<http://rdfs.org/ns/void#> .
+ns29:virtuoso	void:sparqlEndpoint	<http://oplussol11.intranet.openlinksw.com:8890/sparql/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+ns29:virtuoso	foaf:topic	ns23:this ,
+		ns24:this ,
+		ns25:this ,
+		ns26:this .
+@prefix ns34:	<http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#> .
+ns29:virtuoso	foaf:topic	ns34:this .
+@prefix ns35:	<http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#> .
+ns29:virtuoso	foaf:topic	ns35:this .
+@prefix ns36:	<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#> .
+ns29:virtuoso	foaf:topic	ns36:this .
+@prefix ns37:	<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardsSupport#> .
+ns29:virtuoso	foaf:topic	ns37:this .
+@prefix ns38:	<http://data.openlinksw.com/oplweb/product_feature/IntelligentQueryOptimization#> .
+ns29:virtuoso	foaf:topic	ns38:this .
+@prefix ns39:	<http://data.openlinksw.com/oplweb/product_feature/KnowledgeManagement#> .
+ns29:virtuoso	foaf:topic	ns39:this .
+@prefix ns40:	<http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#> .
+ns29:virtuoso	foaf:topic	ns40:this .
+@prefix ns41:	<http://data.openlinksw.com/oplweb/product_feature/MetaSchemalanguage#> .
+ns29:virtuoso	foaf:topic	ns41:this .
+@prefix ns42:	<http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#> .
+ns29:virtuoso	foaf:topic	ns42:this .
+@prefix ns43:	<http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#> .
+ns29:virtuoso	foaf:topic	ns43:this .
+@prefix ns44:	<http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#> .
+ns29:virtuoso	foaf:topic	ns44:this .
+@prefix ns45:	<http://data.openlinksw.com/oplweb/product_feature/RDFMiddleware#> .
+ns29:virtuoso	foaf:topic	ns45:this .
+@prefix ns46:	<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#> .
+ns29:virtuoso	foaf:topic	ns46:this .
+@prefix ns47:	<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverNativeSQLDataSources#> .
+ns29:virtuoso	foaf:topic	ns47:this .
+@prefix ns48:	<http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#> .
+ns29:virtuoso	foaf:topic	ns48:this .
+@prefix ns49:	<http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#> .
+ns29:virtuoso	foaf:topic	ns49:this .
+@prefix ns50:	<http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#> .
+ns29:virtuoso	foaf:topic	ns50:this .
+@prefix ns51:	<http://data.openlinksw.com/oplweb/product_feature/SPARQLQueryLanguage#> .
+ns29:virtuoso	foaf:topic	ns51:this .
+@prefix ns52:	<http://data.openlinksw.com/oplweb/product_feature/StorageEngine#> .
+ns29:virtuoso	foaf:topic	ns52:this .
+@prefix ns53:	<http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#> .
+ns29:virtuoso	foaf:topic	ns53:this .
+@prefix ns54:	<http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#> .
+ns29:virtuoso	foaf:topic	ns54:this .
+@prefix ns55:	<http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#> .
+ns29:virtuoso	foaf:topic	ns55:this .
+@prefix ns56:	<http://data.openlinksw.com/oplweb/product_feature/WebServicestoRDFLinkedData#> .
+ns29:virtuoso	foaf:topic	ns56:this .
+@prefix ns57:	<http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#> .
+ns29:virtuoso	foaf:topic	ns57:this .
+@prefix ns58:	<http://data.openlinksw.com/oplweb/product_feature/data-compression#> .
+ns29:virtuoso	foaf:topic	ns58:this .
+@prefix ns59:	<http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#> .
+ns29:virtuoso	foaf:topic	ns59:this .
+@prefix ns60:	<http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#> .
+ns29:virtuoso	foaf:topic	ns60:this .
+@prefix ns61:	<http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#> .
+ns29:virtuoso	foaf:topic	ns61:this .
+@prefix ns62:	<http://data.openlinksw.com/oplweb/product_feature/vectored-execution#> .
+ns29:virtuoso	foaf:topic	ns62:this ,
+		<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/virtuosoINI#> .
+@prefix ns63:	<http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-app-developer-development-WKS-ANY#> .
+ns29:virtuoso	foaf:topic	ns63:this .
+@prefix ns64:	<http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#> .
+ns29:virtuoso	foaf:topic	ns64:this .
+@prefix ns65:	<http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-personal-WKS-ANY#> .
+ns29:virtuoso	foaf:topic	ns65:this .
+@prefix ns66:	<http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-systems-integration-WKSSVR-ANY#> .
+ns29:virtuoso	foaf:topic	ns66:this .
+@prefix ns67:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-development-WKS-ANY#> .
+ns29:virtuoso	foaf:topic	ns67:this .
+@prefix ns68:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-project-WKS-ANY#> .
+ns29:virtuoso	foaf:topic	ns68:this .
+@prefix ns69:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#> .
+ns29:virtuoso	foaf:topic	ns69:this .
+@prefix ns70:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-personal-WKS-ANY#> .
+ns29:virtuoso	foaf:topic	ns70:this .
+@prefix ns71:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY#> .
+ns29:virtuoso	foaf:topic	ns71:this .
+@prefix ns72:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#> .
+ns29:virtuoso	foaf:topic	ns72:this .
+@prefix ns73:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#> .
+ns29:virtuoso	foaf:topic	ns73:this .
+@prefix ns74:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#> .
+ns29:virtuoso	foaf:topic	ns74:this .
+@prefix ns75:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#> .
+ns29:virtuoso	foaf:topic	ns75:this .
+@prefix ns76:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#> .
+ns29:virtuoso	foaf:topic	ns76:this .
+@prefix ns77:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#> .
+ns29:virtuoso	foaf:topic	ns77:this .
+@prefix ns78:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#> .
+ns29:virtuoso	foaf:topic	ns78:this .
+@prefix ns79:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#> .
+ns29:virtuoso	foaf:topic	ns79:this .
+@prefix ns80:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#> .
+ns29:virtuoso	foaf:topic	ns80:this .
+@prefix ns81:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#> .
+ns29:virtuoso	foaf:topic	ns81:this .
+@prefix ns82:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#> .
+ns29:virtuoso	foaf:topic	ns82:this .
+@prefix ns83:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN#> .
+ns29:virtuoso	foaf:topic	ns83:this .
+@prefix ns84:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#> .
+ns29:virtuoso	foaf:topic	ns84:this .
+@prefix ns85:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#> .
+ns29:virtuoso	foaf:topic	ns85:this .
+@prefix ns86:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#> .
+ns29:virtuoso	foaf:topic	ns86:this .
+@prefix ns87:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-LIN#> .
+ns29:virtuoso	foaf:topic	ns87:this .
+@prefix ns88:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-MAC#> .
+ns29:virtuoso	foaf:topic	ns88:this .
+@prefix ns89:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-WIN#> .
+ns29:virtuoso	foaf:topic	ns89:this .
+@prefix ns90:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN#> .
+ns29:virtuoso	foaf:topic	ns90:this .
+@prefix ns91:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC#> .
+ns29:virtuoso	foaf:topic	ns91:this .
+@prefix ns92:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN#> .
+ns29:virtuoso	foaf:topic	ns92:this .
+@prefix ns93:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-development-SRV-LIN#> .
+ns29:virtuoso	foaf:topic	ns93:this .
+@prefix ns94:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-development-SRV-WIN#> .
+ns29:virtuoso	foaf:topic	ns94:this .
+@prefix ns95:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-LIN#> .
+ns29:virtuoso	foaf:topic	ns95:this .
+@prefix ns96:	<http://data.openlinksw.com/oplweb/installer/Linuxglibc217LicenseManager#> .
+ns29:virtuoso	foaf:topic	ns96:this .
+@prefix ns97:	<http://data.openlinksw.com/oplweb/installer/MacOSXLicenseManager#> .
+ns29:virtuoso	foaf:topic	ns97:this .
+@prefix ns98:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerExe72MacOS#> .
+ns29:virtuoso	foaf:topic	ns98:this .
+@prefix ns99:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerExe72Windows#> .
+ns29:virtuoso	foaf:topic	ns99:this .
+@prefix ns100:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerGzip72LinuxGlibc212#> .
+ns29:virtuoso	foaf:topic	ns100:this .
+@prefix ns101:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerGzip72LinuxGlibc25#> .
+ns29:virtuoso	foaf:topic	ns101:this .
+@prefix ns102:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerGzip81LinuxGlibc212#> .
+ns29:virtuoso	foaf:topic	ns102:this .
+@prefix ns103:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerGzip81LinuxGlibc25#> .
+ns29:virtuoso	foaf:topic	ns103:this .
+@prefix ns104:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerZip72Windows#> .
+ns29:virtuoso	foaf:topic	ns104:this .
+@prefix ns105:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerZip81MacOS#> .
+ns29:virtuoso	foaf:topic	ns105:this .
+@prefix ns106:	<http://data.openlinksw.com/oplweb/installer/VirtuosoServerZip81Windows#> .
+ns29:virtuoso	foaf:topic	ns106:this .
+@prefix ns107:	<http://data.openlinksw.com/oplweb/installer/WindowsLicenseManager#> .
+ns29:virtuoso	foaf:topic	ns107:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-MAC%23this+> .
+@prefix ns108:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifQuestion#> .
+ns29:virtuoso	foaf:topic	ns108:this .
+@prefix ns109:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBQuestion#> .
+ns29:virtuoso	foaf:topic	ns109:this .
+@prefix ns110:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusQuestion#> .
+ns29:virtuoso	foaf:topic	ns110:this .
+@prefix ns111:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreQuestion#> .
+ns29:virtuoso	foaf:topic	ns111:this .
+@prefix ns112:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverQuestion#> .
+ns29:virtuoso	foaf:topic	ns112:this .
+@prefix ns113:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterQuestion#> .
+ns29:virtuoso	foaf:topic	ns113:this .
+@prefix ns114:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudQuestion#> .
+ns29:virtuoso	foaf:topic	ns114:this .
+@prefix ns115:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleQuestion#> .
+ns29:virtuoso	foaf:topic	ns115:this .
+@prefix ns116:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFQuestion#> .
+ns29:virtuoso	foaf:topic	ns116:this .
+@prefix ns117:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideQuestion#> .
+ns29:virtuoso	foaf:topic	ns117:this .
+@prefix ns118:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigQuestion#> .
+ns29:virtuoso	foaf:topic	ns118:this .
+@prefix ns119:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestion#> .
+ns29:virtuoso	foaf:topic	ns119:this .
+@prefix ns120:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLQuestion#> .
+ns29:virtuoso	foaf:topic	ns120:this .
+@prefix ns121:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestion#> .
+ns29:virtuoso	foaf:topic	ns121:this .
+@prefix ns122:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlQuestion#> .
+ns29:virtuoso	foaf:topic	ns122:this .
+@prefix ns123:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerQuestion#> .
+ns29:virtuoso	foaf:topic	ns123:this .
+@prefix ns124:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerQuestion#> .
+ns29:virtuoso	foaf:topic	ns124:this .
+@prefix ns125:	<http://data.openlinksw.com/oplweb/glossary-term/ABAC#> .
+ns29:virtuoso	foaf:topic	ns125:this .
+@prefix ns126:	<http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#> .
+ns29:virtuoso	foaf:topic	ns126:this .
+@prefix ns127:	<http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#> .
+ns29:virtuoso	foaf:topic	ns127:this .
+@prefix ns128:	<http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#> .
+ns29:virtuoso	foaf:topic	ns128:this .
+@prefix ns129:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#> .
+ns29:virtuoso	foaf:topic	ns129:this .
+@prefix ns130:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#> .
+ns29:virtuoso	foaf:topic	ns130:this .
+@prefix ns131:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#> .
+ns29:virtuoso	foaf:topic	ns131:this .
+@prefix ns132:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#> .
+ns29:virtuoso	foaf:topic	ns132:this .
+@prefix ns133:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#> .
+ns29:virtuoso	foaf:topic	ns133:this .
+@prefix ns134:	<http://data.openlinksw.com/oplweb/glossary-term/JDBC#> .
+ns29:virtuoso	foaf:topic	ns134:this .
+@prefix ns135:	<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#> .
+ns29:virtuoso	foaf:topic	ns135:this .
+@prefix ns136:	<http://data.openlinksw.com/oplweb/glossary-term/NewSQL#> .
+ns29:virtuoso	foaf:topic	ns136:this .
+@prefix ns137:	<http://data.openlinksw.com/oplweb/glossary-term/NoSQL#> .
+ns29:virtuoso	foaf:topic	ns137:this .
+@prefix ns138:	<http://data.openlinksw.com/oplweb/glossary-term/ODBC#> .
+ns29:virtuoso	foaf:topic	ns138:this .
+@prefix ns139:	<http://data.openlinksw.com/oplweb/glossary-term/R2RML#> .
+ns29:virtuoso	foaf:topic	ns139:this .
+@prefix ns140:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#> .
+ns29:virtuoso	foaf:topic	ns140:this .
+@prefix ns141:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#> .
+ns29:virtuoso	foaf:topic	ns141:this .
+@prefix ns142:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQLQueryLanguage#> .
+ns29:virtuoso	foaf:topic	ns142:this .
+@prefix ns143:	<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#> .
+ns29:virtuoso	foaf:topic	ns143:this .
+@prefix ns144:	<http://data.openlinksw.com/oplweb/glossary-term/clustering#> .
+ns29:virtuoso	foaf:topic	ns144:this .
+@prefix ns145:	<http://data.openlinksw.com/oplweb/installer/LinuxGlibc23LicenseManager#> .
+ns29:virtuoso	foaf:topic	ns145:this .
+@prefix ns146:	<http://data.openlinksw.com/oplweb/installer/LinuxGlibc25LicenseManager#> .
+ns29:virtuoso	foaf:topic	ns146:this .
+@prefix ns147:	<http://data.openlinksw.com/oplweb/installer/Linuxglibc212LicenseManager#> .
+ns29:virtuoso	foaf:topic	ns147:this ,
+		rdf: .
+@prefix ns148:	<http://data.openlinksw.com/oplweb/product_feature/> .
+ns29:virtuoso	foaf:topic	ns148:virtuoso-server-high-performance .
+@prefix ns149:	<http://data.openlinksw.com/oplweb/real-fusion-of-data-and-artificial-intelligence-#> .
+ns29:virtuoso	foaf:topic	ns149:this .
+@prefix ns150:	<http://oplussol11.intranet.openlinksw.com:8890/DAV/home/thaynes/Public/NewWebsite/Virtuoso-FAQ-for-adding-questionType-Edit-Sheet-csv.ttl#> .
+ns29:virtuoso	foaf:topic	ns150:FederationStatusQuestion ,
+		ns150:FederationTripleStoreAnswer ,
+		ns150:FederationTripleStoreQuestion ,
+		ns150:HighAvailAndRecoverAnswer ,
+		ns150:ManageClusterAnswer ,
+		ns150:ManageClusterQuestion ,
+		ns150:PlansCloudAnswer ,
+		ns150:PlansCloudQuestion ,
+		ns150:ScaleAnswer ,
+		ns150:ScaleQuestion ,
+		ns150:VOSSQL2RDFAnswer ,
+		ns150:VOSSQL2RDFQuestion ,
+		ns150:VirtDeployingLinkedDataGuideAnswer ,
+		ns150:VirtDeployingLinkedDataGuideQuestion ,
+		ns150:VirtFacetBrowserInstallConfigAnswer ,
+		ns150:VirtFacetBrowserInstallConfigQuestion ,
+		ns150:VirtLinkRemoteTablesAnswer ,
+		ns150:VirtLinkRemoteTablesQuestion ,
+		ns150:VirtR2RMLAnswer ,
+		ns150:VirtR2RMLQuestion ,
+		ns150:VirtRdb2RDFViewsGenerationAnswer ,
+		ns150:VirtRdb2RDFViewsGenerationQuestion ,
+		ns150:VirtSparqlCxmlAnswer ,
+		ns150:VirtSparqlCxmlQuestion ,
+		ns150:VirtVisualizeWithHtmlPivotViewerAnswer ,
+		ns150:VirtVisualizeWithHtmlPivotViewerQuestion ,
+		ns150:VirtVisualizeWithPivotViewerAnswer ,
+		ns150:VirtVisualizeWithPivotViewerQuestion .
+@prefix ns151:	<http://oplussol11.intranet.openlinksw.com:8890/DAV/home/thaynes/Public/NewWebsite/website-data-bootstrap2018.ttl#> .
+ns29:virtuoso	foaf:topic	ns151:v8 .
+@prefix ns152:	<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/> .
+ns29:virtuoso	foaf:topic	ns152:VirtInstallationEC2 ,
+		ns152:VirtJenaProvider ,
+		ns152:VirtRDFDriverRedland ,
+		ns152:VirtSesame2Provider ,
+		ns152:VirtSesameProvider ,
+		<http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I.html> .
+@prefix ns153:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns153:this .
+@prefix ns154:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns154:this .
+@prefix ns155:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns155:this .
+@prefix ns156:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns156:this .
+@prefix ns157:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns157:this .
+@prefix ns158:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns158:this .
+@prefix ns159:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns159:this .
+@prefix ns160:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns160:this .
+@prefix ns161:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns161:this .
+@prefix ns162:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns162:this .
+@prefix ns163:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns163:this .
+@prefix ns164:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns164:this .
+@prefix ns165:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns165:this .
+@prefix ns166:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns166:this .
+@prefix ns167:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns167:this .
+@prefix ns168:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns168:this .
+@prefix ns169:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns169:this .
+@prefix ns170:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns170:this .
+@prefix ns171:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns171:this .
+@prefix ns172:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns172:this .
+@prefix ns173:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns173:this .
+@prefix ns174:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns174:this .
+@prefix ns175:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-LIN#> .
+ns29:virtuoso	foaf:topic	ns175:this .
+@prefix ns176:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC#> .
+ns29:virtuoso	foaf:topic	ns176:this .
+@prefix ns177:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-WIN#> .
+ns29:virtuoso	foaf:topic	ns177:this .
+@prefix ns178:	<http://data.openlinksw.com/oplweb/product/Virtuoso#> .
+ns29:virtuoso	foaf:topic	ns178:this ,
+		ns150:HighAvailAndRecoverQuestion ,
+		ns151:v7 .
+@prefix ns179:	<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSparqlCxml#> .
+ns29:virtuoso	foaf:topic	ns179:this .
+@prefix ns180:	<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithHtmlPivotViewer#> .
+ns29:virtuoso	foaf:topic	ns180:this .
+@prefix ns181:	<http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtVisualizeWithPivotViewer#> .
+ns29:virtuoso	foaf:topic	ns181:this ,
+		ns31:this ,
+		ns150:ClusterConfigDifAnswer ,
+		ns150:ClusterConfigDifQuestion ,
+		ns150:EvaluatingNoSQLDBAnswer ,
+		ns150:EvaluatingNoSQLDBQuestion ,
+		ns150:FederationStatusAnswer ,
+		<http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/webdev%20stuff%202018/urn-webdev-virtuoso.ttl> ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-special-price%23this> ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC+-special-price%23this> ,
+		<http://oplussol11.intranet.openlinksw.com:8890/DAV/home/thaynes/Public/NewWebsite/urn-webdev-virtuoso.ttl> ,
+		ns28:virtuoso ,
+		<http://uda.openlinksw.com/dbspecific/> ,
+		ns7:GenericLinux ,
+		ns7:MacOSX ,
+		ns7:OSFamilyAny ,
+		ns7:Windows .
+@prefix ns182:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifAnswer#> .
+ns29:virtuoso	foaf:topic	ns182:this .
+@prefix ns183:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBAnswer#> .
+ns29:virtuoso	foaf:topic	ns183:this .
+@prefix ns184:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusAnswer#> .
+ns29:virtuoso	foaf:topic	ns184:this .
+@prefix ns185:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreAnswer#> .
+ns29:virtuoso	foaf:topic	ns185:this .
+@prefix ns186:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverAnswer#> .
+ns29:virtuoso	foaf:topic	ns186:this .
+@prefix ns187:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterAnswer#> .
+ns29:virtuoso	foaf:topic	ns187:this .
+@prefix ns188:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudAnswer#> .
+ns29:virtuoso	foaf:topic	ns188:this .
+@prefix ns189:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleAnswer#> .
+ns29:virtuoso	foaf:topic	ns189:this .
+@prefix ns190:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFAnswer#> .
+ns29:virtuoso	foaf:topic	ns190:this .
+@prefix ns191:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideAnswer#> .
+ns29:virtuoso	foaf:topic	ns191:this .
+@prefix ns192:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigAnswer#> .
+ns29:virtuoso	foaf:topic	ns192:this .
+@prefix ns193:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesAnswer#> .
+ns29:virtuoso	foaf:topic	ns193:this .
+@prefix ns194:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLAnswer#> .
+ns29:virtuoso	foaf:topic	ns194:this .
+@prefix ns195:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationAnswer#> .
+ns29:virtuoso	foaf:topic	ns195:this .
+@prefix ns196:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlAnswer#> .
+ns29:virtuoso	foaf:topic	ns196:this .
+@prefix ns197:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerAnswer#> .
+ns29:virtuoso	foaf:topic	ns197:this .
+@prefix ns198:	<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerAnswer#> .
+ns29:virtuoso	foaf:topic	ns198:this .
+@prefix ns199:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2017-10-virtuoso-8-early-stage-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns199:this .
+@prefix ns200:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2017-10-virtuoso-8-late-stage-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns200:this .
+@prefix ns201:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2017-10-virtuoso-8-personal-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns201:this .
+@prefix ns202:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2017-10-virtuoso-8-systems-integration-WKSSVR-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns202:this .
+@prefix ns203:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-app-developer-project-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns203:this .
+@prefix ns204:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-early-stage-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns204:this .
+@prefix ns205:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-late-stage-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns205:this .
+@prefix ns206:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-personal-WKS-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns206:this .
+@prefix ns207:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY-retail-price#> .
+ns29:virtuoso	foaf:topic	ns207:this .
+@prefix ns208:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns208:this .
+@prefix ns209:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns209:this .
+@prefix ns210:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns210:this .
+@prefix ns211:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns211:this .
+@prefix ns212:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns212:this .
+@prefix ns213:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns213:this .
+@prefix ns214:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns214:this .
+@prefix ns215:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns215:this .
+@prefix ns216:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns216:this .
+@prefix ns217:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns217:this .
+@prefix ns218:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns218:this .
+@prefix ns219:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns219:this .
+@prefix ns220:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-LIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns220:this .
+@prefix ns221:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-MAC-special-price#> .
+ns29:virtuoso	foaf:topic	ns221:this .
+@prefix ns222:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-WIN-special-price#> .
+ns29:virtuoso	foaf:topic	ns222:this .
+@prefix ns223:	<http://data.openlinksw.com/oplweb/product_benefit/ConceptualViewsOverTabularData#> .
+ns29:virtuoso	foaf:topic	ns223:this .
+@prefix ns224:	<http://data.openlinksw.com/oplweb/product_benefit/ControlledDataAccess#> .
+ns29:virtuoso	foaf:topic	ns224:this .
+@prefix ns225:	<http://data.openlinksw.com/oplweb/product_benefit/ITInfrastructureInvestmentPreservation#> .
+ns29:virtuoso	foaf:topic	ns225:this .
+@prefix ns226:	<http://data.openlinksw.com/oplweb/product_benefit/IndustryStandardsCompliance#> .
+ns29:virtuoso	foaf:topic	ns226:this .
+@prefix ns227:	<http://data.openlinksw.com/oplweb/product_benefit/NoServiceDisruption#> .
+ns29:virtuoso	foaf:topic	ns227:this .
+@prefix ns228:	<http://data.openlinksw.com/oplweb/product_benefit/SophisticatedApplicationFunctionality#> .
+ns29:virtuoso	foaf:topic	ns228:this .
+@prefix ns229:	<http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#> .
+ns29:virtuoso	foaf:topic	ns229:this .
+@prefix ns230:	<http://data.openlinksw.com/oplweb/product_benefit/enables-a-wide-variety-of-deployment-topologies#> .
+ns29:virtuoso	foaf:topic	ns230:this .
+@prefix ns231:	<http://data.openlinksw.com/oplweb/product_benefit/enables-http-oriented-tools-to-work-with-such-relationships-and-other-metadata#> .
+ns29:virtuoso	foaf:topic	ns231:this .
+@prefix ns232:	<http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#> .
+ns29:virtuoso	foaf:topic	ns232:this .
+@prefix ns233:	<http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#> .
+ns29:virtuoso	foaf:topic	ns233:this .
+@prefix ns234:	<http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#> .
+ns29:virtuoso	foaf:topic	ns234:this .
+@prefix ns235:	<http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#> .
+ns29:virtuoso	foaf:topic	ns235:this .
+@prefix ns236:	<http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#> .
+ns29:virtuoso	foaf:topic	ns236:this .
+@prefix ns237:	<http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#> .
+ns29:virtuoso	foaf:topic	ns237:this .
+@prefix ns238:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-MAC#> .
+ns29:virtuoso	foaf:topic	ns238:this .
+@prefix ns239:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#> .
+ns29:virtuoso	foaf:topic	ns239:this .
+@prefix ns240:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN#> .
+ns29:virtuoso	foaf:topic	ns240:this ,
+		ns19:this .
+@prefix ns241:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#> .
+ns29:virtuoso	foaf:topic	ns241:this .
+@prefix ns242:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-LIN#> .
+ns29:virtuoso	foaf:topic	ns242:this .
+@prefix ns243:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-WIN#> .
+ns29:virtuoso	foaf:topic	ns243:this .
+@prefix ns244:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-LIN#> .
+ns29:virtuoso	foaf:topic	ns244:this .
+@prefix ns245:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-MAC#> .
+ns29:virtuoso	foaf:topic	ns245:this .
+@prefix ns246:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-WIN#> .
+ns29:virtuoso	foaf:topic	ns246:this .
+@prefix ns247:	<http://data.openlinksw.com/oplweb/blistering-performance-scalability#> .
+ns29:virtuoso	foaf:topic	ns247:this .
+@prefix ns248:	<http://data.openlinksw.com/oplweb/data-driven-agility-without-compromise#> .
+ns29:virtuoso	foaf:topic	ns248:this .
+@prefix ns249:	<http://www.openlinksw.com/dataspace/organization/openlink#> .
+ns29:virtuoso	foaf:topic	ns249:this .
+@prefix ns250:	<http://data.openlinksw.com/oplweb/data-virtualization-done-right#> .
+ns29:virtuoso	foaf:topic	ns250:this .
+@prefix ns251:	<http://data.openlinksw.com/oplweb/intelligent-data-privacy-security#> .
+ns29:virtuoso	foaf:topic	ns251:this .
+@prefix ns252:	<http://data.openlinksw.com/oplweb/maximize-new-and-emerging-data-centric-innovations-without-disruption-to-existing-infrastructure#> .
+ns29:virtuoso	foaf:topic	ns252:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns1:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns20:this ,
+		ns21:this ,
+		ns22:this ;
+	schema:mainEntity	<http://oplussol11.intranet.openlinksw.com:8890/about/id/entity/http/oplussol11.intranet.openlinksw.com:8890/DAV/home/thaynes/Public/NewWebsite/urn-webdev-virtuoso.ttl> ;
+	schema:url	ns29:virtuoso .
+@prefix ns253:	<http://www.openlinksw.com/ontology/features#> .
+ns148:virtuoso-server-high-performance	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"High performance" .
+@prefix ns254:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns254:this .
+@prefix ns255:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns255:this .
+@prefix ns256:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns256:this .
+@prefix ns257:	<http://data.openlinksw.com/oplweb/product/row-store-sn#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns257:this .
+@prefix ns258:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns258:this .
+@prefix ns259:	<http://data.openlinksw.com/oplweb/product/column-store-cl#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns259:this .
+@prefix ns260:	<http://data.openlinksw.com/oplweb/product/row-store-cl#> .
+ns148:virtuoso-server-high-performance	ns253:isFeatureOf	ns260:this .
+ns108:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso .
+@prefix ns261:	<http://www.openlinksw.com/ontology/faq#> .
+ns108:this	ns261:questionType	ns144:this ,
+		ns128:this ,
+		ns129:this ,
+		ns133:this ;
+	schema:acceptedAnswer	ns182:this ;
+	ns261:hasQuestionText	"What is the differences in terms of performance/scalability between 2 cluster configurations?" .
+ns109:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns143:this ,
+		ns136:this ,
+		ns137:this ;
+	schema:acceptedAnswer	ns183:this ;
+	ns261:hasQuestionText	"Is Virtuoso currently evaluating NoSQL database for the storage of quads?" .
+ns110:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns140:this ,
+		ns141:this ;
+	schema:acceptedAnswer	ns184:this ;
+	ns261:hasQuestionText	"What is the current status of development for Virtuoso federation of triple stores?" .
+ns111:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns129:this ,
+		ns132:this ,
+		ns128:this ,
+		ns133:this ,
+		ns140:this ,
+		ns141:this ,
+		ns144:this ;
+	schema:acceptedAnswer	ns185:this ;
+	ns261:hasQuestionText	"When will federation of triple stores be available in Virtuosoand  how does it compare to clustering?" .
+ns112:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns128:this ,
+		ns129:this ,
+		ns131:this ,
+		ns132:this ,
+		ns133:this ,
+		ns144:this ;
+	schema:acceptedAnswer	ns186:this ;
+	ns261:hasQuestionText	"What are the best options to offer High-Avaliability and Disaster Recovery?  Is it possible to move data from one datacenter to another and how is data transferred?  Are there any numbers about the speed of data replication between two datacenters and consistency of the process?" .
+ns113:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns133:this ,
+		ns129:this ,
+		ns130:this ,
+		ns132:this ,
+		ns128:this ,
+		ns144:this ;
+	schema:acceptedAnswer	ns187:this ;
+	ns261:hasQuestionText	"Do I have to stop the cluster to add a node or partition an index?" .
+ns114:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns125:this ,
+		ns133:this ,
+		ns129:this ,
+		ns131:this ,
+		ns132:this ,
+		ns144:this ;
+	schema:acceptedAnswer	ns188:this ;
+	ns261:hasQuestionText	"Are there any Virtuoso plans for Cloud technologies (Openstack, etc.)?" .
+ns115:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns144:this ,
+		ns129:this ,
+		ns130:this ,
+		ns132:this ,
+		ns128:this ,
+		ns133:this ;
+	schema:acceptedAnswer	ns189:this ;
+	ns261:hasQuestionText	"What is the Virtuoso strategy to scale?  Is it possible to start small and then add servers if needed?" .
+ns116:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns138:this ,
+		ns139:this ,
+		ns126:this ,
+		ns127:this ,
+		ns134:this ;
+	schema:acceptedAnswer	ns190:this ;
+	ns261:hasQuestionText	"How do I create RDF-based Linked Data Views over Relational Data Sources?" .
+ns117:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns135:this ;
+	schema:acceptedAnswer	ns191:this ;
+	ns261:hasQuestionText	"How do I use Virtuoso to deploy Linked Data to the Web?" .
+ns118:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns135:this ;
+	schema:acceptedAnswer	ns192:this ;
+	ns261:hasQuestionText	"How do I install and configure the Virtuoso Faceted Browser?" .
+ns119:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns127:this ,
+		ns134:this ,
+		ns138:this ;
+	schema:acceptedAnswer	ns193:this ;
+	ns261:hasQuestionText	"How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?" .
+ns120:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns126:this ,
+		ns127:this ,
+		ns134:this ,
+		ns138:this ,
+		ns139:this ;
+	schema:acceptedAnswer	ns194:this ;
+	ns261:hasQuestionText	"How do I use R2RML to map RDB to RDF with Virtuoso?" .
+ns121:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns134:this ,
+		ns126:this ,
+		ns127:this ,
+		ns139:this ,
+		ns138:this ;
+	schema:acceptedAnswer	ns195:this ;
+	ns261:hasQuestionText	"How do I use just one click on Virtuoso's HTML-based Wizard to Generate and Deploy RDF-based Linked Data from Relational Databases?" .
+ns122:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns142:this ;
+	schema:acceptedAnswer	ns196:this ;
+	ns261:hasQuestionText	"How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?" .
+ns123:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns135:this ;
+	schema:acceptedAnswer	ns197:this ;
+	ns261:hasQuestionText	"How do I explore Linked Data using the HTML5-based Pivot Viewer?" .
+ns124:this	rdf:type	schema:Question ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	ns261:questionType	ns135:this ;
+	schema:acceptedAnswer	ns198:this ;
+	ns261:hasQuestionText	"How do I explore Linked Data using the Microsoft Pivot Viewer?" .
+ns125:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"ABAC" ;
+	schema:title	"ABAC" .
+ns126:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Conceptual Data Virtualization"@en ;
+	schema:title	"Conceptual Data Virtualization"@en .
+ns127:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Data Virtualization" ;
+	schema:title	"Data Virtualization" .
+ns128:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Cluster Module" ;
+	schema:title	"Cluster Module" .
+ns129:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Virtuoso Cluster" ;
+	schema:title	"Virtuoso Cluster" .
+ns130:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Virtuoso Cluster Node (VCN)" ;
+	schema:title	"Virtuoso Cluster Node (VCN)" .
+ns131:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Virtuoso Replication Cluster" ;
+	schema:title	"Virtuoso Replication Cluster" .
+ns132:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Virtuoso Server Instance (VSI)" ;
+	schema:title	"Virtuoso Server Instance (VSI)" .
+ns133:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Virtuoso Shared-Nothing Cluster" ;
+	schema:title	"Virtuoso Shared-Nothing Cluster" .
+ns134:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Java Database Connectivity (JDBC)"@en ,
+		"Java Database Connectivity (JDBC)" ;
+	schema:title	"Java Database Connectivity (JDBC)"@en ,
+		"Java Database Connectivity (JDBC)" .
+ns135:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Linked Data" ;
+	schema:title	"Linked Data" .
+ns136:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"NewSQL" ;
+	schema:title	"NewSQL" .
+ns137:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"NoSQL" ;
+	schema:title	"NoSQL" .
+ns138:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Open Database Connectivity (ODBC)" ;
+	schema:title	"Open Database Connectivity (ODBC)" .
+ns139:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"SQL Relational Tables to RDF Property (Predicate) Graph Mapping Language" ;
+	schema:title	"SQL Relational Tables to RDF Property (Predicate) Graph Mapping Language" .
+ns140:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"SPARQL" ;
+	schema:title	"SPARQL" .
+ns141:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Federated SPARQL" ;
+	schema:title	"Federated SPARQL" .
+ns142:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"SPARQL Query Language" ;
+	schema:title	"SPARQL Query Language" .
+ns143:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"SQL Relational Database Management System" ;
+	schema:title	"SQL Relational Database Management System" .
+ns144:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Clustering" ;
+	schema:title	"Clustering" .
+@prefix ns262:	<http://www.openlinksw.com/ontology/installers#> .
+ns145:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"License Manager (Binary) for Linux (64-Bit glibc23)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+ns145:this	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/components/misc/oplmgr-linux-x64-glibc2.3.gz> .
+@prefix ns264:	<http://www.openlinksw.com/ontology/products#> .
+ns145:this	ns264:versionText	"1.3.6" .
+ns146:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"License Manager (Binary) for Linux (64-Bit glibc25)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/components/misc/oplmgr-linux-x64-glibc2.5.gz> ;
+	ns264:versionText	"1.3.6" .
+ns147:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"License Manager (Binary) for Linux (64-Bit glibc2.12)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/components/misc/oplmgr-linux-x64-glibc2.12.gz> ;
+	ns264:versionText	"1.3.6" .
+ns96:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"License Manager (Binary) for Linux (64-Bit glibc2.17)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/components/misc/oplmgr-linux-x64-glibc2.17.gz> ;
+	ns264:versionText	"1.3.6" .
+ns97:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"License Manager (Binary) for macOS (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX ;
+	dcterms:format	"application/octet-stream" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/8.1/universal-apple-macosx10.9-64/oplmgr.pkg> ;
+	ns264:versionText	"1.3.6" .
+ns98:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Commercial Edition Executable (Binary) for macOS (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX ;
+	dcterms:format	"application/zip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com/uda/virtuoso/7.2/universal-apple-macosx10.7-32/virtuoso-t.zip> ;
+	ns264:versionText	"7.2" .
+ns99:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Open Source (VOS) Edition Server Binary for Windows (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	dcterms:format	"application/x-msdownload" ;
+	schema:downloadUrl	<http://opldownload-staging.s3.amazonaws.com/uda/virtuoso/7.2/x86_64-generic-win-64/Virtuoso_OpenSource_Server_7.20.x64.exe> ;
+	ns264:versionText	"7.2" .
+ns100:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Server Executable (Binary) for Linux (64-Bit glibc23)" ,
+		"Virtuoso Server Executable (Binary) for Linux (64-Bit glibc212)" ,
+		"Virtuoso Server Executable (Binary) for Linux (64-Bit glibc217)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/7.2/x86_64-generic-linux-glibc217-64/virtuoso-iodbc-t.gz> ,
+		<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/7.2/x86_64-generic-linux-glibc212-64/virtuoso-iodbc-t.gz> ,
+		<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/7.2/x86_64-generic-linux-glibc23-64/virtuoso-iodbc-t.gz> ;
+	ns264:versionText	"7.2" .
+ns101:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Server Executable (Binary) for Linux (64-Bit glibc25)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/7.2/x86_64-generic-linux-glibc25-64/virtuoso-iodbc-t.gz> ;
+	ns264:versionText	"7.2" .
+ns102:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Server Executable (Binary) for Linux (64-Bit glibc212)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com/uda/virtuoso/8.1/x86_64-generic-linux-glibc25-64/virtuoso-iodbc-t.gz> ,
+		<http://download3.openlinksw.com/uda/virtuoso/8.1/x86_64-generic-linux-glibc212-64/virtuoso-iodbc-t.gz> ;
+	ns264:versionText	"8.1" .
+ns103:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Server Executable (Binary) for Linux (64-Bit glibc25)" ;
+	ns7:hasOperatingSystemFamily	ns7:GenericLinux ;
+	dcterms:format	"application/x-gzip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com/uda/virtuoso/8.1/x86_64-generic-linux-glibc25-64/virtuoso-iodbc-t.gz> ;
+	ns264:versionText	"8.1" .
+ns104:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Commercial Edition Server Executable (Binary) for Windows (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	dcterms:format	"application/zip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/7.2/x86_64-generic-win-64/virtuoso-t.zip> ;
+	ns264:versionText	"7.2" .
+ns105:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Server Executable (Binary) for MacOS (64-Bit)" ,
+		"Virtuoso Commercial Edition Server Executable (Binary) for macOS (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:MacOSX ;
+	dcterms:format	"application/zip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com/uda/virtuoso/8.1/universal-apple-macosx10.9-64/virtuoso-iodbc-t.zip> ;
+	ns264:versionText	"8.1" .
+ns106:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Virtuoso Commercial Edition Server Executable (Binary) for Windows (64-Bit)" ,
+		"Virtuoso Server Executable (Binary) for Windows (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	dcterms:format	"application/zip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com/uda/virtuoso/8.1/x86_64-generic-win-64/virtuoso-odbc-t.zip> ;
+	ns264:versionText	"8.1" .
+ns107:this	rdf:type	ns262:ExecutableArchive ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"License Manager (Binary) for Windows (64-Bit)" ;
+	ns7:hasOperatingSystemFamily	ns7:Windows ;
+	dcterms:format	"application/zip" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/components/misc/oplmgr-win64.zip> ;
+	ns264:versionText	"1.3.6" .
+@prefix ns265:	<http://www.openlinksw.com/ontology/offers#> .
+ns63:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+ns63:this	schema:description	"Workstation-class Virtuoso 8.x Application Development License for installation on one (1) host running a\n\t\t\t\t\t   Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, \n\t\t\t\t\t   Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and \n\t\t\t\t\t   Attribute-based Access Controls Modules; will utilize a maximum of eight (8) logical processors; and is transferable across \n\t\t\t\t\t   hosts running supported operating systems, without expiration.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+	schema:priceSpecification	ns199:this ;
+	schema:validThrough	"2018-03-31T23:59:59Z"^^xsd:dateTime .
+ns64:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"\n\t\t\t\t\t\tWorkstation- or Server-class Virtuoso 8.x Workgroup Development License for installation \n\t\t\t\t\t\ton one (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, \n\t\t\t\t\t\tthe Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, \n\t\t\t\t\t\tVirutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen \n\t\t\t\t\t\t(16) logical processors; and is transferable across hosts running supported operating systems, without expiration.\n\t\t\t\t\t  "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Workgroup Development License \n\t\t\t\tfor any Workstation-class or Server-class Operating System\n\t\t\t\t"^^xsd:string ;
+	schema:priceSpecification	ns200:this ;
+	schema:validThrough	"2018-03-31T23:59:59Z"^^xsd:dateTime .
+ns65:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Workstation-class Virtuoso 8.x Personal License for installation on one (1) host running a Workstation-class \n\t\t\t\t\t   Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, Business Analytics, \n\t\t\t\t\t   Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and Attribute-based Access Controls\n\t\t\t\t\t   Modules; will utilize a maximum of two (2) logical processors; and is transferable across hosts running supported operating systems,\n\t\t\t\t\t   without expiration.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-5CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Personal License for any Workstation-class Operating System "^^xsd:string ;
+	schema:priceSpecification	ns201:this ;
+	schema:validThrough	"2018-03-31T23:59:59Z"^^xsd:dateTime .
+ns66:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Workstation- or Server-class Virtuoso 8.x Systems Integration License for installation on \n\t\t\t\t\t\tone (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, \n\t\t\t\t\t\tthe Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, \n\t\t\t\t\t\tVirutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of thirty-two\n\t\t\t\t\t\t(32) logical processors; and is transferable across hosts running supported operating systems, without expiration.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-32CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Systems Integration License for any Workstation- or Server-class Operating System"^^xsd:string ;
+	schema:priceSpecification	ns202:this ;
+	schema:validThrough	"2018-03-31T23:59:59Z"^^xsd:dateTime .
+ns67:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Workstation-class Virtuoso 8.x Application Development License for installation on one (1) host running a\n\t\t\t\t\t   Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, \n\t\t\t\t\t   Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and \n\t\t\t\t\t   Attribute-based Access Controls Modules; will utilize a maximum of eight (8) logical processors; and is transferable across \n\t\t\t\t\t   hosts running supported operating systems, for one (1) year.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+	schema:priceSpecification	ns204:this ;
+	schema:validThrough	"2018-11-09T16:59:59Z"^^xsd:dateTime ,
+		"2018-08-31T23:59:59Z"^^xsd:dateTime .
+ns68:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Workstation-class Virtuoso 8.x Project Development License for installation on one (1) host running \n\t\t\t\t\t   a Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, \n\t\t\t\t\t   Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, \n\t\t\t\t\t   Virutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen (16) \n\t\t\t\t\t   logical processors; and is transferable across hosts running supported operating systems, for one (1) year.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
+	schema:priceSpecification	ns203:this ;
+	schema:validThrough	"2018-11-09T16:59:59Z"^^xsd:dateTime ,
+		"2018-08-31T23:59:59Z"^^xsd:dateTime .
+ns69:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"\n\t\t\t\t\t\tWorkstation- or Server-class Virtuoso 8.x Workgroup Development License for installation \n\t\t\t\t\t\ton one (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, \n\t\t\t\t\t\tthe Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, \n\t\t\t\t\t\tVirutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen \n\t\t\t\t\t\t(16) logical processors; and is transferable across hosts running supported operating systems, for one (1) year.\n\t\t\t\t\t  "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Workgroup Development License \n\t\t\t\tfor any Workstation-class or Server-class Operating System\n\t\t\t\t"^^xsd:string ;
+	schema:priceSpecification	ns205:this ;
+	schema:validThrough	"2018-11-09T16:59:59Z"^^xsd:dateTime ,
+		"2018-08-31T23:59:59Z"^^xsd:dateTime .
+ns70:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Workstation-class Virtuoso 8.x Personal License for installation on one (1) host running a Workstation-class \n\t\t\t\t\t   Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, Business Analytics, \n\t\t\t\t\t   Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and Attribute-based Access Controls\n\t\t\t\t\t   Modules; will utilize a maximum of two (2) logical processors; and is transferable across hosts running supported operating systems,\n\t\t\t\t\t   for one (1) year.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-5CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Personal License for any Workstation-class Operating System "^^xsd:string ;
+	schema:priceSpecification	ns206:this ;
+	schema:validThrough	"2018-11-09T16:59:59Z"^^xsd:dateTime ,
+		"2018-08-31T23:59:59Z"^^xsd:dateTime .
+ns71:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Workstation- or Server-class Virtuoso 8.x Systems Integration License for installation on \n\t\t\t\t\t\tone (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, \n\t\t\t\t\t\tthe Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, \n\t\t\t\t\t\tVirutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of thirty-two\n\t\t\t\t\t\t(32) logical processors; and is transferable across hosts running supported operating systems, for one (1) year.\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-32CORE.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.x Systems Integration License for any Workstation- or Server-class Operating System"^^xsd:string ;
+	schema:priceSpecification	ns207:this ;
+	schema:validThrough	"2018-11-09T16:59:59Z"^^xsd:dateTime ,
+		"2018-08-31T23:59:59Z"^^xsd:dateTime .
+ns240:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns17:this .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+ns240:this	skos:prefLabel	"Workgroup License for Virtuoso 8 on Linux Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems" ;
+	schema:price	1749.99 ;
+	schema:priceSpecification	ns167:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> .
+ns19:this	rdf:type	schema:Offer ,
+		ns265:Virtuoso8Offer ,
+		ns265:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns4:uda ,
+		ns28:uda .
+@prefix ns268:	<https://www.openlinksw.com/about/id/entity/urn/mdata:websites:google:> .
+ns19:this	wdrs:describedby	ns268:seo ,
+		ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ,
+		ns5:uda .
+@prefix ns269:	<https://www.openlinksw.com/about/id/entity/urn/opl:shop:offering:sponging:cache:> .
+ns19:this	wdrs:describedby	ns269:official ;
+	skos:related	_:vb41448 ,
+		_:vb41449 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns18:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems" ,
+		"Workgroup License for Virtuoso 8 on macOS Server" ;
+	schema:category	"appdeveloperworkgroup" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems" ;
+	schema:price	1749.99 ;
+	schema:priceSpecification	ns168:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems" .
+@prefix ns270:	<http://data.openlinksw.com/oplweb/offer/> .
+ns19:this	schema:url	ns270:Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this> .
+@prefix gr:	<http://purl.org/goodrelations/v1#> .
+ns19:this	gr:businessFunction	gr:Sell .
+@prefix ns272:	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#> .
+ns19:this	ns265:isMemberOf	ns272:OfferGroupappdeveloperworkgroup ;
+	ns265:offerNumber	"2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> .
+ns241:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns20:this ;
+	skos:prefLabel	"Workgroup License for Virtuoso 8 on Windows Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems" ;
+	schema:price	1749.99 ;
+	schema:priceSpecification	ns169:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems" ;
+	schema:validThrough	"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-10-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> .
+ns242:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns21:this ;
+	skos:prefLabel	"Personal License for Virtuoso 8 on Linux Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems" ;
+	schema:price	499.99 ;
+	schema:priceSpecification	ns170:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems" ;
+	schema:validThrough	"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-10-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> .
+ns243:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns23:this ;
+	skos:prefLabel	"Personal License for Virtuoso 8 on Windows Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems" ;
+	schema:price	499.99 ;
+	schema:priceSpecification	ns171:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems" ;
+	schema:validThrough	"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-10-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> .
+ns244:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns24:this ;
+	skos:prefLabel	"Personal License for Virtuoso 8 on Linux Workstation" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems" ;
+	schema:price	249.99 ;
+	schema:priceSpecification	ns172:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems" ;
+	schema:validThrough	"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-10-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> .
+ns245:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns25:this ;
+	skos:prefLabel	"Personal License for Virtuoso 8 on macOS Workstation" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems" ;
+	schema:price	249.99 ;
+	schema:priceSpecification	ns173:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> .
+ns246:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:itemOffered	ns26:this ;
+	skos:prefLabel	"Personal License for Virtuoso 8 on Windows Workstation" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems" ;
+	schema:price	249.99 ;
+	schema:priceSpecification	ns174:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-06-30T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> .
+@prefix ns273:	<http://data.openlinksw.com/oplweb/opsys_family/AIX#> .
+ns273:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-aix.gif> .
+@prefix ns274:	<http://data.openlinksw.com/oplweb/opsys_family/DynixPTX#> .
+ns274:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-dynix.gif> .
+@prefix ns275:	<http://data.openlinksw.com/oplweb/opsys_family/FreeBSD#> .
+ns275:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-freebsd.gif> .
+@prefix ns276:	<http://data.openlinksw.com/oplweb/opsys_family/GenericLinux#> .
+ns276:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/linux-cart-icon.png> .
+@prefix ns277:	<http://data.openlinksw.com/oplweb/opsys_family/HPUX#> .
+ns277:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-hpux.gif> .
+@prefix ns278:	<http://data.openlinksw.com/oplweb/opsys_family/Irix#> .
+ns278:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-sgi.gif> .
+@prefix ns279:	<http://data.openlinksw.com/oplweb/opsys_family/JavaVirtualMachine#> .
+ns279:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-java.gif> .
+@prefix ns280:	<http://data.openlinksw.com/oplweb/opsys_family/MacOSX#> .
+ns280:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/macos-cart-icon.png> .
+@prefix ns281:	<http://data.openlinksw.com/oplweb/opsys_family/SCOOpenServer#> .
+ns281:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-scoopenserver.gif> .
+@prefix ns282:	<http://data.openlinksw.com/oplweb/opsys_family/Solaris#> .
+ns282:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-solaris.gif> .
+@prefix ns283:	<http://data.openlinksw.com/oplweb/opsys_family/Tru64UNIX#> .
+ns283:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-tru64.gif> .
+@prefix ns284:	<http://data.openlinksw.com/oplweb/opsys_family/UnixWare#> .
+ns284:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-unixware.gif> .
+@prefix ns285:	<http://data.openlinksw.com/oplweb/opsys_family/Windows#> .
+ns285:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/win-cart-icon.png> .
+@prefix ns286:	<http://www.openlinksw.com/ontology/benefits#> .
+ns223:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Allows dynamic or static transformation of tabular relational data exported from legacy systems into modern graph relational data"@en ,
+		"Allows dynamic or static transformation of tabular relational data exported from legacy systems into modern graph relational data" ;
+	schema:image	<https://www.openlinksw.com/images/conceptual_views-over-tabular-data.jpg> ;
+	schema:name	"Conceptual Views construction over CSV based Tabular Data Sources" .
+ns224:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Limits who can Create, Read, Update, and/or Delete data, based on simple usernames, common Role-Based Access Controls (RBAC), and/or sophisticated application of rules and Attribute-Based Access Controls (ABAC)"@en ,
+		"Limits who can Create, Read, Update, and/or Delete data, based on simple usernames, common Role-Based Access Controls (RBAC), and/or sophisticated application of rules and Attribute-Based Access Controls (ABAC)" ;
+	schema:image	<https://www.openlinksw.com/images/controlled-secure-data-access.jpg> ;
+	schema:name	"Controlled & Secure Data Access" .
+ns225:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Preserves previous investments in IT infrastructure, by embracing and extending rather than ripping and replacing."@en ,
+		"Preserves previous investments in IT infrastructure, by embracing and extending rather than ripping and replacing." ,
+		"IT Infrastructure Investment Preservation"@en ;
+	schema:image	<https://www.openlinksw.com/images/it-investment-preservation.jpg> ;
+	schema:name	"IT Infrastructure Investment Preservation" ,
+		"ITInfrastructureInvestmentPreservation" ,
+		"IT Infrastructure Investment Preservation"@en .
+ns226:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Industry Standards Compliance"@en ,
+		"Ensures broad compatibility and interoperability with a wide variety of third-party tools"@en ;
+	schema:name	"IndustryStandardsCompliance" ,
+		"Industry Standards Compliance"@en .
+ns227:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Provides consistent availability to all relying systems and users" ,
+		"Provides consistent availability to all relying systems and users"@en ;
+	schema:image	<https://www.openlinksw.com/images/uninterrupted-db-access.jpg> ;
+	schema:name	"Uninterrupted Database Engine Access" .
+ns228:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Sophisticated Application Functionality"@en ,
+		"Supports data access, integration and management, from the simplest to the most sophisticated functionality" ,
+		"Supports data access, integration and management, from the simplest to the most sophisticated functionality"@en ;
+	schema:image	<https://www.openlinksw.com/images/app-functionality.jpg> ;
+	schema:name	"Sophisticated Application Functionality"@en ,
+		"Sophisticated Application Functionality" ,
+		"SophisticatedApplicationFunctionality" .
+ns229:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Ensures broad compatibility and interoperability with a wide variety of third-party tools"@en ,
+		"Ensures broad compatibility and interoperability with a wide variety of third-party tools" ;
+	schema:image	<https://www.openlinksw.com/images/standards-compliant.jpg> ;
+	schema:name	"Standards Compliant" .
+ns230:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Enables a wide variety of deployment topologies" ,
+		"enables a wide variety of deployment topologies"@en ;
+	schema:image	<https://www.openlinksw.com/images/variety-of-deployment-topoplogies.jpg> ;
+	schema:name	"Wide variety of deployment topologies" ,
+		"enables-a-wide-variety-of-deployment-topologies" .
+ns231:this	rdf:type	ns286:Benefit ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"enables HTTP-oriented tools to work with such relationships and other metadata"@en ,
+		"By working with Linked Open Data (RDF and SPARQL over HTTP,) Virtuoso enables interoperation with other HTTP-oriented tools to manage data, metadata and relationships" ;
+	schema:image	<https://www.openlinksw.com/images/interoperability-with-tools.jpg> ;
+	schema:name	"Interoperability with other tools through common data format and language" ,
+		"enables-http-oriented-tools-to-work-with-such-relationships-and-other-metadata" .
+ns232:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Attribute-based Access Controls"^^xsd:string ;
+	ns253:isFeatureOf	ns255:this .
+ns233:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Clustering for Fault Tolerance and/or Load Balancing" ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this .
+ns234:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Policy based security is enforced by the Virtuoso SQL compiler by inserting extra conditions into statements, depending on which user is preparing the statement. The tables or views can themselves be readable to a large group of users but compartmentalization is achieved by the database automatically adding extra conditions." ;
+	schema:name	"Configurable Policy-based Security" ;
+	ns286:hasBenefit	ns224:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns235:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Content Negotiation Support including RDF handling" ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this .
+ns236:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Custom Inference Rules"^^xsd:string ;
+	ns253:isFeatureOf	ns255:this .
+ns237:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Two-Phase Commit (2PC) protocol may be used to guarantee ACID properties of Distributed Transactions which change data in more than one database." ;
+	schema:name	"Two-Phase Commit (2PC) in Distributed Transactions" ;
+	ns286:hasBenefit	ns227:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns34:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"\r\n\t\t\t\t   Ability to derive relations (entity relationship types) in a variety of forms. For instance, using mapping rules (via standards\r\n\t\t\t\t   such as W3C's R2RML) to inform transformation of relations represented as Tables in a SQL RDBMS into fine-grained RDF\r\n\t\t\t\t   sentence/statement (depictable and queryable as entity relationship grpahs). Likewise, the use of SPARQL (a W3C open standard)\r\n\t\t\t\t   to extend SQL (an ANSI open standar). This form of dynamnic relations mapping enables use of existing ODBC, JDBC, ADO.NET, OLE\r\n\t\t\t\t   DB, and XMLA compliant applications to exploit powerful a Semantic Web of Linked Data (public and/or private), without ripping\r\n\t\t\t\t   and replacing legacy systems. \r\n\t\t\t\t   "^^xsd:string ,
+		"Ability to derive relations (entity relationship types) in a variety of forms. For instance, using mapping rules (via standards such as W3C's R2RML) to inform transformation of relations represented as Tables in a SQL RDBMS into fine-grained RDF sentence/statement (depictable and queryable as entity relationship grpahs). Likewise, the use of SPARQL (a W3C open standard) to extend SQL (an ANSI open standar). This form of dynamnic relations mapping enables use of existing ODBC, JDBC, ADO.NET, OLE DB, and XMLA compliant applications to exploit powerful a Semantic Web of Linked Data (public and/or private), without ripping and replacing legacy systems." ;
+	schema:name	"Enhanced Relational Mapping"^^xsd:string ,
+		"Enhanced Relational Mapping" ;
+	ns286:hasBenefit	ns229:this ;
+	ns253:isFeatureOf	ns255:this ,
+		ns178:this .
+ns35:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"The Virtuoso HTTP server is HTTP/1.1 compliant, and can accept persistent connections from HTTP/1.1 clients. HTTP/1.0 requests are processed as normal without the persistent connections feature." ;
+	schema:name	"HTTP-Compliant Application Server" ;
+	ns286:hasBenefit	ns229:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns36:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"Virtuoso's SPARQL Query Language Support complies with the W3C SPARQL 1.1 Standard, providing compatibility with other SPARQL-compliant tools, whether home-grown or third-party. The query service implementation extends the standard protocol by providing multiple output-formats (RDF-Turtle, JSON-LD, N-Triples, N-Quads, CSV, TSV, and many others) alongside the standard RDF-XML result serialization; these are made available via additional query parameters, and increasingly via content-negotiation." ;
+	schema:name	"Industry Standard SPARQL Query Language Support" ;
+	ns286:hasBenefit	ns229:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns37:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"Virtuoso supports ratified and de facto industry standards including SQL, ODBC, JDBC, ADO.NET, OLE\u00A0DB, RDF, SPARQL, GData, XML, XQuery, XPath, XSLT, XMLA, WebDAV, HTTP, OpenID, Oauth, NNTP, ATOM-Publishing, OpenSocial, Social Graph API, and more." ,
+		"Support for industry and de facto standards that include: SQL, ODBC, JDBC, ADO.NET, OLEDB, RDF, SPARQL, GData, XML, XQuery, XPath, XSLT, XML/A, WebDAV, HTTP, OpenID, Oauth, NNTP, ATOM-Publishing, OpenSocial, Social Graph API, and more. ." ;
+	schema:name	"Industry Standards Support" ;
+	ns286:hasBenefit	ns226:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns38:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Intelligent Query Optimization" ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns257:this .
+ns39:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Knowledge Management" ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this .
+ns40:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"Virtuoso provides descriptor resources for every entity (data object) in the Native or Virtual Quad Stores, and supports a broad array of output formats, including HTML+RDFa, RDF/XML, N3/Turtle, N-Triples, RDF-JSON, OData+Atom, and OData+JSON." ;
+	schema:name	"Linked Data Publishing" ;
+	ns286:hasBenefit	ns231:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns41:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"Virtuoso Meta Schema Language enables construction of RDF-based Linked Data Views (or Semantic Covers) over SQL, XML, SOA, and REST data sources." ;
+	schema:name	"Meta Schema Language" ;
+	ns286:hasBenefit	ns228:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns42:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Network-based Query Parallelization" ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this .
+ns43:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"Parallelized SQL Query Execution" ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns257:this .
+ns44:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"RDF Data Sets are managed by a dedicated module within the Virtuoso ORDBMS core. This functionality is exposed to client applications through implementations of the SPARQL Query Language and Protocol, plus a collection of Web Services and Virtuoso/PL-based APIs for Creating, Updating, and Deleting RDF Data Sets." ;
+	schema:name	"RDF Data Management" ;
+	ns286:hasBenefit	ns231:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns45:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"The Virtuoso Sponger is the Linked Data middleware component of Virtuoso. It generates Linked Data (in the form of RDF) from a variety of data sources, and supports a wide range of data representation and serialization formats. The Sponger is transparently integrated into Virtuoso's SPARQL Query Processor, where it delivers URI de-referencing across disparate data spaces within SPARQL query patterns. It also delivers configurable smart HTTP caching services. Optionally, it can be used by the Virtuoso Content Crawler to periodically populate and replenish data within the native RDF Quad Store." ;
+	schema:name	"RDF Middleware" ;
+	ns286:hasBenefit	ns230:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns46:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"\"Linked Data Views\" (formerly known as \"RDF Views\") over External Data Sources enable Virtuoso to expose pre-existing ODBC- or JDBC-accessible relational data as Virtual RDF Graphs thereby exposing such data to SPARQL query access, both directly and via Virtuoso's built-in support for SPARQL-in-SQL (SPASQL). The entire process results in RDF Data sets and optimized data access without physical regeneration of RDF Data Sets from the originating SQL Data. (Enterprise Edition only. Exposing JDBC-accessible data requires an add-on ODBC-to-JDBC Bridge solution, also available from OpenLink Software.)" ;
+	schema:name	"Linked Data Views over External Data Sources" ;
+	ns286:hasBenefit	ns231:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns47:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"\"Linked Data Views\" (formerly known as \"RDF Views\") over Native SQL Data Sources enable Virtuoso  to expose pre-existing internal relational data as Virtual RDF Graphs thereby exposing such data to SPARQL query access, both directly and via Virtuoso's built-in support for SPARQL-in-SQL (SPASQL). The entire process results in RDF Data sets and optimized data access without physical regeneration of RDF Data Sets from the originating SQL Data." ;
+	schema:name	"Linked Data Views over Native SQL Data Sources" ;
+	ns286:hasBenefit	ns223:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns48:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"RDF aware Clustering" ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this .
+ns49:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"RDF-based Linked Data Deployment" ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns257:this .
+ns50:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Virtuoso is a runtime hosting vehicle for web services application logic written in PHP, Java, .NET, Python, Perl, Ruby, and many other popular web scripting environments." ;
+	schema:name	"Runtime Hosting" ;
+	ns286:hasBenefit	ns230:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns51:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"SPARQL Query Language Support complies with the W3C SPARQL 1.1 Standard, providing compatibility with other SPARQL-compliant tools, whether home-grown or third-party. The query service implementation extends the standard protocol by providing multiple output-formats (RDF-Turtle, JSON-LD, N-Triples, N-Quads, CSV, TSV, and many others) alongside the standard RDF-XML result serialization; these are made available via additional query parameters, and increasingly via content-negotiation." ;
+	schema:name	"SPARQL Query Language" ;
+	ns286:hasBenefit	ns225:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns52:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Storage Engine" ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns257:this .
+ns53:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Supported Data Access Standards include ODBC, JDBC, ADO.NET, OLE DB, and XMLA." ;
+	schema:name	"Supports a Broad Range of Data Access Standards" ;
+	ns286:hasBenefit	ns229:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns54:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"ODS-Briefcase is a WebDAV-compliant content management platform that offers file-sharing functionality via a \"Briefcase Data Space\". Its File Server functionality may be addressed via Web Browser-based interactions, Web Services, or the SPARQL Query Language, as well as any WebDAV-compliant filesystem (Linux, macOS, Windows, etc.)." ;
+	schema:name	"WebDAV-Compliant Content Manager" ;
+	ns286:hasBenefit	ns229:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns55:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Virtuoso is a runtime hosting vehicle for web services application logic written in PHP, Java, .NET, Python, Perl, Ruby, and many other popular web scripting environments." ;
+	schema:name	"Web Service Deployment Platform" ;
+	ns286:hasBenefit	ns231:this ;
+	ns253:isFeatureOf	ns259:this ,
+		ns260:this ,
+		ns178:this ,
+		ns257:this .
+ns56:this	rdf:type	ns253:ProductFeature ,
+		ns253:Feature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Virtuoso can transform Web Services into RDF Linked Data, on the fly." ;
+	schema:name	"Web Services to RDF Linked Data" ;
+	ns286:hasBenefit	ns228:this ;
+	ns253:isFeatureOf	ns257:this ,
+		ns259:this ,
+		ns260:this ,
+		ns178:this .
+ns57:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Column-wise data storage" ;
+	ns253:isFeatureOf	ns258:this .
+ns58:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Data Compression" ;
+	ns253:isFeatureOf	ns258:this .
+ns59:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Elastic Clustering" ;
+	ns253:isFeatureOf	ns258:this .
+ns60:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"New Extractor Cartridges" ;
+	ns253:isFeatureOf	ns258:this .
+ns61:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"New Meta-Cartridges" ;
+	ns253:isFeatureOf	ns254:this ,
+		ns256:this ,
+		ns258:this .
+ns62:this	rdf:type	ns253:ProductFeature ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Vectored Execution" ;
+	ns253:isFeatureOf	ns258:this .
+<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/virtuosoINI#>	rdf:type	ns262:InitializationFile ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:name	"Generic Virtuoso Initialization File" ;
+	ns7:hasOperatingSystemFamily	ns7:OSFamilyAny ;
+	dcterms:format	"text/plain" ;
+	schema:downloadUrl	<http://download3.openlinksw.com.s3.amazonaws.com/uda/virtuoso/virtuoso.ini> ;
+	ns264:versionText	"1.2.0" .
+@prefix ns287:	<http://www.openlinksw.com/ontology/oplcorp#> .
+ns249:this	rdf:type	ns287:Corporation ;
+	ns287:hasValueProposition	ns247:this ,
+		ns248:this ,
+		ns250:this ,
+		ns251:this ,
+		ns252:this .
+@prefix ns288:	<http://data.openlinksw.com/oplweb/real-fusion-of-data-and-aritificial-intelligence-#> .
+ns249:this	ns287:hasValueProposition	ns288:this ,
+		ns149:this ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:offers	ns19:this .
+<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+>	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:itemOffered	ns22:this ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
+	schema:price	499.99 ;
+	schema:priceSpecification	<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC+-special-price%23this> ;
+	schema:validThrough	"2019-08-31T23:59:59Z"^^xsd:dateTime .
+@prefix ns289:	<urn:opl:shop:offering:sponging:cache:> .
+ns289:official	foaf:topic	ns19:this .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/webdev%20stuff%202018/urn-webdev-virtuoso.ttl>	rdf:type	rdfs:Resource .
+@prefix ldp:	<http://www.w3.org/ns/ldp#> .
+<http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/webdev%20stuff%202018/urn-webdev-virtuoso.ttl>	rdf:type	ldp:Resource ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso .
+<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-special-price%23this>	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC+-special-price%23this>	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+<http://oplussol11.intranet.openlinksw.com:8890/DAV/home/thaynes/Public/NewWebsite/urn-webdev-virtuoso.ttl>	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso .
+@prefix ns292:	<http://www.openlinksw.com/schemas/RDF#> .
+<http://oplussol11.intranet.openlinksw.com:8890/DAV/home/thaynes/Public/NewWebsite/urn-webdev-virtuoso.ttl>	ns292:format	"TURTLE" .
+ns28:virtuoso	rdf:type	foaf:Document .
+@prefix bibo:	<http://purl.org/ontology/bibo/> .
+ns28:virtuoso	rdf:type	bibo:Document .
+@prefix sioc:	<http://rdfs.org/sioc/ns#> .
+ns28:virtuoso	rdf:type	sioc:Container ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso .
+@prefix ns295:	<http://vocab.deri.ie/void#> .
+ns28:virtuoso	ns295:inDataset	ns29:virtuoso ;
+	opl:isDescribedUsing	rdf: .
+@prefix formats:	<http://www.w3.org/ns/formats/> .
+ns28:virtuoso	formats:media_type	"text/turtle" ;
+	sioc:container_of	ns4:virtuoso .
+<http://uda.openlinksw.com/dbspecific/>	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:name	"UDA Drivers Comparison Guide" ;
+	schema:title	"UDA Drivers Comparison Guide" .
+ns7:GenericLinux	rdf:type	ns7:OpsysFamily ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:logo	<https://www.openlinksw.com/images/linux-cart-icon.png> ;
+	schema:name	"Generic Linux" .
+ns7:MacOSX	rdf:type	ns7:OpsysFamily ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:logo	<https://www.openlinksw.com/images/macos-cart-icon.png> ;
+	schema:name	"macOS" .
+ns7:OSFamilyAny	rdf:type	ns7:OpsysFamily ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:logo	<https://www.openlinksw.com/images/OS-Support.svg> ;
+	schema:name	"Any Operating System Family" .
+ns7:Windows	rdf:type	ns7:OpsysFamily ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:logo	<https://www.openlinksw.com/images/win-cart-icon.png> ;
+	schema:name	"Windows" .
+ns182:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"Configuration A:  4 cluster nodes, 3 instances per cluster node (quorum), 1 instance per host cluster node, 12 host cluster nodes.  \n\nConfiguration B:  4 cluster nodes, 3 instances per cluster node (quorum), 4 instances per host cluster node, 3 host cluster nodes.  \n\nPerformance has more to do with the number of Virtuoso Server processes running on each cluster node.  One instance per cluster node will work better than four instances per cluster node.  You will have more OS resources available as the Virtuoso instances are reduced.  Ideally, you want to spread the instances over distinct machines so that you have resources pooled across those machines." .
+ns183:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"Virtuoso is a Native Hybrid DBMS - it is SQL and NoSQL combined." .
+ns184:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created." .
+ns185:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created.  Clustering has more to do with horizontal partitioning of the database across many machines (physical or virtual) to parallelize execution of queries, etc.  SPARQL-FED may be used with a Virtuoso Cluster, just as with a Single-Server Instance." .
+ns186:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"You can use replication for HA across Elastic Clusters or Single-Server instances.  For example, nearly-instantaneous Transactional Replication is used by some of our larger customers (e.g., Globo of Brazil used a Transactional Replication setup for the entire World Cup 2014 without any issues)." .
+ns187:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"If the \"elastic cluster\" option is enabled at DB creation time, adding nodes and repartitioning indexes can be done without stopping the cluster." .
+ns188:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"Virtuoso Open Source Edition (VOS) is part of the LOD2 OpenStack deliverables, but this does not include Enterprise Edition features (i.e., no replication clustering, elastic clustering, fine-grained ABAC security, nor virtual DBMS functionality for making RDF views over external SQL data sources). That said, Virtuoso (both Open Source and Enterprise) may be instatiated on cloud services, including Amazon EC2." .
+ns189:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"Yes.  You start with Single-Server, enable the Elastic Cluster optionand  then add nodes as scalability demands increase." .
+ns190:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"This page discusses the basics of creating RDF-based Linked Data Views over Relational Data Sourcesand  links to several other pages with specific guides for various local and remote (ODBC- and JDBC-accessible) data sources." .
+ns191:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"This page discusses some of the difficulties faced in exposing RDF data and in bridging the \"Linked Data Web\" and the traditional \"Document Web\". Two generic approaches to resolving these deployment challenges - content negotiation and URL rewriting - are described, before looking at OpenLink Virtuoso, from the standpoint of both how it implements these solutions and how Linked Data is deployed." .
+ns192:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"See required prerequisites, pre-installation steps, VAD package installation, post-installation stepsand  example tutorials." .
+ns193:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"See OpenLink How-To guides to learn how to connect Virtuoso's Virtual Database Engine to local or remote data sources including Firebird, DB2, Informix, Ingres, MySQL, Microsoft SQL Server, Oracle, PostgreSQL, Progress, Sybaseand  others accessible by ODBC or JDBC. (Note - JDBC requires an ODBC-to-JDBC Bridge, which OpenLink may also supply.)" .
+ns194:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"R2RML, a W3C Recommendation, is a language for expressing customized mappings from relational databases to RDF data sets. Such mappings provide the ability to view existing relational data in the RDF data model, expressed in a structure and target vocabulary of the mapping author's choice. R2RML mappings are themselves RDF graphs written in Turtle syntax. R2RML is becoming the generic standard adopted by most vendors of tools mapping relational data to RDF, enabling the interoperability of R2RML scripts, whether created with such tools or by hand. This page discusses how to use R2RML specifically with Virtuoso." .
+ns195:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"See example of One-Click Linked Data Generation & Deployment of Linked Data Views over Relational Data Sources with Virtuoso." .
+ns196:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"See OpenLink How-To guide that demonstrates the generation of CXML-based output from SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer." .
+ns197:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration." .
+ns198:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	ns261:hasAnswerText	"See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration." .
+ns199:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns200:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	1249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns201:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	99.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns202:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns203:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns204:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns205:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	1249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns206:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	99.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns207:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns208:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns209:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns210:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns211:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	2249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns212:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	2249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns213:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	2249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns214:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	2999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns215:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	2999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns216:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	2999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns217:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	99.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns218:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	99.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns219:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	99.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns220:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns221:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns222:this	wdrs:describedby	ns4:virtuoso ,
+		ns5:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns153:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns154:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns155:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns156:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns157:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns158:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns159:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns160:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns161:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns162:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns163:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns164:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns165:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns166:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns167:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns168:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns169:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns170:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns171:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns172:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns173:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns174:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string .
+ns175:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:itemOffered	ns1:this ;
+	skos:prefLabel	"Department License for Virtuoso 8 on Linux Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems" ;
+	schema:price	4999.99 ;
+	schema:priceSpecification	ns164:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> .
+ns176:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:itemOffered	ns15:this ;
+	skos:prefLabel	"Department License for Virtuoso 8 on macOS Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems" ;
+	schema:price	4999.99 ;
+	schema:priceSpecification	ns165:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> .
+ns177:this	rdf:type	ns265:Virtuoso8Offer ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:itemOffered	ns16:this ;
+	skos:prefLabel	"Department License for Virtuoso 8 on Windows Server" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems" ;
+	schema:price	4999.99 ;
+	schema:priceSpecification	ns166:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ,
+		"2019-08-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> .
+ns178:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:comment	"Secure and High-Performance Platform for both Multi-Model Database Management and Conceptual Data Virtualization" ;
+	schema:description	"\r\n\t  \t\t\t\t\t  Secure, Cross Platform, and High-Performance Platform that uniquely delivers the following integrated\r\n\t\t\t\t\t\t  functionality: data access, data integration, data virtualization, multi-model data management [relational tables and relational \r\n\t\t\t\t\t\t  property graphs],and HTTP application deployment services.  \r\n\t\t\t\t\t\t  "@en ,
+		"Secure, Cross Platform, and High-Performance Data Server that uniquely delivers the following integrated\n      functionality: data access, data integration, multi-model data management [relational tables and relational property graphs],\n      and HTTP application deployment services.  " ,
+		"\r\n\t  \t\t\t\t\t  Secure, Cross Platform, and High-Performance Platform that uniquely delivers the following integrated\r\n\t\t\t\t\t\t  functionality: data access, data integration, data virtualization, multi-model data management [relational tables and relational \r\n\t\t\t\t\t\t  property graphs],and HTTP application deployment services.  \r\n\t\t\t\t\t\t  "^^xsd:string ,
+		"Secure, Cross Platform, and High-Performance Data Server that uniquely delivers the following integrated\r\n      functionality: data access, data integration, multi-model data management [relational tables and relational property graphs],\r\n      and HTTP application deployment services.  " ;
+	schema:name	"Virtuoso Universal Server "^^xsd:string .
+ns179:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:description	"This document provides a HOWTO guide that showcases the generation of CXML based output from\r\n                         SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer."@en ,
+		"Working with SPARQL-based Pivot Collections and Virtuoso" ;
+	schema:name	"Working with SPARQL-based Pivot Collections and Virtuoso" ;
+	schema:title	"Working with SPARQL-based Pivot Collections and Virtuoso" ;
+	schema:headline	"This document provides a HOWTO guide that showcases the generation of CXML based output from\r\n                         SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer."@en ,
+		"Working with SPARQL-based Pivot Collections and Virtuoso" .
+ns180:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:description	"Linked Data Exploration with the HTML5 Pivot Viewer" ,
+		"This document provides a HOWTO guide that showcases how to use a Virtuoso\r\n                         hosted instance of the Microsoft PivotViewer as a Linked Data front-end for\r\n                         follow-your-nose data exploration."@en ;
+	schema:name	"Linked Data Exploration with the HTML5 Pivot Viewer" ;
+	schema:title	"Linked Data Exploration with the HTML5 Pivot Viewer" ;
+	schema:headline	"Linked Data Exploration with the HTML5 Pivot Viewer" ,
+		"This document provides a HOWTO guide that showcases how to use a Virtuoso\r\n                         hosted instance of the Microsoft PivotViewer as a Linked Data front-end for\r\n                         follow-your-nose data exploration."@en .
+ns181:this	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:description	"Linked Data Exploration with the Microsoft Pivot Viewer" ,
+		"This document provides a HOWTO guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."@en ;
+	schema:name	"Linked Data Exploration with the Microsoft Pivot Viewer" ;
+	schema:title	"Linked Data Exploration with the Microsoft Pivot Viewer" ;
+	schema:headline	"Linked Data Exploration with the Microsoft Pivot Viewer" ,
+		"This document provides a HOWTO guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."@en .
+ns31:this	owl:sameAs	ns5:virtuoso ,
+		ns4:virtuoso ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso .
+ns152:VirtInstallationEC2	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:name	"Virtuoso Universal Server AMI for Amazon EC2 Instantiation Guide " ;
+	schema:title	"Virtuoso Universal Server AMI for Amazon EC2 Instantiation Guide " .
+ns152:VirtJenaProvider	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:name	"Virtuoso Native Jena Provider Usage Guide" ;
+	schema:title	"Virtuoso Native Jena Provider Usage Guide" .
+ns152:VirtRDFDriverRedland	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:name	"Virtuoso Native Redland Provider Usage Guide" ;
+	schema:title	"Virtuoso Native Redland Provider Usage Guide" .
+ns152:VirtSesame2Provider	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:name	"Virtuoso Native Sesame 2 Provider Usage Guide" ;
+	schema:title	"Virtuoso Native Sesame 2 Provider Usage Guide" .
+ns152:VirtSesameProvider	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:name	"Virtuoso Native Sesame Provider Usage Guide" ;
+	schema:title	"Virtuoso Native Sesame Provider Usage Guide" .
+<http://virtuoso.openlinksw.com/tutorials/sparql/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I/OpenLink_Data_Spaces_SIOC_and_SPARQL_Guide_Part_I.html>	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ;
+	schema:name	"OpenLink Data Spaces, SIOC and SPARQL Guide" ;
+	schema:title	"OpenLink Data Spaces, SIOC and SPARQL Guide" .
+ns29:uda	foaf:topic	ns19:this .
+@prefix ns297:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#> .
+ns297:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this .
+@prefix ns298:	<http://data.openlinksw.com/oplweb/module/SPIN#> .
+ns297:this	ns2:hasLicenseModule	ns298:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this .
+@prefix ns299:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#> .
+ns299:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns9:this ,
+		ns298:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this .
+@prefix ns300:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#> .
+ns300:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns298:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this .
+@prefix ns301:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-combo-WKS-ANY#> .
+ns301:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns9:this ,
+		ns298:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this .
+@prefix ns302:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#> .
+ns302:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns298:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this .
+@prefix ns303:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-LIN#> .
+ns303:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this .
+@prefix ns304:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-MAC#> .
+ns304:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this .
+@prefix ns305:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-WIN#> .
+ns305:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns13:this ,
+		ns14:this ,
+		ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this .
+@prefix ns306:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-LIN#> .
+ns306:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns307:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-MAC#> .
+ns307:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns308:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-WIN#> .
+ns308:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns309:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#> .
+ns309:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns310:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#> .
+ns310:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns311:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#> .
+ns311:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns312:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-LIN#> .
+ns312:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns313:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-MAC#> .
+ns313:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns314:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-WIN#> .
+ns314:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns315:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#> .
+ns315:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns316:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#> .
+ns316:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns9:this ,
+		ns13:this ,
+		ns14:this .
+@prefix ns317:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#> .
+ns317:this	rdf:type	ns2:Virtuoso8License ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns9:this ,
+		ns10:this ,
+		ns11:this ,
+		ns12:this ,
+		ns13:this ,
+		ns14:this .
+ns149:this	rdf:type	ns287:ValueProposition ;
+	wdrs:describedby	ns4:virtuoso ,
+		ns28:virtuoso ,
+		ns5:virtuoso ;
+	schema:description	"Built-in reasoning and inference functionality makes artificial intelligence, machine-learning, data lineage, and data governance an integral part of its Data Virtualization functionality, facilitating the construction of a modern Knowledge Graph for each business domain of interest (e.g., Corporate, Department, Workgroup, Project, etc.)" ;
+	schema:image	<https://www.openlinksw.com/images/interoperability-with-tools.jpg> ;
+	schema:name	"Real Fusion of Data and Artificial Intelligence " ;
+	ns287:hasRank	"3"^^xsd:int .
+<http://virtuoso.openlinksw.com/offers/>	schema:about	ns19:this ;
+	schema:offers	ns19:this .
+@prefix ns318:	<http://data.openlinksw.com/oplweb/opsys_family/MacOSClassic#> .
+ns318:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-macos.gif> .
+@prefix ns319:	<urn:mdata:websites:google:> .
+ns319:seo	foaf:topic	ns19:this .
+<http://virtuoso.openlinksw.com/>	schema:offers	ns19:this .
+<http://virtuoso.openlinksw.com/index-temp-2/>	schema:offers	ns19:this .
+<http://virtuoso.openlinksw.com/prices/>	schema:offers	ns19:this .
+@prefix ns320:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#> .
+ns320:this	rdf:type	ns265:Virtuoso8Offer ;
+	skos:prefLabel	"Personal License for Virtuoso 8 on macOS Server" .
+@prefix ns321:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC-special-price#> .
+ns320:this	schema:priceSpecification	ns321:this ;
+	schema:title	"Software License Offer: Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
+	schema:validThrough	"2019-10-31T23:59:59Z"^^xsd:dateTime ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&mode=v> .
+@prefix ns322:	<http://data.openlinksw.com/oplweb/opsys_family/MonoCLR#> .
+ns322:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-mono.gif> .
+@prefix ns323:	<http://data.openlinksw.com/oplweb/opsys_family/DG-UX#> .
+ns323:this	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-digital.gif> .
+ns7:Irix	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-sgi.gif> .
+ns7:MacOSClassic	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-macos.gif> .
+ns7:FreeBSD	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-freebsd.gif> .
+ns7:DynixPTX	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-dynix.gif> .
+ns7:Tru64UNIX	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-tru64.gif> .
+ns7:SCOOpenServer	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-scoopenserver.gif> .
+ns7:UnixWare	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-unixware.gif> .
+ns7:LynxOS	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-lynxos.png> .
+ns7:JavaVirtualMachine	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-java.gif> .
+ns7:DG-UX	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-digital.gif> .
+ns7:Ruby	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-ruby.png> .
+ns7:Firefox	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-firefox.png> .
+ns7:MonoCLR	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-mono.gif> .
+@prefix ns324:	<https://www.openlinksw.com/about/id/urn/webdev:> .
+ns324:virtuoso	rdf:type	bibo:Document ,
+		sioc:Container ;
+	ns295:inDataset	ns29:virtuoso ;
+	formats:media_type	"text/turtle" ;
+	sioc:container_of	ns5:virtuoso .
+ns9:this	schema:name	"ABAC Module" .
+ns11:this	schema:name	"Business Analytics Module"^^xsd:string .
+ns12:this	schema:name	"Replication Module"^^xsd:string .
+ns298:this	schema:name	"Custom Reasoning & Inference  Module" .
+ns10:this	schema:name	"VAL Module"^^xsd:string .
+ns13:this	schema:name	"VDB Module"^^xsd:string .
+ns14:this	schema:name	"Virtuoso 8.x Column Storage"^^xsd:string .
+ns8:annual	schema:name	"License Duration -- One Year Annual" ;
+	ns2:isDurationOf	ns19:this .
+ns7:serverWorkstationOS	schema:name	"Server or Workstation" .
+ns7:workstationOS	schema:name	"Workstation"^^xsd:string .
+ns7:AIX	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-aix.gif> .
+ns7:HPUX	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-hpux.gif> .
+ns7:Solaris	rdf:type	ns7:OpsysFamily ;
+	schema:logo	<https://www.openlinksw.com/images/icon-solaris.gif> .
+ns247:this	rdf:type	ns287:ValueProposition ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"As demonstrated by its platform dominance in the massive Linked Open Data (LOD) Cloud - the world's largest Knowledge Graph - Virtuoso's functionality isn't challenged by performance or scalability.\n<br/><br/>\nDBpedia, the kernel that originally seeded the LOD Cloud, is a live instance of Virtuoso offering 24/7 access to all users, anywhere in the world. Key benefits of this include:<br /><br /> <ul><li>Hyperlink-based Super Keys identify subject-matter principals referenced in Wikipedia documents</li> <li>High-Performance Web Query Service enables delivery of SPARQL queries over HTTP, where solutions are returned using a variety of document types (HTML, CSV, JSON, XML, RDF-Turtle, and many others)</li> <li>Scalability handles any kind of ad-hoc query while enforcing a practical \"fair use\" policy, enabled by a unique and innovative \"Anytime Query\" feature.</li></ul>\n<br/><br/>\nThe LOD Cloud Cache, another Virtuoso instance, provides an even larger and more challenging instance that offers access to a live Knowledge Graph comprising more than 40 Billion entity relationships deployed in line with Linked Data principles." ;
+	schema:image	<https://www.openlinksw.com/images/LOD_Cloud_Atlas_MD.png> ;
+	schema:name	"Blistering Performance & Scalability" ;
+	ns287:hasRank	"5"^^xsd:int .
+ns248:this	rdf:type	ns287:ValueProposition ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"As a Data Virtualization platform, Virtuoso enables fast and flexible harmonization of disparate data that increases agility for individuals and enterprises alike." ;
+	schema:image	<https://www.openlinksw.com/images/webby_structured_data_packets_v9.png> ;
+	schema:name	"Data-driven agility without compromise" ;
+	ns287:hasRank	"1"^^xsd:int .
+ns250:this	rdf:type	ns287:ValueProposition ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Its Data Virtualization capability enables the construction and deployment of Knowledge Graphs atop existing data exposed by APIs such as HTTP, ODBC, JDBC, ADO.NET, OLE DB, XMLA, and many service-specific APIs (e.g., LinkedIn, Crunchbase, Twitter, Facebook, etc.)" ;
+	schema:image	<https://www.openlinksw.com/images/uninterrupted-db-access.jpg> ;
+	schema:name	"Data Virtualization done right" ;
+	ns287:hasRank	"2"^^xsd:int .
+ns251:this	rdf:type	ns287:ValueProposition ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Knowledge Graphs created by this platform manifest as a secure Semantic Web of Linked Data where Attribute-based Access Control (ABAC) provides the basis for intelligent Data Access Policies that scale across the enterprise and hybrid clouds. " ;
+	schema:image	<https://www.openlinksw.com/images/controlled-access-to-data-assets.jpg> ;
+	schema:name	"Intelligent Data Privacy & Security" ;
+	ns287:hasRank	"4"^^xsd:int .
+ns252:this	rdf:type	ns287:ValueProposition ;
+	wdrs:describedby	ns5:virtuoso ,
+		ns4:virtuoso ,
+		ns28:virtuoso ;
+	schema:description	"Inject the power of hyperlinks as \"super keys\" into existing applications and services, thereby transforming them into modern tools for secure and smart interaction with new and existing data sources." ;
+	schema:image	<https://www.openlinksw.com/images/app-functionality.jpg> ;
+	schema:name	"Maximize new and emerging data-centric innovations without disruption to existing infrastructure" ;
+	ns287:hasRank	"6"^^xsd:int .

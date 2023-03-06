@@ -1,0 +1,288 @@
+@prefix schema:   <http://schema.org/> .
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix sioc:     <http://rdfs.org/sioc/ns#> .
+@prefix xhv:      <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:       <http://purl.org/goodrelations/v1#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix wdrs:     <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:    <http://rdfs.org/sioc/services#> .
+@prefix oplofr:   <http://www.openlinksw.com/ontology/offers#> .
+@prefix :         <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6OffersPrices.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6OffersPrices.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-21T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "Virtuoso 6.x Products Offers Prices Related Information Document" ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso 6.x Products Offers Prices. """ ;
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 6.x Offers Prices"^^xsd:string  ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 6.x Offers Prices"""^^xsd:string  ;
+   sioc:has_container <.>   ;
+   sioc:sibling <Virtuoso6ProductsReleases.ttl> ,
+                <Virtuoso6Products.ttl> ,
+                <Virtuoso6Offers.ttl> ,
+                <Virtuoso6Modules.ttl> ,
+                <Virtuoso6Licenses.ttl> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-21T09:41:00-05:00"^^xsd:dateTime;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   skos:related <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTOffersPrices.ttl> ,
+                <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTOffersPrices.ttl>  ;
+   skos:related <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTOffersPrices.ttl> ,
+                <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTOffersPrices.ttl> ;
+   schema:about <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-personal-WKS-win-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-personal-WKS-linux-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-personal-WKS-macosx-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-win-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-linux-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-macosx-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-solaris-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-win-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-linux-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-macosx-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-solaris-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-win-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-win-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-linux-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx-price1#this> ,
+                <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris-price1#this> .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-personal-WKS-win-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-personal-WKS-win#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "99.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Personal License (non-expiring, 2 cores, 5 threads) on Windows(Desktop) -- Retail Offer Unit Price: 99.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-win-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-win#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "499.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Early Stage Development License (1 year expiration, 2 cores, 5 threads) on Windows(Desktop) -- Retail Offer Unit Price: 499.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-win-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-win#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "1249.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Late Stage Development License (non-expiring, 4 cores, 10 threads) on Windows(Desktop) -- Retail Offer Unit Price: 1,249.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-win-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-win#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "2499.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Initial Deployment License (non-expiring, 4 cores, 10 threads) on Windows(Server/Desktop) -- Retail Offer Unit Price: 2,499.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-win-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-win#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "4999.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Systems Integration License (non-expiring, 8 cores, 10 threads) on Windows(Server/Desktop) -- Retail Offer Unit Price: 4,999.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-personal-WKS-linux-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-personal-WKS-linux#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "99.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Personal License (non-expiring, 2 cores, 5 threads) on Linux (Desktop) -- Retail Offer Unit Price: 99.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-linux-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-linux#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "499.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Early Stage Development License (1 year expiration, 2 cores, 5 threads) on Linux (Desktop) -- Retail Offer Unit Price: 499.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-linux-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-linux#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "1249.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Late Stage Development License (non-expiring, 4 cores, 10 threads) on Linux (Desktop) -- Retail Offer Unit Price: 1,249.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "2499.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Initial Deployment License (non-expiring, 4 cores, 10 threads) on Linux (Server/Desktop) -- Retail Offer Unit Price: 2,499.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-linux-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-linux#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "4999.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Systems Integration License (non-expiring, 8 cores, 10 threads) on Linux (Server/Desktop) -- Retail Offer Unit Price: 4,999.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-solaris-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-solaris#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "499.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Early Stage Development License (1 year expiration, 2 cores, 5 threads) on Solaris (Desktop) -- Retail Offer Unit Price: 499.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-solaris-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-solaris#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "1249.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Late Stage Development License (non-expiring, 4 cores, 10 threads) on Solaris (Desktop) -- Retail Offer Unit Price: 1,249.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "2499.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Initial Deployment License (non-expiring, 4 cores, 10 threads) on Solaris (Server/Desktop) -- Retail Offer Unit Price: 2,499.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "4999.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Systems Integration License (non-expiring, 8 cores, 10 threads) on Solaris (Server/Desktop) -- Retail Offer Unit Price: 4,999.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-personal-WKS-macosx-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-personal-WKS-macosx#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "99.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Personal License (non-expiring, 2 cores, 5 threads) on Mac OS X (Desktop) -- Retail Offer Unit Price: 99.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-early-stage-WKS-macosx-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-macosx#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "499.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Early Stage Development License (1 year expiration, 2 cores, 5 threads) on Mac OS X (Desktop) -- Retail Offer Unit Price: 499.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-late-stage-WKS-macosx-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-macosx#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "1249.99"^^xsd:decimal ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:name "Virtuoso 6.x Late Stage Development License (non-expiring, 4 cores, 10 threads) on Mac OS X (Desktop) -- Retail Offer Unit Price: 1,249.99 "^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "2499.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Initial Deployment License (non-expiring, 4 cores, 10 threads) on Mac OS X (Server/Desktop) -- Retail Offer Unit Price: 2,499.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx-price1#this>
+      wdrs:describedby source: ;
+      a schema:UnitPriceSpecification , oplofr:Virtuoso6Pricing , oplofr:Virtuoso6RetailUnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+      oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx#this> ;
+      schema:priceCurrency "USD"^^xsd:string ;
+      schema:price "4999.99"^^xsd:decimal ;
+      schema:name "Virtuoso 6.x Systems Integration License (non-expiring, 8 cores, 10 threads) on Mac OS X (Server/Desktop) -- Retail Offer Unit Price: 4,999.99 "^^xsd:string ;
+      schema:unitCode "C62"^^xsd:string ;
+      schema:validFrom "2016-02-11T00:00:00Z"^^xsd:dateTime ;
+      schema:validThrough "2016-12-31T23:59:59Z"^^xsd:dateTime .
+
+
+
+

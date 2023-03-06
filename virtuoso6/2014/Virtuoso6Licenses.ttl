@@ -1,0 +1,500 @@
+@prefix    schema:   <http://schema.org/>                            .
+@prefix        cc:   <http://creativecommons.org/ns#>                .
+@prefix      sioc:   <http://rdfs.org/sioc/ns#>                      .
+@prefix       xhv:   <http://www.w3.org/1999/xhtml/vocab#>           .
+@prefix  openlink:   <http://www.openlinksw.com/oplweb#>             .
+@prefix    oplweb:   <http://www.openlinksw.com/schemas/oplweb#>     .
+@prefix       xsd:   <http://www.w3.org/2001/XMLSchema#>             .
+@prefix      rdfs:   <http://www.w3.org/2000/01/rdf-schema#>         .
+@prefix       owl:   <http://www.w3.org/2002/07/owl#>                .
+@prefix   dcterms:   <http://purl.org/dc/terms/>                     .
+@prefix      wdrs:   <http://www.w3.org/2007/05/powder-s#>           .
+@prefix      foaf:   <http://xmlns.com/foaf/0.1/>                    .
+@prefix      skos:   <http://www.w3.org/2004/02/skos/core#>          .
+@prefix     siocs:   <http://rdfs.org/sioc/services#>                .
+@prefix    opllic:   <http://www.openlinksw.com/ontology/licenses#>  .
+@prefix   oplcont:   <http://www.openlinksw.com/ontology/contracts#> .
+@prefix    oplsof:   <http://www.openlinksw.com/ontology/software#>  .
+@prefix          :   <#>  .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6Licenses.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6Licenses.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "Virtuoso 6.x Licenses Related Information Document" ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso 6.x Licenses.""";
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 6.x Licenses"^^xsd:string  ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 6.x Licenses."""^^xsd:string  ;
+   sioc:has_container <.> ;
+   sioc:sibling <Virtuoso6ProductsReleases.ttl> ,
+                <Virtuoso6Products.ttl> ,
+                <Virtuoso6OffersPrices.ttl> ,
+                <Virtuoso6Offers.ttl> ,
+                <Virtuoso6Modules.ttl>  ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   skos:related  <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTProducts.ttl> ,
+                 <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTProducts.ttl> ;
+   schema:about <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-personal-WKS-win#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-personal-WKS-linux#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-personal-WKS-macosx#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-win#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-linux#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-macosx#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-solaris#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-win#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-linux#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-macosx#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-solaris#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-win#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-win#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-linux#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx#this> ,
+                 <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris#this>  .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-initial-deployment-WKSSVR-linux"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Initial-Deployment License for installation (transferable) on one (1) host running on Linux (Server/Dektop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Initial-Deployment License (4 cores, 10 threads) for deployment on Linux (Server/Dektop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-05-WKSSVR-linux"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Initial-Deployment License for installation (transferable) on one (1) host running on Mac OS X (Server/Dektop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Initial-Deployment License (4 cores, 10 threads) for deployment on Mac OS X (Server/Dektop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-05-WKSSVR-macosx"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Initial-Deployment License for installation (transferable) on one (1) host running on Solaris (Server/Dektop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Initial-Deployment License (4 cores, 10 threads) for deployment on Solaris (Server/Dektop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-05-WKSSVR-solaris"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-initial-deployment-WKSSVR-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-initial-deployment-WKSSVR-win"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Initial-Deployment License for installation (transferable) on one (1) host running on Windows (Server/Dektop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-initial-deployment-WKSSVR-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Initial-Deployment License (4 cores, 10 threads) for deployment on Windows (Server/Dektop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-05-WKSSVR-win"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-late-stage-WKS-linux"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Linux (Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Late-stage-WKS-Development License (non-expiring, 4 cores, 10 threads) for deployment on Linux (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-04-linux"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-late-stage-WKS-macosx"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Mac OS X (Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Late-stage-WKS-Development License (non-expiring, 4 cores, 10 threads) for deployment on Mac OS X (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-04-macosx"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-late-stage-WKS-solaris"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Solaris (Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Late-stage-WKS-Development License (non-expiring, 4 cores, 10 threads) for deployment on Solaris (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-04-solaris"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-late-stage-WKS-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-late-stage-WKS-win"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Windows (Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of four (4) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-late-stage-WKS-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Late-stage-WKS-Development License (non-expiring, 4 cores, 10 threads) for deployment on Windows (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-04-win"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-personal-WKS-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-personal-WKS-linux"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Personal License for installation (transferable) on one (1) host running on Linux (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of up to 2 processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-personal-WKS-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Personal License (no expiration, 2 cores, 5 threads) for deployment on Linux (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-01-WKS-linux"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-personal-WKS-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-personal-WKS-macosx"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Personal License for installation (transferable) on one (1) host running on Mac OS X (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of up to 2 processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-personal-WKS-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Personal License (no expiration, 2 cores, 5 threads) for deployment on Mac OS X (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-01-WKS-macosx"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-personal-WKS-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-personal-WKS-win"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Personal License for installation (transferable) on one (1) host running on Windows (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of up to 2 processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-personal-WKS-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Personal License (no expiration, 2 cores, 5 threads) for deployment on Windows (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-01-WKS-win"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-systems-integration-WKSSVR-linux"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Systems-Integration License for installation (transferable) on one (1) host running on Linux (Server/Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of eight (8) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Systems-Integration License (8 cores, 10 threads) for deployment on Linux (Server/Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-07-WKSSVR-linux"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-systems-integration-WKSSVR-macosx"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Systems-Integration License for installation (transferable) on one (1) host running on Mac OS X (Server/Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of eight (8) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Systems-Integration License (8 cores, 10 threads) for deployment on Mac OS X (Server/Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-07-WKSSVR-macosx"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-systems-integration-WKSSVR-solaris"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Systems-Integration License for installation (transferable) on one (1) host running on Solaris (Server/Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of eight (8) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Systems-Integration License (8 cores, 10 threads) for deployment on Solaris (Server/Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-07-WKSSVR-solaris"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-systems-integration-WKSSVR-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-systems-integration-WKSSVR-win"^^xsd:string ;
+    schema:description "Server-class Virtuoso 6.x Systems-Integration License for installation (transferable) on one (1) host running on Windows (Server/Desktop). Enables ten (10) Client Service Threads, and will utilize a maximum of eight (8) processor cores, without expiration."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-systems-integration-WKSSVR-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 6.x Systems-Integration License (8 cores, 10 threads) for deployment on Windows (Server/Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-07-WKSSVR-win"^^xsd:string ;
+    wdrs:describedby source: .
+
+
+:Duration-2016-02-virtuoso-6-early-stage-WKS-linux a opllic:LicenseDuration ;
+    schema:name "1 year"^^xsd:string ;
+    opllic:durationYears "1"^^xsd:integer ;
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-linux#this> .
+
+:Duration-2016-02-virtuoso-6-early-stage-WKS-macosx a opllic:LicenseDuration ;
+    schema:name "1 year"^^xsd:string ;
+    opllic:durationYears "1"^^xsd:integer ;
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-macosx#this> .
+
+:Duration-2016-02-virtuoso-6-early-stage-WKS-solaris a opllic:LicenseDuration ;
+    schema:name "1 year"^^xsd:string ;
+    opllic:durationYears "1"^^xsd:integer ;
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-solaris#this> .
+
+:Duration-2016-02-virtuoso-6-early-stage-WKS-win a opllic:LicenseDuration ;
+    schema:name "1 year"^^xsd:string ;
+    opllic:durationYears "1"^^xsd:integer ;
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-win#this> .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-linux#this> a
+        opllic:ExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-early-stage-WKS-linux"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Early-Stage-Development License for installation (transferable) on one (1) host running on Linux (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of four (4) processor cores, for one (1) year."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasDuration :Duration-2016-02-virtuoso-6-early-stage-WKS-linux ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Early-Stage-Development License (1 year expiration, 4 cores, 5 threads) for deployment on Linux (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-03-WKS-linux"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-macosx#this> a
+        opllic:ExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-early-stage-WKS-macosx"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Early-Stage-Development License for installation (transferable) on one (1) host running on Mac OS X (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of four (4) processor cores, for one (1) year."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasDuration :Duration-2016-02-virtuoso-6-early-stage-WKS-macosx ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Early-Stage-Development License (1 year expiration, 4 cores, 5 threads) for deployment on Mac OS X (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-03-WKS-macosx"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-solaris#this> a
+        opllic:ExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-early-stage-WKS-solaris"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Early-Stage-Development License for installation (transferable) on one (1) host running on Solaris (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of four (4) processor cores, for one (1) year."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasDuration :Duration-2016-02-virtuoso-6-early-stage-WKS-solaris ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Early-Stage-Development License (1 year expiration, 4 cores, 5 threads) for deployment on Solaris (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-03-WKS-solaris"^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-6-early-stage-WKS-win#this> a
+        opllic:ExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso6License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+    schema:name "Virtuoso 6.x License: 2016-02-virtuoso-6-early-stage-WKS-win"^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 6.x Early-Stage-Development License for installation (transferable) on one (1) host running on Windows (Desktop). Enables five (5) Client Service Threads, and will utilize a maximum of four (4) processor cores, for one (1) year."^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+    opllic:hasDuration :Duration-2016-02-virtuoso-6-early-stage-WKS-win ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-6-early-stage-WKS-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 6.x Early-Stage-Development License (1 year expiration, 4 cores, 5 threads) for deployment on Windows (Desktop)"^^xsd:string ;
+    skos:prefLabel "Virtuoso 6.x License: 2016-02-VIRT-03-WKS-win"^^xsd:string ;
+    wdrs:describedby source: .
+

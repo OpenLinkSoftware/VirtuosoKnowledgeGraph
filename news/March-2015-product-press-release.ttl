@@ -1,0 +1,149 @@
+## Document Metadata
+
+@prefix schema:   <http://schema.org/> .
+@prefix sioc:     <http://rdfs.org/sioc/ns#> .
+@prefix xhv:      <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix rdf:	    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix wdrs:     <http://www.w3.org/2007/05/powder-s#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplpress: <http://www.openlinksw.com/ontology/pressrelease#> .
+@prefix :          <#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/news/March-2015-product-press-release.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/news/March-2015-product-press-release.ttl> .
+
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:name "March 2015 Press Releases Related Information Document" ;
+  schema:comment """This document Describes the Virtuoso 7.2 and ODBC, JDBC, ADO.NET, and OLE-DB providers for the World Wide Web press releases."""@en ;
+  owl:sameAs source: .
+
+
+source:
+  a schema:CreativeWork ;
+  schema:name "March 2015 Press Releases Description" ;
+  schema:comment  """Describes the Virtuoso 7.2 and ODBC, JDBC, ADO.NET, and OLE-DB providers for the World Wide Web press releases."""@en ;
+  schema:dateCreated "2015-03-12T17:15:00-05:00"^^xsd:date ;
+  schema:dateModified "2015-03-12T17:15:00-05:00"^^xsd:date ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  dcterms:subject
+               <http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/>,
+	             <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/> ;
+  schema:about <http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/>,
+	             <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/> .
+
+
+## Press Release Descriptions
+
+<http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/>
+  a  oplpress:PressRelease, schema:WebPage, schema:TechArticle ;
+  schema:name "ODBC, JDBC, ADO.NET, OLE-DB Drivers for the World Wide Web RDBMS Press Release"@en ;
+  schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+  oplpress:hasHeadLine "OpenLink Unleashes New ODBC, JDBC, ADO.NET, and OLE DB Drivers for the World Wide Web" ;
+  oplpress:hasSubHeadLine """New High-Performance Data Access Driver Middleware turns World Wide Web
+  				     into a Federated Relational Database"""@en ;
+  oplpress:hasSituationAnalysis """Situation Analysis Exponential growth of the Internet and World Wide Web continue to
+  						   challenge the data-driven pursuit of agility by enterprises and individuals alike. Today,
+  						   as has been the case for many years, data silo proliferation increasingly reduces the utility
+  						   of existing productivity tools (such as spreadsheets, business intelligence report writers, document
+  						   editors, development environments, and others) as well as a new generation of mobile applications running
+  						   on smartphones, tablets, and wearables (e.g., wrist watches) while also increasing data access, integration,
+  						   and dissemination costs."""@en ;
+  oplpress:hasBody """OpenLink Software, Inc., an innovative technology leader in high performance data access,
+  			  integration, virtualization, and native data management, today introduced a new collection of
+  			  high-performance, secure, and cross-platform drivers for Open Database & Open Data Connectivity
+  			  that turn the World Wide Web into a federated relational database that's accessible from any existing
+  			  ODBC, JDBC, ADO.NET, or OLE DB compliant application or service.
+
+  			  The new LOD Cloud Connectivity Drivers, a client-only component of OpenLink Virtuoso, delivers an unrivalled
+  			  data access driver solution that turns any Virtuoso instance (Personal, Enterprise, or Cloud-hosted) into a
+  			  powerful data-junction-box for the World Wide Web, providing federated access to the massive data resources of
+  			  the World Wide Web and its Linked Open Data enclave.
+
+  			  In this new data access frontier, hundreds of data sources (including Facebook, Google+, Twitter, and LinkedIn)
+  			  become directly accessible by ODBC, JDBC, ADO.NET, and OLE DB compliant tools, through the same familiar interfaces
+  			  used to access SQL RDBMS-hosted databases provided by the likes of Oracle, Microsoft SQL Server, DB2, Sybase, Informix,
+  			  Ingress, Progress, MySQL, and many others."""@en ;
+  oplpress:hasQuote """Exposing the World Wide Web as a federated relational [Tables & Property Graphs] database,
+  			   accessible by both SQL and SPARQL, has been a fundamental goal of ours since the Web explosion
+  			   -- said Kingsley Idehen, Founder & CEO, OpenLink Software."""@en ;
+  oplpress:hasQuote """Every industry inflection, in regards to data access, interaction, integration, or management,
+  			   provides an opportunity for OpenLink Software to demonstrate its technology innovation prowess
+  			   and leadership. The World Wide Web, the Social Media realm it's spawned, and today's Big Linked
+  			   Open Data phenomena are no different -- he added."""@en ;
+  schema:mentions <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/> ;
+  xhv:related <http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/ODBCDriver#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/JDBCDriver#this>,
+  			<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this> .
+
+
+<http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release/>
+  a  oplpress:PressRelease, schema:WebPage, schema:TechArticle ;
+  schema:name "Virtuoso 7.2 Press Release" ;
+  schema:about <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+  schema:url <http://virtuoso.openlinksw.com/news/virtuoso-v72-press-release> ;
+  oplpress:hasHeadLine "OpenLink Unleashes Update To Semantically-Aware Column-Store For Handling Big Data Challenges"@en ;
+  oplpress:hasSubHeadLine """Virtuoso 7.2 Enhances Massively Scalable Hybrid (Relational Tables & RDF Property/Predicate Graphs)
+  					 DBMS For Secure, High-Performance, Big Data Management and Integration Challenges."""@en ;
+  oplpress:hasBody """OpenLink Software, Inc., today unveiled the latest, most advanced version of the Virtuoso hybrid data management system,
+  			  further expanding their cost-effective, secure, cross-platform, high-performance, and massively-scalable solution to the
+  			  challenge of performing and disseminating insightful analytics over Big, Small, and Diverse Data. This latest product release
+  			  delivers record setting performance, scalability, and agility, alongside unrivaled security sophistication.
+  			  Major Updates include:
+  			  Enhanced 3rd Party Storage Services Integration -- 3rd Party Storage Services (e.g., Dropbox, Amazon S3, Microsoft OneDrive,
+  			  Google Drive, Box, Rackspace, etc.) are mountable and un-mountable (asynchronously) to Virtuoso's HTTP/WebDAV based File Server
+  			  layer. This feature enables end-user level exploitation of open standards for Web-scale Verifiable Identity (e.g., PKIX) that no
+  			  longer depend on domain ownership.
+  			  Loosely-coupled CSV document support -- Attachment of external, filesystem-hosted CSV Documents to Virtuoso frees users from confinement
+  			  to wholesale import and export. Once attached, these CSV documents are treated like native SQL Tables, thereby enabling powerful transformations
+  			  into RDF-based Linked Open Data. Net effect, enhanced data virtualization functionality that enables powerful data integration and transformation
+  			   -- without losing the lightweight data definition and manipulation benefits of filesystem-hosted CSV documents.
+  			  Loosely-Coupled Data Transformation Services -- Enables use of the HTTP POST method to request asynchronous transformation services to convert a
+  			  myriad of structured data sources into RDF-based Linked Open Data, on the fly.
+  			  Built-in Nanotation Processor -- Automatic extraction and transformation of digital sentences (using RDF-TURTLE notation) embedded in Email
+  			  Messages, Online Discussion Posts, Tweets, Social Media Posts (Facebook, LinkedIn, Google+), HTML Body, and Plain Text documents, into RDF-based
+  			  Linked Open Data, which is then stored in the host Virtuoso instance. This feature provides users with the freedom, power, and flexibility to
+  			  create structured data wherever and whenever -- as long as the target destination is a content input control that supports the 'plain/text'
+  			  content-type.
+  			  Loosely-coupled SSL/TLS -- For enhanced security, SSL/TLS version and associated cipher selection is now configurable. Net effect, you can now
+  			  explicitly disable the use of specific SSL/TLS versions (e.g., SSL/TLS 3.0, which is susceptible to the POODLE exploit)."""@en ;
+  oplpress:hasQuote """Virtuoso 7.2 continues to demonstrate OpenLink's profound understanding of the fundamental challenges impeding the pursuit of agility shared by
+   			   individuals and enterprises alike, in regards to big, small, disparately-located, and heterogeneously-shaped data access, integration, and
+  			   management -- Kingsley Idehen, Founder & CEO, OpenLink Software"""@en ;
+  oplpress:hasQuote """As established technology innovation leaders in these realms, none of these functionality enhancements is delivered without paying special
+   			   attention to individual privacy and enterprise security -- alongside unobtrusive implementation -- he added."""@en ;
+  schema:mentions <http://virtuoso.openlinksw.com/news/virtuoso-lod-cloud-access-driver-press-release/> ;
+  xhv:related <http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/ODBCDriver#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/JDBCDriver#this>,
+  			<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#this>,
+  			<http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenDataConnectivity#this> .

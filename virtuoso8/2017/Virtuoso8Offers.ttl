@@ -1,0 +1,309 @@
+@prefix cc:          <http://creativecommons.org/ns#> .
+@prefix schema:      <http://schema.org/> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#> .
+@prefix xhv:         <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:          <http://purl.org/goodrelations/v1#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix wdrs:        <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:       <http://rdfs.org/sioc/services#> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplofr:      <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplcont:     <http://www.openlinksw.com/ontology/contracts#> .
+@prefix opllic:      <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplben:      <http://www.openlinksw.com/ontology/benefits#> .
+@prefix :            <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2018-03-02T10:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2018-03-01T14:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2018-11-05T10:00:00-05:00"^^xsd:dateTime ;
+   schema:name "Virtuoso 8.x Offers Related Information Document " ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso 8.x Offers. """;
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 8.x offers "^^xsd:string  ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 8.x Offers. """^^xsd:string  ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2018-03-02T10:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2018-03-01T14:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2018-11-05T10:00:00-05:00"^^xsd:dateTime ;
+   sioc:has_container <.>  ;
+   sioc:sibling <Virtuoso8ProductsReleases.ttl> ,
+                <Virtuoso8Products.ttl> ,
+                <Virtuoso8OffersPrices.ttl> ,
+                <Virtuoso8Licenses.ttl> ,
+                <Virtuoso8Modules.ttl>  ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/>  ;
+   skos:related <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTOffers.ttl> ,
+                <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTOffers.ttl>  ;
+				
+   schema:about 	
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+			   	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-development-WKS-ANY#this> ,
+		   	 	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+		   	 	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> ,
+		   	 	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> .
+
+	<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+			   	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-development-WKS-ANY#this> ,
+			 	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+			 	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> ,
+			 	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY#this> ,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#this>,
+		        <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this>,
+				<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> .
+
+
+## Offer 1
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-personal-WKS-ANY#this> a
+    schema:Offer,
+    oplofr:Virtuoso8BasicOffer,
+    oplofr:Virtuoso8Offer ;
+    schema:category "personal" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-5CORE.png> ;
+	oplofr:isMemberOf :OfferGroupPersonal ;
+    schema:name "Software License Offer: Virtuoso 8.x Personal License for any Workstation-class Operating System "^^xsd:string ;
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Personal License for any Workstation-class Operating System "^^xsd:string ;
+	oplofr:offerNumber "2018-03-virtuoso-8-personal-WKS-ANY"^^xsd:string ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ;
+	schema:price "99.99"^^xsd:decimal ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-personal-WKS-ANY-retail-price#this> ;
+    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2018-11-09T16:59:59+00:00"^^xsd:dateTime ;
+    schema:comment """Software License Offer: Virtuoso 8.x Personal License (non-expiring, 2 cores, 5 threads) for deployment 
+					  on any Workstation-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """Workstation-class Virtuoso 8.x Personal License for installation on one (1) host running a Workstation-class 
+					   Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, Business Analytics, 
+					   Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and Attribute-based Access Controls
+					   Modules; will utilize a maximum of two (2) logical processors; and is transferable across hosts running supported operating systems,
+					   for one (1) year.
+					   """^^xsd:string ;
+    schema:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2018-03-virtuoso-8-personal-WKS-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
+    opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+    skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+	
+
+## Offer 2
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-development-WKS-ANY#this> a
+    schema:Offer,
+    oplofr:Virtuoso8BasicOffer,
+    oplofr:Virtuoso8Offer ;
+    schema:category "appdeveloperdevelopment" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	oplofr:isMemberOf :OfferGroupEarlyStage ;
+    schema:name "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+	oplofr:offerNumber "2018-03-virtuoso-8-app-developer-development-WKS-ANY"^^xsd:string ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+	schema:price "499.99"^^xsd:decimal ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-early-stage-WKS-ANY-retail-price#this>;
+    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2018-11-09T16:59:59+00:00"^^xsd:dateTime ;
+	schema:comment """Software License Offer: Virtuoso 8.x Application Development License (non-expiring, 8 cores, 5 threads) 
+					  for deployment on any Workstation-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """Workstation-class Virtuoso 8.x Application Development License for installation on one (1) host running a
+					   Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, 
+					   Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and 
+					   Attribute-based Access Controls Modules; will utilize a maximum of eight (8) logical processors; and is transferable across 
+					   hosts running supported operating systems, for one (1) year.
+					   """^^xsd:string ;
+    schema:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2018-03-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
+    opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+    skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+
+## Offer 3
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> a
+    schema:Offer,
+    oplofr:Virtuoso8BasicOffer,
+    oplofr:Virtuoso8Offer ;
+    schema:category "appdeveloperproject" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
+	oplofr:isMemberOf :OfferGroupLateStage ;
+    schema:name "Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
+	oplofr:offerNumber "2018-03-virtuoso-8-app-developer-project-WKS-ANY"^^xsd:string ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ;
+	schema:price "749.99"^^xsd:decimal ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>
+;
+    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2018-11-09T16:59:59+00:00"^^xsd:dateTime ;
+	schema:comment """Software License Offer: Virtuoso 8.x Project Development License (non-expiring, 16 cores, 5 threads) 
+				   for deployment on any Workstation-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """Workstation-class Virtuoso 8.x Project Development License for installation on one (1) host running 
+					   a Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, 
+					   Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, 
+					   Virutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen (16) 
+					   logical processors; and is transferable across hosts running supported operating systems, for one (1) year.
+					   """^^xsd:string ;
+    schema:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2018-03-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
+    opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+    skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+
+
+## Offer 4
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> a
+    schema:Offer,
+    oplofr:Virtuoso8BasicOffer,
+    oplofr:Virtuoso8Offer ;
+    schema:category "appdeveloperworkgroup" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+	oplofr:isMemberOf :OfferGroupInitialDeployment;
+    schema:name """Software License Offer: Virtuoso 8.x Workgroup Development License 
+				for any Workstation-class or Server-class Operating System
+				"""^^xsd:string ;
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Workgroup Development License for any Workstation-class or Server-class Operating System"^^xsd:string ;
+	oplofr:offerNumber "2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY"^^xsd:string ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ;
+	schema:price "1249.99"^^xsd:decimal ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-late-stage-WKS-ANY-retail-price#this>;
+    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2018-11-09T16:59:59+00:00"^^xsd:dateTime ;
+	schema:comment """Software License Offer: Virtuoso 8.x Workgroup Development License (non-expiring, 16 cores, 10 threads) 
+					  for deployment on any Workstation- or Server-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """
+						Workstation- or Server-class Virtuoso 8.x Workgroup Development License for installation 
+						on one (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, 
+						the Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, 
+						Virutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen 
+						(16) logical processors; and is transferable across hosts running supported operating systems, for one (1) year.
+					  """^^xsd:string ;
+    schema:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
+    opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+    skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+
+## Offer 5
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY#this>  a
+    schema:Offer,
+    oplofr:Virtuoso8BasicOffer,
+    oplofr:Virtuoso8Offer ;
+    schema:category "appdeveloperdepartment" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-32CORE.png> ;
+	oplofr:isMemberOf :OfferGroupSystemsIntegration ;
+    oplofr:offerNumber "2018-03-virtuoso-8-app-developer-department-WKSSVR-ANY"^^xsd:string ;
+    schema:name "Software License Offer: Virtuoso 8.x Systems Integration License for any Workstation- or Server-class Operating System"^^xsd:string ;
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Systems Integration License for any Workstation- or Server-class Operating System"^^xsd:string ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-combo-WKS-ANY#this> ;
+	schema:price "4999.99"^^xsd:decimal ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY-retail-price#this>  ;
+    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2018-11-09T16:59:59+00:00"^^xsd:dateTime ;
+	schema:comment """Software License Offer: Virtuoso 8.x Systems Integration  License (non-expiring, 32 cores, 10 threads) 
+				   for deployment on any Workstation- or Server-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """Workstation- or Server-class Virtuoso 8.x Systems Integration License for installation on 
+						one (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, 
+						the Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, 
+						Virutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of thirty-two
+						(32) logical processors; and is transferable across hosts running supported operating systems, for one (1) year.
+					   """^^xsd:string ;
+    schema:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
+    opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+    skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+
+
+# V8.x
+# Offer groups
+
+
+:OfferGroupPersonal
+      a oplofr:OfferGroup ;
+      schema:name "Personal " ;
+      schema:comment "Virtuoso 8.x Personal License (non-expiring, 2 cores, 5 threads). " .
+
+
+:OfferGroupEarlyStage
+      a oplofr:OfferGroup ;
+      schema:name "Early Stage " ;
+      schema:comment "Virtuoso 8.x Early Stage Workstation Development License (non-expiring, 8 cores, 5 threads). " .
+
+
+:OfferGroupLateStage
+      a oplofr:OfferGroup ;
+      schema:name "Late Stage " ;
+      schema:comment "Virtuoso 8.x Late Stage Development License (non-expiration, 8 cores, 10 threads). " .
+
+
+:OfferGroupInitialDeployment
+      a oplofr:OfferGroup ;
+      schema:name "Initial Deployment " ;
+      schema:comment "Virtuoso 8.x Initial Deployment License (non-expiring, 16 cores, 10 threads). " .
+
+
+:OfferGroupSystemsIntegration
+      a oplofr:OfferGroup ;
+      schema:name "Systems Integration " ;
+      schema:comment "Virtuoso 8.x Systems Integration License (non-expiring, 32 cores, 10 threads). " .
+
+
+
+## Virtuoso 8.2 Offers, Price Specifications, and Licenses ##
+

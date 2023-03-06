@@ -1,0 +1,2084 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-department-SRV-LIN#> .
+@prefix ns2:	<http://www.openlinksw.com/ontology/licenses#> .
+ns1:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License .
+@prefix schema:	<http://schema.org/> .
+ns1:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+@prefix ns5:	<http://vbv8.pigsty:8889/about/id/entity/urn/webdev:virtuoso:> .
+ns1:this	wdrs:describedby	ns5:offers2 .
+@prefix ns6:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/entity/urn/webdev:> .
+ns1:this	wdrs:describedby	ns6:virtuoso .
+@prefix ns7:	<https://www.openlinksw.com/about/id/entity/urn/webdev:> .
+ns1:this	wdrs:describedby	ns7:virtuoso .
+@prefix ns8:	<https://www.openlinksw.com/about/id/entity/urn/opl:shop:offering:sponging:cache:> .
+ns1:this	wdrs:describedby	ns8:official .
+@prefix ns9:	<http://data.openlinksw.com/oplweb/product/column-store-cl#> .
+ns1:this	schema:model	ns9:this .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+ns1:this	skos:prefLabel	"Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" .
+@prefix ns11:	<http://www.openlinksw.com/ontology/software#> .
+ns1:this	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	75 .
+@prefix ns12:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-LIN#> .
+ns1:this	ns2:partOf	ns12:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS .
+@prefix ns13:	<http://data.openlinksw.com/oplweb/license/License-Duration#> .
+ns1:this	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	75 .
+@prefix ns14:	<http://data.openlinksw.com/oplweb/module/ABACACLs#> .
+ns1:this	ns2:hasLicenseModule	ns14:this .
+@prefix ns15:	<http://data.openlinksw.com/oplweb/module/VAL#> .
+ns1:this	ns2:hasLicenseModule	ns15:this .
+@prefix ns16:	<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#> .
+ns1:this	ns2:hasLicenseModule	ns16:this .
+@prefix ns17:	<http://data.openlinksw.com/oplweb/module/Replication#> .
+ns1:this	ns2:hasLicenseModule	ns17:this .
+@prefix ns18:	<http://data.openlinksw.com/oplweb/module/VDB#> .
+ns1:this	ns2:hasLicenseModule	ns18:this .
+@prefix ns19:	<http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#> .
+ns1:this	ns2:hasLicenseModule	ns19:this .
+@prefix ns20:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#> .
+ns1:this	ns2:productLicenseOf	ns20:this .
+@prefix ns21:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-department-SRV-MAC#> .
+ns21:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	75 .
+@prefix ns22:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC#> .
+ns21:this	ns2:partOf	ns22:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	75 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns23:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-department-SRV-WIN#> .
+ns23:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	75 .
+@prefix ns24:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-WIN#> .
+ns23:this	ns2:partOf	ns24:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	75 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns25:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN#> .
+ns25:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	25 .
+@prefix ns26:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN#> .
+ns25:this	ns2:partOf	ns26:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	25 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns27:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC#> .
+ns27:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	25 .
+@prefix ns28:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC#> .
+ns27:this	ns2:partOf	ns28:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	25 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns29:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#> .
+ns29:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	25 .
+@prefix ns30:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#> .
+ns29:this	ns2:partOf	ns30:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	25 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns31:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-LIN#> .
+ns31:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	5 .
+@prefix ns32:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-LIN#> .
+ns31:this	ns2:partOf	ns32:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns33:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-MAC#> .
+ns33:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	5 .
+@prefix ns34:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#> .
+ns33:this	ns2:partOf	ns34:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns35:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-WIN#> .
+ns35:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	5 .
+@prefix ns36:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-WIN#> .
+ns35:this	ns2:partOf	ns36:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns37:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-personal-WKS-LIN#> .
+ns37:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	2 .
+@prefix ns38:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-LIN#> .
+ns37:this	ns2:partOf	ns38:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	48 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns39:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-personal-WKS-MAC#> .
+ns39:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	2 .
+@prefix ns40:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-MAC#> .
+ns39:this	ns2:partOf	ns40:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	48 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix ns41:	<http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-personal-WKS-WIN#> .
+ns41:this	rdf:type	ns2:ProductLicense ,
+		ns2:Virtuoso8License ,
+		schema:Product ,
+		ns2:ExpiringLicense ;
+	wdrs:describedby	ns5:offers2 ,
+		ns6:virtuoso ,
+		ns7:virtuoso ,
+		ns8:official ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	2 .
+@prefix ns42:	<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-WIN#> .
+ns41:this	ns2:partOf	ns42:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	48 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ;
+	ns2:productLicenseOf	ns20:this .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix ns44:	<urn:webdev:virtuoso:> .
+@prefix ns45:	<http://www.openlinksw.com/dataspace/organization/openlink#> .
+ns44:offers2	foaf:topic	ns45:this ,
+		ns13:annual .
+@prefix ns46:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC-special-price#> .
+ns44:offers2	foaf:topic	ns46:this ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> ,
+		ns34:this .
+@prefix ns47:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#> .
+ns44:offers2	foaf:topic	ns47:this ,
+		<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> .
+@prefix ns48:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-retail-price#> .
+ns44:offers2	foaf:topic	ns48:this .
+@prefix ns49:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-retail-price#> .
+ns44:offers2	foaf:topic	ns49:this .
+@prefix ns50:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-retail-price#> .
+ns44:offers2	foaf:topic	ns50:this .
+@prefix ns51:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#> .
+ns44:offers2	foaf:topic	ns51:this .
+@prefix ns52:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#> .
+ns44:offers2	foaf:topic	ns52:this .
+@prefix ns53:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-retail-price#> .
+ns44:offers2	foaf:topic	ns53:this .
+@prefix ns54:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-retail-price#> .
+ns44:offers2	foaf:topic	ns54:this .
+@prefix ns55:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-retail-price#> .
+ns44:offers2	foaf:topic	ns55:this .
+@prefix ns56:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-retail-price#> .
+ns44:offers2	foaf:topic	ns56:this .
+@prefix ns57:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC-retail-price#> .
+ns44:offers2	foaf:topic	ns57:this .
+@prefix ns58:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-retail-price#> .
+ns44:offers2	foaf:topic	ns58:this ,
+		ns24:this .
+@prefix ns59:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN-special-price#> .
+ns44:offers2	foaf:topic	ns59:this .
+@prefix ns60:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-LIN-special-price#> .
+ns44:offers2	foaf:topic	ns60:this .
+@prefix ns61:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-WIN-special-price#> .
+ns44:offers2	foaf:topic	ns61:this .
+@prefix ns62:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-LIN-special-price#> .
+ns44:offers2	foaf:topic	ns62:this .
+@prefix ns63:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-MAC-special-price#> .
+ns44:offers2	foaf:topic	ns63:this .
+@prefix ns64:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-WIN-special-price#> .
+ns44:offers2	foaf:topic	ns64:this ,
+		ns12:this ,
+		ns22:this .
+@prefix ns65:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-LIN-special-price#> .
+ns44:offers2	foaf:topic	ns65:this .
+@prefix ns66:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-MAC-special-price#> .
+ns44:offers2	foaf:topic	ns66:this .
+@prefix ns67:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-WIN-special-price#> .
+ns44:offers2	foaf:topic	ns67:this .
+@prefix ns68:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN-special-price#> .
+ns44:offers2	foaf:topic	ns68:this .
+@prefix ns69:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC-special-price#> .
+ns44:offers2	foaf:topic	ns69:this ,
+		ns40:this ,
+		ns42:this ,
+		ns26:this ,
+		ns28:this ,
+		ns30:this ,
+		ns32:this ,
+		ns36:this ,
+		ns38:this ,
+		_:vb41450 ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this ,
+		ns21:this ,
+		ns23:this ,
+		ns25:this ,
+		ns27:this ,
+		ns29:this ,
+		ns31:this ,
+		ns33:this ,
+		ns35:this ,
+		<http://virtuoso.openlinksw.com/offers/> ,
+		ns1:this .
+@prefix ns70:	<http://vbv8.pigsty:8889/about/id/urn/webdev:virtuoso:> .
+@prefix bibo:	<http://purl.org/ontology/bibo/> .
+ns70:offers2	rdf:type	bibo:Document .
+@prefix sioc:	<http://rdfs.org/sioc/ns#> .
+ns70:offers2	rdf:type	sioc:Container .
+@prefix ns73:	<http://vocab.deri.ie/void#> .
+ns70:offers2	ns73:inDataset	ns44:offers2 .
+@prefix formats:	<http://www.w3.org/ns/formats/> .
+ns70:offers2	formats:media_type	"text/turtle" ;
+	sioc:container_of	ns5:offers2 .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix ns76:	<urn:webdev:virtuoso:offers2#> .
+ns76:this	owl:sameAs	ns5:offers2 .
+@prefix ns77:	<urn:webdev:> .
+ns77:virtuoso	foaf:topic	ns35:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this .
+@prefix ns78:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-development-WKS-ANY#> .
+ns77:virtuoso	foaf:topic	ns78:this .
+@prefix ns79:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-project-WKS-ANY#> .
+ns77:virtuoso	foaf:topic	ns79:this .
+@prefix ns80:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#> .
+ns77:virtuoso	foaf:topic	ns80:this .
+@prefix ns81:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-personal-WKS-ANY#> .
+ns77:virtuoso	foaf:topic	ns81:this .
+@prefix ns82:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY#> .
+ns77:virtuoso	foaf:topic	ns82:this .
+@prefix ns83:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#> .
+ns77:virtuoso	foaf:topic	ns83:this .
+@prefix ns84:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#> .
+ns77:virtuoso	foaf:topic	ns84:this .
+@prefix ns85:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#> .
+ns77:virtuoso	foaf:topic	ns85:this .
+@prefix ns86:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#> .
+ns77:virtuoso	foaf:topic	ns86:this .
+@prefix ns87:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#> .
+ns77:virtuoso	foaf:topic	ns87:this .
+@prefix ns88:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#> .
+ns77:virtuoso	foaf:topic	ns88:this .
+@prefix ns89:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#> .
+ns77:virtuoso	foaf:topic	ns89:this .
+@prefix ns90:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#> .
+ns77:virtuoso	foaf:topic	ns90:this .
+@prefix ns91:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#> .
+ns77:virtuoso	foaf:topic	ns91:this .
+@prefix ns92:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#> .
+ns77:virtuoso	foaf:topic	ns92:this .
+@prefix ns93:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#> .
+ns77:virtuoso	foaf:topic	ns93:this .
+@prefix ns94:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN#> .
+ns77:virtuoso	foaf:topic	ns94:this .
+@prefix ns95:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#> .
+ns77:virtuoso	foaf:topic	ns95:this .
+@prefix ns96:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#> .
+ns77:virtuoso	foaf:topic	ns96:this .
+@prefix ns97:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#> .
+ns77:virtuoso	foaf:topic	ns97:this ,
+		ns12:this ,
+		ns22:this ,
+		ns24:this ,
+		ns26:this ,
+		ns28:this ,
+		ns30:this ,
+		ns32:this ,
+		ns36:this ,
+		ns38:this ,
+		ns40:this ,
+		ns42:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns1:this ,
+		ns21:this ,
+		ns23:this ,
+		ns25:this ,
+		ns27:this ,
+		ns29:this ,
+		ns31:this ,
+		ns33:this .
+ns26:this	rdf:type	schema:Offer .
+@prefix ns98:	<http://www.openlinksw.com/ontology/offers#> .
+ns26:this	rdf:type	ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+ns26:this	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns25:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems" ;
+	schema:category	"appdeveloperworkgroup" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems" ;
+	schema:price	1749.99 ;
+	schema:priceSpecification	ns68:this .
+@prefix ns100:	<http://data.openlinksw.com/oplweb/offer/> .
+ns26:this	schema:url	ns100:Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this> .
+@prefix gr:	<http://purl.org/goodrelations/v1#> .
+ns26:this	gr:businessFunction	gr:Sell .
+@prefix ns102:	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#> .
+ns26:this	ns98:isMemberOf	ns102:OfferGroupappdeveloperworkgroup ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> .
+ns28:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns27:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems" ;
+	schema:category	"appdeveloperworkgroup" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems" ;
+	schema:price	1749.99 ;
+	schema:priceSpecification	ns69:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdeveloperworkgroup ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> .
+ns30:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns29:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems" ;
+	schema:category	"appdeveloperworkgroup" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems" ;
+	schema:price	1749.99 ;
+	schema:priceSpecification	ns59:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdeveloperworkgroup ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> .
+ns32:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns31:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems" ;
+	schema:category	"appdevelopment" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems" ;
+	schema:price	499.99 ;
+	schema:priceSpecification	ns60:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-development-SRV-LIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdevelopment ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-development-SRV-LIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> .
+ns36:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns35:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems" ;
+	schema:category	"appdevelopment" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems" ;
+	schema:price	499.99 ;
+	schema:priceSpecification	ns61:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-development-SRV-WIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdevelopment ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-development-SRV-WIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> .
+ns38:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns37:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems" ;
+	schema:category	"personal" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems" ;
+	schema:price	249.99 ;
+	schema:priceSpecification	ns62:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-personal-WKS-LIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this> ;
+	gr:businessFunction	gr:Sell .
+@prefix ns103:	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#> .
+ns38:this	ns98:isMemberOf	ns103:OfferGrouppersonal ;
+	ns98:offerNumber	"2019-04-virtuoso-83-personal-WKS-LIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> .
+ns40:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns39:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems" ;
+	schema:category	"personal" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems" ;
+	schema:price	249.99 ;
+	schema:priceSpecification	ns63:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-personal-WKS-MAC ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns103:OfferGrouppersonal ;
+	ns98:offerNumber	"2019-04-virtuoso-83-personal-WKS-MAC"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> .
+ns42:this	rdf:type	schema:Offer ,
+		ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns41:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems" ;
+	schema:category	"personal" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal License  (expiring, 4 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems" ;
+	schema:price	249.99 ;
+	schema:priceSpecification	ns64:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-personal-WKS-WIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns103:OfferGrouppersonal ;
+	ns98:offerNumber	"2019-04-virtuoso-83-personal-WKS-WIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> .
+ns45:this	wdrs:describedby	ns5:offers2 ;
+	schema:offers	<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns40:this ,
+		ns42:this ,
+		ns26:this ,
+		ns28:this ,
+		ns36:this ,
+		ns38:this ,
+		ns30:this ,
+		ns32:this ,
+		ns93:this ,
+		ns94:this ,
+		ns91:this ,
+		ns92:this ,
+		ns97:this ,
+		ns95:this ,
+		ns96:this ,
+		ns85:this ,
+		ns86:this ,
+		ns83:this ,
+		ns84:this ,
+		ns89:this ,
+		ns90:this ,
+		ns87:this ,
+		ns88:this ,
+		ns78:this ,
+		ns81:this ,
+		ns82:this ,
+		ns79:this ,
+		ns80:this ,
+		ns24:this ,
+		ns12:this ,
+		ns22:this ,
+		ns34:this .
+ns46:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^xsd:string ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns57:this .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-MAC"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-MAC"^^xsd:string .
+@prefix ns104:	<urn:opl:shop:offering:sponging:cache:> .
+ns104:official	foaf:topic	<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns40:this ,
+		ns42:this ,
+		ns30:this ,
+		ns32:this ,
+		ns36:this ,
+		ns38:this ,
+		ns26:this ,
+		ns28:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this ,
+		ns29:this ,
+		ns31:this ,
+		ns33:this ,
+		ns35:this ,
+		ns21:this ,
+		ns23:this ,
+		ns25:this ,
+		ns27:this ,
+		ns1:this ,
+		ns24:this ,
+		ns12:this ,
+		ns22:this .
+@prefix ns105:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-app-developer-project-WKS-ANY-retail-price#> .
+@prefix ns106:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#> .
+ns105:this	skos:related	ns106:this ;
+	ns98:priceSpecificationOf	ns79:this .
+@prefix ns107:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-early-stage-WKS-ANY-retail-price#> .
+@prefix ns108:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#> .
+ns107:this	skos:related	ns108:this ;
+	ns98:priceSpecificationOf	ns78:this .
+@prefix ns109:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-late-stage-WKS-ANY-retail-price#> .
+@prefix ns110:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#> .
+ns109:this	skos:related	ns110:this ;
+	ns98:priceSpecificationOf	ns80:this .
+@prefix ns111:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-personal-WKS-ANY-retail-price#> .
+@prefix ns112:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#> .
+ns111:this	skos:related	ns112:this ;
+	ns98:priceSpecificationOf	ns81:this .
+@prefix ns113:	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY-retail-price#> .
+@prefix ns114:	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-combo-WKS-ANY#> .
+ns113:this	skos:related	ns114:this ;
+	ns98:priceSpecificationOf	ns82:this .
+ns65:this	rdf:type	ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^xsd:string ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns47:this .
+ns66:this	rdf:type	ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^xsd:string ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns51:this .
+ns67:this	rdf:type	ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^xsd:string ;
+	schema:price	4999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns52:this .
+ns68:this	rdf:type	ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^xsd:string ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns53:this .
+ns69:this	rdf:type	ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^xsd:string ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns54:this .
+ns59:this	rdf:type	ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^xsd:string ;
+	schema:price	1749.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns55:this .
+ns60:this	rdf:type	ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^xsd:string ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns56:this .
+ns61:this	rdf:type	ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^xsd:string ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns58:this .
+ns62:this	rdf:type	ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^xsd:string ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns48:this .
+ns63:this	rdf:type	ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^xsd:string ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns49:this .
+ns64:this	rdf:type	ns98:Virtuoso8SpecialUnitPriceSpecification ,
+		ns98:SpecialUnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^xsd:string ;
+	schema:price	249.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	ns98:hasRetailPriceSpecification	ns50:this .
+ns12:this	rdf:type	ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ,
+		schema:Offer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns1:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems" ;
+	schema:category	"appdeveloperdepartment" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems" ;
+	schema:price	4999.99 ;
+	schema:priceSpecification	ns65:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-dev-department-SRV-LIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdeveloperdepartment ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-dev-department-SRV-LIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> .
+ns22:this	rdf:type	ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ,
+		schema:Offer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns21:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems" ;
+	schema:category	"appdeveloperdepartment" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems" ;
+	schema:price	4999.99 ;
+	schema:priceSpecification	ns66:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdeveloperdepartment ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-dev-department-SRV-MAC"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> .
+ns24:this	rdf:type	ns98:Virtuoso8Offer ,
+		ns98:VirtuosoSpecialOffer ,
+		schema:Offer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns23:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> ;
+	skos:prefLabel	"Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems" ;
+	schema:category	"appdeveloperdepartment" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems" ;
+	schema:price	4999.99 ;
+	schema:priceSpecification	ns67:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-dev-department-SRV-WIN ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdeveloperdepartment ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-dev-department-SRV-WIN"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> .
+@prefix ns115:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#> .
+ns115:this	ns2:hasProductLicense	ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns114:this ,
+		ns112:this .
+ns47:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^xsd:string ;
+	schema:price	9999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns51:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^xsd:string ;
+	schema:price	9999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns52:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^xsd:string ;
+	schema:price	9999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns53:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^xsd:string ;
+	schema:price	3499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns54:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^xsd:string ;
+	schema:price	3499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns55:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^xsd:string ;
+	schema:price	3499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns56:this	rdf:type	ns98:RetailPriceSpecification ,
+		schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^xsd:string ;
+	schema:price	999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns57:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^xsd:string ;
+	schema:price	999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns58:this	rdf:type	schema:UnitPriceSpecification ,
+		ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^xsd:string ;
+	schema:price	999.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns48:this	rdf:type	ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^xsd:string ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns49:this	rdf:type	ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^xsd:string ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+ns50:this	rdf:type	ns98:Virtuoso8Pricing ,
+		ns98:RetailPriceSpecification ,
+		schema:UnitPriceSpecification ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:name	"Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^xsd:string ;
+	schema:price	499.99 ;
+	schema:priceCurrency	"USD"^^xsd:string ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-MAC"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-MAC"^^xsd:string .
+ns77:uda	foaf:topic	<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns78:this ,
+		ns79:this ,
+		ns80:this ,
+		ns81:this ,
+		ns82:this ,
+		ns83:this ,
+		ns84:this ,
+		ns85:this ,
+		ns86:this ,
+		ns87:this ,
+		ns88:this ,
+		ns89:this ,
+		ns90:this ,
+		ns91:this ,
+		ns92:this ,
+		ns93:this ,
+		ns94:this ,
+		ns95:this ,
+		ns96:this ,
+		ns97:this ,
+		ns26:this ,
+		ns28:this ,
+		ns30:this ,
+		ns32:this ,
+		ns36:this ,
+		ns38:this ,
+		ns40:this ,
+		ns42:this .
+ns106:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	wdrs:describedby	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Licenses.ttl> ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.x License: 2018-03-virtuoso-8-app-developer-project-WKS-ANY"^^xsd:string ;
+	schema:comment	"\r\n\t\t\t\t\tVirtuoso 8.x Application Development Progject License (non-expiring, 16 cores, 5 threads) \r\n\t\t\t\t\tfor deployment on any OS (Workstation)\r\n\t\t\t\t\t"^^xsd:string ;
+	schema:description	"\r\n\t\t\t\t\t\tWorkstation-class Virtuoso 8.x Application Development Progject License for installation (transferable) \r\n\t\t\t\t\t\ton one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, \r\n\t\t\t\t\t\tthe Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, \r\n\t\t\t\t\t\tVirtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize a \r\n\t\t\t\t\t\tmaximum of sixteen (16) processor cores, for one (1) year. \r\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
+	schema:name	"Virtuoso 8.x License: 2018-03-virtuoso-8-app-developer-project-WKS-ANY 16 cores"^^xsd:string ;
+	ns11:hasDatabaseFamily	ns11:OpenLinkVirtuoso ;
+	ns11:hasOperatingSystemFamily	ns11:OSFamilyAny ;
+	ns2:maxNetworkInstance	1 ;
+	ns2:partOf	ns115:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	16 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this .
+@prefix ns116:	<http://data.openlinksw.com/oplweb/module/SPIN#> .
+ns106:this	ns2:hasLicenseModule	ns116:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ;
+	ns2:productLicenseOf	ns115:this .
+ns108:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	wdrs:describedby	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Licenses.ttl> ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.x License: 2018-03-virtuoso-8-early-stage-combo-WKS-ANY"^^xsd:string ;
+	schema:comment	"\r\n\t\t\t\t\tVirtuoso 8.x Early-stage-combo-WKS-ANY-Development License (non-expiring, 8 cores, 5 threads) for \r\n\t\t\t\t\tdeployment on any OS (Workstation) \r\n\t\t\t\t   "^^xsd:string ;
+	schema:description	"\r\n\t\t\t\t\t   Workstation-class Virtuoso 8.x Early-Stage-Combo Development License for installation (transferable) \r\n\t\t\t\t\t   on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, \r\n\t\t\t\t\t   the Column Store, Custom Reasoning & Inference Rules, Advanced Module, and will utilize a maximum of \r\n\t\t\t\t\t   eight (8) processor cores, for one (1) year. \r\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	schema:name	"Virtuoso 8.x License: 2018-03-virtuoso-8-early-stage-combo-WKS-ANY 8 cores"^^xsd:string ;
+	ns11:hasDatabaseFamily	ns11:OpenLinkVirtuoso ;
+	ns11:hasOperatingSystemFamily	ns11:OSFamilyAny ;
+	ns2:maxNetworkInstance	1 .
+@prefix ns117:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#> .
+ns108:this	ns2:partOf	ns117:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns14:this ,
+		ns116:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ;
+	ns2:productLicenseOf	ns115:this .
+ns110:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	wdrs:describedby	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Licenses.ttl> ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.x License: 2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+	schema:comment	"\r\n\t\t\t\t   Virtuoso 8.x Initial-Deployment-WKSSVR-ANY License (non-expiring, 16 cores, 10 threads) \r\n\t\t\t\t   for deployment on any OS (Server or Workstation) \r\n\t\t\t\t   "^^xsd:string ;
+	schema:description	"\r\n\t\t\t\t\t\tServer-class Virtuoso 8.x Initial-Deployment License for installation (transferable) on one (1) host \r\n\t\t\t\t\t\trunning any supported Workstation- or Server-class OS. Enables ten (10) Client Service Threads, the \r\n\t\t\t\t\t\tColumn Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, \r\n\t\t\t\t\t\tVirtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize \r\n\t\t\t\t\t\ta maximum of sixteen (16) processor cores, for one (1) year. \r\n\t\t\t\t\t  "^^xsd:string ;
+	schema:image	<https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+	schema:name	"Virtuoso 8.x License: 2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+	ns11:hasDatabaseFamily	ns11:OpenLinkVirtuoso ;
+	ns11:hasOperatingSystemFamily	ns11:OSFamilyAny ;
+	ns2:maxNetworkInstance	1 .
+@prefix ns118:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#> .
+ns110:this	ns2:partOf	ns118:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	16 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns116:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ;
+	ns2:productLicenseOf	ns115:this .
+ns114:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	wdrs:describedby	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Licenses.ttl> ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.x License: 2018-03-virtuoso-8-late-stage-combo-WKS-ANY "^^xsd:string ;
+	schema:comment	"\r\n\t\t\t\t\tVirtuoso 8.x Late-stage-combo-WKS-ANY-Development License (non-expiring, 32 cores, 10 threads) \r\n\t\t\t\t\tfor deployment on any OS (Workstation) \r\n\t\t\t\t   "^^xsd:string ;
+	schema:description	"\r\n\t\t\t\t\t   Workstation-class Virtuoso 8.x Late-Stage-Combo Development License for installation (transferable) \r\n\t\t\t\t\t   on one (1) host running any supported Workstation-class OS. Enables ten (10) Client Service Threads, \r\n\t\t\t\t\t   the Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, \r\n\t\t\t\t\t   Virtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize a \r\n\t\t\t\t\t   maximum of thirty two (32) processor cores, for one (1) year. \r\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-32CORE.png> ;
+	schema:name	"Virtuoso 8.x License: 2018-03-virtuoso-8-late-stage-combo-WKS-ANY "^^xsd:string ;
+	ns11:hasDatabaseFamily	ns11:OpenLinkVirtuoso ;
+	ns11:hasOperatingSystemFamily	ns11:OSFamilyAny ;
+	ns2:maxNetworkInstance	1 .
+@prefix ns119:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-late-stage-combo-WKS-ANY#> .
+ns114:this	ns2:partOf	ns119:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	32 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns14:this ,
+		ns116:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ;
+	ns2:productLicenseOf	ns115:this .
+ns112:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	wdrs:describedby	<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Licenses.ttl> ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.x License: 2018-03-VIRT-03-WKS-ANY "^^xsd:string ;
+	schema:comment	"Virtuoso 8.x Personal License (non-expiring, 2 cores, 5 threads) for deployment on any OS (Workstation) "^^xsd:string ;
+	schema:description	"\r\n\t\t\t\t\t\t  Workstation-class Virtuoso 8.x Personal License for installation (transferable) \r\n\t\t\t\t\t\t  on one (1) host running on any OS (Workstation). Enables five (5) Client Service Threads, the \r\n\t\t\t\t\t\t  Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, \r\n\t\t\t\t\t\t  Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize a maximum of two (2) \r\n\t\t\t\t\t\t  processor cores, for one (1) year. \r\n\t\t\t\t\t   "^^xsd:string ;
+	schema:image	<https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-5CORE.png> ;
+	schema:name	"Virtuoso 8.x License: 2018-03-virtuoso-8-personal-WKS-ANY"^^xsd:string ;
+	ns11:hasDatabaseFamily	ns11:OpenLinkVirtuoso ;
+	ns11:hasOperatingSystemFamily	ns11:OSFamilyAny ;
+	ns2:maxNetworkInstance	1 .
+@prefix ns120:	<http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-early-stage-WKS-linux#> .
+ns112:this	ns2:partOf	ns120:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	2 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns116:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ;
+	ns2:productLicenseOf	ns115:this .
+@prefix ns121:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-LIN#> .
+ns121:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns83:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this .
+@prefix ns122:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#> .
+ns121:this	ns2:productLicenseOf	ns122:this .
+@prefix ns123:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-MAC#> .
+ns123:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns84:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns124:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-WIN#> .
+ns124:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:Virtuoso8License ,
+		ns2:ProductLicense ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns85:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	4 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns18:this ,
+		ns19:this ,
+		ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns125:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-LIN#> .
+ns125:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns86:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns126:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-MAC#> .
+ns126:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns87:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns127:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-WIN#> .
+ns127:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns88:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns128:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#> .
+ns128:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Linux (Server or Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns89:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns129:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#> .
+ns129:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For macOS (Server or Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns90:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns130:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#> .
+ns130:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Windows (Server or Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	5 ;
+	ns2:partOf	ns91:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	5 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns131:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-LIN#> .
+ns131:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	2 ;
+	ns2:partOf	ns92:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	2 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns132:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-MAC#> .
+ns132:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	2 ;
+	ns2:partOf	ns93:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	2 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns133:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-WIN#> .
+ns133:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	2 ;
+	ns2:partOf	ns94:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	2 ;
+	ns11:hasOperatingSystemType	ns11:workstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	4 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns134:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#> .
+ns134:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Linux (Server or Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-LIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:GenericLinux ;
+	ns2:maxNetworkInstance	10 ;
+	ns2:partOf	ns95:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns135:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#> .
+ns135:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For macOS (Server or Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-MAC.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:MacOSX ;
+	ns2:maxNetworkInstance	10 ;
+	ns2:partOf	ns96:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns14:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+@prefix ns136:	<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#> .
+ns136:this	rdf:type	schema:Product ,
+		ns2:ExpiringLicense ,
+		ns2:ProductLicense ,
+		ns2:Virtuoso8License ;
+	ns2:durationDays	"365"^^xsd:int ;
+	schema:model	ns9:this ;
+	skos:prefLabel	"Virtuoso 8.2 Application Development License For Windows (Server or  Workstation) Operating Systems" ;
+	schema:comment	" Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\r\n\r\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\r\n\r\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ,
+		"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-WIN.png> ;
+	schema:name	"Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	ns11:hasOperatingSystemFamily	ns11:Windows ;
+	ns2:maxNetworkInstance	10 ;
+	ns2:partOf	ns97:this ;
+	ns2:serialNumberBroadcast	1 ;
+	ns2:hasMaximumProcessorCores	8 ;
+	ns11:hasOperatingSystemType	ns11:serverWorkstationOS ;
+	ns2:hasDuration	ns13:annual ;
+	ns2:hasSessions	10 ;
+	ns2:hasLicenseModule	ns14:this ,
+		ns15:this ,
+		ns16:this ,
+		ns17:this ,
+		ns18:this ,
+		ns19:this ;
+	ns2:productLicenseOf	ns122:this .
+ns122:this	ns2:hasProductLicense	ns121:this ,
+		ns123:this ,
+		ns124:this ,
+		ns125:this ,
+		ns126:this ,
+		ns127:this ,
+		ns128:this ,
+		ns129:this ,
+		ns130:this ,
+		ns131:this ,
+		ns132:this ,
+		ns133:this ,
+		ns134:this ,
+		ns135:this ,
+		ns136:this .
+<http://virtuoso.openlinksw.com/offers/>	rdf:type	schema:WebPage ;
+	wdrs:describedby	ns5:offers2 .
+@prefix ns137:	<http://www.openlinksw.com/#> .
+<http://virtuoso.openlinksw.com/offers/>	schema:publisher	ns137:this ;
+	schema:about	ns24:this ,
+		ns12:this ,
+		ns22:this ,
+		ns87:this ,
+		ns88:this ,
+		ns89:this ,
+		ns90:this ,
+		ns83:this ,
+		ns84:this ,
+		ns85:this ,
+		ns86:this ,
+		ns95:this ,
+		ns96:this ,
+		ns97:this ,
+		ns91:this ,
+		ns92:this ,
+		ns93:this ,
+		ns94:this ,
+		ns40:this ,
+		ns42:this ,
+		ns30:this ,
+		ns32:this ,
+		ns36:this ,
+		ns38:this ,
+		ns26:this ,
+		ns28:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns34:this ;
+	schema:name	"Virtuoso Current Offers Listing Page"^^xsd:string ;
+	schema:offers	ns34:this ,
+		ns85:this ,
+		ns86:this ,
+		ns83:this ,
+		ns84:this ,
+		ns89:this ,
+		ns90:this ,
+		ns87:this ,
+		ns24:this ,
+		ns88:this ,
+		ns12:this ,
+		ns22:this ,
+		ns93:this ,
+		ns94:this ,
+		ns91:this ,
+		ns92:this ,
+		ns97:this ,
+		ns95:this ,
+		ns96:this ,
+		ns40:this ,
+		ns42:this ,
+		ns26:this ,
+		ns28:this ,
+		ns36:this ,
+		ns38:this ,
+		ns30:this ,
+		ns32:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-LIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-LIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-WIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-WIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-LIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-LIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-WIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-WIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-LIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-personal-WKS-LIN"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-MAC"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-personal-WKS-MAC"^^xsd:string .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v>	wdrs:describedby	ns5:offers2 ;
+	schema:description	"HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-WIN"^^xsd:string ;
+	schema:name	"HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-personal-WKS-WIN"^^xsd:string .
+@prefix ns138:	<urn:mdata:websites:google:> .
+ns138:seo	foaf:topic	<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns24:this ,
+		ns12:this ,
+		ns22:this ,
+		ns40:this ,
+		ns42:this ,
+		ns30:this ,
+		ns32:this ,
+		ns36:this ,
+		ns38:this ,
+		ns26:this ,
+		ns28:this .
+<http://virtuoso.openlinksw.com/>	schema:offers	ns12:this ,
+		ns22:this ,
+		ns24:this ,
+		ns36:this ,
+		ns38:this ,
+		ns30:this ,
+		ns32:this ,
+		ns26:this ,
+		ns28:this ,
+		ns40:this ,
+		ns42:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Licenses.ttl>	schema:about	ns112:this ,
+		ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns114:this .
+<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl>	schema:about	ns91:this ,
+		ns92:this ,
+		ns93:this ,
+		ns94:this ,
+		ns95:this ,
+		ns96:this ,
+		ns97:this ,
+		ns83:this ,
+		ns84:this ,
+		ns85:this ,
+		ns86:this ,
+		ns87:this ,
+		ns88:this ,
+		ns89:this ,
+		ns90:this ,
+		ns78:this ,
+		ns79:this ,
+		ns80:this ,
+		ns81:this ,
+		ns82:this .
+<http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2018/Virtuoso-82-Special-Offers.ttl>	schema:about	ns95:this ,
+		ns96:this ,
+		ns97:this ,
+		ns91:this ,
+		ns92:this ,
+		ns93:this ,
+		ns94:this ,
+		ns87:this ,
+		ns88:this ,
+		ns89:this ,
+		ns90:this ,
+		ns83:this ,
+		ns84:this ,
+		ns85:this ,
+		ns86:this .
+<http://virtuoso.openlinksw.com/index-temp-2/>	schema:offers	ns12:this ,
+		ns22:this ,
+		ns24:this ,
+		ns36:this ,
+		ns38:this ,
+		ns30:this ,
+		ns32:this ,
+		ns26:this ,
+		ns28:this ,
+		ns40:this ,
+		ns42:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+<http://virtuoso.openlinksw.com/offers/offers.vsp>	schema:about	ns95:this ,
+		ns96:this ,
+		ns97:this ,
+		ns91:this ,
+		ns92:this ,
+		ns93:this ,
+		ns94:this ,
+		ns87:this ,
+		ns88:this ,
+		ns89:this ,
+		ns90:this ,
+		ns83:this ,
+		ns84:this ,
+		ns85:this ,
+		ns86:this ;
+	schema:offers	ns93:this ,
+		ns94:this ,
+		ns91:this ,
+		ns92:this ,
+		ns97:this ,
+		ns95:this ,
+		ns96:this ,
+		ns85:this ,
+		ns86:this ,
+		ns83:this ,
+		ns84:this ,
+		ns89:this ,
+		ns90:this ,
+		ns87:this ,
+		ns88:this .
+<http://virtuoso.openlinksw.com/prices/>	schema:offers	ns24:this ,
+		ns12:this ,
+		ns22:this ,
+		ns40:this ,
+		ns42:this ,
+		ns36:this ,
+		ns38:this ,
+		ns30:this ,
+		ns32:this ,
+		ns26:this ,
+		ns28:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+ns34:this	rdf:type	ns98:VirtuosoSpecialOffer ,
+		ns98:Virtuoso8Offer ,
+		schema:Offer ;
+	wdrs:describedby	ns5:offers2 ;
+	skos:related	_:vb41450 ;
+	schema:validFrom	"2019-03-28T23:59:59Z"^^xsd:dateTime ;
+	schema:itemOffered	ns33:this ;
+	schema:mainEntityOfPage	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&modev> ;
+	skos:prefLabel	"Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
+	schema:category	"appdevelopment" ;
+	schema:comment	"Software License Offer: Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
+	schema:description	"Concurrency enables flexible exploration and determination of optimal license.\n\nEnterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.\n\nPricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered." ;
+	schema:image	<http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
+	schema:name	"Software License Offer: Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
+	schema:price	499.99 ;
+	schema:priceSpecification	ns46:this ;
+	schema:url	ns100:Offer-2019-04-virtuoso-83-app-development-SRV-MAC ;
+	schema:validThrough	"2019-12-31T23:59:59Z"^^xsd:dateTime ;
+	schema:potentialAction	<https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this> ;
+	gr:businessFunction	gr:Sell ;
+	ns98:isMemberOf	ns102:OfferGroupappdevelopment ;
+	ns98:offerNumber	"2019-04-virtuoso-83-app-development-SRV-MAC"^^xsd:string ;
+	ns2:hasBuyService	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&mode=v> .
+ns14:this	ns2:isModuleOf	ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns112:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this .
+ns16:this	ns2:isModuleOf	ns112:this ,
+		ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this .
+ns17:this	ns2:isModuleOf	ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns112:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this .
+ns116:this	ns2:isModuleOf	ns112:this ,
+		ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this .
+ns15:this	ns2:isModuleOf	ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns112:this ,
+		ns37:this ,
+		ns39:this ,
+		ns41:this .
+ns18:this	ns2:isModuleOf	ns37:this ,
+		ns39:this ,
+		ns41:this ,
+		ns112:this ,
+		ns106:this ,
+		ns108:this ,
+		ns110:this .
+ns19:this	ns2:isModuleOf	ns37:this ,
+		ns39:this ,
+		ns41:this ,
+		ns106:this ,
+		ns108:this ,
+		ns110:this ,
+		ns112:this .
+ns13:annual	rdf:type	ns2:Duration ;
+	wdrs:describedby	ns5:offers2 ;
+	schema:name	"License Duration -- One Year Annual" ;
+	ns2:durationYears	1 ;
+	ns2:isDurationOf	ns12:this ,
+		ns22:this ,
+		ns24:this ,
+		ns112:this ,
+		ns110:this ,
+		ns114:this ,
+		ns106:this ,
+		ns108:this ,
+		ns34:this ,
+		<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ,
+		ns36:this ,
+		ns38:this ,
+		ns30:this ,
+		ns32:this ,
+		ns26:this ,
+		ns28:this ,
+		ns40:this ,
+		ns42:this ,
+		ns97:this ,
+		ns95:this ,
+		ns96:this ,
+		ns93:this ,
+		ns94:this ,
+		ns91:this ,
+		ns92:this ,
+		ns89:this ,
+		ns90:this ,
+		ns87:this ,
+		ns88:this ,
+		ns85:this ,
+		ns86:this ,
+		ns83:this ,
+		ns84:this .
+_:vb41450	wdrs:describedby	ns5:offers2 .
+@prefix ns139:	<http://www.openlinksw.com/ontology/products#> .
+@prefix ns140:	<http://data.openlinksw.com/oplweb/product_family/virtuoso#> .
+_:vb41450	ns139:hasFamily	ns140:this .

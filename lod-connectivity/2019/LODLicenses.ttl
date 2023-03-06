@@ -1,0 +1,306 @@
+@prefix schema:      <http://schema.org/> .
+@prefix cc:          <http://creativecommons.org/ns#> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix opllic:      <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:      <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:      <http://www.openlinksw.com/ontology/products#> .
+@prefix xhv:         <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:        <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix acl:         <http://www.w3.org/ns/auth/acl#> .
+@prefix oplacl:      <http://www.openlinksw.com/ontology/acl#> .
+@prefix oplres:      <http://www.openlinksw.com/ontology/restrictions#> .
+@prefix :            <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2018-04-09T11:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2020-04-02T11:41:00-05:00"^^xsd:dateTime;
+   schema:name "OpenLink LOD Cloud Products Licenses Related Information Document " ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with OpenLink LOD Cloud Products Licenses. """^^xsd:string ;
+   owl:sameAs source: .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Client Connectivity for LOD Cloud License "^^xsd:string ;
+   schema:comment """This document describes OpenLink Client Connectivity for LOD Cloud product family licenses. """^^xsd:string ;
+   schema:author <http://www.openlinksw.com/#this>  ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2018-04-09T11:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2020-04-02T11:41:00-05:00"^^xsd:dateTime;
+   sioc:has_container <.> ;
+   sioc:sibling <LODOffersPrices.ttl> ,
+                <LODOffers.ttl> ,
+                <LODProducts.ttl> ,
+                <LODProductsReleases.ttl> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   skos:related <http://virtuoso.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7Licenses.ttl> ;
+   schema:about <http://data.openlinksw.com/oplweb/license/License-2018-04-LOD-personal-client-access-basic-sql#this> ,
+              :Duration-2018-04-LOD-personal-client-access-basic-sql ,
+              <http://data.openlinksw.com/oplweb/license/License-2018-04-WWW-eval-personal-client-access-basic-sql#this> ,
+              :Duration-2018-04-WWW-eval-personal-client-access-basic-sql ,
+              :uriburner-server ,
+              :myusnet ,
+              :Any-LODCloud-Connect-Restriction-basic ,
+              :rule1 ,
+              :res1 ,
+              :res2 ,
+              :Data-Access-Client-Application-Restriction-Any ,
+              :Data-Access-Client-Application-Restriction-MSAccess ,
+              :ConnectivityProtocolRestrictionODBC ,
+              :SQLConnectivityProtocolRestriction ,
+              :HTTPConnectivityProtocolRestriction  .
+
+# Uncomment to enable new LOD subcription offer:
+#              <http://data.openlinksw.com/oplweb/license/License-2014-12-LOD-Subscription-30#this> .
+
+## Client Connectivity for LOD Cloud License via SQL
+<http://data.openlinksw.com/oplweb/license/License-2018-04-LOD-personal-client-access-basic-sql#this>
+   a opllic:ProductLicense, schema:Product, opllic:ClientAccessLicense , opllic:Virtuoso7License , opllic:CertificateBasedLicense ;
+   oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+   oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+   oplsof:hasOperatingSystemType oplsof:AnyOS ;
+   schema:image <https://s-media-cache-ak0.pinimg.com/originals/ac/f3/0f/acf30f15248f0044396fdc00a4c91c02.jpg> ;
+   schema:name  """Virtuoso Data Access Driver for the World Wide Web RDBMS -- 90 Day License for a Single Network Client """^^xsd:string ;
+   skos:prefLabel 	"""Virtuoso Data Access Driver for the World Wide Web RDBMS -- 90 Day License for a Single Network Client"""^^xsd:string;
+   schema:description """This license entitles a named user, identified by a WebID, to basic Read-Only
+			SQL and/or SPASQL (SPARQL-in-SQL) client access to the World Wide Web as a relational
+			data source, by use of ODBC, JDBC, ADO.NET, and/or OLE DB compliant applications against
+			the URIBurner Service Instance at <http://linkeddata.uriburner.com>, thereby enabling
+			interaction with Web-hosted data on par with SQL RDBMS-hosted data interaction via these
+			same data access standards. Actual data access rates under this license are limited to
+			100 requests per second, and result sets are limited to 200 rows. """^^xsd:string ;
+   schema:comment """This license entitles a named user, identified by a WebID, to basic Read-Only
+			SQL and/or SPASQL (SPARQL-in-SQL) client access to the World Wide Web as a relational
+			data source, by use of ODBC, JDBC, ADO.NET, and/or OLE DB compliant applications against
+			the URIBurner Service Instance at <http://linkeddata.uriburner.com>, thereby enabling
+			interaction with Web-hosted data on par with SQL RDBMS-hosted data interaction via these
+			same data access standards. Actual data access rates under this license are limited to
+			100 requests per second, and result sets are limited to 200 rows. """^^xsd:string ;
+   opllic:hasServiceProvider <http://linkeddata.uriburner.com#this> ;
+   opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> ;
+   schema:model <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+   wdrs:describedby source: ;
+   opllic:hasLicenseCode "ANY-LODCloud-Connect" ;
+   opllic:hasClientConnectionRestriction :Any-LODCloud-Connect-Restriction-basic ;
+   opllic:hasLicenseFileName "AnyClient-LODCloud-Connect.p12" ;
+   oplsof:hasClientOperatingSystemFamilyRestriction  oplsof:OSFamilyAny ;
+   oplsof:hasClientOperatingSystemTypeRestriction  oplsof:serverWorkstationOS ;
+   opllic:hasClientApplicationRestriction :Data-Access-Client-Application-Restriction-Any ;
+   opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-04-LOD-personal-client-access-basic-sql#this> ;
+   opllic:hasDuration :Duration-2018-04-LOD-personal-client-access-basic-sql .
+
+
+## License Duration
+:Duration-2018-04-LOD-personal-client-access-basic-sql
+   a opllic:LicenseDuration ;
+   schema:name "90 Days "^^xsd:string ;
+   wdrs:describedby source: ;
+   opllic:isDurationOf :Data-Access-Client-Application-Restriction-MSAccess ;
+   opllic:durationDays "90"^^xsd:integer  .
+
+
+# Server instance, the server to which the customer will get access
+:uriburner-server
+  a opllic:VirtuosoServer ;
+  schema:name "URIBurner " ;
+  wdrs:describedby source: ;
+  schema:comment "URIBurner server instance " ;
+  opllic:hasDomain "linkeddata.uriburner.com"^^xsd:string ;
+  opllic:hasACLRulesEndpoint <https://linkeddata.uriburner.com/acl/rules> ;
+  opllic:hasACLRestrictionsEndpoint <https://linkeddata.uriburner.com/acl/restrictions> ;
+  opllic:hasCertGeneratorEndpoint <https://linkeddata.uriburner.com/certgen/> .
+
+
+## Basic client connection scope ODBC-LOD-Cloud
+:Any-LODCloud-Connect-Restriction-basic
+   a opllic:ClientConnectionRestriction, opllic:SqlClientConnectionRestriction ;
+   schema:name "Basic LOD Cloud Connectivity Restriction "^^xsd:string ;
+   schema:comment """Relation that associates a Linked Open Data (LOD) Cloud License
+   			with basic connectivity restrictions. Examples include:
+   			Maximum Result Set Rows; Connection Rate Limits; Target Server DNS Name;
+   			Access modes (Read, Write, Sponge). This information is also used by Shop Agent License Generators
+   			to create Access Control Lists (ACLs) and Policies on a target Virtuoso instance that provides
+   			LOD Cloud Connectivity. """^^xsd:string ;
+   opllic:hasMaxResultRowsLimit "200"^^xsd:integer ;
+   opllic:hasRateLimit "100"^^xsd:integer ;
+   opllic:hasServer :uriburner-server ;
+   opllic:hasSparqlAccessMode oplacl:Sponge ;
+   opllic:hasAclRestriction :res1, :res2 ;
+   wdrs:describedby source: ;
+   opllic:hasAclRule :rule1 .
+
+:rule1 a acl:Authorization ;
+  schema:name "Authorization that grants Sponge privileges " ;
+  acl:accessTo <urn:virtuoso:access:sparql> ;
+  oplacl:hasScope oplacl:Query ;
+  oplacl:hasAccessMode oplacl:Sponge ;
+  wdrs:describedby source: ;
+  oplacl:hasRealm oplacl:SqlRealm .
+
+:res1 a oplres:Restriction ;
+  schema:name "Rate Limit: 100 per second " ;
+  oplres:hasRestrictedResource <urn:virtuoso:restrictions:sql-request-rate> ;
+  oplres:hasMaxValue "100"^^xsd:decimal ;
+  wdrs:describedby source: ;
+  oplres:hasRealm oplacl:SqlRealm .
+
+:res2 a oplres:Restriction ;
+  schema:name "Query Result (Solution) Rows Limit: 200 " ;
+  oplres:hasRestrictedResource <urn:virtuoso:restrictions:sql-result-rows> ;
+  oplres:hasMaxValue "200"^^xsd:decimal ;
+  wdrs:describedby source: ;
+  oplres:hasRealm oplacl:SqlRealm .
+
+## Restriction: Any SQL Client Application
+:Data-Access-Client-Application-Restriction-Any
+   a opllic:ClientApplicationRestriction ;
+   schema:name "Any SQL Client Application "^^xsd:string ;
+   wdrs:describedby source: ;
+   schema:comment "Describes SQL client connectivity without restriction to any specific application(s) or OS "^^xsd:string ;
+   opllic:maxNetworkInstance "1"^^xsd:integer ;
+   opllic:hasConnectivityProtocolRestriction :SQLConnectivityProtocolRestriction ;
+   oplsof:hasClientOperatingSystemTypeRestriction oplsof:AnyOS ;
+   oplsof:hasClientOperatingSystemFamilyRestriction oplsof:OSFamilyAny .
+
+## Restriction MS Access
+:Data-Access-Client-Application-Restriction-MSAccess
+   a opllic:ClientApplicationRestriction ;
+   schema:name "Microsoft Access Client Application Restriction " ;
+   schema:comment "Describes client connectivity restricted to Microsoft Access " ;
+   opllic:maxNetworkInstance "1"^^xsd:integer ;
+   wdrs:describedby source: ;
+   opllic:hasConnectivityProtocolRestriction :SQLConnectivityProtocolRestriction ,
+                                             :HTTPConnectivityProtocolRestriction ;
+   opllic:hasClientNetworkNameRestriction "www.openlinksw.com"^^xsd:string ;
+   opllic:hasClientNetworkAddressRestriction "194.109.117.211"^^xsd:string ;
+   opllic:hasClientNetworkDomainNameRestriction "uriburner.com"^^xsd:string ;
+   oplsof:hasClientOperatingSystemTypeRestriction oplsof:serverWorkstationOS ;
+   oplsof:hasClientOperatingSystemFamilyRestriction oplsof:Windows .
+
+## ODBC Connectivity Protocol
+:ConnectivityProtocolRestrictionODBC
+   a opllic:ConnectivityProtocolRestriction ;
+   schema:name "ODBC Protocol Restriction " ;
+   wdrs:describedby source: ;
+   schema:comment "Describes client connectivity restricted to ODBC " ;
+   opllic:hasMaximumSQLClientConnections "5"^^xsd:integer .
+
+## SQL Connectivity Protocol (which includes: ODBC, JDBC, ADO.NET, OLE-DB)
+:SQLConnectivityProtocolRestriction
+  a opllic:ConnectivityProtocolRestriction , opllic:ConnectivityProtocolRestrictionSQL;
+  schema:name "SQL Connectivity Restriction "^^xsd:string ;
+  wdrs:describedby source: ;
+  schema:comment """Describes client connectivity restricted to SQL (which includes: ODBC, JDBC, ADO.NET, OLE-DB) """^^xsd:string ;
+  opllic:hasMaximumSQLClientConnections "5"^^xsd:integer .
+
+## HTTP Connectivity protocol (includes HTTP, XMLA, SPARQL)
+:HTTPConnectivityProtocolRestriction
+   a opllic:ConnectivityProtocolRestriction , opllic:ConnectivityProtocolRestrictionHTTP ;
+   schema:name "HTTP Protocol Restriction "^^xsd:string ;
+   wdrs:describedby source: ;
+   schema:comment "Describes client connectivity restricted to HTTP (which includes HTTP, XMLA, SPARQL) "^^xsd:string ;
+   opllic:hasMaximumHttpClientConnections "10"^^xsd:integer .
+
+# Uncomment to enable new LOD subcription offer:
+
+# :License-2014-12-LOD-Subscription-30
+#       a opllic:ProductLicense,
+#       schema:Product ,
+#       opllic:SubscriptionLicense ,
+#       opllic:Virtuoso7License ,
+#       opllic:CertificateBasedLicense ;
+#     opllic:hasRenewableMethod opllic:Automatic ;
+#     schema:name "LOD Connectivity via URIBurner Service: 2014-12-LOD-Subscription-30" ;
+#     skos:prefLabel "LOD Connectivity via URIBurner Service: 30 Day Subscription Interval"^^xsd:string ;
+#     opllic:hasServiceProvider <http://linkeddata.uriburner.com#this> ;
+#     schema:comment """This license entitles a named ODBC, JDBC, ADO.NET, or OLE-DB compliant application
+#       user [identified by a WebID] to subscription (renewable [manually or automatically] during 30 day intervals)
+#        access (using SPARQL and/or SQL) to the Linked Open Data (LOD) cloud via the URIBurner Service Instance at:
+#       <http://linkeddata.uriburner.com>."""^^xsd:string ;
+#     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> ;
+#     schema:model <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+#     wdrs:describedby source: ;
+#     opllic:hasLicenseCode "ANY-LODCloud-Subscribe-30" ;
+#     opllic:hasLicenseFileName "AnyClient-LODCloud-Subscribe-30.p12" ;
+#     oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+#     oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+#     opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2014-12-LOD-Subscription-30#this> ;
+#     opllic:hasDuration :Duration-2014-12-LOD-Subscription-30 ;
+#     opllic:hasClientApplicationRestriction :Data-Access-Client-Application-Restriction-Any ;
+#     opllic:hasClientConnectionRestriction :Any-LODCloud-Connect-Restriction-basic .
+#
+#
+# :Duration-2014-12-LOD-Subscription-30
+#     a opllic:LicenseDuration ;
+#     schema:name "Non expiring"^^xsd:string ;
+#     wdrs:describedby source: ;
+#     opllic:isDurationOf :License-2014-12-LOD-Subscription-30 ;
+#     opllic:durationDays "30"^^xsd:integer  ;
+#     opllic:renewalInterval "30"^^xsd:integer .
+#
+
+
+
+
+## Pilot -- Client Connectivity for LOD Cloud License via HTTP
+<http://data.openlinksw.com/oplweb/license/License-2018-04-WWW-eval-personal-client-access-basic-sql#this>
+  a opllic:ExpiringLicense, opllic:ProductLicense, schema:Product, opllic:ClientAccessLicense , opllic:Virtuoso7License , opllic:CertificateBasedLicense ;
+  oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+  oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+  oplsof:hasOperatingSystemType oplsof:AnyOS ;
+  opllic:serialNumberBroadcast "0"^^xsd:integer ;
+  schema:image <https://s-media-cache-ak0.pinimg.com/originals/ac/f3/0f/acf30f15248f0044396fdc00a4c91c02.jpg> ;
+  schema:name """Virtuoso Data Access Driver for the World Wide Web RDBMS -- Free 15 Day Evaluation License """^^xsd:string ;
+  skos:prefLabel """Virtuoso Data Access Driver for the World Wide Web RDBMS -- Free 15 Day Evaluation License"""^^xsd:string;
+  schema:description  """This license entitles a named user, identified by a WebID, to basic Read-Only
+			SQL and/or SPASQL (SPARQL-in-SQL) client access to the World Wide Web as a relational
+			data source, by use of ODBC, JDBC, ADO.NET, and/or OLE DB compliant applications against
+			the URIBurner Service Instance at <http://linkeddata.uriburner.com>, thereby enabling
+			interaction with Web-hosted data on par with SQL RDBMS-hosted data interaction via these
+			same data access standards. Actual data access rates under this license are limited to
+			100 requests per second, and result sets are limited to 200 rows. """^^xsd:string ;
+  schema:comment """This license entitles a named user, identified by a WebID, to basic Read-Only
+			SQL and/or SPASQL (SPARQL-in-SQL) client access to the World Wide Web as a relational
+			data source, by use of ODBC, JDBC, ADO.NET, and/or OLE DB compliant applications against
+			the URIBurner Service Instance at <http://linkeddata.uriburner.com>, thereby enabling
+			interaction with Web-hosted data on par with SQL RDBMS-hosted data interaction via these
+			same data access standards. Actual data access rates under this license are limited to
+			100 requests per second, and result sets are limited to 200 rows. """^^xsd:string ;
+  opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> ;
+  schema:model <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+  wdrs:describedby source: ;
+  schema:relatedLink <http://data.openlinksw.com/oplweb/license/License-2018-04-LOD-personal-client-access-basic-sql#this> ;
+  opllic:hasLicenseCode "ANY-LODCloud-Connect"^^xsd:string ;
+  opllic:hasLicenseFileName "Eval-AnyClient-LODCloud-Connect.p12"^^xsd:string ;
+  oplsof:hasClientOperatingSystemFamilyRestriction oplsof:OSFamilyAny ;
+  oplsof:hasClientOperatingSystemTypeRestriction oplsof:serverWorkstationOS ;
+  opllic:hasClientConnectionRestriction :Any-LODCloud-Connect-Restriction-basic ;
+  opllic:hasClientApplicationRestriction :Data-Access-Client-Application-Restriction-Any ;
+  opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-04-WWW-eval-personal-client-access-basic-sql#this> ;
+  opllic:hasDuration :Duration-2018-04-WWW-eval-personal-client-access-basic-sql .
+
+## License Duration
+:Duration-2018-04-WWW-eval-personal-client-access-basic-sql
+   a opllic:LicenseDuration ;
+   schema:name """90 Day Duration """^^xsd:string ;
+   wdrs:describedby source: ;
+   opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2018-04-WWW-eval-personal-client-access-basic-sql#this> ;
+   opllic:durationDays "90"^^xsd:integer  .

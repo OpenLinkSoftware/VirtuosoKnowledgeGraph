@@ -1,0 +1,786 @@
+
+## Virtuoso Client Connectivity, ODBC Drivers, and Installers for Windows##
+
+@prefix oplpro:      <http://www.openlinksw.com/ontology/products#> .
+@prefix gr:         <http://purl.org/goodrelations/v1#> .
+@prefix opllic:     <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplfeat:    <http://www.openlinksw.com/ontology/features#> .
+@prefix oplinstall: <http://www.openlinksw.com/ontology/installers#> .
+@prefix schema:     <http://schema.org/> .
+@prefix sioc:       <http://rdfs.org/sioc/ns#> .
+@prefix xhv:        <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:         <http://creativecommons.org/ns#> .
+@prefix rdf:	      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix wdrs:       <http://www.w3.org/2007/05/powder-s#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix :          <http://virtuoso.openlinksw.com/data/turtle/connectivity/products.ttl#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/connectivity/products.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/connectivity/products.ttl> .
+
+## Document Metadata
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  schema:name "Virtuoso Client Connectivity Kit and ODBC Driver Products Related Information Document" ;
+  schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso Client Connectivity Kit and ODBC Driver Products"""^^xsd:string ;
+  owl:sameAs <http://virtuoso.openlinksw.com/data/turtle/connectivity/products.ttl> .
+
+
+source:
+  a schema:CreativeWork ;
+  schema:name "Virtuoso Client Connectivity Kit and ODBC Driver Products Descriptions" ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:url :this ;
+  schema:dateCreated "2015-01-27T15:44:00-05:00"^^xsd:dateTime;
+  schema:dateModified "2015-02-17T09:41:00-05:00"^^xsd:dateTime;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  dcterms:subject
+				<http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this>,
+				<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider>,
+				<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider>,
+				<http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html>,
+				<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFDataProviders>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-redland-provider#this> ,
+				<http://data.openlinksw.com/oplweb/product/column-store-cl#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-linux-odbc-driver#this> ;
+  schema:about
+        <http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this>,
+				<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider>,
+				<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider>,
+				<http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html>,
+				<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFDataProviders>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-redland-provider#this> ,
+				<http://data.openlinksw.com/oplweb/product/column-store-cl#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-linux-odbc-driver#this> .
+
+
+## Virtuoso Client Connectivity ##
+
+<http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this>
+a foaf:Group ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Client Connectivity" ;
+schema:image <http://media-cache-ec0.pinimg.com/originals/f0/a5/a3/f0a5a31a7153ed228e87f24c26fb152b.jpg> ;
+schema:comment """Client Components that provide connectivity to Virtuoso Server instances using open standards based data access
+				protocols such as: ODBC, JDBC, ADO.NET,and OLE-DB. The Server Components enable installation and use of Virtuoso RDBMS
+				(SQL Tables and RDF Property/Predicate Graph) instances that are accessible to HTTP, WebDAV, LDP, IMAP4, POP3, SPARQL,
+				ODBC, JDBC, ADO.NET, OLE-DB, and XMLA clients.
+			 """ ;
+foaf:member <http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-linux-odbc-driver#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this>,
+			<http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> ,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-redland-provider#this> ;
+xhv:related <http://data.openlinksw.com/oplweb/product/column-store-cl#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this>,
+			<http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+
+## Virtuoso Client Connectivity for Windows Product Model Description
+
+#is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/accessinterfaces.html> ;
+<http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:name "Virtuoso Client Connectivity Kit for Windows" ;
+    schema:image <http://media-cache-ec0.pinimg.com/originals/f0/a5/a3/f0a5a31a7153ed228e87f24c26fb152b.jpg> ;
+    schema:comment """Client Components that provide connectivity to Virtuoso Server instances using open standards based data access
+				protocols such as: ODBC, JDBC, ADO.NET,and OLE-DB. The Server Components enable installation and use of Virtuoso RDBMS
+				(SQL Tables and RDF Property/Predicate Graph) instances that are accessible to HTTP, WebDAV, LDP, IMAP4, POP3, SPARQL,
+				ODBC, JDBC, ADO.NET, OLE-DB, and XMLA clients.
+			 """ ;
+	  schema:description """Client Components that provide connectivity to Virtuoso Server instances using open standards based data access
+				protocols such as: ODBC, JDBC, ADO.NET,and OLE-DB. The Server Components enable installation and use of Virtuoso RDBMS
+				(SQL Tables and RDF Property/Predicate Graph) instances that are accessible to HTTP, WebDAV, LDP, IMAP4, POP3, SPARQL,
+				ODBC, JDBC, ADO.NET, OLE-DB, and XMLA clients.
+			 """ ;
+    schema:hasPart <http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this> ;
+    xhv:related <http://data.openlinksw.com/oplweb/product/column-store-cl#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this> ;
+    oplinstall:hasInstallerArchive
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveWindows#this> ;
+    oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+
+
+## Virtuoso ODBC for Windows Descriptions
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/odbcimplementation.html> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/sampleodbcapps.html>,
+# 			 			<http://www.slideshare.net/kidehen/accessing-linked-open-data-sources-via-virtuoso-odbc>,
+# 						<http://www.slideshare.net/kidehen/virtuoso-odbc-driver-configuration-usage-windows>,
+# 						<http://www.slideshare.net/kidehen/tableau-desktop-as-a-linked-open-data-frontend-via-odbc>,
+# 						<http://www.slideshare.net/kidehen/using-sap-crystal-reports-as-a-linked-open-data-frontend-via-odbc>,
+# 						<http://www.slideshare.net/kidehen/exploiting-linked-open-data-via-microsoft-access-using-odbc-2>,
+# 						<http://www.slideshare.net/kidehen/using-tibco-spotfire-via-virtuoso-odbc-as-linked-data-frontend> ;
+# is schema:model of <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+# is opllic:hasProductLicense of <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl#License-2014-02-LOD-personal-client-access-basic-http> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+<http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:name "Virtuoso ODBC Driver for Windows" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/47/ea/c1/47eac1f74eee01a9f7e02efadc041a43.jpg> ;
+    schema:comment """Client Component that provides connectivity to Virtuoso Server instances using the Open Database Connectivity (ODBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any ODBC compliant application,
+				service, or development environment. Examples include Microsoft Acccess, Microsoft Excel, Visual Studio, PHP, Tableau, Crystal Reports,
+				Filemaker, Spotfire, and many others.""" ;
+		schema:description """Client Component that provides connectivity to Virtuoso Server instances using the Open Database Connectivity (ODBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any ODBC compliant application,
+				service, or development environment. Examples include Microsoft Acccess, Microsoft Excel, Visual Studio, PHP, Tableau, Crystal Reports,
+				Filemaker, Spotfire, and many others.""" ;
+    xhv:related <http://librdf.org/docs/api/redland-storage-module-virtuoso.html>,
+			<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland>,
+			<http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ;
+
+oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveWindows#this> ;
+oplfeat:hasFeature <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCSupport#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCHighPerformance#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCSecurity#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCToWeb#this>  .
+
+
+
+
+## Redland Provider
+
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html#rdfnativestorageproviderredland> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+# is schema:about of <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+<http://data.openlinksw.com/oplweb/product/virtuoso-redland-provider#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:name "Native Redland Provider for Virtuoso" ;
+    schema:keywords """Redland, Redland Provider, RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:image <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland/virt_redland_arch.png> ;
+    schema:comment """Redland an open source framework for RDF document manipulation and accces.
+				The framework includes several high-level language APIs providing RDF manipulation and storage and requires the Raptor RDF
+				parser and Rasqal RDF syntax and query library for its use.""";
+		schema:description """Redland an open source framework for RDF document manipulation and accces.
+				The framework includes several high-level language APIs providing RDF manipulation and storage and requires the Raptor RDF
+				parser and Rasqal RDF syntax and query library for its use.""";
+    schema:author <http://www.openlinksw.com/#this> ;
+    xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> .
+
+## Redland Native RDF Provider Documentation
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Native Redland Provider Usage Guide";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-redland-provider#this> ;
+schema:comment """Installation, configuration, and use of Virtuoso's Native Provider for Redland's 'C' programming language
+				based RDF Framework.""" ;
+schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland#this> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,
+			<http://librdf.org/docs/api/redland-storage-module-virtuoso.html> .
+
+#### Java OS ####
+
+# JDBC Driver Description
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/VirtuosoDriverJDBC.html> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/jdbcdemos.html> ;
+# is schema:model of <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+# is opllic:hasProductLicense of <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl#License-2014-02-LOD-personal-client-access-basic-http> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this>,
+# 	 			 <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this>;
+
+<http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:name "Virtuoso JDBC Driver" ;
+    schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:image <http://media-cache-ec0.pinimg.com/originals/41/4d/15/414d15832c667b54d460f528afe6aefa.jpg> ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:comment """Client Component that provides connectivity to Virtuoso Server instances using the Java Database Connectivity (JDBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any JDBC compliant application,
+				service, or development environment. Examples include Jena, Sesame, and Redland.""" ;
+		schema:description """Client Component that provides connectivity to Virtuoso Server instances using the Java Database Connectivity (JDBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any JDBC compliant application,
+				service, or development environment. Examples include Jena, Sesame, and Redland.""" ;
+		xhv:related <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ,
+			<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> ;
+    oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC3xDriverJARrchive#this>,
+							   <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC3xSSLTLSDriverJARrchive#this>,
+					   		 <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC4DriverJARrchive#this>,
+							   <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC4SSLTLSDriverJARrchive#this>,
+	 				   		 <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC41DriverJARrchive#this>,
+							   <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC41SSLTLSDriverJARrchive#this> ;
+    oplfeat:hasFeature <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureJDBCSupport#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureJDBCHighPerformance#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureJDBCSecurity#this> .
+
+
+## RDF Native Providers for Java based Frameworks
+
+## Documentation Cross References
+
+<http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Native RDF Providers Documentation";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>,
+			 <http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this>,
+			 <http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this> ;
+schema:comment """Installation, configuration, and use of Virtuoso's Native RDF Providers.""" ;
+schema:url 	 <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html#this> ;
+schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider>,
+	 		 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider>,
+			 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFDataProviders>,
+			 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFDataProviders>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "VOS Wiki: Virtuoso Native RDF Providers Documentation";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>,
+			 <http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this>,
+			 <http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this> ;
+schema:comment """VOS Wiki document covering Installation, configuration, and use of Virtuoso's Native RDF Providers.""" ;
+schema:url 	 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFDataProviders#this> ;
+schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider>,
+			 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+## Jena
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html#rdfnativestorageprovidersjena> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+# is schema:about of <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html> .
+<http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """Jena, Jena Provider, RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:name "Native Jena Provider for Virtuoso" ;
+    schema:image <http://docs.openlinksw.com/images/ui/VirtJenaProvider.png> ;
+    schema:comment """Java JAR file that constitutes Virtuoso's Jena Native Provider. Once installed into a Java Virtual Machine (JVM),
+				 Jena based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""";
+		schema:description """Java JAR file that constitutes Virtuoso's Jena Native Provider. Once installed into a Java Virtual Machine (JVM),
+				 Jena based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""";
+    oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJenaProviderJARArchive#this> .
+
+
+## Jena 2
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html#rdfnativestorageprovidersjena> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+# is schema:about of <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> .
+<http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """Jena2, Jena2 Provider, RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:name "Native Jena 2 Provider for Virtuoso" ;
+    schema:comment """Java JAR file that constitutes Virtuoso's Jena 2 Native Provider. Once installed into a Java Virtual Machine (JVM),
+				 Jena 2 based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""";
+		schema:description """Java JAR file that constitutes Virtuoso's Jena 2 Native Provider. Once installed into a Java Virtual Machine (JVM),
+				 Jena 2 based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""";
+    oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJena2ProviderJARArchive#this> .
+
+
+## Documentation Cross References
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Native Jena Provider Usage Guide";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this>,
+			 <http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this> ,
+			 <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJena3ProviderJARArchive#this> ,
+			 <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJenaProviderJARArchive#this> ,
+			 <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJena2ProviderJARArchive#this> ;
+schema:comment """Installation, configuration, and use of Virtuoso's Native Provider for Jena's Java based Framework.""" ;
+schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider#this> ;
+schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider>,
+	 		 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+
+## Sesame Providers
+
+## Documentation Cross References
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Native Sesame Provider Usage Guide";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-sesame-provider#this>;
+schema:comment """Installation, configuration, and use of Virtuoso's Native Provider for
+				Sesame's Java based Framework.
+			 """ ;
+schema:url   <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider#this> ;
+schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider>,
+	 		 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+## Sesame 2 Providers
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html#rdfnativestorageproviderssesame> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+# is schema:about of <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider> .
+<http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """Sesame, Sesame Provider, Sesame2, Sesame2 Provider, RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:name "Native Sesame 2 Provider for Virtuoso" ;
+    schema:image <http://docs.openlinksw.com/images/ui/VirtSesame2Provider.png> ;
+    schema:comment """Java JAR file that constitutes Virtuoso's Native Sesame 2 Provider. Once installed into a Java Virtual Machine (JVM),
+				 Sesame based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""";
+		schema:description """Java JAR file that constitutes Virtuoso's Native Sesame 2 Provider. Once installed into a Java Virtual Machine (JVM),
+				 Sesame based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""";
+    oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame26ProviderJARArchive#this> ,
+                               <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame40ProviderJARArchive#this> .
+
+## Documentation Cross References
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Native Sesame 2 Provider Usage Guide";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame26ProviderJARArchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame27ProviderJARArchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame40ProviderJARArchive#this> ;
+schema:comment """Installation, configuration, and use of Virtuoso's Native Provider for
+				Sesame 2's Java based Framework.
+			 """ ;
+schema:url   <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2Provider#this> ;
+schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider>,
+	 		 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJdbcHibernate>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso JDBC Driver Hibernate Support";
+schema:about <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC3xDriverJARrchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC3xSSLTLSDriverJARrchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC4DriverJARrchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC4SSLTLSDriverJARrchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC41DriverJARrchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC41SSLTLSDriverJARrchive#this> ;
+schema:comment """Virtuoso JDBC Driver Hibernate Support""" ;
+schema:url   <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJdbcHibernate#this> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2HttpRepository>
+a schema:CreativeWork ;
+wdrs:describedby source: ;
+schema:name "Virtuoso Sesame HTTP Repository Configuration and Usage";
+schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame26ProviderJARArchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame27ProviderJARArchive#this> ,
+             <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame40ProviderJARArchive#this> ;
+schema:comment """Virtuoso Sesame HTTP Repository Configuration and Usage""" ;
+schema:url   <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesame2HttpRepository#this> ;
+schema:mentions <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider>,
+	 		 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtJenaProvider> ;
+xhv:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+
+#### Mac OS X ####
+
+## Virtuoso Client Connectivity for Mac OS X Product Model Description
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/qsclientcon.html> ;
+<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "MacOSX" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """Connectivity, RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:name "Virtuoso Client Connectivity Kit for Mac OS X" ;
+    schema:image <http://media-cache-ec0.pinimg.com/originals/f0/a5/a3/f0a5a31a7153ed228e87f24c26fb152b.jpg> ;
+    schema:comment """Client Components that provide connectivity to Virtuoso Server instances using open standards based data access
+				protocols such as: ODBC, JDBC, ADO.NET,and OLE-DB. The Server Components enable installation and use of Virtuoso RDBMS
+				(SQL Tables and RDF Property/Predicate Graph) instances that are accessible to HTTP, WebDAV, LDP, IMAP4, POP3, SPARQL,
+				ODBC, JDBC, ADO.NET, OLE-DB, and XMLA clients.""" ;
+		schema:description """Client Components that provide connectivity to Virtuoso Server instances using open standards based data access
+				protocols such as: ODBC, JDBC, ADO.NET,and OLE-DB. The Server Components enable installation and use of Virtuoso RDBMS
+				(SQL Tables and RDF Property/Predicate Graph) instances that are accessible to HTTP, WebDAV, LDP, IMAP4, POP3, SPARQL,
+				ODBC, JDBC, ADO.NET, OLE-DB, and XMLA clients.""" ;
+    schema:hasPart <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>,
+				<http://data.openlinksw.com/oplweb/product/virtuoso-jdbc-driver#this> ;
+    xhv:related <http://data.openlinksw.com/oplweb/product/column-store-cl#this>,
+			<http://data.openlinksw.com/oplweb/product/virtuoso-windows-client-connectivity#this>;
+    oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+# ODBC Driver for Mac OS X Description
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/odbcimplementation.html> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/sampleodbcapps.html> ;
+# is schema:model of <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+# is opllic:hasProductLicense of <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl#License-2014-02-LOD-personal-client-access-basic-http> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-client-connectivity#this> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/sampleodbcapps.html>,
+# 			 			<http://www.slideshare.net/kidehen/accessing-linked-open-data-sources-via-virtuoso-odbc>,
+# 						<http://www.slideshare.net/kidehen/tableau-desktop-as-a-linked-open-data-frontend-via-odbc>,
+# 						<http://www.slideshare.net/kidehen/virtuosos-odbc-driver-for-mac-os-x-installation-configuration>,
+# 						<http://www.slideshare.net/kidehen/exploiting-linked-data-via-filemake> ;
+# is schema:model of <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+<http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:name "Virtuoso ODBC Driver for Mac OS X" ;
+    schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/47/ea/c1/47eac1f74eee01a9f7e02efadc041a43.jpg> ;
+    schema:comment """Client Component that provides connectivity to Virtuoso Server instances using the Open Database Connectivity (ODBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any ODBC compliant application,
+				service, or development environment. Examples include: Microsoft Excel, Filemaker, and many others.""" ;
+		schema:description """Client Component that provides connectivity to Virtuoso Server instances using the Open Database Connectivity (ODBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any ODBC compliant application,
+				service, or development environment. Examples include: Microsoft Excel, Filemaker, and many others.""" ;
+    xhv:related <http://librdf.org/docs/api/redland-storage-module-virtuoso.html>,
+			<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland> ;
+    oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveMacOSX#this> ;
+    oplfeat:hasFeature <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCSupport#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCHighPerformance#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCSecurity#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCToWeb#this>  .
+
+## Virtuoso ODBC for Linux Descriptions
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/odbcimplementation.html> ;
+# is schema:about of <http://docs.openlinksw.com/virtuoso/sampleodbcapps.html> ;
+# is schema:model of <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+# is opllic:hasProductLicense of <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl#License-2014-02-LOD-personal-client-access-basic-http> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+<http://data.openlinksw.com/oplweb/product/virtuoso-linux-odbc-driver#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Linux" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:name "Virtuoso ODBC Driver for Linux" ;
+    schema:keywords """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/47/ea/c1/47eac1f74eee01a9f7e02efadc041a43.jpg> ;
+    schema:comment """Client Component that provides connectivity to Virtuoso Server instances using the Open Database Connectivity (ODBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any Linux hosted ODBC
+				compliant application, service, or development environment. Examples include: PHP, Python, Ruby etc.""" ;
+		schema:description """Client Component that provides connectivity to Virtuoso Server instances using the Open Database Connectivity (ODBC) open standard.
+				Once installed, these secure and high-performance drivers provide connectivity to Virtuoso instances from any Linux hosted ODBC
+				compliant application, service, or development environment. Examples include: PHP, Python, Ruby etc.""" ;
+    xhv:related <http://librdf.org/docs/api/redland-storage-module-virtuoso.html>,
+			<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtRDFDriverRedland>,
+			<http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ;
+    oplinstall:hasInstallerArchive <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelqvcLinux#this>,
+	 						                 <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelnvcLinux#this> ,
+	 						                 <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelrvcLinux#this> ;
+    oplfeat:hasFeature <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCSupport#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCHighPerformance#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCSecurity#this>,
+				   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-client-connectivityFeatureODBCToWeb#this>  .
+
+
+<http://docs.openlinksw.com/jena2/>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:mentions  <http://docs.openlinksw.com/>, <http://docs.openlinksw.com/jena/> ;
+  schema:name "Virtuoso Jena 2 Documentation" .
+
+<http://docs.openlinksw.com/jena/>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:mentions  <http://docs.openlinksw.com/>, <http://docs.openlinksw.com/jena2/> ;
+  schema:name "Virtuoso Jena Documentation" .
+
+<http://docs.openlinksw.com/sesame2/>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:mentions  <http://docs.openlinksw.com/>, <http://docs.openlinksw.com/sesame/> ;
+  schema:name "Virtuoso Sesame 2 Documentation" .
+
+<http://docs.openlinksw.com/sesame/>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:mentions  <http://docs.openlinksw.com/>, <http://docs.openlinksw.com/sesame2/> ;
+  schema:name "Virtuoso Sesame Documentation" .
+
+<http://docs.openlinksw.com/jena2/>
+  schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-jena2-provider#this> .
+
+<http://docs.openlinksw.com/jena/>
+  schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-jena-provider#this> .
+
+<http://docs.openlinksw.com/sesame2/>
+  schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-sesame2-provider#this> .
+
+
+<http://docs.openlinksw.com/sesame/>
+  schema:about <http://data.openlinksw.com/oplweb/product/virtuoso-sesame-provider#this> .
+
+
+# is schema:about of <http://virtuoso.openlinksw.com/> , <http://docs.openlinksw.com/virtuoso/rdfnativestorageproviders.html#rdfnativestorageproviderssesame> ,
+#                     <http://docs.openlinksw.com/virtuoso/dataccessclientsconfailandbalance.html#dataccessclientsconfailandbalancesesm> ;
+# is foaf:member of <http://data.openlinksw.com/oplweb/product/virtuoso-client-connectivity#this> ;
+# # oplinstall:hasInstallerArchive ---
+#  is schema:about of <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtSesameProvider> .
+ <http://data.openlinksw.com/oplweb/product/virtuoso-sesame-provider#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    wdrs:describedby source: ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """Sesame, Sesame Provider, RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database""" ;
+    schema:name "Native Sesame Provider for Virtuoso" ;
+    schema:comment """Java JAR file that constitutes Virtuoso's Native Sesame Provider. Once installed into a Java Virtual Machine (JVM),
+ 				 Sesame based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""" ;
+ 		schema:description """Java JAR file that constitutes Virtuoso's Native Sesame Provider. Once installed into a Java Virtual Machine (JVM),
+ 				 Sesame based applications are equipped with complete access to Virtuoso's suite of RDF related functionality.""" .
+
+
+
+# is schema:about of <http://virtuoso.openlinksw.com/rdbms-engine/>,
+#                      <http://docs.openlinksw.com/virtuoso/coredbengine.html#colstore> ;
+<http://data.openlinksw.com/oplweb/product/column-store-cl#this>
+    a oplpro:Product ,
+      schema:SoftwareApplication ,
+      schema:CreativeWork ;
+    schema:name "Virtuoso Column Store" ;
+    wdrs:describedby source: ;
+    schema:applicationCategory schema:BusinessApplication ;
+    schema:operatingSystem "Windows, Linux, Unix, MacOSX, Unix, Solaris" ;
+    schema:applicationSuite "Virtuoso" ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    schema:keywords """Column Store, ODBC, Virtuoso ODBC Driver,
+                   JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store, RDF Quad Store,
+                   Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data Virtualization,
+                   Relational Database, Column-wise Database, Columnar Database, Column Store""" ;
+    schema:description """Virtuoso Edition equipped with Column-wise (or Columnar) Data Storage functionality""" ;
+    schema:comment """Virtuoso Edition equipped with Column-wise (or Columnar) Data Storage functionality""" .
+
+
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallMac>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  wdrs:describedby source: ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:mentions  <http://docs.openlinksw.com/> ;
+  schema:about <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveMacOSX#this> ;
+  schema:name "Installing the Virtuoso Universal Server on Mac OS X" .
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientMac>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  wdrs:describedby source: ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveMacOSX#this> ;
+  schema:mentions  <http://docs.openlinksw.com/> ;
+  schema:name "Installing the Virtuoso Client Connectivity Suite on Mac OS X " .
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallClientWin>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  wdrs:describedby source: ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:mentions  <http://docs.openlinksw.com/> ;
+  schema:about <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveWindows#this> ;
+  schema:name "Installing the Virtuoso Client Connectivity Suite on Windows" .
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallWin32>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  wdrs:describedby source: ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:mentions  <http://docs.openlinksw.com/> ;
+  schema:about <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveWindows#this> ;
+  schema:name "Installing the Virtuoso Universal Server on Windows " .
+
+<http://wikis.openlinksw.com/dataspace/owiki/wiki/VirtuosoWikiWeb/VirtuosoInstallUnixPE>
+  a schema:CreativeWork ;
+  dcterms:format "text/html" ;
+  wdrs:describedby source: ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:mentions  <http://docs.openlinksw.com/> ;
+  schema:about <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelrvpLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelnvpLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelovpLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelqvcLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelrvcLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelnvcLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelovcLinux#this> ,
+               <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelqvpLinux#this> ;
+  schema:name "Installing the Virtuoso Universal Server on Unix-like OS (AIX, HP-UX, Linux, Solaris, etc.)" .
+
+

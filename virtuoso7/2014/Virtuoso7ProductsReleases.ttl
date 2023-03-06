@@ -1,0 +1,167 @@
+@prefix schema:  <http://schema.org/> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix xhv:     <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix awol:    <http://bblfish.net/work/atom-owl/2006-06-06/#> .
+@prefix wdrs:    <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:   <http://rdfs.org/sioc/services#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix opllic:  <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplinst: <http://www.openlinksw.com/ontology/installers#> .
+@prefix oplfea:  <http://www.openlinksw.com/ontology/features#> .
+@prefix oplpro:  <http://www.openlinksw.com/ontology/products#> .
+@prefix :        <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7ProductsReleases.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7ProductsReleases.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2016-02-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "Virtuoso 7.x Releases Related Information Document " ;
+   schema:comment  """This document is a launch point for discovering routes to various information sources associated with Virtuoso 7.x Releases.  """;
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 7.x Releases "^^xsd:string  ;
+   schema:comment  """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 7.x Releases """^^xsd:string  ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2016-02-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:about  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this>  ;
+   sioc:has_container <.> ;
+   sioc:sibling <Virtuoso7Products.ttl> ,
+                <Virtuoso7OffersPrices.ttl> ,
+                <Virtuoso7Offers.ttl> ,
+                <Virtuoso7Modules.ttl> ,
+                <Virtuoso7Licenses.ttl> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   skos:related  <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTProductsReleases.ttl> ,
+                 <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTProductsReleases.ttl> .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this>
+  a oplpro:ProductRelease  ,
+    schema:CreativeWork ,
+    schema:SoftwareApplication ,
+    <http://purl.org/dc/dcmitype/Software>  ;
+  oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  schema:version "7.2"^^xsd:decimal ;
+  oplpro:versionText "7.x"^^xsd:string ;
+  schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:name "Virtuoso Universal Server Version 7.2 Release" ;
+  wdrs:describedby  source:  ;
+  schema:comment  """Latest edition (7.2) of the Virtuoso Hybrid Data Server for Data Access, Integration, and Management (Relational Tables and Entity Relation/Property Graphs).  """@en ;
+  schema:description   """<p>Latest edition of Virtuoso that includes the following enhancements and new features:</p>
+<p>1. Load Service Data ROLE -- Added SPARQL endpoint deduction capability to SPARQL-FED.</p>
+<p>2. Improved LDP Support -- Enhanced support for Linked Data Platform protocol as an extension to existing WebDAV protocol support.</p>
+<p>3. Loosely-coupled SSL/TLS -- SSL/TLS version and associated cipher selection is now configurable.</p>
+<p>4. Filesystem Hosted Virtual Tables -- Enables File System hosted CSV documents to be attached to Virtuoso instances.</p>
+<p>5. Loosely-Coupled Sponger Middleware Services -- In-built RDF document transformation middleware is now loosely-coupled its host Virtuoso database server instance.</p>
+<p>6. In-built Nanotation Processor -- Enables TURTLE statements to be embedded in Email Messages, Online Discussion Posts, Tweets, Social Media Posts (Facebook, LinkedIn, Google+), HTML Body, and Plain Text documents en route to automatic transformation into RDF-based Linked Open Data which is then stored in the host Virtuoso instance.</p>
+<p>7. Geo-Spatial SPARQL Extensions -- Enhanced extensions to SPARQL that enable high-performance and scalable query of data constructed using spatial oriented relations.</p>
+<p>8. SPARQL Query Processing Parallelism Enhancements -- 10x performance and scalability gain in regards to in multi-user applications and services that utilize complex lookup queries in SPARQL query patterns.</p> """@en ;
+  schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
+  foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
+  oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/SparlLoadServiceData#this>,
+                    <http://data.openlinksw.com/oplweb/product_feature/ImprovedLDPSupport#this>,
+                    <http://data.openlinksw.com/oplweb/product_feature/LooselyCoupledTLS#this>,
+				            <http://data.openlinksw.com/oplweb/product_feature/MountAndUmounting3rdPartyStorage#this>,
+				            <http://data.openlinksw.com/oplweb/product_feature/FileHostedVirtualTables#this>,
+				            <http://data.openlinksw.com/oplweb/product_feature/LooserCoupledSpongerMiddleware#this>,
+				            <http://data.openlinksw.com/oplweb/product_feature/NanotationProcessor#this>,
+				            <http://data.openlinksw.com/oplweb/product_feature/GeoSpatialSPARQL#this>,
+				            <http://data.openlinksw.com/oplweb/product_feature/SPARQLParallelismEnhancement#this> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  oplpro:upgradeOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ;
+  dcterms:isReferencedBy <http://kidehen.blogspot.com/2015/02/open-data-access-changed-forever-via.html#this>,
+					               <http://kidehen.blogspot.com/2015/01/from-open-database-connectivity-to.html#this>,
+					               <http://kidehen.blogspot.com/2015/01/review-publishing-for-everyone.html#this>,
+					               <http://kidehen.blogspot.com/2015/01/social-networking-profiles-for-everyone.html#this>,
+					               <http://kidehen.blogspot.com/2015/01/loosely-coupling-database-document.html#this>,
+					               <http://kidehen.blogspot.com/2014/12/deceptively-simple-conceptual-data.html#this>,
+					               <http://kidehen.blogspot.com/2014/10/progress-78910-andor-openedge-data-de.html#this>,
+					               <http://kidehen.blogspot.com/2014/08/db2-sql-rdbms-data-de-silo-fication.html#this>,
+					               <http://kidehen.blogspot.com/2014/04/oracle-data-de-silo-fication-using-rdf.html#this>,
+					               <http://kidehen.blogspot.com/2014/06/sql-server-data-de-silo-fication-using.html#this>,
+					               <http://kidehen.blogspot.com/2014/09/linked-open-data-enterprise.html#this>,
+					               <http://kidehen.blogspot.com/2014/08/linked-local-data-lld-and-linked-open.html#this>,
+					               <http://kidehen.blogspot.com/2014/03/preloaded-preconfigured-dbpedia.html#this>,
+					               <http://virtuoso.openlinksw.com/whitepapers/LOD2_D2.1.5_LOD_Cloud_Hosted_On_The_LOD2_Knowledge_Store_Cluster_500B_Triples.pdf#this>  ;
+  rdfs:seeAlso <http://bit.ly/1mu0XsR>,
+							 <http://virtuoso.openlinksw.com/download>,
+							 <http://boards.openlinksw.com/support/viewforum.php?f=25#this>,
+							 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this> ;
+  oplinst:hasInstallerArchive
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame40ProviderJARArchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJena3ProviderJARArchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJena2ProviderJARArchive#this> ,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoNativeJenaProviderJARArchive#this> ,
+  			  <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame26ProviderJARArchive#this> ,
+  			  <http://data.openlinksw.com/oplweb/installer/VirtuosoNativeSesame27ProviderJARArchive#this>  ,
+  			  <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC3xDriverJARrchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC3xSSLTLSDriverJARrchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC4DriverJARrchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC4SSLTLSDriverJARrchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC41DriverJARrchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoJDBC41SSLTLSDriverJARrchive#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveMacOSX#this>,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveMacOSX#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchiveWindows#this> ,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelqvpLinux#this> ,
+          <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelrvpLinux#this> ,
+
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelqvcLinux#this>,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelrvcLinux#this>,
+
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelnvpLinux#this>,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelnvcLinux#this> ,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchivelovcLinux#this> ,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchivelovpLinux#this> ,
+  				<http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchiveMacOSX#this> ;
+  opllic:hasProductLicense
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-win#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-linux#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-macosx#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-win#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-linux#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-macosx#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-solaris#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-win#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-linux#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-macosx#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-solaris#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-win#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-linux#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-macosx#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-solaris#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-win#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-linux#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-macosx#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-solaris#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-early-stage-combo-WKS-ANY#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-late-stage-WKS-ANY#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-late-stage-combo-WKS-ANY#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY#this> ,
+               <http://data.openlinksw.com/oplweb/license/License-2016-05-virtuoso-7-systems-integration-WKSSVR-ANY#this> .
+
+
+

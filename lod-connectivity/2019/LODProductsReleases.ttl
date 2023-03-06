@@ -1,0 +1,74 @@
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix :          <#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODProductsReleases.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/lod-connectivity/LODProductsReleases.ttl> .
+
+
+sourceDAV:
+   a schema:CreativeWork ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "OpenLink LOD Cloud Releases Related Information Document" ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with OpenLink LOD Cloud Releases."""^^xsd:string ;
+   schema:about <http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> ;
+   owl:sameAs source: .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink LOD Releases"^^xsd:string ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink LOD Releases"""^^xsd:string ;
+   schema:author <http://www.openlinksw.com/#this>  ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   sioc:has_container <.> ;
+   sioc:sibling <LODProducts.ttl> ,
+                <LODOffersPrices.ttl> ,
+                <LODOffers.ttl> ,
+                <LODLicenses.ttl>  ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   skos:related  <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTProductsReleases.ttl> ,
+                 <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTProductsReleases.ttl> ;
+   schema:about <http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_release/DaaS-LOD-Cloud#this>
+     a oplpro:ProductRelease  ,
+       schema:CreativeWork ,
+       schema:SoftwareApplication ;
+     oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
+     schema:version "1.0"^^xsd:decimal ;
+     oplpro:versionText "1.0"^^xsd:string ;
+     schema:image <http://virtuoso.openlinksw.com/images/lodcompapp.jpg> ;
+     oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+     schema:name "LOD Cloud Connectivity Release"^^xsd:string ;
+     opllic:hasProductLicense <http://data.openlinksw.com/oplweb/license/License-2016-02-LOD-personal-client-access-basic-sql#this> ,
+                              <http://data.openlinksw.com/oplweb/license/License-2016-02-WWW-eval-personal-client-access-basic-sql#this> ;
+     wdrs:describedby source: .
+
+# Uncomment to enable new LOD subcription offer:
+# opllic:hasProductLicense <http://data.openlinksw.com/oplweb/license/License-2014-12-LOD-Subscription-30#this> ;
+

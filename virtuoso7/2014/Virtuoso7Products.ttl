@@ -1,0 +1,343 @@
+@prefix oplweb:    <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix schema:    <http://schema.org/> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix category:  <http://dbpedia.org/resource/Category:> .
+@prefix oplgterms: <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#> .
+@prefix oplwiki:	 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplfea:    <http://www.openlinksw.com/ontology/features#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix oplami:    <http://www.openlinksw.com/ontology/oplami#> .
+@prefix kidehen:   <http://kingsley.idehen.net/dataspace/person/kidehen#> .
+@prefix :          <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7Products.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7Products.ttl> .
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+  schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+  schema:dateModified "2016-02-01T09:41:00-05:00"^^xsd:dateTime;
+  schema:name "Virtuoso 7.x Products Related Information Document" ;
+  schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB """ ;
+  schema:description  """This document is a launch point for discovering routes to various information sources associated with Virtuoso 7.x Products. """;
+  owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 7.x Products"^^xsd:string ;
+   schema:description  """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 7.x Products """^^xsd:string ;
+   schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB """ ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2016-02-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+              <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-c04220a8#this> ,
+              <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+   sioc:sibling <Virtuoso7ProductsReleases.ttl> ,
+                <Virtuoso7OffersPrices.ttl> ,
+                <Virtuoso7Offers.ttl> ,
+                <Virtuoso7Licenses.ttl> ,
+                <Virtuoso7Modules.ttl>  ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/>  ;
+   skos:related  <http://uda.openlinksw.com/data/turtle/multi-tier/UDAMTProducts.ttl> ,
+                 <http://uda.openlinksw.com/data/turtle/single-tier/UDASTProducts.ttl> .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso#this>
+      a  schema:SoftwareApplication ,
+         oplpro:Product,
+         schema:CreativeWork ;
+      schema:applicationCategory schema:BusinessApplication ;
+      oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+      schema:operatingSystem "Windows, Linux, MacOSX, Unix, Solaris " ;
+      schema:applicationSuite "Virtuoso" ;
+      schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, Virtuoso ODBC Driver,
+         JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, RDF, RDF Database, RDF Triple Store,
+         RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, Big Data, Virtuoso, MDM, Data Integration, Data
+         Virtualization, Relational Database  """ ;
+      oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+      oplpro:hasRelease <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+      schema:applicationSubCategory "Software > Computer Software > Business & Productivity Software"^^xsd:string ;
+      schema:category <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+      schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+      skos:prefLabel "Virtuoso Universal Server "^^xsd:string ;
+      schema:name "Virtuoso Universal Server "^^xsd:string ;
+      wdrs:describedby source: , <http://data.openlinksw.com/oplweb/product/Virtuoso> ;
+      oplfea:hasFeature
+        <http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/IndustryStandardsSupport#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/IntelligentQueryOptimization#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/KnowledgeManagement#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/MetaSchemalanguage#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFMiddleware#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverNativeSQLDataSources#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/SPARQLQueryLanguage#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/StorageEngine#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/WebServicestoRDFLinkedData#this> ;
+      schema:sameAs <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
+                    <http://dbpedia.org/resource/Virtuoso_Universal_Server> ;
+      opllic:hasModule
+             <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this> ,
+             <http://data.openlinksw.com/oplweb/module/VAL#this> ,
+             <http://data.openlinksw.com/oplweb/module/ABACACLs#this> ,
+             <http://data.openlinksw.com/oplweb/module/Replication#this> ,
+             <http://data.openlinksw.com/oplweb/module/VDB#this> ,
+             <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> ,
+             <http://data.openlinksw.com/oplweb/module/ODS#this> ;
+      schema:comment  """A Web-scalable platform for Creation, Deployment, and General exploitation of the Linked Data meme across
+      Public and Private networks.  """;
+      schema:description  """Secure, Cross Platform, and High-Performance Data Server that uniquely delivers the following integrated
+      functionality: data access, data integration, multi-model data management [relational tables and relational property graphs],
+      and HTTP application deployment services.  """ ;
+      schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
+      oplweb:wikipediaPage <http://en.wikipedia.org/wiki/Virtuoso_Universal_Server> ;
+      schema:logo <http://virtuoso.openlinksw.com/images/slider/virtuosohome.gif> ;
+      schema:author <http://www.openlinksw.com/#this> ;
+      schema:manufacturer <http://www.openlinksw.com/dataspace/organization/openlink#this> .
+
+
+# <------------- Virtuoso AMI Products ------------->
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-c04220a8#this>
+  a  schema:SoftwareApplication ,
+     oplpro:Product,
+     schema:CreativeWork ,
+     <http://sw.opencyc.org/concept/Mx4rvcUMxZwpEbGdrcN5Y29ycA> ,
+     oplami:AmazonEC2EBSBackedAMI ,
+     oplami:CloudHostedVirtualMachine ;
+  schema:name "Virtuoso Universal Server 7.2 (Enterprise -- Cloud BYOL Edition) " ;
+  schema:applicationCategory schema:BusinessApplication ;
+  schema:category <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+  schema:operatingSystem "Windows, Linux, MacOSX, Unix, Solaris " ;
+  schema:applicationSuite "Virtuoso" ;
+  schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB """ ;
+  wdrs:describedby source: ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:description  """High-Performance, Scalable, Secure, Data Server for Data Integration, Web Application Deployment, Linked Open Data publication, and Native Data Management (Relational Tables and RDF Property Graphs). """^^xsd:string ;
+  schema:comment  """One-click installation edition of Virtuoso that's available on a Bring-Your-Own-License (BYOL) model basis. This edition of Virutoso is deployed via the Amazon Web Services (AWS) Cloud and available for immediate purchase and use via its associated marketplace. """^^xsd:string ;
+  skos:prefLabel "Virtuoso Universal Server 7.2 (Enterprise -- Cloud BYOL Edition) " ;
+  schema:image <http://media-cache-ak0.pinimg.com/originals/56/fe/1f/56fe1fe5f0deef3eee9c0a1a29272d62.jpg> ;
+  dcterms:identifier "Virtuoso-ami-c04220a8" ;
+  schema:isPartOf <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+  xhv:related dbpedia:Amazon_Web_Services ,
+              category:Cloud_platforms ,
+              oplgterms:DBpedia ,
+              oplgterms:LODCloud ,
+              oplgterms:SemanticWeb ,
+              oplgterms:LinkedData ,
+              oplgterms:RDF ;
+  oplami:ec2AMI-ID "ami-c04220a8" ;
+  oplami:ec2OwnerID "940880361860" ;
+  oplami:ec2Status "available" ;
+  oplami:ec2StateReason "-" ;
+  oplami:ec2Platform "Other Linux" ;
+  oplami:ec2Architecture "x86_64" ;
+  oplami:ec2ImageType "machine" ;
+  oplami:ec2VirtualizationType "hvm" ;
+  oplami:ec2RootDeviceName "/dev/sda1" .
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this>
+    a  schema:SoftwareApplication ,
+       oplpro:Product,
+       schema:CreativeWork ,
+       <http://sw.opencyc.org/concept/Mx4rvcUMxZwpEbGdrcN5Y29ycA> ,
+       oplami:AmazonEC2EBSSnapshot ;
+   wdrs:describedby source: ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   schema:category <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+   schema:applicationCategory schema:BusinessApplication ;
+   schema:operatingSystem "Windows, Linux, MacOSX, Unix, Solaris" ;
+   schema:applicationSuite "Virtuoso" ;
+   schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB """ ;
+   schema:name "DBpedia 3.10 (Virtuoso 7.1 Single-Server) " ;
+   schema:description  """DBpedia 3.10 Preloaded & Preconfigured Elastic Block Storage (EBS) Device on Amazon Web Services based
+   Elastic Computing Cloud. """^^xsd:string ;
+   schema:comment  """Amazon Cloud Services hosted Elastic Block Storage that's comprised of a preconfigured instance of Virtuoso 7.1
+   (Single-Server Edition) and a preloaded DBpedia 3.10 dataset. Mounting this device to an Amazon Machine Instance (Virtual Machine)
+   in the EC2 (Elastic Computing Cloud) provides you with immediate access to a personal or service-specific instance of DBpedia 3.10
+   (a/k/a DBpedia 2014). """^^xsd:string ;
+   skos:prefLabel "DBpedia 3.10 (Virtuoso 7.1 Single-Server) " ;
+   schema:image <http://media-cache-ec0.pinimg.com/originals/62/e5/a5/62e5a55b04b58272a182691c2be66266.jpg> ;
+   dcterms:identifier "snap-fae8e458" ;
+   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+   xhv:related dbpedia:Amazon_Web_Services ,
+               category:Cloud_platforms ,
+               oplgterms:DBpedia ,
+               oplgterms:LODCloud ,
+               oplgterms:SemanticWeb ,
+               oplgterms:LinkedData ,
+               oplgterms:RDF ,
+               oplwiki:VirtAWSPublicDataSets ,
+               oplwiki:VirtInstallationEC2 ;
+   oplami:ec2EBSSnapshotVolumeID "vol-ff114593" ;
+   oplami:ec2EBSSnapshotID "snap-fae8e458" ;
+   oplami:ec2EBSSnapshotOwnerID "940880361860" ;
+   oplami:ec2EBSSnapshotStatus "completed" ;
+   oplami:ec2EBSSnapshotCapacity "75 GiB" ;
+   oplami:ec2EBSSnapshotEncrypted 0 ;
+   oplami:ec2EBSSnapshotKMSKeyID "none" ;
+   oplami:ec2EBSSnapshotKMSKeyAliases "none" ;
+   oplami:ec2EBSSnapshotKMSKeyARN "none" ;
+   oplami:ec2EBSSnapshotProductCodes "none" .
+
+
+# <------------- Virtuoso AMI Web Pages ------------->
+
+<http://kidehen.blogspot.com/2014/03/preloaded-preconfigured-dbpedia.html>
+  a schema:WebPage ;
+  wdrs:describedby source: ;
+  schema:name "Preloaded and Preconfigured DBpedia Cloud Instance " ;
+  schema:comment  """Blog post that covers installation and configuration of a personal and/or service-specific instance of DBpedia 3.10
+  (a/k/a DBpedia 2014) via the Amazon EC2 Cloud. """^^xsd:string ;
+  schema:significantLink <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  schema:creator kidehen:this ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  xhv:related <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ,
+              oplgterms:DBpedia ,
+              oplgterms:LODCloud ,
+              oplgterms:SemanticWeb ,
+              oplgterms:LinkedData ,
+              oplgterms:RDF .
+
+
+oplwiki:VirtEBSBackedBYOLAMI
+  a schema:WebPage ;
+  wdrs:describedby source: ;
+  schema:name "Virtuoso EBS-Backed Instance in the Amazon EC2 Cloud " ;
+  schema:comment  """Howto oriented document covering installation, configuration, and use of the Virtuoso EBS-Backed AMI
+  (Amazon Machine Image) that provides a preconfigured Virtuoso 7.1 instance in the Amazon Web Services based Cloud. """^^xsd:string ;
+  schema:significantLink <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-c04220a8#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-c04220a8#this> ;
+  xhv:related <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ,
+              oplgterms:DBpedia ,
+              oplgterms:LODCloud ,
+              oplgterms:SemanticWeb ,
+              oplgterms:LinkedData ,
+              oplgterms:RDF .
+
+
+
+oplwiki:VirtAWSPublicDataSets
+  a schema:WebPage ;
+  wdrs:describedby source: ;
+  schema:name "Virtuoso Hosted Linked Data Sets from Amazon EC2 Cloud Services " ;
+  schema:comment  """Howto oriented document covering installation and usage guides for DBpedia 3.8 datasets on Virtuoso
+  Clustered Server DBpedia 3.7, datasets on Virtuoso Clustered Server , BBC (Music, Programmes, Nature, and Food) combined
+  with DBpedia 3.6 on Virtuoso Clustered Server and BBC Music and Programmes on Virtuoso Server """^^xsd:string ;
+  schema:significantLink <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-c04220a8#this> ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  xhv:related <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ,
+              oplgterms:DBpedia ,
+              oplgterms:LODCloud ,
+              oplgterms:SemanticWeb ,
+              oplgterms:LinkedData ,
+              oplgterms:RDF .
+
+oplwiki:VirtInstallationEC2
+  a schema:WebPage ;
+  wdrs:describedby source: ;
+  schema:name "Virtuoso Universal Server AMI for Amazon EC2 Instantiation Guide " ;
+  schema:comment  """Howto oriented document covering installation, configuration, and use of Virtuoso Universal Server AMI for Amazon EC2
+  comprised as cloud-based bundle of the following OpenLink and third-party products and services: Virtuoso Universal Server, Virtuoso
+  Sponger Middleware & Cartridges (extensible RDFizer covering 30+ different data formats), OpenLink Data Spaces (ODS), OpenLink Ajax
+  Toolkit (OAT) 3rd party PHP applications (WordPress, MediaWiki, phpBB, and Drupal)  """^^xsd:string ;
+  schema:significantLink <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  dcterms:subject <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso-aws-ebs-snap-dbpedia-fae8e458#this> ;
+  xhv:related <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ,
+              oplgterms:DBpedia ,
+              oplgterms:LODCloud ,
+              oplgterms:SemanticWeb ,
+              oplgterms:LinkedData ,
+              oplgterms:RDF .
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-linux#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-macosx#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-solaris#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-win#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-combo-WKS-ANY#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-linux#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-macosx#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-solaris#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-win#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-linux#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-macosx#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-solaris#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-win#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-combo-WKS-ANY#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-personal-WKS-linux#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-personal-WKS-macosx#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-personal-WKS-win#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-linux#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-macosx#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-solaris#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-win#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-early-stage-combo-WKS-ANY#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-late-stage-WKS-ANY#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-late-stage-combo-WKS-ANY#this>,
+        <http://data.openlinksw.com/oplweb/offer/Offer-2016-05-virtuoso-7-systems-integration-WKSSVR-ANY#this> .
+

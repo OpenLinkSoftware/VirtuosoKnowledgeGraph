@@ -1,0 +1,639 @@
+@prefix    schema:   <http://schema.org/> .
+@prefix        cc:   <http://creativecommons.org/ns#>                .
+@prefix      sioc:   <http://rdfs.org/sioc/ns#>                      .
+@prefix       xhv:   <http://www.w3.org/1999/xhtml/vocab#>           .
+@prefix  openlink:   <http://www.openlinksw.com/oplweb#>             .
+@prefix    oplweb:   <http://www.openlinksw.com/schemas/oplweb#>     .
+@prefix       xsd:   <http://www.w3.org/2001/XMLSchema#>             .
+@prefix      rdfs:   <http://www.w3.org/2000/01/rdf-schema#>         .
+@prefix       owl:   <http://www.w3.org/2002/07/owl#>                .
+@prefix   dcterms:   <http://purl.org/dc/terms/>                     .
+@prefix      wdrs:   <http://www.w3.org/2007/05/powder-s#>           .
+@prefix      foaf:   <http://xmlns.com/foaf/0.1/>                    .
+@prefix      skos:   <http://www.w3.org/2004/02/skos/core#>          .
+@prefix     siocs:   <http://rdfs.org/sioc/services#>                .
+@prefix    opllic:   <http://www.openlinksw.com/ontology/licenses#>  .
+@prefix   oplcont:   <http://www.openlinksw.com/ontology/contracts#> .
+@prefix    oplsof:   <http://www.openlinksw.com/ontology/software#>  .
+@prefix          :   <#>                                             .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7Licenses.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso7/2014/Virtuoso7Licenses.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2016-02-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "Virtuoso 7.x Products Licenses Related Information Document " ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso 7.x Products Licenses. """;
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 7.x licenses "^^xsd:string ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 7.x Products Licenses. """^^xsd:string ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2016-02-01T09:41:00-05:00"^^xsd:dateTime;
+   sioc:has_container <.> ;
+   sioc:sibling <Virtuoso7ProductsReleases.ttl> ,
+                <Virtuoso7Products.ttl> ,
+                <Virtuoso7OffersPrices.ttl> ,
+                <Virtuoso7Offers.ttl> ,
+                <Virtuoso7Modules.ttl> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   skos:related <http://uda.openlinksw.com/data/turtle/multi-tier/2014/UDAMTProducts.ttl> ,
+                <http://uda.openlinksw.com/data/turtle/single-tier/2014/UDASTProducts.ttl> ;
+   schema:about <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-win#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-linux#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-macosx#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-win#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-linux#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-macosx#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-solaris#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-win#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-linux#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-macosx#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-solaris#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-win#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-linux#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-macosx#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-solaris#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-win#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-linux#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-macosx#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-solaris#this> ,
+
+                <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-early-stage-combo-WKS-ANY#this> ,
+
+                <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-late-stage-combo-WKS-ANY#this> ,
+
+
+                <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-late-stage-WKS-ANY#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY#this> ,
+                <http://data.openlinksw.com/oplweb/license/License-2016-05-virtuoso-7-systems-integration-WKSSVR-ANY#this> .
+
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-early-stage-WKS-linux "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Early-Stage-Development License for installation (transferable) on one (1) host running on Linux (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, for one (1) year. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Early-Stage-Development License (non-expiring, 4 cores, 5 threads) for deployment on Linux (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-03-WKS-linux "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-early-stage-WKS-macosx "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Early-Stage-Development License for installation (transferable) on one (1) host running on Mac OS X (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, for one (1) year. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Early-Stage-Development License (non-expiring, 4 cores, 5 threads) for deployment on Mac OS X (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-03-WKS-macosx "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-early-stage-WKS-solaris "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Early-Stage-Development License for installation (transferable) on one (1) host running on Solaris (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, for one (1) year. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Early-Stage-Development License (non-expiring, 4 cores, 5 threads) for deployment on Solaris (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-03-WKS-solaris "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-early-stage-WKS-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-early-stage-WKS-win "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Early-Stage-Development License for installation (transferable) on one (1) host running on Windows (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, for one (1) year. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-early-stage-WKS-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Early-Stage-Development License (non-expiring, 4 cores, 5 threads) for deployment on Windows (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-03-WKS-win "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-initial-deployment-WKSSVR-linux "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Initial-Deployment License for installation (transferable) on one (1) host running on Linux (Server/Dektop). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Initial-Deployment License (4 cores, 10 threads) for deployment on Linux (Server/Dektop) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-05-WKSSVR-linux "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-initial-deployment-WKSSVR-macosx "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Initial-Deployment License for installation (transferable) on one (1) host running on Mac OS X (Server/Dektop). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Initial-Deployment License (4 cores, 10 threads) for deployment on Mac OS X (Server/Dektop) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-05-WKSSVR-macosx "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-initial-deployment-WKSSVR-solaris "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Initial-Deployment License for installation (transferable) on one (1) host running on Solaris (Server/Dektop). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Initial-Deployment License (4 cores, 10 threads) for deployment on Solaris (Server/Dektop) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-05-WKSSVR-solaris "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-WKSSVR-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-initial-deployment-WKSSVR-win "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Initial-Deployment License for installation (transferable) on one (1) host running on Windows (Server/Dektop). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-WKSSVR-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Initial-Deployment License (4 cores, 10 threads) for deployment on Windows (Server/Dektop) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-05-WKSSVR-win "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-late-stage-WKS-linux "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Linux (Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Late-stage-WKS-Development License (4 cores, 10 threads) for deployment on Linux (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-04-linux "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-late-stage-WKS-macosx "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Mac OS X (Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Late-stage-WKS-Development License (4 cores, 10 threads) for deployment on Mac OS X (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-04-macosx "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-late-stage-WKS-solaris "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Solaris (Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Late-stage-WKS-Development License (4 cores, 10 threads) for deployment on Solaris (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-04-solaris "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-late-stage-WKS-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-late-stage-WKS-win "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Late-stage-WKS-Development License for installation (transferable) on one (1) host running on Windows (Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-late-stage-WKS-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Late-stage-WKS-Development License (4 cores, 10 threads) for deployment on Windows (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-04-win "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-personal-WKS-linux "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Personal License for installation (transferable) on one (1) host running on Linux (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of up to 2 processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-personal-WKS-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Personal License (no expiration, 2 cores, 5 threads) for deployment on Linux (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-01-WKS-linux "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-personal-WKS-macosx "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Personal License for installation (transferable) on one (1) host running on Mac OS X (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of up to 2 processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-personal-WKS-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Personal License (no expiration, 2 cores, 5 threads) for deployment on Mac OS X (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-01-WKS-macosx "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-personal-WKS-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-personal-WKS-win "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Personal License for installation (transferable) on one (1) host running on Windows (Workstation). Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of up to 2 processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-personal-WKS-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Personal License (no expiration, 2 cores, 5 threads) for deployment on Windows (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-01-WKS-win "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-linux#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-systems-integration-WKSSVR-linux "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Systems-Integration License for installation (transferable) on one (1) host running on Linux (Server/Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of eight (8) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-linux#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Systems-Integration License (8 cores, 10 threads) for deployment on Linux (Server/Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-07-WKSSVR-linux "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-macosx#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-systems-integration-WKSSVR-macosx "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Systems-Integration License for installation (transferable) on one (1) host running on Mac OS X (Server/Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of eight (8) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-macosx#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Systems-Integration License (8 cores, 10 threads) for deployment on Mac OS X (Server/Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-07-WKSSVR-macosx "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-solaris#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-systems-integration-WKSSVR-solaris "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Systems-Integration License for installation (transferable) on one (1) host running on Solaris (Server/Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of eight (8) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-solaris#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Solaris ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Systems-Integration License (8 cores, 10 threads) for deployment on Solaris (Server/Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-07-WKSSVR-solaris "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-systems-integration-WKSSVR-win#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-systems-integration-WKSSVR-win "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Systems-Integration License for installation (transferable) on one (1) host running on Windows (Server/Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of eight (8) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-systems-integration-WKSSVR-win#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:Windows ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Systems-Integration License (8 cores, 10 threads) for deployment on Windows (Server/Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-07-WKSSVR-win "^^xsd:string ;
+    wdrs:describedby source: .
+
+# <http://data.openlinksw.com/oplweb/license/License-2016-02-virtuoso-7-initial-deployment-combo-WKSSVR-ANY#this> a
+#         opllic:NonExpiringLicense,
+#         opllic:ProductLicense,
+#         opllic:Virtuoso7License , schema:Product ;
+#     schema:name "Virtuoso 7.x License: 2016-02-virtuoso-7-initial-deployment-combo-WKSSVR-ANY "^^xsd:string ;
+#     schema:description "Server-class Virtuoso 7.x Initial-Deployment-Development License for installation (transferable) on one (1) host running on any supported system (Server/Workstation). Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of four (4) processor cores. "^^xsd:string ;
+#     schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+#     opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+#     opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+#     opllic:hasSessions "10"^^xsd:integer ;
+#     opllic:maxNetworkInstance "1"^^xsd:integer ;
+#     opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-02-virtuoso-7-initial-deployment-combo-WKSSVR-ANY#this> ;
+#     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+#     opllic:serialNumberBroadcast "1"^^xsd:integer ;
+#     oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+#     oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+#     schema:comment "Virtuoso 7.x Initial-Deployment-Development Server License (non-expiring, 4 cores, 10 threads) for deployment on any supported OS (Server/Workstation) "^^xsd:string ;
+#     skos:prefLabel "Virtuoso 7.x License: 2016-02-VIRT-05-combo-WKSSVR-ANY "^^xsd:string ;
+#     wdrs:describedby source: .
+
+##############################
+
+
+<http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-early-stage-combo-WKS-ANY#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-22-virtuoso-7-early-stage-combo-WKS-ANY 8 cores "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Early-Stage-Combo Development License for installation (transferable) on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of eight (8) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-early-stage-combo-WKS-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Early-stage-combo-WKS-ANY-Development License (non-expiring, 8 cores, 5 threads) for deployment on any OS (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-22-virtuoso-7-early-stage-combo-WKS-ANY 8 cores "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-late-stage-WKS-ANY#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-22-virtuoso-7-late-stage-WKS-ANY "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Late-Stage Development License for installation (transferable) on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, the Column Store Module, and will utilize a maximum of sixteen (16) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-late-stage-WKS-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Late-stage-WKS-ANY-Development License (non-expiring, 16 cores, 5 threads) for deployment on any OS (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-22-virtuoso-7-late-stage-WKS-ANY "^^xsd:string ;
+    wdrs:describedby source: .
+
+
+<http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-late-stage-combo-WKS-ANY#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-22-virtuoso-7-late-stage-combo-WKS-ANY "^^xsd:string ;
+    schema:description "Workstation-class Virtuoso 7.x Late-Stage-Combo Development License for installation (transferable) on one (1) host running any supported Workstation-class OS. Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of sixteen (16) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-late-stage-combo-WKS-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    schema:comment "Virtuoso 7.x Late-stage-combo-WKS-ANY-Development License (non-expiring, 16 cores, 10 threads) for deployment on any OS (Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-22-virtuoso-7-late-stage-combo-WKS-ANY "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Initial-Deployment License for installation (transferable) on one (1) host running any supported Workstation- or Server-class OS. Enables ten (10) Client Service Threads, the Column Store Module, and will utilize a maximum of sixteen (16) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Initial-Deployment-WKSSVR-ANY License (non-expiring, 16 cores, 10 threads) for deployment on any OS (Server or Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-22-virtuoso-7-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+    wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/license/License-2016-05-virtuoso-7-systems-integration-WKSSVR-ANY#this> a
+        opllic:NonExpiringLicense,
+        opllic:ProductLicense,
+        opllic:Virtuoso7License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+    schema:name "Virtuoso 7.x License: 2016-05-virtuoso-7-systems-integration-WKSSVR-ANY "^^xsd:string ;
+    schema:description "Server-class Virtuoso 7.x Systems-Integration License for installation (transferable) on one (1) host running any supported Workstation- or Server-class OS. Enables twenty-five (25) Client Service Threads, the Column Store Module, and will utilize a maximum of sixteen (16) processor cores, without expiration. "^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+    opllic:hasSessions "25"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2016-05-virtuoso-7-systems-integration-WKSSVR-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+    opllic:serialNumberBroadcast "1"^^xsd:integer ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    schema:comment "Virtuoso 7.x Systems Integration License (non-expiring, 16 cores, 25 threads) for deployment on any OS (Server or Workstation) "^^xsd:string ;
+    skos:prefLabel "Virtuoso 7.x License: 2016-05-virtuoso-7-systems-integration-WKSSVR-ANY "^^xsd:string ;
+    wdrs:describedby source: .
+

@@ -1,0 +1,157 @@
+@prefix oplweb:    <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix schema:    <http://schema.org/> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix category:  <http://dbpedia.org/resource/Category:> .
+@prefix oplgterms: <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#> .
+@prefix oplwiki:	 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplfea:    <http://www.openlinksw.com/ontology/features#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix oplami:    <http://www.openlinksw.com/ontology/oplami#> .
+@prefix kidehen:   <http://kingsley.idehen.net/dataspace/person/kidehen#> .
+@prefix :          <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Products.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Products.ttl> .
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:datePublished "2017-10-02T15:38:25-00:00"^^xsd:dateTime ;
+  schema:dateCreated "2017-10-01T12:38:25-00:00"^^xsd:dateTime ;
+  schema:dateModified "2017-10-02T09:41:00-05:00"^^xsd:dateTime;
+  schema:name "Virtuoso 8.x Products Related Information Document" ;
+  schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, GraphDB, KnowledgeGraph, SQL, SPARQL """ ;
+  schema:description  """This document is a launch point for discovering routes to various information sources associated with Virtuoso 8.x Products. """;
+  owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 8.x Products"^^xsd:string ;
+   schema:description  """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 8.x Products """^^xsd:string ;
+   schema:keywords  """RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration, Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB """ ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2017-10-02T15:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2017-10-01T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2017-10-02T09:41:00-05:00"^^xsd:dateTime;
+   schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+   sioc:sibling <Virtuoso8ProductsReleases.ttl> ,
+                <Virtuoso8OffersPrices.ttl> ,
+                <Virtuoso8Offers.ttl> ,
+                <Virtuoso8Licenses.ttl> ,
+                <Virtuoso8Modules.ttl>  ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso#this>
+      a  schema:SoftwareApplication ,
+         oplpro:Product,
+         schema:CreativeWork ;
+      schema:applicationCategory schema:BusinessApplication ;
+      oplpro:hasCategory <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+              <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+      schema:operatingSystem "Windows, Linux, MacOSX, Unix, Solaris " ;
+      schema:applicationSuite "Virtuoso" ;
+      schema:keywords  """
+	  					  RDBMS, Relational Database, Graph Database, Database, Middleware, ETL, Data Integration,
+         				  Virtual Database, Data Lake, Big Data, NoSQL, NewSQL, ODBC, JDBC, ADO.NET, OLE-DB, ODBC, 
+						  Virtuoso ODBC Driver, JDBC, SQL, Semantic Web, SemanticWeb, Linked Data, LinkedData, Linked Open Data, 
+						  RDF, RDF Database, RDF Triple Store, RDF Quad Store, Open Data, Smart Data, SmartData, NoSQL, NewSQL, 
+						  Big Data, Virtuoso, MDM, Data Integration, Data Virtualization, Relational Database, GraphDB, KnowledgeGraph, 
+						  SPARQL
+					   """@en ;
+      oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+      oplpro:hasRelease <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+      schema:applicationSubCategory "Software > Computer Software > Business & Productivity Software"^^xsd:string ;
+      schema:category <http://data.openlinksw.com/oplweb/product_category/SqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/SparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/VirtualSparqlRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HybridRdbms#this> ,
+                     <http://data.openlinksw.com/oplweb/product_category/HttpServer#this> ;
+      schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+      skos:prefLabel "Virtuoso Universal Server "^^xsd:string ;
+      schema:name "Virtuoso Universal Server "^^xsd:string ;
+      wdrs:describedby source: , <http://data.openlinksw.com/oplweb/product/Virtuoso> ;
+      oplfea:hasFeature
+        <http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/IndustryStandardsSupport#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/IntelligentQueryOptimization#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/KnowledgeManagement#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/MetaSchemalanguage#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFMiddleware#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverNativeSQLDataSources#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/SPARQLQueryLanguage#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/StorageEngine#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#this> ,
+        <http://data.openlinksw.com/oplweb/product_feature/WebServicestoRDFLinkedData#this> ;
+      schema:sameAs <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
+                    <http://dbpedia.org/resource/Virtuoso_Universal_Server> ;
+      opllic:hasModule
+             <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this> ,
+             <http://data.openlinksw.com/oplweb/module/VAL#this> ,
+             <http://data.openlinksw.com/oplweb/module/ABACACLs#this> ,
+             <http://data.openlinksw.com/oplweb/module/Replication#this> ,
+             <http://data.openlinksw.com/oplweb/module/VDB#this> ,
+             <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> ,
+             <http://data.openlinksw.com/oplweb/module/ODS#this> ;
+      schema:comment  """
+	  				  Secure, High-Performance, and Open Standards compliant Platform for Multi-Model Relational Database Management (SQL Tables and RDF Property Graphs), Data Virtualization, and Data Integration.
+					  """@en;
+      schema:description  """
+	  					  Secure, Cross Platform, and High-Performance Platform that uniquely delivers the following integrated
+						  functionality: data access, data integration, data virtualization, multi-model data management [relational tables and relational 
+						  property graphs],and HTTP application deployment services.  
+						  """@en;
+      schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
+      oplweb:wikipediaPage <http://en.wikipedia.org/wiki/Virtuoso_Universal_Server> ;
+      schema:logo <http://virtuoso.openlinksw.com/images/slider/virtuosohome.gif> ;
+      schema:author <http://www.openlinksw.com/#this> ;
+      schema:manufacturer <http://www.openlinksw.com/dataspace/organization/openlink#this> .
+
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso#this> 
+schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-personal-WKS-ANY#this> ,
+			  <http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-app-developer-development-WKS-ANY#this> ,
+			  <http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+			  <http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> ,
+			  <http://data.openlinksw.com/oplweb/offer/Offer-2017-10-virtuoso-8-systems-integration-WKSSVR-ANY#this>  .
+

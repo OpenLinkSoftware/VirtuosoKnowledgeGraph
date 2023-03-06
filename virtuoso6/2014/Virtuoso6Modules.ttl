@@ -1,0 +1,69 @@
+@prefix schema:      <http://schema.org/> .
+@prefix cc:          <http://creativecommons.org/ns#> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#> .
+@prefix xhv:         <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:        <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:       <http://rdfs.org/sioc/services#> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#>
+@prefix opllic:      <http://www.openlinksw.com/ontology/licenses#> .
+@prefix :            <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6Modules.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6Modules.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "Virtuoso 6.x Modules Related Information Document" ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso 6.x Modules.""";
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 6 Modules"^^xsd:string ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 6 Modules"""^^xsd:string ;
+   sioc:has_container <.> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   sioc:sibling <Virtuoso6Products.ttl> ,
+                <Virtuoso6OffersPrices.ttl> ,
+                <Virtuoso6Offers.ttl> ,
+                <Virtuoso6Licenses.ttl> ,
+                <Virtuoso6ProductsReleases.ttl> ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
+   schema:about <http://data.openlinksw.com/oplweb/module/Virtuoso6Clustering#this> .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+
+#l:License-2014-04-virtuoso-6-pilot-30-ANY
+
+<http://data.openlinksw.com/oplweb/module/Virtuoso6Clustering#this>
+      a opllic:Module ;
+      opllic:hasModuleCode "CLUSTER" ;
+      schema:comment """License for Virtuoso 6 Cluster Module enables Shared-Nothing Cluster functionality"""^^xsd:string ;
+      schema:description """License for Virtuoso 6 Cluster Module enables Shared-Nothing Cluster functionality within scope of encompassing Virtuoso License."""^^xsd:string ;
+      schema:name "Virtuoso6Clustering"^^xsd:string ;
+      skos:altLabel "Virtuoso 6.x Cluster Module"^^xsd:string .
+#      opllic:isModuleOf l:License-2015-10-virtuoso-6-workgroup-WKSSVR-linux ,
+#                        l:License-2015-10-virtuoso-6-workgroup-WKSSVR-win  ,
+#                        l:License-2015-10-virtuoso-6-workgroup-WKSSVR-solaris ,
+#                        l:License-2015-10-virtuoso-6-workgroup-WKSSVR-macosx ;
+
+

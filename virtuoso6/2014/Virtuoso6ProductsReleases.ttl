@@ -1,0 +1,105 @@
+@prefix schema:      <http://schema.org/> .
+@prefix cc:          <http://creativecommons.org/ns/> .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#> .
+@prefix xhv:         <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix gr:          <http://purl.org/goodrelations/v1#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:        <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix siocs:       <http://rdfs.org/sioc/services#> .
+@prefix sioc:        <http://rdfs.org/sioc/ns#>
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix opllic:      <http://www.openlinksw.com/ontology/licenses#>  .
+@prefix oplfea:      <http://www.openlinksw.com/ontology/features#> .
+@prefix oplpro:      <http://www.openlinksw.com/ontology/products#> .
+@prefix :            <#> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6ProductsReleases.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso6/2014/Virtuoso6ProductsReleases.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   schema:name "Virtuoso 6.x Releases Related Information Document" ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with Virtuoso 6.x Releases.""" ;
+   owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "OpenLink Virtuoso 6 Releases"^^xsd:string  ;
+   schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Virtuoso 6 Releases"""^^xsd:string  ;
+   sioc:has_container <.>  ;
+   schema:datePublished "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2015-10-01T09:41:00-05:00"^^xsd:dateTime;
+   sioc:sibling <Virtuoso6Products.ttl> ,
+                <Virtuoso6OffersPrices.ttl> ,
+                <Virtuoso6Offers.ttl> ,
+                <Virtuoso6Licenses.ttl> ,
+                <Virtuoso6Modules.ttl>  ;
+   xhv:alternate <http://virtuoso.openlinksw.com/offers/>  ;
+   skos:related <http://uda.openlinksw.com/offers/>  ;
+   schema:about <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> ,
+              <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this> .
+
+<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
+<.> sioc:container_of source: .
+
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this>
+     a oplpro:ProductRelease  ,
+       schema:CreativeWork ,
+       schema:SoftwareApplication ;
+     oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/row-store-sn#this> ;
+     schema:version "6.4"^^xsd:decimal ;
+     oplpro:versionText "6.x"^^xsd:string ;
+     schema:comment "6.x"^^xsd:string ;
+     schema:image <http://virtuoso.openlinksw.com/images/vconc650.jpg> ;
+     oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+     schema:name """Virtuoso Universal Server (Row Store & Single Server Edition) Version 6.4 Release """^^xsd:string ;
+     opllic:hasProductLicense <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-personal-WKS-win#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-personal-WKS-linux#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-personal-WKS-macosx#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-early-stage-WKS-win#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-early-stage-WKS-linux#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-early-stage-WKS-macosx#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-early-stage-WKS-solaris#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-late-stage-WKS-win#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-late-stage-WKS-linux#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-late-stage-WKS-macosx#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-late-stage-WKS-solaris#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-initial-deployment-WKSSVR-win#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-initial-deployment-WKSSVR-linux#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-initial-deployment-WKSSVR-macosx#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-initial-deployment-WKSSVR-solaris#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-systems-integration-WKSSVR-win#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-systems-integration-WKSSVR-linux#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-systems-integration-WKSSVR-macosx#this> ,
+                         <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-systems-integration-WKSSVR-solaris#this> .
+
+
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this>
+     a oplpro:ProductRelease  ,
+       schema:CreativeWork ,
+       schema:SoftwareApplication ;
+     oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/row-store-cl#this> ;
+     schema:version "6.4"^^xsd:decimal ;
+     oplpro:versionText "6.x"^^xsd:string ;
+     schema:image <http://ods.openlinksw.com/wiki/main/Main/VirtInstallationEC2/ec2-pay-1.png> ;
+     oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+     schema:name """Virtuoso Universal Server (Row Store & Cluster Server Edition) Version 6.4 Release """^^xsd:string .
+
+     # opllic:hasProductLicense
+     #                   <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-department-WKSSVR-win#this> ,
+     #                   <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-department-WKSSVR-linux#this> ,
+     #                   <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-department-WKSSVR-solaris#this> ,
+     #                   <http://data.openlinksw.com/oplweb/license/LicenseLicense-2016-02-virtuoso-6-department-WKSSVR-macosx#this> .
+     #
+                         #<http://data.openlinksw.com/oplweb/license/LicenseLicense-2014-04-virtuoso-6-pilot-30-ANY#this> ,
+
