@@ -471,15 +471,15 @@ source:
 							 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this> .
 
 <http://data.openlinksw.com/oplweb/product_feature/graphql-query-endpoint#this>
-  a oplfea:ProductFeature ;
-  wdrs:describedby source: ;
-	skos:altLabel "GraphQL Query Endpoint" ;
-	schema:name "graphql-query-endpoint" ;
-  oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ;
-	schema:comment """A built-in query service endpoint for handling HTTP messages comprising GraphQL payloads that perform query and (insert and delete) mutation operations from GraphQL clients."""@en;
-  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this>,
-                    <http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this>,
-                    <http://data.openlinksw.com/oplweb/product_benefit/ITInfrastructureInvestmentPreservation#this>.
+   a                  oplfea:ProductFeature ;
+   wdrs:describedby   source: ;
+   skos:altLabel      "GraphQL Query Endpoint" ;
+   schema:name        "graphql-query-endpoint" ;
+   oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ;
+   schema:comment     """A built-in query service endpoint for handling HTTP messages comprising GraphQL payloads that perform query and mutation (insert and delete) operations from GraphQL clients."""@en ;
+   oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ,
+                      <http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this> ,
+                      <http://data.openlinksw.com/oplweb/product_benefit/ITInfrastructureInvestmentPreservation#this> .
 
   <http://data.openlinksw.com/oplweb/product_feature/encryption-at-rest#this>
   a oplfea:ProductFeature ;
