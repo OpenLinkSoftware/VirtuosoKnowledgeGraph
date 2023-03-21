@@ -469,3 +469,40 @@ source:
 							 <http://virtuoso.openlinksw.com/download>,
 							 <http://boards.openlinksw.com/support/viewforum.php?f=25#this>,
 							 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/graphql-query-endpoint#this>
+   a                  oplfea:ProductFeature ;
+   wdrs:describedby   source: ;
+   skos:altLabel      "GraphQL Query Endpoint" ;
+   schema:name        "graphql-query-endpoint" ;
+   oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ;
+   schema:comment     """A built-in query service endpoint for handling HTTP messages comprising GraphQL payloads that perform query and mutation (insert and delete) operations from GraphQL clients."""@en ;
+   oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ,
+                      <http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this> ,
+                      <http://data.openlinksw.com/oplweb/product_benefit/ITInfrastructureInvestmentPreservation#this> .
+
+  <http://data.openlinksw.com/oplweb/product_feature/encryption-at-rest#this>
+  a oplfea:ProductFeature ;
+  wdrs:describedby source: ;
+	skos:altLabel "Encryption at Rest" ;
+	schema:name "encryption-at-rest" ;
+  oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ;
+	schema:comment """âEncryption At Restâ """@en ;
+  oplben:hasBenefit <http://data.openlinksw.com/oplweb/support_benefits#c3cde62562b9bac195fc0f8354fe3d22>.
+
+<http://data.openlinksw.com/oplweb/product_feature/geosparql-functions#this>
+   a                oplfea:ProductFeature ;
+   wdrs:describedby   source: ;
+   skos:altLabel      "GeoSPARQL Functions" ;
+   schema:name        "geosparql-functions" ;
+   oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ;
+   oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/IndustryStandardsCompliance#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance#this>
+   a                  oplfea:ProductFeature ;
+   wdrs:describedby   source: ;
+   skos:altLabel      "High Performance" ;
+   schema:name        "high-performance" ;
+   oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ,
+                      <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> ;
+   rdfs:comment       "Blistering performance — bring on the benchmarks!" .
