@@ -490,13 +490,13 @@ source:
 	schema:comment """âEncryption At Restâ """@en ;
   oplben:hasBenefit <http://data.openlinksw.com/oplweb/support_benefits#c3cde62562b9bac195fc0f8354fe3d22>.
 
-  <http://data.openlinksw.com/oplweb/product_feature/geosparql-functions#this>
-  a oplfea:ProductFeature ;
-  wdrs:describedby source: ;
-	skos:altLabel "GeoSPARQL Functions" ;
-	schema:name "geosparql-functions" ;
-  oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this>;
-  oplben:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/IndustryStandardsCompliance#this>.
+<http://data.openlinksw.com/oplweb/product_feature/geosparql-functions#this>
+   a                oplfea:ProductFeature ;
+   wdrs:describedby   source: ;
+   skos:altLabel      "GeoSPARQL Functions" ;
+   schema:name        "geosparql-functions" ;
+   oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80x#this> ;
+   oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/IndustryStandardsCompliance#this> .
 
   <http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance#this>
   a oplfea:ProductFeature ;
