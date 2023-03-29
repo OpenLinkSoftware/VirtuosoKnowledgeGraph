@@ -1,237 +1,354 @@
-﻿@prefix schema:	<http://schema.org/> .
-@prefix ns1:	<http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#> .
-@prefix feat:	<http://www.openlinksw.com/ontology/features#> .
-@prefix ns3:	<http://data.openlinksw.com/oplweb/product/column-store-cl#> .
-@prefix ns4:	<http://data.openlinksw.com/oplweb/product/row-store-cl#> .
+@prefix : <#>.
 @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ns6:	<http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#> .
-@prefix ns7:	<http://data.openlinksw.com/oplweb/product/row-store-sn#> .
-@prefix ns8:	<http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#> .
-@prefix ns9:	<http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#> .
-@prefix ns10:	<http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#> .
-@prefix ns11:	<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#> .
-@prefix ns12:	<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardsSupport#> .
-@prefix ns13:	<http://data.openlinksw.com/oplweb/product_feature/IntelligentQueryOptimization#> .
-@prefix ns14:	<http://data.openlinksw.com/oplweb/product_feature/KnowledgeManagement#> .
-@prefix ns15:	<http://data.openlinksw.com/oplweb/product_feature/MetaSchemalanguage#> .
-@prefix ns16:	<http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#> .
-@prefix ns17:	<http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#> .
-@prefix ns18:	<http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#> .
-@prefix ns19:	<http://data.openlinksw.com/oplweb/product_feature/RDFMiddleware#> .
-@prefix ns20:	<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#> .
-@prefix ns21:	<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverNativeSQLDataSources#> .
-@prefix ns22:	<http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#> .
-@prefix ns23:	<http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#> .
-@prefix ns24:	<http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#> .
-@prefix ns25:	<http://data.openlinksw.com/oplweb/product_feature/SPARQLQueryLanguage#> .
-@prefix ns26:	<http://data.openlinksw.com/oplweb/product_feature/StorageEngine#> .
-@prefix ns27:	<http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#> .
-@prefix ns28:	<http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#> .
-@prefix ns29:	<http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#> .
-@prefix ns30:	<http://data.openlinksw.com/oplweb/product_feature/WebServicestoRDFLinkedData#> .
-@prefix dt:	<http://www.w3.org/2001/XMLSchema#> .
-@prefix ns32:	<http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#> .
-@prefix ns33:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#> .
-@prefix ns34:	<http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#> .
-@prefix ns35:	<http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#> .
-@prefix ns36:	<http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#> .
-@prefix ns37:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#> .
-@prefix ns38:	<http://data.openlinksw.com/oplweb/product_feature/data-compression#> .
-@prefix ns39:	<http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#> .
-@prefix ns40:	<http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#> .
-@prefix ns41:	<http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#> .
-@prefix ns42:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#> .
-@prefix ns43:	<http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#> .
-@prefix ns44:	<http://data.openlinksw.com/oplweb/product_feature/vectored-execution#> .
-@prefix ns45:	<http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#> .
-@prefix ns46:	<http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance#> .
-@prefix ns47:	<http://www.openlinksw.com/temp#> .
-@prefix ns48:	<urn:website:new:rules#> .
-@prefix ns49:	<urn:webdev:virtuoso#> .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+@prefix schema:	<http://schema.org/> .
 
-ns1:this
-	schema:name	"Clustering for Fault Tolerance Load Balancing" , "Clustering for Fault Tolerance and/or Load Balancing" ;
-	feat:isFeatureOf ns3:this , ns4:this ;
-	rdf:type	feat:ProductFeature .
-ns6:this
-	schema:name	"Configurable Policy based Security" , "Configurable Policy-based Security" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns8:this
-	schema:name	"Content Negotiation Support including RDF handling" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns9:this
-	schema:name	"Distributed Transactions Support 2 Phase Commit" , "Two-Phase Commit (2PC) in Distributed Transactions" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns10:this
-	schema:name	"HTTP Compliant Application Server" , "HTTP-Compliant Application Server" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns11:this
-	schema:name	"Industry Standard Query Language Support SPARQL" , "Industry Standard SPARQL Query Language Support" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns12:this
-	schema:name	"Industry Standards Support" , "Industry Standard Support" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns13:this
-	schema:name	"Intelligent Query Optimization" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns14:this
-	schema:name	"Knowledge Management" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns15:this
-	schema:name	"Meta Schema language" , "Meta Schema Language" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns16:this
-	schema:name	"Network based Query Parallelization" , "Network-based Query Parallelization" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns17:this
-	schema:name	"Parallelized SQL Query Execution" , "Parallelized Execution of SQL Queries" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns18:this
-	schema:name	"RDF Data Management" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns19:this
-	schema:name	"RDF Middleware" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns20:this
-	schema:name	"RDF Views over External Data Sources" , "Linked Data Views over External Data Sources" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns21:this
-	schema:name	"RDF Views over Native SQL Data Sources" , "Linked Data Views over Native SQL Data Sources" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns22:this
-	schema:name	"RDF aware Clustering" ;
-	feat:isFeatureOf	ns3:this , ns4:this ;
-	rdf:type	feat:ProductFeature .
-ns23:this
-	schema:name	"RDF based Linked Data Deployment" , "RDF-based Linked Data Deployment" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns24:this
-	schema:name	"Runtime Hosting" , "Run Time Hosting" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns25:this
-	schema:name	"SPARQL Query Language" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns26:this
-	schema:name	"Storage Engine" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns27:this
-	schema:name	"Supports Broad Range of Data Access Standards" , "Supports a Broad Range of Data Access Standards" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns28:this
-	schema:name	"WebDAV Compliant Content Manager" , "WebDAV-Compliant Content Manager" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns29:this
-	schema:name	"Web Service Deployment Platform" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns30:this
-	schema:name	"Web Services to RDF Linked Data" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns32:this
-	schema:name	"Attribute-based Access Controls"^^dt:string ;
-	feat:isFeatureOf	ns33:this ;
-	rdf:type	feat:ProductFeature .
-ns34:this
-	schema:name	"Custom Inference Rules"^^dt:string ;
-	feat:isFeatureOf	ns33:this ;
-	rdf:type	feat:ProductFeature .
-ns35:this
-	schema:name	"Enhanced Relational Mapping"^^dt:string , "Enhanced Relational Mapping" ;
-	feat:isFeatureOf	ns33:this ;
-	rdf:type	feat:ProductFeature .
-ns36:this
-	schema:name	"Column-wise data storage" ;
-	feat:isFeatureOf	ns37:this,
-						ns33:this;
-	rdf:type	feat:ProductFeature .
-ns38:this
-	schema:name	"Data Compression" ;
-	feat:isFeatureOf	ns37:this,
-						ns33:this;
-	rdf:type	feat:ProductFeature .
-ns39:this
-	schema:name	"Elastic Clustering" ;
-	feat:isFeatureOf	ns37:this ;
-	rdf:type	feat:ProductFeature .
-ns40:this
-	schema:name	"New Extractor Cartridges" ;
-	feat:isFeatureOf	ns37:this ,
-						ns33:this;
-	rdf:type	feat:ProductFeature .
-ns41:this
-	schema:name	"New Meta-Cartridges" ;
-	feat:isFeatureOf	ns37:this , 
-						ns42:this , 
-						ns43:this ,
-						ns33:this;
-						
-	rdf:type	feat:ProductFeature .
-ns44:this
-	schema:name	"Vectored Execution" ;
-	feat:isFeatureOf	ns37:this,
-						ns33:this;
-	rdf:type	feat:ProductFeature .
-ns45:this
-	schema:name	"Linked Data Publishing" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this ;
-	rdf:type	feat:ProductFeature .
-ns46:this
-	schema:name	"High performance" ;
-	feat:isFeatureOf	ns3:this , ns4:this , ns7:this , ns33:this , ns37:this , ns42:this , ns43:this ;
-	rdf:type	feat:ProductFeature .
+:this
+  a schema:CreativeWork ;
+  schema:name """Virtuoso Features Comparison Matrix Document"""@en ;
+  schema:comment """Description of Virtuoso features and benefits that are mapped to product groups, for feature comparison matrix usage."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software"@en ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this>.               
 
-<http://data.openlinksw.com/oplweb/product_feature/graphql-query-endpoint#this>
-schema:name	"GraphQL Query Endpoint" ;
-feat:isFeatureOf	ns33:this;
-rdf:type	feat:ProductFeature .
+<http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"RDF Data Management"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#this>
+    rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"RDF based Linked Data Deployment"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> ,
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/WebServicestoRDFLinkedData#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Web Services to RDF Linked Data"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+    
+<http://data.openlinksw.com/oplweb/product_feature/geosparql-functions-and-magic-predicates#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"GeoSPARQL Functions"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Attribute-based Access Controls"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Custom Inference Rules"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Enhanced Relational Mapping"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
 
 <http://data.openlinksw.com/oplweb/product_feature/encryption-at-rest#this>
-schema:name "Encryption at Rest" ;
-feat:isFeatureOf ns33:this ;
-rdf:type feat:ProductFeature .	
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Encryption at Rest"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
 
-<http://data.openlinksw.com/oplweb/product_feature/geosparql-functions-and-magic-predicates#this>
-schema:name "GeoSPARQL Functions" ;
-feat:isFeatureOf ns33:this;
-rdf:type	feat:ProductFeature .
+<http://data.openlinksw.com/oplweb/product_feature/graphql-query-endpoint#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"GraphQL Query Endpoint"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
 
-ns47:v7
-	schema:name	"Virtuoso 7.x" ;
-	rdf:type	ns48:ProductGroup ;
-	ns48:groupContains	ns3:this , ns4:this , ns7:this , ns37:this , ns42:this , ns43:this .
-ns47:v8
-	schema:name	"Virtuoso 8.x" ;
-	rdf:type	ns48:ProductGroup ;
-	ns48:groupContains	ns3:this , ns4:this , ns7:this , ns33:this.
-ns49:v7
-	schema:name	"Virtuoso 7.x" ;
-	rdf:type	ns48:ProductGroup ;
-	ns48:groupContains	ns3:this , ns4:this , ns7:this , ns37:this , ns42:this , ns43:this .
-ns49:v8
-	schema:name	"Virtuoso 8.x" ;
-	rdf:type	ns48:ProductGroup ;
-	ns48:groupContains	ns3:this , ns4:this , ns7:this , ns33:this .
+<http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"New Meta-Cartridges"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> .
 
+<http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"New Extractor Cartridges"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
 
+<http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Elastic Clustering"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Column-wise data storage"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/vectored-execution#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Vectored Execution"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/data-compression#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Data Compression"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Clustering for Fault Tolerance and/or Load Balancing"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Configurable Policy based Security"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Content Negotiation Support including RDF handling"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Distributed Transactions Support 2 Phase Commit"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"HTTP-Compliant Application Server"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+                                                                
+<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Industry Standard SPARQL Query Language Support"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardsSupport#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Industry Standards Support"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/IntelligentQueryOptimization#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Intelligent Query Optimization"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/KnowledgeManagement#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Knowledge Management"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Linked Data Publishing"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/MetaSchemalanguage#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Meta Schema Language"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Network based Query Parallelization"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Parallelized SQL Query Execution"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFMiddleware#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"RDF Middleware"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"RDF Views over External Data Sources"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverNativeSQLDataSources#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Linked Data Views over Native SQL Data Sources"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"RDF aware Clustering"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> ,
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Run Time Hosting"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/SPARQLQueryLanguage#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"SPARQL Query Language"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/StorageEngine#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Storage Engine"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Supports a Broad Range of Data Access Standards"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"WebDAV Compliant Content Manager"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"Web Service Deployment Platform"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this.
+
+<http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance#this>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this;
+	schema:name	"High performance"@en ;
+	<http://www.openlinksw.com/ontology/features#isFeatureOf>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product/column-store-cl#this> , 
+                                                                <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> .
+
+<http://www.openlinksw.com/temp#v7>
+	rdf:type <urn:website:new:rules#ProductGroup> ;
+	wdrs:describedby :this;
+	schema:name	"Virtuoso 7.x"@en ;
+	<urn:website:new:rules#groupContains>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/column-store-cl#this> , 
+                                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> .
+
+<http://www.openlinksw.com/temp#v8>
+	rdf:type <urn:website:new:rules#ProductGroup> ;
+	wdrs:describedby :this;
+	schema:name	"Virtuoso 8.x"@en ;
+	<urn:website:new:rules#groupContains>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performancethis>
+	rdf:type <http://www.openlinksw.com/ontology/features#ProductFeature> ;
+	wdrs:describedby :this.
+
+<urn:webdev:virtuoso#v8>
+	rdf:type <urn:website:new:rules#ProductGroup> ;
+	wdrs:describedby :this;
+	schema:name	"Virtuoso 8.x"@en ;
+	<urn:website:new:rules#groupContains>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-cl#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/column-store-cl#this> .
+
+<urn:webdev:virtuoso#v7>
+	rdf:type <urn:website:new:rules#ProductGroup> ;
+	wdrs:describedby :this;
+	schema:name	"Virtuoso 7.x"@en ;
+	<urn:website:new:rules#groupContains>	<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease70x#this> , 
+                                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreClusterCloud64x#this> , 
+                                            <http://data.openlinksw.com/oplweb/product/row-store-cl#this> , <http://data.openlinksw.com/oplweb/product/row-store-sn#this> , <http://data.openlinksw.com/oplweb/product/column-store-cl#this> , <http://data.openlinksw.com/oplweb/product_release/VirtuosoReleaseRowStoreSingle64x#this> .
