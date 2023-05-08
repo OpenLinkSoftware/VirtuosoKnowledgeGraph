@@ -262,7 +262,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values âMâ and âFâ, could we infer concepts of âGenderâ and Male/Female? Is there any ability to identify concepts that may be identical?)"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this> a schema:Answer;
 schema:name "Answer to question: Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values âMâ and âFâ, could we infer concepts of âGenderâ and Male/Female? Is there any ability to identify concepts that may be identical?)"@en ;
-schema:answerExplanation "As part of the RDF Linked Data View creation process (using Virtuosoâs native RDF View mapping language or R2RML) an alternative schema or ontology can be used for performing the mapping to RDF, as demonstrated in the this post on Customizing R2RML scripts in Virtuoso "@en .
+schema:answerExplanation "As part of the RDF Linked Data View creation process (using Virtuoso's native RDF View mapping language or R2RML) an alternative schema or ontology can be used for performing the mapping to RDF, as demonstrated in the this post on Customizing R2RML scripts in Virtuoso "@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -522,7 +522,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "Is it possible to upload data in a prevalent RDF format (e.g. Turtle syntax, RDF/XML)?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this> a schema:Answer;
 schema:name "Answer to question: Is it possible to upload data in a prevalent RDF format (e.g. Turtle syntax, RDF/XML)?"@en ;
-schema:answerExplanation "Yes. Virtuosoâs triple/quad-store can ingest data found in most RDF serializations, as well as RDB2RDF/R2RML transformations from SQL/tabular data."@en .
+schema:answerExplanation "Yes. Virtuoso's triple/quad-store can ingest data found in most RDF serializations, as well as RDB2RDF/R2RML transformations from SQL/tabular data."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -793,9 +793,9 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersQuestion#this> a schema:Question;
-schema:name "How do I use Virtuosoâs Replication Functionality to configure for High Availability that isnât dependent on a single publisher?"@en .
+schema:name "How do I use Virtuoso's Replication Functionality to configure for High Availability that isnât dependent on a single publisher?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersAnswer#this> a schema:Answer;
-schema:name "Answer to question: How do I use Virtuosoâs Replication Functionality to configure for High Availability that isnât dependent on a single publisher?"@en ;
+schema:name "Answer to question: How do I use Virtuoso's Replication Functionality to configure for High Availability that isnât dependent on a single publisher?"@en ;
 schema:answerExplanation """For High Availability across multiple publishers nodes bi-directional graph replication would need to be setup between each cluster node, such that writes on one are pushed to the other and vice-versa as detailed at in the documentation at: 
 
    http://docs.openlinksw.com/virtuoso/rdfgraphreplicationtopl/#rdfgraphreplicationtoplbid  
@@ -1140,7 +1140,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "How do I use R2RML to map RDB to RDF with Virtuoso?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this> a schema:Answer;
 schema:name "Answer to question: How do I use R2RML to map RDB to RDF with Virtuoso?"@en ;
-schema:answerExplanation "You can use the HTML-based R2RML Wizard or upload existing R2RML documents for processing using Virtuosoâs native R2RML processor."@en .
+schema:answerExplanation "You can use the HTML-based R2RML Wizard or upload existing R2RML documents for processing using Virtuoso's native R2RML processor."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -1153,7 +1153,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "How do I Generate and Deploy RDF-based Linked Data from Tables in a Relational Database?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this> a schema:Answer;
 schema:name "Answer to question: How do I Generate and Deploy RDF-based Linked Data from Tables in a Relational Database?"@en ;
-schema:answerExplanation "Virtuosoâs HTML-based Admin Interface (âThe Conductorâ) provides a one-click interface for generating RDF-Views that are deployed using Linked Data principles from relational database tables."@en ;
+schema:answerExplanation "Virtuoso's HTML-based Admin Interface (âThe Conductorâ) provides a one-click interface for generating RDF-Views that are deployed using Linked Data principles from relational database tables."@en ;
 schema:relatedLink <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>;
@@ -1232,9 +1232,9 @@ schema:position "12"^^<http://www.w3.org/2001/XMLSchema#int> .
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> a schema:Question;
-schema:name "Are there entry level offers for Virtuosoâs commercial edition?"@en .
+schema:name "Are there entry level offers for Virtuoso's commercial edition?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this> a schema:Answer;
-schema:name "Answer to question: Are there entry level offers for Virtuosoâs commercial edition?"@en ;
+schema:name "Answer to question: Are there entry level offers for Virtuoso's commercial edition?"@en ;
 schema:answerExplanation "Yes, entry level offer licenses exist for usage scoped to Personal, Workgroup, and Project levels"@en ;
 schema:relatedLink <https://virtuoso.openlinksw.com/pricing/> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this>;
