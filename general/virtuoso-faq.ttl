@@ -1,10 +1,45 @@
 ### TURTLE START ###
+
 @prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/virtuoso-faq-2023.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/virtuoso-faq-2023.ttl> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oplweb-faq: <https://data.openlinksw.com/oplweb/faq/Virtuoso#> . 
+@prefix oplweb-faq-page: <https://virtuoso.openlinksw.com/faq/> . 
+
+
+sourceDAV:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this>  ;
+   schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions -- WebDAV hosted TURTLE Document 2"@en;
+   schema:description """RDF based Linked Data document that describes the OpenLink Virtuoso Universal Server Frequently Asked Questions."""@en ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2023-05-08T16:01:00-05:00"^^xsd:dateTime ;
+   cc:attributionName  "OpenLink Software"@en;
+   dcterms:format "text/turtle"@en;
+   cc:attributionURL  <http://www.openlinksw.com/>  ;
+   owl:sameAs source: ;
+   schema:mainEntity oplweb-faq-page: . 
+
+source:
+   a schema:CreativeWork ;
+   schema:creator <http://www.openlinksw.com/#this>  ;
+   schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions -- WebDAV hosted TURTLE Document"@en;
+   schema:comment """RDF based Linked Data document that describes the OpenLink Virtuoso Universal Server Frequently Asked Questions."""@en ;
+   schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2023-05-08T16:01:00-05:00"^^xsd:dateTime ;
+   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName  "OpenLink Software"@en;
+   dcterms:format "text/turtle"@en;
+   cc:attributionURL  <http://www.openlinksw.com/>  ;
+   schema:mainEntity oplweb-faq-page: . 
 
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerQuestion#this> a schema:Question;
 schema:name "How do I explore Linked Data using the Microsoft Pivot Viewer?" .
