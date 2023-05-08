@@ -1,328 +1,1228 @@
-@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix schema:	<http://schema.org/> .
-@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
-@prefix ns4:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/urn/webdev:> .
-@prefix ns5:	<http://oplussol11.intranet.openlinksw.com:8890/about/id/entity/urn/webdev:> .
-@prefix ns6:	<http://www.openlinksw.com/ontology/faq#> .
-@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
-@prefix ns8:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQLQueryLanguage#> .
-@prefix ns9:	<http://www.openlinksw.com/#> .
-@prefix ns10:	<http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#> .
-@prefix ns11:	<http://data.openlinksw.com/oplweb/glossary-term/clustering#> .
-@prefix ns12:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#> .
-@prefix ns13:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#> .
-@prefix ns14:	<http://data.openlinksw.com/oplweb/glossary-term/NewSQL#> .
-@prefix ns15:	<http://data.openlinksw.com/oplweb/glossary-term/NoSQL#> .
-@prefix ns16:	<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#> .
-@prefix ns17:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#> .
-@prefix ns18:	<http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#> .
-@prefix ns19:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#> .
-@prefix ns20:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#> .
-@prefix ns21:	<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#> .
-@prefix ns22:	<http://data.openlinksw.com/oplweb/glossary-term/ABAC#> .
-@prefix ns23:	<http://data.openlinksw.com/oplweb/glossary-term/JDBC#> .
-@prefix ns24:	<http://data.openlinksw.com/oplweb/glossary-term/ODBC#> .
-@prefix ns25:	<http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#> .
-@prefix ns26:	<http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#> .
-@prefix ns27:	<http://data.openlinksw.com/oplweb/glossary-term/R2RML#> .
-@prefix ns28:	<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#> .
-@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/general/virtuoso-faq.ttl> .
-@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/general/virtuoso-faq.ttl> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+### TURTLE START ###
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix oplweb-faq: <https://data.openlinksw.com/oplweb/faq/Virtuoso#> . 
-@prefix oplweb-faq-page: <https://virtuoso.openlinksw.com/faq/> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-sourceDAV:
-   a schema:CreativeWork ;
-   schema:creator <http://www.openlinksw.com/#this>  ;
-   schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions -- WebDAV hosted TURTLE Document 2"@en;
-   schema:description """RDF based Linked Data document that describes the OpenLink Virtuoso Universal Server Frequently Asked Questions."""@en ;
-   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-   schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-   schema:dateModified "2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-   cc:attributionName  "OpenLink Software"@en;
-   dcterms:format "text/turtle"@en;
-   cc:attributionURL  <http://www.openlinksw.com/>  ;
-   owl:sameAs source: ;
-   schema:mainEntity oplweb-faq-page: . 
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerQuestion#this> a schema:Question;
+schema:name "How do I explore Linked Data using the Microsoft Pivot Viewer?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I explore Linked Data using the Microsoft Pivot Viewer?";
+schema:answerExplanation "See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration.";
+schema:relatedLink <https://vos.openlinksw.com/owiki/wiki/VOS/VirtVisualizeWithPivotViewer> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithPivotViewerAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerQuestion#this> a schema:Question;
+schema:name "How do I explore Linked Data using the HTML5-based Pivot Viewer?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I explore Linked Data using the HTML5-based Pivot Viewer?";
+schema:answerExplanation "Simply click on the PivotViewer visualization option presented in the native Faceted Browser's Query Builder UI or goto to the end-point created by the PivotViewer VAD and then enter the text of a SPARQL Query for query solution visualization.";
+schema:relatedLink <https://medium.com/virtuoso-blog/linked-data-visualization-innovation-image-processing-inside-query-processor-cad9999ac858> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtVisualizeWithHtmlPivotViewerAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlQuestion#this> a schema:Question;
+schema:name "How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?";
+schema:answerExplanation "Select the CXML output option from the SPARQL Query Solution format drop-down presented in the Virtuoso SPARQL Query Editor.";
+schema:relatedLink <https://vos.openlinksw.com/owiki/wiki/VOS/VirtSparqlCxml#AncCxmlGenerationFromSparql> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQLQueryLanguage#this>,<http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#this>,<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtSparqlCxmlAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestion#this> a schema:Question;
+schema:name "How do I use just one click on Virtuoso's HTML-based Wizard to Generate and Deploy RDF-based Linked Data from Relational Databases?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I use just one click on Virtuoso's HTML-based Wizard to Generate and Deploy RDF-based Linked Data from Relational Databases?";
+schema:answerExplanation "This is enabled via the built-in RDF Views Wizard Interface comprising a button for deployment scoped to a single table or a selection of tables. These tables may be native Virtuoso Tables or Virtual Tables attached from ODBC- or JDBC-accessible data sources.";
+schema:relatedLink <https://medium.com/virtuoso-blog/rdf-views-generate-b0538101a724> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#this>,<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/R2RML#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtWhR2RMLQuestion#this> a schema:Question;
+schema:name "What is R2RML?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLAnswer#this> a schema:Answer;
+schema:name "Answer to question: What is R2RML?";
+schema:answerExplanation "R2RML, a W3C Recommendation, is a language for expressing customized mappings from relational databases to RDF data sets. Such mappings provide the ability to view existing relational data in the RDF data model, expressed in a structure and target vocabulary of the mapping author's choice. R2RML mappings are themselves RDF graphs written in Turtle syntax. R2RML is becoming the generic standard adopted by most vendors of tools mapping relational data to RDF, enabling the interoperability of R2RML scripts, whether created with such tools or by hand. This page discusses how to use R2RML specifically with Virtuoso.";
+schema:relatedLink <https://community.openlinksw.com/t/generating-virtuoso-rdf-views-using-r2rml/3044> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtWhR2RMLQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#this>,<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/R2RML#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtWhR2RMLQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestion#this> a schema:Question;
+schema:name "How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?";
+schema:answerExplanation "Via a built-in Remote Table Attachment SQL procedure (that references ODBC or JDBC Data Source Names [DSNs] ) or the HTML-based Admin interface that also includes a Remote Table Attachment Wizard.";
+schema:relatedLink <http://data.openlinksw.com/oplweb/virtuoso/faq#/https://docs.openlinksw.com/virtuoso/ch-vdbengine/%0A> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigQuestion#this> a schema:Question;
+schema:name "How do I install and configure the Virtuoso Faceted Browser?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I install and configure the Virtuoso Faceted Browser?";
+schema:answerExplanation "Simply install its associated Virtuoso Application Distro (VAD) package.";
+schema:relatedLink <https://vos.openlinksw.com/owiki/wiki/VOS/VirtFacetBrowserInstallConfig> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtFacetBrowserInstallConfigAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFQuestion#this> a schema:Question;
+schema:name "How do I create RDF-based Linked Data Views over Relational Data Sources?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I create RDF-based Linked Data Views over Relational Data Sources?";
+schema:answerExplanation "This involves identifying external ODBC- and JDBC-accessible Tables and then attaching them to Virtuoso Data Virtualization Layer (its Virtual Database Module) using the HTML-based Admin UI or SQL via the iSQL interface. Once tables are attached, they can then be used for RDF View generation using the R2RML wizard or SQL.  At the end of this process, Virtuoso will generate 5-Star Linked Data that provides data access to any HTTP-aware client (e.g., Web Browsers). ";
+schema:relatedLink <https://medium.com/virtuoso-blog/rdf-views-generate-b0538101a724> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#this>,<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/R2RML#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VOSSQL2RDFAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudQuestion#this> a schema:Question;
+schema:name "Are there any Virtuoso plans for Cloud technologies (Openstack, etc.)?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudAnswer#this> a schema:Answer;
+schema:name "Answer to question: Are there any Virtuoso plans for Cloud technologies (Openstack, etc.)?";
+schema:answerExplanation "Virtuoso Open Source Edition (VOS) is part of the LOD2 OpenStack deliverables, but this does not include Enterprise Edition features (i.e., no replication clustering, elastic clustering, fine-grained ABAC security, nor virtual DBMS functionality for making RDF views over external SQL data sources). That said, Virtuoso (both Open Source and Enterprise) may be instatiated on cloud services, including Amazon EC2." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>,<http://data.openlinksw.com/oplweb/glossary-term/clustering#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this>,<https://www.openlinksw.com/describe/?url=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Fglossary-term%2FDefVirtuosoServerInstance%23this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/PlansCloudAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterQuestion#this> a schema:Question;
+schema:name "Do I have to stop the cluster to add a node or partition an index?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterAnswer#this> a schema:Answer;
+schema:name "Answer to question: Do I have to stop the cluster to add a node or partition an index?";
+schema:answerExplanation "If the \"elastic cluster\" option is enabled at DB creation time, adding nodes and repartitioning indexes can be done without stopping the cluster." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/clustering#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManageClusterAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreQuestion#this> a schema:Question;
+schema:name "When will federation of triple stores be available in Virtuoso and  how does it compare to clustering?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreAnswer#this> a schema:Answer;
+schema:name "Answer to question: When will federation of triple stores be available in Virtuoso and  how does it compare to clustering?";
+schema:answerExplanation "Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created.  Clustering has more to do with horizontal partitioning of the database across many machines (physical or virtual) to parallelize execution of queries, etc.  SPARQL-FED may be used with a Virtuoso Cluster, just as with a Single-Server Instance." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationTripleStoreAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusQuestion#this> a schema:Question;
+schema:name "What is the current status of development for Virtuoso federation of triple stores?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusAnswer#this> a schema:Answer;
+schema:name "Answer to question: What is the current status of development for Virtuoso federation of triple stores?";
+schema:answerExplanation "Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/FederationStatusAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBQuestion#this> a schema:Question;
+schema:name "Is Virtuoso currently evaluating NoSQL database for the storage of quads?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is Virtuoso currently evaluating NoSQL database for the storage of quads?";
+schema:answerExplanation "Virtuoso is a Native Hybrid DBMS - it is SQL and NoSQL combined." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/NoSQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/NewSQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/EvaluatingNoSQLDBAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifQuestion#this> a schema:Question;
+schema:name "What is the differences in terms of performance/scalability between 2 cluster configurations?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifAnswer#this> a schema:Answer;
+schema:name "Answer to question: What is the differences in terms of performance/scalability between 2 cluster configurations?";
+schema:answerExplanation """Configuration A:  4 cluster nodes, 3 instances per cluster node (quorum), 1 instance per host cluster node, 12 host cluster nodes.  
 
-source:
-   a schema:CreativeWork ;
-   schema:creator <http://www.openlinksw.com/#this>  ;
-   schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions -- WebDAV hosted TURTLE Document"@en;
-   schema:comment """RDF based Linked Data document that describes the OpenLink Virtuoso Universal Server Frequently Asked Questions."""@en ;
-   schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-   schema:dateModified "2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-   schema:license  <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
-   cc:attributionName  "OpenLink Software"@en;
-   dcterms:format "text/turtle"@en;
-   cc:attributionURL  <http://www.openlinksw.com/>  ;
-   schema:mainEntity oplweb-faq-page: . 
+Configuration B:  4 cluster nodes, 3 instances per cluster node (quorum), 4 instances per host cluster node, 3 host cluster nodes.  
 
-oplweb-faq-page:
-a schema:WebPage, schema:FAQPage ;
-schema:creator <http://www.openlinksw.com/#this>  ;
-schema:dateCreated  "2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-schema:dateModified "2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-schema:name "OpenLink Virtuoso Universal Server Frequently Asked Questions (FAQ) Page"@en ;
-schema:keywords: "database, http, sql, sparql, rdf, knowledgegraph, faq, data virtualization, data federation, dbms, semanticweb, linkeddata" ;
-schema:description """
-                     Virtuoso Frequently Asked Questions (FAQ) Page.
-					 This page includes questions and answers related to functionality across the following Virtuoso Modules:
-                     <ul>
-					 <li>Multi-Model Database Management (Single-Server & Cluster Editions)</li>
-					 <li>Web HTTP Server and Linked Data Deployment</li>
-					 <li>Native and Virtual Knowledge Graph Deployment</li>
-					 <li>SQL and SPARQL Query Language Support</li>
-					 <li>Data Virtualization</li>
-					 <li>Data Federation</li>
-					 <li>Cloud Deployment</li>
-					 </ul>
-					"""@en ;
-schema:mainEntity oplweb-faq:VirtVisualizeWithPivotViewerQuestion, oplweb-faq:VirtVisualizeWithHtmlPivotViewerQuestion,
-				  oplweb-faq:VirtRdb2RDFViewsGenerationQuestion, oplweb-faq:VirtR2RMLQuestion,
-			      oplweb-faq:VirtLinkRemoteTablesQuestion, oplweb-faq:VirtDeployingLinkedDataGuideQuestion,
-				  oplweb-faq:VOSSQL2RDFQuestion, oplweb-faq:ScaleQuestion, oplweb-faq:PlansCloudQuestion,
-				  oplweb-faq:ManageClusterQuestion, oplweb-faq:FederationTripleStoreQuestion,
-				  oplweb-faq:EvaluatingNoSQLDBQuestion, oplweb-faq:ClusterConfigDifQuestion,
-				  oplweb-faq:VirtSparqlCxmlQuestion .
+Performance has more to do with the number of Virtuoso Server processes running on each cluster node.  One instance per cluster node will work better than four instances per cluster node.  You will have more OS resources available as the Virtuoso instances are reduced.  Ideally, you want to spread the instances over distinct machines so that you have resources pooled across those machines.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/clustering#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ClusterConfigDifAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoOpenSourceLimitationsvsCommercialEditionQuestion#this> a schema:Question;
+schema:name "What are the limitations of the opensource edition versus the enterprise edition" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoOpenSourceLimitationsvsCommercialEditionAnswer#this> a schema:Answer;
+schema:name "Answer to question: What are the limitations of the opensource edition versus the enterprise edition";
+schema:answerExplanation """The following features are only available using the Enterprise Edition:
 
-oplweb-faq:VirtSparqlCxmlQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I use SPARQL to dynamically generate CXML collections for the Microsoft or HTML5-based PivotViewer?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns8:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtSparqlCxmlAnswer ;
-	schema:creator	ns9:this .
+-  Virtual Database Layer
+- Virtuoso Authentication Layer (VAL)
+- Elastic Cluster (Virtuoso 7.X Only)
+- Custom Reasoning and Inference
 
-oplweb-faq:ClusterConfigDifAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"Configuration A:  4 cluster nodes, 3 instances per cluster node (quorum), 1 instance per host cluster node, 12 host cluster nodes.  \n\nConfiguration B:  4 cluster nodes, 3 instances per cluster node (quorum), 4 instances per host cluster node, 3 host cluster nodes.  \n\nPerformance has more to do with the number of Virtuoso Server processes running on each cluster node.  One instance per cluster node will work better than four instances per cluster node.  You will have more OS resources available as the Virtuoso instances are reduced.  Ideally, you want to spread the instances over distinct machines so that you have resources pooled across those machines."@en.
+""";
+schema:relatedLink <https://virtuoso.openlinksw.com/features-comparison-matrix/> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoOpenSourceLimitationsvsCommercialEditionQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoOpenSourceLimitationsvsCommercialEditionAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoOpenSourceLimitationsvsCommercialEditionQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoOpenSourceLimitationsvsCommercialEditionAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xQuestion#this> a schema:Question;
+schema:name "What are the steps to move existing RDF content in a Virtuoso 7.x server to another Virtuoso server?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xAnswer#this> a schema:Answer;
+schema:name "Answer to question: What are the steps to move existing RDF content in a Virtuoso 7.x server to another Virtuoso server?";
+schema:answerExplanation "Migration of all RDF Data from one Virtuoso instance to another can be completed using the dump_nquads procedure to create a data dump of all RDF content in a Virtuoso instance, and then loading into your new instance using Virtuoso's Bulk Loader.";
+schema:relatedLink <https://docs.openlinksw.com/virtuoso/rdfperfdumpintonquads/> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,<http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this>,<http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaQuestion#this> a schema:Question;
+schema:name "Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values âMâ and âFâ, could we infer concepts of âGenderâ and Male/Female? Is there any ability to identify concepts that may be identical?)" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values âMâ and âFâ, could we infer concepts of âGenderâ and Male/Female? Is there any ability to identify concepts that may be identical?)";
+schema:answerExplanation "As part of the RDF Linked Data View creation process (using Virtuosoâs native RDF View mapping language or R2RML) an alternative schema or ontology can be used for performing the mapping to RDF, as demonstrated in the this post on Customizing R2RML scripts in Virtuoso " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/AutomatedRDFExtractionOptionsQuestion#this> a schema:Question;
+schema:name """Is it possible to run the RDF extraction process in a more automated
+fashion? (i.e. via API or similar rather than via the interface)""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/AutomatedRDFExtractionOptionsAnswer#this> a schema:Answer;
+schema:name """Answer to question: Is it possible to run the RDF extraction process in a more automated
+fashion? (i.e. via API or similar rather than via the interface)""";
+schema:answerExplanation "Assuming it is the mapping of RDB data to RDF Linked Data Views they are referring to as indicated previously, this can be scripted as detailed in the this example script for the Oracle Human Resources sample database." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/AutomatedRDFExtractionOptionsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/AutomatedRDFExtractionOptionsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,<http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/AutomatedRDFExtractionOptionsQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/AutomatedRDFExtractionOptionsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VisualRDFGraphRepresentationQuestion#this> a schema:Question;
+schema:name "Is there any available plugin for exploring the RDF graphs visually?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VisualRDFGraphRepresentationAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is there any available plugin for exploring the RDF graphs visually?";
+schema:answerExplanation "The Virtuoso Faceted Browser can be used for searching, finding and traversing RDF Linked Data relationships of data hosted in Virtuoso and following links to discover additional relationships" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VisualRDFGraphRepresentationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VisualRDFGraphRepresentationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VisualRDFGraphRepresentationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VisualRDFGraphRepresentationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationQuestion#this> a schema:Question;
+schema:name "Should I utilise the Virtuoso native SPARQL Endpoint?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationAnswer#this> a schema:Answer;
+schema:name "Answer to question: Should I utilise the Virtuoso native SPARQL Endpoint?";
+schema:answerExplanation """By not utilising the Virtuoso native SPARQL Endpoint the Net effect is that you lose the ability to expose other critical features like:
 
-oplweb-faq:ClusterConfigDifQuestion
-	rdf:type	schema:Question ;
-	schema:name	"What is the differences in terms of performance/scalability between 2 cluster configurations?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns10:this , ns11:this , ns12:this , ns13:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:ClusterConfigDifAnswer ;
-	schema:creator	ns9:this .
+Federated Queries using SPARQL-FED
+Additional results formats supported by Virtuoso â which makes data
+available to a wide range of applications
+Security features.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQLEndpoint#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportQuestion#this> a schema:Question;
+schema:name "Is hyperGraphQL a browser based API, and can this be used with Virtuoso? Alternatively, what other browser-based or third-party APIs does Virtuoso provide and/or work with ?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is hyperGraphQL a browser based API, and can this be used with Virtuoso? Alternatively, what other browser-based or third-party APIs does Virtuoso provide and/or work with ?";
+schema:answerExplanation """We offer a number of Application Programming Interfaces (APIs) for accessing RDF Data managed by a Virtuoso instance. These include:
 
-oplweb-faq:EvaluatingNoSQLDBAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"Virtuoso is a Native Hybrid DBMS  it is SQL and NoSQL combined."@en.
+* Entity Description Services via `/describe` endpoint â enhanced Search that fuses effects of Free Text and SPARQL 
 
-oplweb-faq:EvaluatingNoSQLDBQuestion
-	rdf:type	schema:Question ;
-	schema:name	"Is Virtuoso currently evaluating NoSQL database for the storage of quads?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns14:this , ns15:this , ns16:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:EvaluatingNoSQLDBAnswer ;
-	schema:creator	ns9:this .
+* Faceted Browser Headless API â as per OSDB binding, i.e., another variant of the above
 
-oplweb-faq:FederationStatusAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created."@en.
+* ODBC and JDBC â using SQL rather than SPARQL courtesy of SPARQL
 
-oplweb-faq:FederationStatusQuestion
-	rdf:type	schema:Question ;
-	schema:name	"What is the current status of development for Virtuoso federation of triple stores?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns17:this , ns18:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:FederationStatusAnswer ;
-	schema:creator	ns9:this .
+* Jena and RDF4j â ditto
 
-oplweb-faq:FederationTripleStoreAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"Virtuoso has supported Federated SPARQL a/k/a SPARQL-FED since the specification was created.  Clustering has more to do with horizontal partitioning of the database across many machines (physical or virtual) to parallelize execution of queries, etc.  SPARQL-FED may be used with a Virtuoso Cluster, just as with a Single-Server Instance."@en.
+* Custom APIs built to spec using Stored Procedures â leveraging Virtuoso's ability to publish Stored Procedures for SOAP or REST-ful interaction """ .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>,<http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OntologyEditorandVisualizerQuestion#this> a schema:Question;
+schema:name "Does virtuoso have an Ontology Editor and Visualizer?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OntologyEditorandVisualizerAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does virtuoso have an Ontology Editor and Visualizer?";
+schema:answerExplanation "Virtuoso works with any ontology editors that are based on open standards, such as: OWL, RDF-TURTLE, JSON-LD, RDF/XML, etc." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OntologyEditorandVisualizerQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/OntologyEditorandVisualizerAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Ontology#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/OntologyEditorandVisualizerQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/OntologyEditorandVisualizerAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeterminingInvalidIRIsQuestion#this> a schema:Question;
+schema:name "How do I determine if there are invalid IRIs in my Virtuoso DBMS? " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeterminingInvalidIRIsAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I determine if there are invalid IRIs in my Virtuoso DBMS? ";
+schema:answerExplanation """Run the following SQL commands.  
 
-oplweb-faq:FederationTripleStoreQuestion
-	rdf:type	schema:Question ;
-	schema:name	"When will federation of triple stores be available in Virtuosoand  how does it compare to clustering?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns10:this , ns11:this , ns12:this , ns19:this , ns13:this , ns17:this , ns18:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:FederationTripleStoreAnswer ;
-	schema:creator	ns9:this .
-	
-oplweb-faq:HighAvailAndRecoverAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"You can use replication for HA across Elastic Clusters or Single-Server instances.  For example, nearly-instantaneous Transactional Replication is used by some of our larger customers (e.g., Globo of Brazil used a Transactional Replication setup for the entire World Cup 2014 without any issues)."@en.
+SELECT COUNT(*) FROM RDF_QUAD q WHERE not exists (SELECT 1 FROM RDF_IRI i WHERE i.RI_ID=q.G); 
+SELECT COUNT(*) FROM RDF_QUAD q WHERE not exists (SELECT 1 FROM RDF_IRI i WHERE i.RI_ID=q.P); 
+SELECT COUNT(*) FROM RDF_QUAD q WHERE is_named_iri_id(q.S) AND NOT EXISTS (SELECT 1 FROM RDF_IRI i WHERE i.RI_ID=q.S); 
+SELECT COUNT(*) FROM RDF_QUAD q WHERE is_named_iri_id(q.O) AND NOT EXISTS (SELECT 1 FROM RDF_IRI i WHERE i.RI_ID=q.O) SELECT TOP 5 ID_TO_IRI(G) FROM RDF_QUAD q WHERE is_named_iri_id(q.S) AND NOT EXISTS (SELECT 1 FROM RDF_IRI i WHERE i.RI_ID=q.S);""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeterminingInvalidIRIsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeterminingInvalidIRIsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeterminingInvalidIRIsQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeterminingInvalidIRIsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManagingIncreasedQueryResponseTimeQuestion#this> a schema:Question;
+schema:name "Virtuoso SPARQL Query reponse time increases as Named Graphs size increases" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManagingIncreasedQueryResponseTimeAnswer#this> a schema:Answer;
+schema:name "Answer to question: Virtuoso SPARQL Query reponse time increases as Named Graphs size increases";
+schema:answerExplanation "Add Named Graph Query scoping to the body of these queries. Also ensure tests are performed via ISQL using the Virtuoso Conductor, /sparql endpoint UI, or isql using the command-line. Note that when using the command-line to separate its response time from that of your terminal session as the latter could introduce confusion.  " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManagingIncreasedQueryResponseTimeQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ManagingIncreasedQueryResponseTimeAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ManagingIncreasedQueryResponseTimeQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManagingIncreasedQueryResponseTimeAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoBulkLoaderwithS3HostedFilesQuestion#this> a schema:Question;
+schema:name "Can I use the Virtuoso Bulk Loader against RDF or CSV files hosted on Amazon S3? " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoBulkLoaderwithS3HostedFilesAnswer#this> a schema:Answer;
+schema:name "Answer to question: Can I use the Virtuoso Bulk Loader against RDF or CSV files hosted on Amazon S3? ";
+schema:answerExplanation "Yes, once you mount your S3 bucket to a host operating system folder. Examples of tools that include this functionality are : s3fs (https://github.com/s3fs-fuse/s3fs-fuse) " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoBulkLoaderwithS3HostedFilesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoBulkLoaderwithS3HostedFilesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Document#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoBulkLoaderwithS3HostedFilesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoBulkLoaderwithS3HostedFilesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DatasetMemoryRequirementsQuestion#this> a schema:Question;
+schema:name "Data Size - how much memory would be required for hosting dataset" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DatasetMemoryRequirementsAnswer#this> a schema:Answer;
+schema:name "Answer to question: Data Size - how much memory would be required for hosting dataset";
+schema:answerExplanation "Typically 10GB per billion triple or 10 bytes per quad, but they should monitor with status output to ensure all the allocated buffers are not being used and if so look to increase memory or ensure SSD or other fast storage devices etc are in use." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DatasetMemoryRequirementsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DatasetMemoryRequirementsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DatasetMemoryRequirementsQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DatasetMemoryRequirementsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageQuestion#this> schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageAnswer#this> schema:answerExplanation "If the service is being used by a large number of users concurrently, especially if their are many longer running analytical rather than quick lookup queries being run that would consume all license points blocking other users." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+a schema:Question;
+schema:name "Concurrent usage - how many user can be supported by the current platform" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageAnswer#this> a schema:Answer;
+schema:name "Answer to question: Concurrent usage - how many user can be supported by the current platform" .
+<https://virtuoso.openlinksw.com/faq/> schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageQuestion#this>;
+a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ConcurrentUsageAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeploymentOptionsQuestion#this> a schema:Question;
+schema:name """Which of the following landing zones are supported?
+- SaaS
+- PaaS
+- IaaS
+- On-premise""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeploymentOptionsAnswer#this> a schema:Answer;
+schema:name """Answer to question: Which of the following landing zones are supported?
+- SaaS
+- PaaS
+- IaaS
+- On-premise""";
+schema:answerExplanation """Most current Virtuoso deployments are:
 
-oplweb-faq:HighAvailAndRecoverQuestion
-	rdf:type	schema:Question ;
-	schema:name	"What are the best options to offer High-Avaliability and Disaster Recovery?  Is it possible to move data from one datacenter to another and how is data transferred?  Are there any numbers about the speed of data replication between two datacenters and consistency of the process?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns10:this , ns11:this , ns12:this , ns20:this , ns19:this , ns13:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:HighAvailAndRecoverAnswer ;
-	schema:creator	ns9:this .
+- On-premise
+- Cloud (AWS & Azure; others coming)
+- Docker Container
 
-oplweb-faq:ManageClusterAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"If the \"elastic cluster\" option is enabled at DB creation time, adding nodes and repartitioning indexes can be done without stopping the cluster."@en.
+Definitions of SaaS, PaaS, and IaaS vary. A custom arrangement could be made for any of these, once our respective definitions are aligned.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeploymentOptionsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeploymentOptionsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeploymentOptionsQuestion#this>;
+a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeploymentOptionsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportQuestion#this> a schema:Question;
+schema:name "What cloud technology / provider is/are your solution(s) hosted on?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: What cloud technology / provider is/are your solution(s) hosted on?";
+schema:answerExplanation "Amazon AWS and Microsoft Azure Clouds, supporting Pay-As-You-Go (PAYGO) and Bring-Your-Own-License (BYOL) Virtual Machine options.";
+schema:relatedLink <https://shop.openlinksw.com/onboarding/> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsQuestion#this> a schema:Question;
+schema:name "In what ways can your solution be scaled to the clientâs needs in terms of storage and performance?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsAnswer#this> a schema:Answer;
+schema:name "Answer to question: In what ways can your solution be scaled to the clientâs needs in terms of storage and performance?";
+schema:answerExplanation "Single-Server is highly scalable based on multi-threading and vectorized query execution; Replication Cluster permits any desired topology, with no implicit limitation on node counts; Elastic \"Shared Nothing\" Cluster offers horizontal partitions by way of sharding, again with no implicit limitation on node counts. " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportQuestion#this> a schema:Question;
+schema:name "What (internationally recognized) security standards does your platform adhere to?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: What (internationally recognized) security standards does your platform adhere to?";
+schema:answerExplanation "Virtuoso supports open standards-based security protocols including TLS, OpenID Connect, and OAuth 2.0." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>,<http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceQuestion#this> a schema:Question;
+schema:name "To what extent do you consider your offering to be a âone stop solutionâ covering both knowledge graph storage as well as learning / reasoning / inferencing features?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceAnswer#this> a schema:Answer;
+schema:name "Answer to question: To what extent do you consider your offering to be a âone stop solutionâ covering both knowledge graph storage as well as learning / reasoning / inferencing features?";
+schema:answerExplanation "As a Knowledge Graph platform, Virtuoso includes both built-in and custom reasoning & inference functionality. Either approach is accessible by both SQL (via ODBC or JDBC compliant clients) and SPARQL compliant tools. " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQL1.1AndGeoSPARQLSupportQuestion#this> a schema:Question;
+schema:name """Is your solution compatible with SPARQL 1.1 and GeoSPARQL?
 
-oplweb-faq:ManageClusterQuestion
-	rdf:type	schema:Question ;
-	schema:name	"Do I have to stop the cluster to add a node or partition an index?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns10:this , ns11:this , ns12:this , ns21:this , ns19:this , ns13:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:ManageClusterAnswer ;
-	schema:creator	ns9:this .
+""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQL1.1AndGeoSPARQLSupportAnswer#this> a schema:Answer;
+schema:name """Answer to question: Is your solution compatible with SPARQL 1.1 and GeoSPARQL?
 
-oplweb-faq:PlansCloudAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"Virtuoso Open Source Edition (VOS) is part of the LOD2 OpenStack deliverables, but this does not include Enterprise Edition features (i.e., no replication clustering, elastic clustering, fine-grained ABAC security, nor virtual DBMS functionality for making RDF views over external SQL data sources). That said, Virtuoso (both Open Source and Enterprise) may be instatiated on cloud services, including Amazon EC2."@en.
+""";
+schema:answerExplanation "Yes. Further, we participated in development of both of these standards." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQL1.1AndGeoSPARQLSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQL1.1AndGeoSPARQLSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQL1.1AndGeoSPARQLSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQL1.1AndGeoSPARQLSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFQuadSupportQuestion#this> a schema:Question;
+schema:name "Is your solution compatible with quads (so not only triples but: graph, subject, predicate, object), i.e. does it support sub-graphs?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFQuadSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is your solution compatible with quads (so not only triples but: graph, subject, predicate, object), i.e. does it support sub-graphs?";
+schema:answerExplanation "Yes. Virtuoso supports named graphs, and graph groups, among other related features." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFQuadSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFQuadSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFQuadSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFQuadSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadQuestion#this> a schema:Question;
+schema:name "Is it possible to upload data in a prevalent RDF format (e.g. Turtle syntax, RDF/XML)?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is it possible to upload data in a prevalent RDF format (e.g. Turtle syntax, RDF/XML)?";
+schema:answerExplanation "Yes. Virtuosoâs triple/quad-store can ingest data found in most RDF serializations, as well as RDB2RDF/R2RML transformations from SQL/tabular data." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportQuestion#this> a schema:Question;
+schema:name "Is database interaction possible through an API?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is database interaction possible through an API?";
+schema:answerExplanation """Yes. 
 
-oplweb-faq:PlansCloudQuestion
-	rdf:type	schema:Question ;
-	schema:name	"Are there any Virtuoso plans for Cloud technologies (Openstack, etc.)?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns11:this , ns12:this , ns20:this , ns19:this , ns13:this , ns22:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:PlansCloudAnswer ;
-	schema:creator	ns9:this .
+We support a variety of interfaces and mechanisms, including SQL-style interfaces (ODBC, JDBC, ADO.NET, OLE DB, etc.), HTTP, SPARQL, and others, allowing use of most common DB-interaction tools, supporting SQL, SPARQL, and SPASQL (SPARQL-in-SQL) queries, and delivering results in SQL-style tabular form, various RDF serializations, etc. 
 
-oplweb-faq:ScaleAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"Yes.  You start with Single-Server, enable the Elastic Cluster optionand  then add nodes as scalability demands increase."@en.
+These enable development of new integrations â often without specific cost â in a wide range of programming and script languages, including C/C+/C++, Java, Javascript, Python, Perl, PHP, Ruby, OpenRDF Sesame, Eclipse RDF4J, Apache Jena, and more. 
 
-oplweb-faq:ScaleQuestion
-	rdf:type	schema:Question ;
-	schema:name	"What is the Virtuoso strategy to scale?  Is it possible to start small and then add servers if needed?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns10:this , ns11:this , ns12:this , ns21:this , ns19:this , ns13:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:ScaleAnswer ;
-	schema:creator	ns9:this .
+In most cases, development of an integration for Virtuoso really means development of an integration for an open standard or specification, which means no Virtuoso lock-in, and also means that integration with other platforms is included as a \"built-in\" of this Virtusoo integration.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/QueryConsoleSupportQuestion#this> a schema:Question;
+schema:name "Is database interaction possible with a query console?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/QueryConsoleSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is database interaction possible with a query console?";
+schema:answerExplanation """Yes. 
 
-oplweb-faq:VOSSQL2RDFAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"This page discusses the basics of creating RDF-based Linked Data Views over Relational Data Sourcesand  links to several other pages with specific guides for various local and remote (ODBC- and JDBC-accessible) data sources."@en.
+We ship a command-line isql-based tool through which SQL and SPASQL queries may be executed.
 
-oplweb-faq:VOSSQL2RDFQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I create RDF-based Linked Data Views over Relational Data Sources?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns23:this , ns24:this , ns25:this , ns26:this , ns27:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VOSSQL2RDFAnswer ;
-	schema:creator	ns9:this .
+Any ODBC, JDBC, ADO.NET, or OLE DB standard-compliant tool may be used in similar fashion.
 
-oplweb-faq:VirtDeployingLinkedDataGuideAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"This page discusses some of the difficulties faced in exposing RDF data and in bridging the \"Linked Data Web\" and the traditional \"Document Web\". Two generic approaches to resolving these deployment challenges  content negotiation and URL rewriting  are described, before looking at OpenLink Virtuoso, from the standpoint of both how it implements these solutions and how Linked Data is deployed."@en.
+Virtuoso also has an HTML-based Administration Console interface called the Conductor, which includes an HTML-based iSQL implementation which lets users quickly and directly query Virtuoso using SQL or SPASQL, from their web browser.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/QueryConsoleSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/QueryConsoleSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/QueryConsoleSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/QueryConsoleSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportQuestion#this> a schema:Question;
+schema:name "Do you support at least one Test environment in addition to Production, in support of Application Lifecycle and Change Management (in particular with regard to client-side integration)?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Do you support at least one Test environment in addition to Production, in support of Application Lifecycle and Change Management (in particular with regard to client-side integration)?";
+schema:answerExplanation """Yes. 
 
-oplweb-faq:VirtDeployingLinkedDataGuideQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I use Virtuoso to deploy Linked Data to the Web?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns28:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtDeployingLinkedDataGuideAnswer ;
-	schema:creator	ns9:this .
+Virtuoso can be deployed to all described environments. Each running Virtuoso instance requires an appropriately scaled license/support package, typically being smaller-scale for Test, QA, Disaster Recovery, etc, than for Production. Cold-Swap DR may have a copy of the same license file as its primary instance, but only one of these may be running at a time; Primary must be fully stopped before starting the Secondary""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewQuestion#this> a schema:Question;
+schema:name "Could you provide a general overview of your platformâs Identity & Access Management (IAM) framework? This includes the User Admin GUI, application roles, permissions, reports, API (for provisioning and reporting) etc." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewAnswer#this> a schema:Answer;
+schema:name "Answer to question: Could you provide a general overview of your platformâs Identity & Access Management (IAM) framework? This includes the User Admin GUI, application roles, permissions, reports, API (for provisioning and reporting) etc.";
+schema:answerExplanation "Identity & Access Management is handled via VAL, the Virtuoso Authentication Layer, which is an open-standards-based, multi-protocol authentication layer. VAL provides fine-grained, attributed-based access controls (ABAC) to protected resources (such as HTTP-accessible documents, folders, services [via their endpoints], and SPARQL named graphs). In a nutshell, this solution uses logic, expressed in the form of entity relationships, to address issues such as identity, authorization, and restriction." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>,<http://data.openlinksw.com/oplweb/glossary-term/Identity#this>,<http://data.openlinksw.com/oplweb/glossary-term/RBAC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RBACSeparationCapabilityQuestion#this> a schema:Question;
+schema:name "Related to the previous question: is there a clear segregation possible between IT Support (e.g. Access Manager) and business roles?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RBACSeparationCapabilityAnswer#this> a schema:Answer;
+schema:name "Answer to question: Related to the previous question: is there a clear segregation possible between IT Support (e.g. Access Manager) and business roles?";
+schema:answerExplanation "Yes." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RBACSeparationCapabilityQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RBACSeparationCapabilityAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RBACSeparationCapabilityQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RBACSeparationCapabilityAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityQuestion#this> a schema:Question;
+schema:name "Does your platform cater for the creation of multiple knowledge graph instances / databases?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does your platform cater for the creation of multiple knowledge graph instances / databases?";
+schema:answerExplanation "Yes." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationQuestion#this> a schema:Question;
+schema:name "In what way can logical data segregation (âChinese Wallsâ) be achieved between different end user groups?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationAnswer#this> a schema:Answer;
+schema:name "Answer to question: In what way can logical data segregation (âChinese Wallsâ) be achieved between different end user groups?";
+schema:answerExplanation "Attribute-based Access Controls (ABAC)" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/AuditTrailQuestion#this> a schema:Question;
+schema:name "Does your platform feature an audit trail? If so, what type and level of events are captured?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/AuditTrailAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does your platform feature an audit trail? If so, what type and level of events are captured?";
+schema:answerExplanation "For HTTP interactions, you can use an enhanced HTTP log file that includes a User Identity field (i.e., a WebID or NetID, these being the identifiers used for OpenID Connect + OAuth connections).  For SQL connections, these can be developed as custom logs that are informed by logging flags. " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/AuditTrailQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/AuditTrailAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataProvenance#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/AuditTrailQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/AuditTrailAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MinimizingLatencyQuestion#this> a schema:Question;
+schema:name "What is your advice to minimize latency between the database and presentation / reporting layer? We ask this in the context of the knowledge graph database and inferencing components residing on different landing zones." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MinimizingLatencyAnswer#this> a schema:Answer;
+schema:name "Answer to question: What is your advice to minimize latency between the database and presentation / reporting layer? We ask this in the context of the knowledge graph database and inferencing components residing on different landing zones.";
+schema:answerExplanation "Built-in cache invalidation that's part of native HTTP support. Note, we have a number of live Virtuoso instances that demonstrate these capabilities, starting with DBpedia (http://dbpedia.org/sparql).";
+schema:relatedLink <https://vos.openlinksw.com/owiki/wiki/VOS/VirtSpongerRESTPatterns> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/MinimizingLatencyQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/MinimizingLatencyAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/MinimizingLatencyQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/MinimizingLatencyAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ModifyingMaxLineCountQuestion#this> a schema:Question;
+schema:name "DEFINE sql:max-allowed-line-count X" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ModifyingMaxLineCountAnswer#this> a schema:Answer;
+schema:name "Answer to question: DEFINE sql:max-allowed-line-count X";
+schema:answerExplanation "The \"DEFINE sql:max-allowed-line-count X\" SPARQL query pragma  reduces the number of SPARQL query plans tried from the default maximum of 10000 to X, hence reducing the query compilation time and memory consumption." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ModifyingMaxLineCountQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ModifyingMaxLineCountAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ModifyingMaxLineCountQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ModifyingMaxLineCountAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPandHTTPSviaProxyServerQuestion#this> a schema:Question;
+schema:name "How to execute HTTP and HTTPS requests via Proxy server" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPandHTTPSviaProxyServerAnswer#this> a schema:Answer;
+schema:name "Answer to question: How to execute HTTP and HTTPS requests via Proxy server";
+schema:answerExplanation """If all http/https requests are required to use a proxy, we recommend setting the \"HTTPProxyServer = {Proxy Server URL}\" param in the \"[HTTP Server]\" section of the \"virtuoso.ini\" configuration file, for example:
 
-oplweb-faq:VirtFacetBrowserInstallConfigAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"See required prerequisites, pre-installation steps, VAD package installation, post-installation stepsand  example tutorials."@en.
+[HTTPServer]
+HTTPProxyServer             = http://example.com:3128      # SQUID example
 
-oplweb-faq:VirtFacetBrowserInstallConfigQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I install and configure the Virtuoso Faceted Browser?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns28:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtFacetBrowserInstallConfigAnswer ;
-	schema:creator	ns9:this .
+With this setting in place the \"get:proxy ...\" pragma is not needed for each SPARQL query as everything will be redirected via the proxy by default. However if this define is used, it overrides the setting in the \"virtuoso.ini\" file. Note the `http://` protocol specifier is optional but recommended, for example:
 
-oplweb-faq:VirtLinkRemoteTablesAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"See OpenLink How-To guides to learn how to connect Virtuoso's Virtual Database Engine to local or remote data sources including Firebird, DB2, Informix, Ingres, MySQL, Microsoft SQL Server, Oracle, PostgreSQL, Progress, Sybaseand  others accessible by ODBC or JDBC. (Note  JDBC requires an ODBC-to-JDBC Bridge, which OpenLink may also supply.)"@en.
+SPARQL
+   define get:proxy \"http://example.com:3128\" 
+   define get:soft \"soft\"
+   select * from <http://dbpedia.org/resource/Paraquay""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPandHTTPSviaProxyServerQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPandHTTPSviaProxyServerAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPandHTTPSviaProxyServerQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPandHTTPSviaProxyServerAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSQuestion#this> a schema:Question;
+schema:name "What limits exists on the size of data SPARQL \"INSERT DATA\" or \"INSERT\" queries can perform" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSAnswer#this> a schema:Answer;
+schema:name "Answer to question: What limits exists on the size of data SPARQL \"INSERT DATA\" or \"INSERT\" queries can perform";
+schema:answerExplanation "There is a 32K limit on code vectors sizes in SQL limiting the size of the SPARQL insert query when translated to SQL. Thus the actual SPARQL limit is less than much less than this." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountQuestion#this> a schema:Question;
+schema:name "Can TABLE-A be encrypted with a different key than TABLE-B â i.e., can multiple keys might be used in one DB, over time?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountAnswer#this> a schema:Answer;
+schema:name "Answer to question: Can TABLE-A be encrypted with a different key than TABLE-B â i.e., can multiple keys might be used in one DB, over time?";
+schema:answerExplanation """One shared secret (symmetric encryption key) across a DB instance comprising Tables. Not a key per Table which is overkill.
 
-oplweb-faq:VirtLinkRemoteTablesQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I attach the Virtuoso Virtual Database Engine to ODBC- or JDBC-accessible Data Sources?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns23:this , ns24:this , ns26:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtLinkRemoteTablesAnswer ;
-	schema:creator	ns9:this .
+Key management happens above the DBMS layer.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/UnexpectedTLSCCAChallengesQuestion#this> a schema:Question;
+schema:name "Why am I receiving TLS Client Certificate Authentication (CCA) Challenges despite setting HTTPS_Verify to \"none\" ? " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/UnexpectedTLSCCAChallengesAnswer#this> a schema:Answer;
+schema:name "Answer to question: Why am I receiving TLS Client Certificate Authentication (CCA) Challenges despite setting HTTPS_Verify to \"none\" ? ";
+schema:answerExplanation "Creation of HTTPS endpoints (manually or via VADs) that omit critical security settings. You can verify using the query: SELECT hp_lpath, hp_host FROM http_path WHERE hp_listen_host = ':443' AND HP_SECURITY IS NULL;" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/UnexpectedTLSCCAChallengesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/UnexpectedTLSCCAChallengesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/WebIDTLSProtocol#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/UnexpectedTLSCCAChallengesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/UnexpectedTLSCCAChallengesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLUpdateWithSR186Question#this> a schema:Question;
+schema:name "Unable to perform SPAQL UPDATE queries against Virtuoso \"~/sparql-auth\" SPARQL endpoint when logged in as authneticated user with \"SPARQL_UPDATE\" role, due to \"SR186:SECURITY...\" error" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLUpdateWithSR186Answer#this> a schema:Answer;
+schema:name "Answer to question: Unable to perform SPAQL UPDATE queries against Virtuoso \"~/sparql-auth\" SPARQL endpoint when logged in as authneticated user with \"SPARQL_UPDATE\" role, due to \"SR186:SECURITY...\" error";
+schema:answerExplanation "This issue was due to new \"~/sparql-auth\" SPARQL endpoint form page redirecting queries incorrect back to the \"~/sparql\" SPARQL endpoint that runs as the 'SPARQL\" user that does not have the \"SPARQL_UPDATE\" role. This issue occurs with the Virtuoso Open Source 07.20.3323  and Closed source 08.03.3322 build and is fixed in later builds. Note for Virtuoso closed source (commercial) builds if the VAL VAD package is installed that creates its own SPARQL endpoint form pages this problem does not occur." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLUpdateWithSR186Question#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLUpdateWithSR186Answer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLUpdateWithSR186Question#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLUpdateWithSR186Answer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectQuestion#this> a schema:Question;
+schema:name "Unable to execute SPARQL query against  RDF View Virtual Graph due to error, \"Virtuoso 42000 Error SQ033: SELECT access denied for column column-name of table table-name, user ID 112\" error" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectAnswer#this> a schema:Answer;
+schema:name "Answer to question: Unable to execute SPARQL query against  RDF View Virtual Graph due to error, \"Virtuoso 42000 Error SQ033: SELECT access denied for column column-name of table table-name, user ID 112\" error";
+schema:answerExplanation "The error implies the âSPARQLâ user â112â the ~/sparql endpoint runs as does not have select access on the table , which is required for tables/resources to be queryâable via the ~/sparql endpoint. This error can be fixed by running the command \"grant select on \"table-name\" to âSPARQLâ;\" or adding the Virtuoso \"SPARQL_SELECT\" role to the table-name." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeQuestion#this> a schema:Question;
+schema:name """Imagine a scenario like this:
+- Multiple, complex knowledge graphs are established in the platform.
+- Each KG might represent a focused business domain
+- Each KG draws from many data sources of special relevance to that domain
+- Lots of analytics get done within a single knowledge graph
+- Other important analytics get done using data from more than one knowledge graph
+For the analytics done within a KG, Iâd anticipate many case in which a query can or should be scoped to the whole thing. And users might not even know all the named graphs in it. So, itâs great to be able to set the whole-KG scope very simply.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeAnswer#this> a schema:Answer;
+schema:name """Answer to question: Imagine a scenario like this:
+- Multiple, complex knowledge graphs are established in the platform.
+- Each KG might represent a focused business domain
+- Each KG draws from many data sources of special relevance to that domain
+- Lots of analytics get done within a single knowledge graph
+- Other important analytics get done using data from more than one knowledge graph
+For the analytics done within a KG, Iâd anticipate many case in which a query can or should be scoped to the whole thing. And users might not even know all the named graphs in it. So, itâs great to be able to set the whole-KG scope very simply.""";
+schema:answerExplanation """You can use RDF Graph Groups (RGG) in this manner, but I donât consider this optimal bearing in mind Virtuoso is a Quad Store that supports the use of a Graph Operator in the body of SPARQL Queries for optimizing construction of the Default Graph used in its query solution production pipeline.
+We have the live LOD Cloud instance comprising millions of Named Graphs that demonstrates this point.
+RGGs are more useful for ABAC ACLs. (but we need to double check this claim)
+Users should simply dump data into Named Graphs and queries should be formulated with explicit Named Graph scope or the use of variables.""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSQuestion#this> a schema:Question;
+schema:name """
 
-oplweb-faq:VirtR2RMLAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"R2RML, a W3C Recommendation, is a language for expressing customized mappings from relational databases to RDF data sets. Such mappings provide the ability to view existing relational data in the RDF data model, expressed in a structure and target vocabulary of the mapping author's choice. R2RML mappings are themselves RDF graphs written in Turtle syntax. R2RML is becoming the generic standard adopted by most vendors of tools mapping relational data to RDF, enabling the interoperability of R2RML scripts, whether created with such tools or by hand. This page discusses how to use R2RML specifically with Virtuoso."@en.
+Are there any OAuth2.0 examples on how to connect Virtuoso server using curl or prefereable with JS/TS/React client?""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSAnswer#this> a schema:Answer;
+schema:name """Answer to question: 
 
-oplweb-faq:VirtR2RMLQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I use R2RML to map RDB to RDF with Virtuoso?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns23:this , ns24:this , ns25:this , ns26:this , ns27:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtR2RMLAnswer ;
-	schema:creator	ns9:this .
+Are there any OAuth2.0 examples on how to connect Virtuoso server using curl or prefereable with JS/TS/React client?""";
+schema:answerExplanation "An example is available here: https://medium.com/virtuoso-blog/virtuoso-setup-for-openid-connect-oidc-and-oauth-protocol-d894102ce270" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Identity#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersQuestion#this> a schema:Question;
+schema:name "How do I use Virtuosoâs Replication Functionality to configure for High Availability that isnât dependent on a single publisher?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I use Virtuosoâs Replication Functionality to configure for High Availability that isnât dependent on a single publisher?";
+schema:answerExplanation """For High Availability across multiple publishers nodes bi-directional graph replication would need to be setup between each cluster node, such that writes on one are pushed to the other and vice-versa as detailed at in the documentation at: 
 
-oplweb-faq:VirtRdb2RDFViewsGenerationAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"See example of One-Click Linked Data Generation & Deployment of Linked Data Views over Relational Data Sources with Virtuoso."@en.
+   http://docs.openlinksw.com/virtuoso/rdfgraphreplicationtopl/#rdfgraphreplicationtoplbid  
 
-oplweb-faq:VirtRdb2RDFViewsGenerationQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I use just one click on Virtuoso's HTML-based Wizard to Generate and Deploy RDF-based Linked Data from Relational Databases?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns23:this , ns24:this , ns25:this , ns26:this , ns27:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtRdb2RDFViewsGenerationAnswer ;
-	schema:creator	ns9:this .
+For HTTP High Availability access across multiple Farm Subscriber nodes to the SPARQL endpoint a proxy server / load balancer needs to be placed in front of the slave subscriber nodes to enable transparent connection across available nodes as detailed in the documentation at: 
 
-oplweb-faq:VirtSparqlCxmlAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"See OpenLink How-To guide that demonstrates the generation of CXML-based output from SPARQL queries. This output is then used as input for the Microsoft or HTML5-based PivotViewer."@en.
+   http://docs.openlinksw.com/virtuoso/rdfgraphreplicationscenr/  
 
-oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."@en.
+For High Availability access across multiple Publisher or Subscriber nodes to the SQL (ie Jena provider/ JDBC /ODBC /ADO.Net etc) interfaces the Virtuoso Round Robin connection functionality needs to be used to enable transparent connection across available nodes as detailed at: 
+ 
+   http://docs.openlinksw.com/virtuoso/dataccessclientsconfailandbalance/""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TransitivePropertyPathQuerySupportQuestion#this> a schema:Question;
+schema:name "Transitive property path query support" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TransitivePropertyPathQuerySupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Transitive property path query support";
+schema:answerExplanation "Transisitive property path queries are only supported againt physical graphs/triples. Thus when mapping relational data to RDF , the generated triples must be materialized as physical rather than he default virtual triples and transitive property path queries run again the physical graph names." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TransitivePropertyPathQuerySupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/TransitivePropertyPathQuerySupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/TransitivePropertyPathQuerySupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/TransitivePropertyPathQuerySupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtualizationOnaTimeSeriesDatabaseQuestion#this> a schema:Question;
+schema:name "Is it possible to do virtualization using a TimeSeries database's API endpoint?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtualizationOnaTimeSeriesDatabaseAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is it possible to do virtualization using a TimeSeries database's API endpoint?";
+schema:answerExplanation "Yes. Virtuoso can virtualize TimeSeries data through ODBC connections, and it's Sponger Middleware. A custom cartridge may be required for APIs that don't use standard outputs  (I.E., CSV and JSON)" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtualizationOnaTimeSeriesDatabaseQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtualizationOnaTimeSeriesDatabaseAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtualizationOnaTimeSeriesDatabaseQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtualizationOnaTimeSeriesDatabaseAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RESTfulAPISupportQuestion#this> a schema:Question;
+schema:name "Is it possible to  integrate APIs that support REST-ful interaction into a Virtuoso instance" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RESTfulAPISupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is it possible to  integrate APIs that support REST-ful interaction into a Virtuoso instance";
+schema:answerExplanation "Yes, through use of Virtuoso's Sponger Middleware" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RESTfulAPISupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RESTfulAPISupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RESTfulAPISupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RESTfulAPISupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HandlingVirtualizationChangeSensitivityQuestion#this> a schema:Question;
+schema:name "How does Virtuoso handle  change-sensitivity for integrated APIs?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HandlingVirtualizationChangeSensitivityAnswer#this> a schema:Answer;
+schema:name "Answer to question: How does Virtuoso handle  change-sensitivity for integrated APIs?";
+schema:answerExplanation "Virtuoso's Sponger Middleware has a number of operations that allow it to handle changes in API content" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HandlingVirtualizationChangeSensitivityQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/HandlingVirtualizationChangeSensitivityAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/HandlingVirtualizationChangeSensitivityQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/HandlingVirtualizationChangeSensitivityAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataPagingSupportQuestion#this> a schema:Question;
+schema:name "Does Virtuoso Support Data Paging for external RESTful API data?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataPagingSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does Virtuoso Support Data Paging for external RESTful API data?";
+schema:answerExplanation "Yes" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataPagingSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataPagingSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataPagingSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DataPagingSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConventionalSQLDataVirtualizationSupportQuestion#this> a schema:Question;
+schema:name "Does Virtuoso support Conventional SQL Data Virtualization ?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConventionalSQLDataVirtualizationSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does Virtuoso support Conventional SQL Data Virtualization ?";
+schema:answerExplanation "Yes" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConventionalSQLDataVirtualizationSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ConventionalSQLDataVirtualizationSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>,<http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ConventionalSQLDataVirtualizationSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ConventionalSQLDataVirtualizationSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoesVirtuososupportABACatopexistingIAMsetupsQuestion#this> a schema:Question;
+schema:name "Does Virtuoso support ABAC integrated into existing Identity Access Management (IAM) setup (e.g., LDAP via WebIDTLS+Delegation)" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoesVirtuososupportABACatopexistingIAMsetupsAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does Virtuoso support ABAC integrated into existing Identity Access Management (IAM) setup (e.g., LDAP via WebIDTLS+Delegation)";
+schema:answerExplanation "Yes" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoesVirtuososupportABACatopexistingIAMsetupsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DoesVirtuososupportABACatopexistingIAMsetupsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DoesVirtuososupportABACatopexistingIAMsetupsQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoesVirtuososupportABACatopexistingIAMsetupsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OpenIDConnectAuthSupportABACQuestion#this> a schema:Question;
+schema:name "Does Virtuoso support OpenID Connect + Auth Support in conjunction with ABAC" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OpenIDConnectAuthSupportABACAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does Virtuoso support OpenID Connect + Auth Support in conjunction with ABAC";
+schema:answerExplanation "Yes" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/OpenIDConnectAuthSupportABACQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/OpenIDConnectAuthSupportABACAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/OpenIDConnectAuthSupportABACQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/OpenIDConnectAuthSupportABACAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPRestEndpointAsAnExternalTableQuestion#this> a schema:Question;
+schema:name """Can an HTTP Rest Endpoint be transformed to an External Table?
 
-oplweb-faq:VirtVisualizeWithHtmlPivotViewerQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I explore Linked Data using the HTML5-based Pivot Viewer?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns28:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer ;
-	schema:creator	ns9:this .
+""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPRestEndpointAsAnExternalTableAnswer#this> a schema:Answer;
+schema:name """Answer to question: Can an HTTP Rest Endpoint be transformed to an External Table?
 
-oplweb-faq:VirtVisualizeWithPivotViewerAnswer
-	rdf:type	schema:Answer ;
-	schema:text	"See OpenLink How-To guide that showcases how to use a Virtuoso hosted instance of the Microsoft PivotViewer as a Linked Data front-end for follow-your-nose data exploration."@en.
+""";
+schema:answerExplanation "Yes" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPRestEndpointAsAnExternalTableQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPRestEndpointAsAnExternalTableAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPRestEndpointAsAnExternalTableQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/HTTPRestEndpointAsAnExternalTableAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/JSONToRDFMappingOntologyRequirementsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/JSONToRDFMappingOntologyRequirementsAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+a schema:Question;
+schema:name "Do you need an ontology for direct mapping from JSON to RDF?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/JSONToRDFMappingOntologyRequirementsAnswer#this> a schema:Answer;
+schema:name "Answer to question: Do you need an ontology for direct mapping from JSON to RDF?";
+schema:answerExplanation "No. Virtuoso's Sponger Middleware can map JSON to RDF without external ontology requirements." .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/JSONToRDFMappingOntologyRequirementsQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/JSONToRDFMappingOntologyRequirementsAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RelationalDatabaseTablesbasedVirtualizationQuestion#this> a schema:Question;
+schema:name "When virtualization is applied to a conventional SQL-based RDBMS, is the end product always a Knowledge Graph? " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RelationalDatabaseTablesbasedVirtualizationAnswer#this> a schema:Answer;
+schema:name "Answer to question: When virtualization is applied to a conventional SQL-based RDBMS, is the end product always a Knowledge Graph? ";
+schema:answerExplanation "No, if desired virtualization can be Tables oriented i.e., creating a federated view. Naturally, if so desired, this can also take the form of a Knowledge Graph deployed using Linked Data principles." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RelationalDatabaseTablesbasedVirtualizationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RelationalDatabaseTablesbasedVirtualizationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RelationalDatabaseTablesbasedVirtualizationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RelationalDatabaseTablesbasedVirtualizationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RestFulInteractionwithVirtualRelationalDatabaseTablesQuestion#this> a schema:Question;
+schema:name "Is RESTful interaction possible with virtualized SQL Tables that aren't represented as a Knowledge Graph?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RestFulInteractionwithVirtualRelationalDatabaseTablesAnswer#this> a schema:Answer;
+schema:name "Answer to question: Is RESTful interaction possible with virtualized SQL Tables that aren't represented as a Knowledge Graph?";
+schema:answerExplanation "Yes, by virtue of the fact that Virtuoso enables the generation of Web Services for REST-ful interaction via SQL Stored Procedures. It even supports the creation of complex Stored Procedures that manifest as relations views. " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RestFulInteractionwithVirtualRelationalDatabaseTablesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RestFulInteractionwithVirtualRelationalDatabaseTablesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RestFulInteractionwithVirtualRelationalDatabaseTablesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RestFulInteractionwithVirtualRelationalDatabaseTablesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ReverseProxySupportQuestion#this> a schema:Question;
+schema:name "Reverse proxy - client only interested in accessing external restful endpoint" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ReverseProxySupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Reverse proxy - client only interested in accessing external restful endpoint";
+schema:answerExplanation "Yes " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ReverseProxySupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ReverseProxySupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ReverseProxySupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ReverseProxySupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoOpenShiftvirtualmachinesexistQuestion#this> a schema:Question;
+schema:name "Do you have a specific preconfigured service for OpenShift?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoOpenShiftvirtualmachinesexistAnswer#this> a schema:Answer;
+schema:name "Answer to question: Do you have a specific preconfigured service for OpenShift?";
+schema:answerExplanation "Not by default, but they can be produced on demand" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoOpenShiftvirtualmachinesexistQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DoOpenShiftvirtualmachinesexistAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/os#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DoOpenShiftvirtualmachinesexistQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DoOpenShiftvirtualmachinesexistAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PhysicalDataTenancyQuestion#this> a schema:Question;
+schema:name "What do we need for Physcal data tenancy ?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PhysicalDataTenancyAnswer#this> a schema:Answer;
+schema:name "Answer to question: What do we need for Physcal data tenancy ?";
+schema:answerExplanation "Use the Virtuoso Authentication Layer. Fine-grained access controls can be used for more detailed access control." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PhysicalDataTenancyQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/PhysicalDataTenancyAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/PhysicalDataTenancyAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this>;
+a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/PhysicalDataTenancyQuestion#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TimeseriesDataVisibilityviaattachedtablesQuestion#this> a schema:Question;
+schema:name "Can contextless Time Series data, be extracted and reconciled in Virtuoso?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TimeseriesDataVisibilityviaattachedtablesAnswer#this> a schema:Answer;
+schema:name "Answer to question: Can contextless Time Series data, be extracted and reconciled in Virtuoso?";
+schema:answerExplanation "Yes, as long as the Time Series data is accessible to Virtuoso." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/TimeseriesDataVisibilityviaattachedtablesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/TimeseriesDataVisibilityviaattachedtablesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>,<http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/TimeseriesDataVisibilityviaattachedtablesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/TimeseriesDataVisibilityviaattachedtablesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PreventInvalidIRIgenerationDuringETLWithoutACIDConfigurationQuestion#this> a schema:Question;
+schema:name "How do I prevent invalid IRIs from being generated during an ETL process that isn't properly configured for proper ACID protection of underlying data integrity? " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PreventInvalidIRIgenerationDuringETLWithoutACIDConfigurationAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I prevent invalid IRIs from being generated during an ETL process that isn't properly configured for proper ACID protection of underlying data integrity? ";
+schema:answerExplanation """Ensure you are running a version 8.3.x or later release (or backported version of 7.2.x) where 
+debug_invalid_iri_id = 1 is set in the [Flags] section of the Virtuoso Configuration file (virtuoso.ini)""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/PreventInvalidIRIgenerationDuringETLWithoutACIDConfigurationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/PreventInvalidIRIgenerationDuringETLWithoutACIDConfigurationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/PreventInvalidIRIgenerationDuringETLWithoutACIDConfigurationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/PreventInvalidIRIgenerationDuringETLWithoutACIDConfigurationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/UniquenessViolationwhenCondiguring3rdPartyOAuthBasedIdentityProvidersQuestion#this> a schema:Question;
+schema:name "Why am I receiving \"SR175: Uniqueness violation : Violating unique index APP_REG_K1 on table OAUTH.DBA.APP_REG. Transaction killed\" when trying to configure Identity Provider (IdP) bindings from Virtuoso functioning as the Relying Party (Client) to 3rd Party OAuth Servers?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/UniquenessViolationwhenCondiguring3rdPartyOAuthBasedIdentityProvidersAnswer#this> a schema:Answer;
+schema:name "Answer to question: Why am I receiving \"SR175: Uniqueness violation : Violating unique index APP_REG_K1 on table OAUTH.DBA.APP_REG. Transaction killed\" when trying to configure Identity Provider (IdP) bindings from Virtuoso functioning as the Relying Party (Client) to 3rd Party OAuth Servers?";
+schema:answerExplanation "This is because your chosen OAuth Client App ID conflicts with one that's already in place. You MUST have a unique identifier denoting each OAuth Client  (Relying Party) binding to an OAuth Server (i.e., Identity Provider). " .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/UniquenessViolationwhenCondiguring3rdPartyOAuthBasedIdentityProvidersQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/UniquenessViolationwhenCondiguring3rdPartyOAuthBasedIdentityProvidersAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/UniquenessViolationwhenCondiguring3rdPartyOAuthBasedIdentityProvidersQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/UniquenessViolationwhenCondiguring3rdPartyOAuthBasedIdentityProvidersAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA128HashesQuestion#this> a schema:Question;
+schema:name "How can I create SHA-128 hashes?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA128HashesAnswer#this> a schema:Answer;
+schema:name "Answer to question: How can I create SHA-128 hashes?";
+schema:answerExplanation "SPARQL users can use the SHA1() function. SQL Users should use the RDF_SHA128_IMPL() function." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA128HashesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA128HashesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA128HashesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA128HashesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA256HashesQuestion#this> a schema:Question;
+schema:name "How can I create SHA-256 hashes?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA256HashesAnswer#this> a schema:Answer;
+schema:name "Answer to question: How can I create SHA-256 hashes?";
+schema:answerExplanation "SPARQL users can use the SHA256() function. SQL Users should use the RDF_SHA256_IMPL() function." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA256HashesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA256HashesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA256HashesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/CreateSHA256HashesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManuallyReplaceVirtuosoServerBinaryQuestion#this> a schema:Question;
+schema:name "How can I manually replace the Virtuoso server binary?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManuallyReplaceVirtuosoServerBinaryAnswer#this> a schema:Answer;
+schema:name "Answer to question: How can I manually replace the Virtuoso server binary?";
+schema:answerExplanation "If copying the Virtuoso server binary (virtuoso-iodbc-t) manually to replace an existing binary the Virtuoso plugins in the ~/hosting directory of the new Virtuoso installation should also be replaced, as there are some incompatibilities with previous plugin versions." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManuallyReplaceVirtuosoServerBinaryQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ManuallyReplaceVirtuosoServerBinaryAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ManuallyReplaceVirtuosoServerBinaryQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ManuallyReplaceVirtuosoServerBinaryAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CopyMultipleFoldersFromHTTPServertoGithubRepoQuestion#this> a schema:Question;
+schema:name "How can I copy multiple folders from a HTTP Server over to a Github repo?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CopyMultipleFoldersFromHTTPServertoGithubRepoAnswer#this> a schema:Answer;
+schema:name "Answer to question: How can I copy multiple folders from a HTTP Server over to a Github repo?";
+schema:answerExplanation "If the HTTP server supports WebDAV, you can mount a root folder to your OS and then copy over in bulk using the upload UI provided by Github." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/CopyMultipleFoldersFromHTTPServertoGithubRepoQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/CopyMultipleFoldersFromHTTPServertoGithubRepoAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/CopyMultipleFoldersFromHTTPServertoGithubRepoQuestion#this>;
+a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/CopyMultipleFoldersFromHTTPServertoGithubRepoAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverQuestion#this> a schema:Question;
+schema:name "What are the best options for High-Avaliability and Disaster Recovery? Is it possible to move data from one datacenter to another and how is data transferred? Are there any numbers about the speed of data replication between two datacenters and consistency of the process?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverAnswer#this> a schema:Answer;
+schema:name "Answer to question: What are the best options for High-Avaliability and Disaster Recovery? Is it possible to move data from one datacenter to another and how is data transferred? Are there any numbers about the speed of data replication between two datacenters and consistency of the process?";
+schema:answerExplanation "Replication, using a variety of topologies, can be used to achieve High-Availability via a collection of Single-Server instances. If need be, you can go further using a Shared-Nothing Cluster Configuration comprising a horizontally partitioned database spread across commodity server machines." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailAndRecoverAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleQuestion#this> a schema:Question;
+schema:name "What is the Virtuoso strategy to scale? Is it possible to start small and then add servers if needed?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleAnswer#this> a schema:Answer;
+schema:name "Answer to question: What is the Virtuoso strategy to scale? Is it possible to start small and then add servers if needed?";
+schema:answerExplanation "Yes. You start with Single-Server which scales up to more than 100 billion RDF triples and then migrate to the Elastic Cluster Edition if your scalability demands exceed whatâs offered by single-server instances." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideQuestion#this> a schema:Question;
+schema:name "How do I use Virtuoso to deploy Linked Data to the Web?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I use Virtuoso to deploy Linked Data to the Web?";
+schema:answerExplanation "By leveraing its built-in support for HTTP and deployment of RDF using Linked Data Principles. This boils down to loading RDF and/or attaching native or external 3rd party DBMS hosted tables and then exposing to interaction endpoints for SPARQL, Faceted Search & Browsing, or Hyperlinks that provide fine-grained entity names." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtDeployingLinkedDataGuideAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestionQuestion#this> a schema:Question;
+schema:name "How do I attach ODBC- or JDBC-accessible Tables to Virtuoso?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestionAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I attach ODBC- or JDBC-accessible Tables to Virtuoso?";
+schema:answerExplanation "Any ODBC- or JDBC-accessible table can be attached to Virtuoso using SQL Attach Statements or the visual HTML-based Conductor Admin Interface." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestionQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestionAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>,<http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestionQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtLinkRemoteTablesQuestionAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardQuestion#this> a schema:Question;
+schema:name "How do I use R2RML to map RDB to RDF with Virtuoso?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I use R2RML to map RDB to RDF with Virtuoso?";
+schema:answerExplanation "You can use the HTML-based R2RML Wizard or upload existing R2RML documents for processing using Virtuosoâs native R2RML processor." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationQuestion#this> a schema:Question;
+schema:name "How do I Generate and Deploy RDF-based Linked Data from Tables in a Relational Database?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I Generate and Deploy RDF-based Linked Data from Tables in a Relational Database?";
+schema:answerExplanation "Virtuosoâs HTML-based Admin Interface (âThe Conductorâ) provides a one-click interface for generating RDF-Views that are deployed using Linked Data principles from relational database tables.";
+schema:relatedLink <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestionQuestion#this> a schema:Question;
+schema:name "How Do I generate an RDF View of relational database tables?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestionAnswer#this> a schema:Answer;
+schema:name "Answer to question: How Do I generate an RDF View of relational database tables?";
+schema:answerExplanation "Use the Linked Data Views Wizard, located in Virtuoso's conductor panel.";
+schema:relatedLink <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestionQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestionAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestionQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtRdb2RDFViewsGenerationQuestionAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementQuestion#this> a schema:Question;
+schema:name "Can RDF Repositories be managed and created using a REST API?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementAnswer#this> a schema:Answer;
+schema:name "Answer to question: Can RDF Repositories be managed and created using a REST API?";
+schema:answerExplanation "A Virtuoso RDF Repository can be created using RDF4J and simailar solutions.";
+schema:relatedLink <https://vos.openlinksw.com/owiki/wiki/VOS/VirtSesame2HttpRepository> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestQuestion#this> a schema:Question;
+schema:name "Can N-Quads be ingested into Virtuoso using the REST API?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestAnswer#this> a schema:Answer;
+schema:name "Answer to question: Can N-Quads be ingested into Virtuoso using the REST API?";
+schema:answerExplanation "N-Quads can be ingested into Virtuoso RESTfully through its Sponger Middleware, Directly through its SPARQL endpoint,  Virtuoso's Crawler, or RDF Sink Folders via Virtuoso or ODS-Briefcase." .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,<http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoQuestion#this> a schema:Question;
+schema:name "How do I deploy Virtuoso?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoAnswer#this> a schema:Answer;
+schema:name "Answer to question: How do I deploy Virtuoso?";
+schema:answerExplanation "You can download an installer for on-premise installation, instantiate a Docker Container, or instantiate in the cloud (on a BYOL or PAGO) basis across the Amazon AWS, Microsoft Azure, or Google Clouds" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this> a schema:Question;
+schema:name "Does Virtuoso support Encryption at Rest (EAR)" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this> a schema:Answer;
+schema:name "Answer to question: Does Virtuoso support Encryption at Rest (EAR)";
+schema:answerExplanation "Yes, you can encrypt a Virtuoso Database cryptographically as part of your data governance and security initiatives";
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> a schema:Question;
+schema:name "Are there entry level offers for Virtuosoâs commercial edition?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this> a schema:Answer;
+schema:name "Answer to question: Are there entry level offers for Virtuosoâs commercial edition?";
+schema:answerExplanation "Yes, entry level offer licenses exist for usage scoped to Personal, Workgroup, and Project levels";
+schema:relatedLink <https://virtuoso.openlinksw.com/pricing/> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/license#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesQuestion#this> a schema:Question;
+schema:name "As a multi-model data platform, what query languages are supported by Virtuoso?" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesAnswer#this> a schema:Answer;
+schema:name "Answer to question: As a multi-model data platform, what query languages are supported by Virtuoso?";
+schema:answerExplanation """SQL, SPARQL, SPASQL (fusion of SQL and SPARQL), and GraphQL
 
-oplweb-faq:VirtVisualizeWithPivotViewerQuestion
-	rdf:type	schema:Question ;
-	schema:name	"How do I explore Linked Data using the Microsoft Pivot Viewer?"@en;
-	schema:dateCreated	"2019-01-30T10:00:00-05:00"^^xsd:dateTime ;
-	schema:dateModified	"2021-12-16T13:38:00-05:00"^^xsd:dateTime ;
-	schema:category	ns28:this ;
-	schema:relatedLink	oplweb-faq:ClusterConfigDifAnswer , oplweb-faq:EvaluatingNoSQLDBAnswer , oplweb-faq:FederationStatusAnswer , oplweb-faq:FederationTripleStoreAnswer , oplweb-faq:HighAvailAndRecoverAnswer , oplweb-faq:ManageClusterAnswer , oplweb-faq:PlansCloudAnswer , oplweb-faq:ScaleAnswer , oplweb-faq:VOSSQL2RDFAnswer , oplweb-faq:VirtDeployingLinkedDataGuideAnswer , oplweb-faq:VirtFacetBrowserInstallConfigAnswer , oplweb-faq:VirtLinkRemoteTablesAnswer , oplweb-faq:VirtR2RMLAnswer , oplweb-faq:VirtRdb2RDFViewsGenerationAnswer , oplweb-faq:VirtSparqlCxmlAnswer , oplweb-faq:VirtVisualizeWithHtmlPivotViewerAnswer , oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:acceptedAnswer	oplweb-faq:VirtVisualizeWithPivotViewerAnswer ;
-	schema:creator	ns9:this .
+""" .
+<http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesAnswer#this>;
+schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
+schema:creator <http://www.openlinksw.com/#this>;
+schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
+schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesAnswer#this>;
+schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+### TURTLE END ###
