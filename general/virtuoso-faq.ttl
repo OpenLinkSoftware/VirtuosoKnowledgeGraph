@@ -259,10 +259,10 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/MovingRDFContentfromVirtuoso7.xAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaQuestion#this> a schema:Question;
-schema:name "Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values âMâ and âFâ, could we infer concepts of âGenderâ and Male/Female? Is there any ability to identify concepts that may be identical?)"@en .
+schema:name "Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values ‘M’ and ‘F’, could we infer concepts of ‘Gender’ and Male/Female? Is there any ability to identify concepts that may be identical?)"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this> a schema:Answer;
-schema:name "Answer to question: Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values âMâ and âFâ, could we infer concepts of âGenderâ and Male/Female? Is there any ability to identify concepts that may be identical?)"@en ;
-schema:answerExplanation "As part of the RDF Linked Data View creation process (using Virtuoso's native RDF View mapping language or R2RML) an alternative schema or ontology can be used for performing the mapping to RDF, as demonstrated in the this post on Customizing R2RML scripts in Virtuoso "@en .
+schema:name "Answer to question: Is there any functionality to infer links/concepts beyond the schema definition? (For example, given a column populated by only values ‘M’ and ‘F’, could we infer concepts of ‘Gender’ and Male/Female? Is there any ability to identify concepts that may be identical?)"@en ;
+schema:answerExplanation "As part of the RDF Linked Data View creation process (using Virtuoso’s native RDF View mapping language or R2RML) an alternative schema or ontology can be used for performing the mapping to RDF, as demonstrated in the this post on Customizing R2RML scripts in Virtuoso "@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/InferenceFunctionalityBeyondSchemaAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -303,7 +303,7 @@ schema:name "Answer to question: Should I utilise the Virtuoso native SPARQL End
 schema:answerExplanation """By not utilising the Virtuoso native SPARQL Endpoint the Net effect is that you lose the ability to expose other critical features like:
 
 Federated Queries using SPARQL-FED
-Additional results formats supported by Virtuoso â which makes data
+Additional results formats supported by Virtuoso — which makes data
 available to a wide range of applications
 Security features."""@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/NativeSPARQLEndpointUtilizationAnswer#this>;
@@ -319,15 +319,15 @@ schema:name "Is hyperGraphQL a browser based API, and can this be used with Virt
 schema:name "Answer to question: Is hyperGraphQL a browser based API, and can this be used with Virtuoso? Alternatively, what other browser-based or third-party APIs does Virtuoso provide and/or work with ?"@en ;
 schema:answerExplanation """We offer a number of Application Programming Interfaces (APIs) for accessing RDF Data managed by a Virtuoso instance. These include:
 
-* Entity Description Services via `/describe` endpoint â enhanced Search that fuses effects of Free Text and SPARQL 
+* Entity Description Services via `/describe` endpoint — enhanced Search that fuses effects of Free Text and SPARQL 
 
-* Faceted Browser Headless API â as per OSDB binding, i.e., another variant of the above
+* Faceted Browser Headless API — as per OSDB binding, i.e., another variant of the above
 
-* ODBC and JDBC â using SQL rather than SPARQL courtesy of SPARQL
+* ODBC and JDBC — using SQL rather than SPARQL courtesy of SPARQL
 
-* Jena and RDF4j â ditto
+* Jena and RDF4j — ditto
 
-* Custom APIs built to spec using Stored Procedures â leveraging Virtuoso's ability to publish Stored Procedures for SOAP or REST-ful interaction """@en .
+* Custom APIs built to spec using Stored Procedures — leveraging Virtuoso's ability to publish Stored Procedures for SOAP or REST-ful interaction """@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ThirdPartyAPISupportAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>,<http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -454,9 +454,9 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/CloudSupportAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsQuestion#this> a schema:Question;
-schema:name "In what ways can your solution be scaled to the clientâs needs in terms of storage and performance?"@en .
+schema:name "In what ways can your solution be scaled to the client’s needs in terms of storage and performance?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsAnswer#this> a schema:Answer;
-schema:name "Answer to question: In what ways can your solution be scaled to the clientâs needs in terms of storage and performance?"@en ;
+schema:name "Answer to question: In what ways can your solution be scaled to the client’s needs in terms of storage and performance?"@en ;
 schema:answerExplanation "Single-Server is highly scalable based on multi-threading and vectorized query execution; Replication Cluster permits any desired topology, with no implicit limitation on node counts; Elastic \"Shared Nothing\" Cluster offers horizontal partitions by way of sharding, again with no implicit limitation on node counts. "@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScalabilityMethodsAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
@@ -479,9 +479,9 @@ schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> .
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/StandardsSupportAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceQuestion#this> a schema:Question;
-schema:name "To what extent do you consider your offering to be a âone stop solutionâ covering both knowledge graph storage as well as learning / reasoning / inferencing features?"@en .
+schema:name "To what extent do you consider your offering to be a ‘one stop solution’ covering both knowledge graph storage as well as learning / reasoning / inferencing features?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceAnswer#this> a schema:Answer;
-schema:name "Answer to question: To what extent do you consider your offering to be a âone stop solutionâ covering both knowledge graph storage as well as learning / reasoning / inferencing features?"@en ;
+schema:name "Answer to question: To what extent do you consider your offering to be a ‘one stop solution’ covering both knowledge graph storage as well as learning / reasoning / inferencing features?"@en ;
 schema:answerExplanation "As a Knowledge Graph platform, Virtuoso includes both built-in and custom reasoning & inference functionality. Either approach is accessible by both SQL (via ODBC or JDBC compliant clients) and SPARQL compliant tools. "@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/OneStepSolutionForKnowledgeGraphStorageReasoningandInferenceAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>;
@@ -522,7 +522,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "Is it possible to upload data in a prevalent RDF format (e.g. Turtle syntax, RDF/XML)?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this> a schema:Answer;
 schema:name "Answer to question: Is it possible to upload data in a prevalent RDF format (e.g. Turtle syntax, RDF/XML)?"@en ;
-schema:answerExplanation "Yes. Virtuoso's triple/quad-store can ingest data found in most RDF serializations, as well as RDB2RDF/R2RML transformations from SQL/tabular data."@en .
+schema:answerExplanation "Yes. Virtuoso’s triple/quad-store can ingest data found in most RDF serializations, as well as RDB2RDF/R2RML transformations from SQL/tabular data."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFFormatUploadAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -538,7 +538,7 @@ schema:answerExplanation """Yes.
 
 We support a variety of interfaces and mechanisms, including SQL-style interfaces (ODBC, JDBC, ADO.NET, OLE DB, etc.), HTTP, SPARQL, and others, allowing use of most common DB-interaction tools, supporting SQL, SPARQL, and SPASQL (SPARQL-in-SQL) queries, and delivering results in SQL-style tabular form, various RDF serializations, etc. 
 
-These enable development of new integrations â often without specific cost â in a wide range of programming and script languages, including C/C+/C++, Java, Javascript, Python, Perl, PHP, Ruby, OpenRDF Sesame, Eclipse RDF4J, Apache Jena, and more. 
+These enable development of new integrations — often without specific cost — in a wide range of programming and script languages, including C/C+/C++, Java, Javascript, Python, Perl, PHP, Ruby, OpenRDF Sesame, Eclipse RDF4J, Apache Jena, and more. 
 
 In most cases, development of an integration for Virtuoso really means development of an integration for an open standard or specification, which means no Virtuoso lock-in, and also means that integration with other platforms is included as a \"built-in\" of this Virtusoo integration."""@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/APISupportAnswer#this>;
@@ -581,9 +581,9 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/TestEnvironmentSupportAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewQuestion#this> a schema:Question;
-schema:name "Could you provide a general overview of your platformâs Identity & Access Management (IAM) framework? This includes the User Admin GUI, application roles, permissions, reports, API (for provisioning and reporting) etc."@en .
+schema:name "Could you provide a general overview of your platform’s Identity & Access Management (IAM) framework? This includes the User Admin GUI, application roles, permissions, reports, API (for provisioning and reporting) etc."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewAnswer#this> a schema:Answer;
-schema:name "Answer to question: Could you provide a general overview of your platformâs Identity & Access Management (IAM) framework? This includes the User Admin GUI, application roles, permissions, reports, API (for provisioning and reporting) etc."@en ;
+schema:name "Answer to question: Could you provide a general overview of your platform’s Identity & Access Management (IAM) framework? This includes the User Admin GUI, application roles, permissions, reports, API (for provisioning and reporting) etc."@en ;
 schema:answerExplanation "Identity & Access Management is handled via VAL, the Virtuoso Authentication Layer, which is an open-standards-based, multi-protocol authentication layer. VAL provides fine-grained, attributed-based access controls (ABAC) to protected resources (such as HTTP-accessible documents, folders, services [via their endpoints], and SPARQL named graphs). In a nutshell, this solution uses logic, expressed in the form of entity relationships, to address issues such as identity, authorization, and restriction."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/IAMGeneralOverviewAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>,<http://data.openlinksw.com/oplweb/glossary-term/Identity#this>,<http://data.openlinksw.com/oplweb/glossary-term/RBAC#this>;
@@ -617,9 +617,9 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/MultipleKnowledgeGraphAbilityAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationQuestion#this> a schema:Question;
-schema:name "In what way can logical data segregation (âChinese Wallsâ) be achieved between different end user groups?"@en .
+schema:name "In what way can logical data segregation (‘Chinese Walls’) be achieved between different end user groups?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationAnswer#this> a schema:Answer;
-schema:name "Answer to question: In what way can logical data segregation (âChinese Wallsâ) be achieved between different end user groups?"@en ;
+schema:name "Answer to question: In what way can logical data segregation (‘Chinese Walls’) be achieved between different end user groups?"@en ;
 schema:answerExplanation "Attribute-based Access Controls (ABAC)"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DataSegregationAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>;
@@ -700,9 +700,9 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SPARQLINSERTLIMITSAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountQuestion#this> a schema:Question;
-schema:name "Can TABLE-A be encrypted with a different key than TABLE-B â i.e., can multiple keys might be used in one DB, over time?"@en .
+schema:name "Can TABLE-A be encrypted with a different key than TABLE-B – i.e., can multiple keys might be used in one DB, over time?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/TableEncryptionKeyCountAnswer#this> a schema:Answer;
-schema:name "Answer to question: Can TABLE-A be encrypted with a different key than TABLE-B â i.e., can multiple keys might be used in one DB, over time?"@en ;
+schema:name "Answer to question: Can TABLE-A be encrypted with a different key than TABLE-B – i.e., can multiple keys might be used in one DB, over time?"@en ;
 schema:answerExplanation """One shared secret (symmetric encryption key) across a DB instance comprising Tables. Not a key per Table which is overkill.
 
 Key management happens above the DBMS layer."""@en .
@@ -741,7 +741,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "Unable to execute SPARQL query against  RDF View Virtual Graph due to error, \"Virtuoso 42000 Error SQ033: SELECT access denied for column column-name of table table-name, user ID 112\" error"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectAnswer#this> a schema:Answer;
 schema:name "Answer to question: Unable to execute SPARQL query against  RDF View Virtual Graph due to error, \"Virtuoso 42000 Error SQ033: SELECT access denied for column column-name of table table-name, user ID 112\" error"@en ;
-schema:answerExplanation "The error implies the âSPARQLâ user â112â the ~/sparql endpoint runs as does not have select access on the table , which is required for tables/resources to be queryâable via the ~/sparql endpoint. This error can be fixed by running the command \"grant select on \"table-name\" to âSPARQLâ;\" or adding the Virtuoso \"SPARQL_SELECT\" role to the table-name."@en .
+schema:answerExplanation "The error implies the “SPARQL” user “112” the ~/sparql endpoint runs as does not have select access on the table , which is required for tables/resources to be query’able via the ~/sparql endpoint. This error can be fixed by running the command \"grant select on \"table-name\" to “SPARQL”;\" or adding the Virtuoso \"SPARQL_SELECT\" role to the table-name."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SQ033ErrorSPARQLSelectAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -756,7 +756,7 @@ schema:name """Imagine a scenario like this:
 - Each KG draws from many data sources of special relevance to that domain
 - Lots of analytics get done within a single knowledge graph
 - Other important analytics get done using data from more than one knowledge graph
-For the analytics done within a KG, Iâd anticipate many case in which a query can or should be scoped to the whole thing. And users might not even know all the named graphs in it. So, itâs great to be able to set the whole-KG scope very simply."""@en .
+For the analytics done within a KG, I’d anticipate many case in which a query can or should be scoped to the whole thing. And users might not even know all the named graphs in it. So, it’s great to be able to set the whole-KG scope very simply."""@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/SettingKnowledgeGraphScopeAnswer#this> a schema:Answer;
 schema:name """Answer to question: Imagine a scenario like this:
 - Multiple, complex knowledge graphs are established in the platform.
@@ -764,8 +764,8 @@ schema:name """Answer to question: Imagine a scenario like this:
 - Each KG draws from many data sources of special relevance to that domain
 - Lots of analytics get done within a single knowledge graph
 - Other important analytics get done using data from more than one knowledge graph
-For the analytics done within a KG, Iâd anticipate many case in which a query can or should be scoped to the whole thing. And users might not even know all the named graphs in it. So, itâs great to be able to set the whole-KG scope very simply."""@en ;
-schema:answerExplanation """You can use RDF Graph Groups (RGG) in this manner, but I donât consider this optimal bearing in mind Virtuoso is a Quad Store that supports the use of a Graph Operator in the body of SPARQL Queries for optimizing construction of the Default Graph used in its query solution production pipeline.
+For the analytics done within a KG, I’d anticipate many case in which a query can or should be scoped to the whole thing. And users might not even know all the named graphs in it. So, it’s great to be able to set the whole-KG scope very simply."""@en ;
+schema:answerExplanation """You can use RDF Graph Groups (RGG) in this manner, but I don’t consider this optimal bearing in mind Virtuoso is a Quad Store that supports the use of a Graph Operator in the body of SPARQL Queries for optimizing construction of the Default Graph used in its query solution production pipeline.
 We have the live LOD Cloud instance comprising millions of Named Graphs that demonstrates this point.
 RGGs are more useful for ABAC ACLs. (but we need to double check this claim)
 Users should simply dump data into Named Graphs and queries should be formulated with explicit Named Graph scope or the use of variables."""@en .
@@ -793,9 +793,9 @@ schema:dateCreated "2023-04-12T18:14:00+00:00"^^<http://www.w3.org/2001/XMLSchem
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/Oauth2.0ExamplesforJSAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersQuestion#this> a schema:Question;
-schema:name "How do I use Virtuoso's Replication Functionality to configure for High Availability that isnât dependent on a single publisher?"@en .
+schema:name "How do I use Virtuoso’s Replication Functionality to configure for High Availability that isn’t dependent on a single publisher?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/HighAvailabilityAcrossMultiplePublishersAnswer#this> a schema:Answer;
-schema:name "Answer to question: How do I use Virtuoso's Replication Functionality to configure for High Availability that isnât dependent on a single publisher?"@en ;
+schema:name "Answer to question: How do I use Virtuoso’s Replication Functionality to configure for High Availability that isn’t dependent on a single publisher?"@en ;
 schema:answerExplanation """For High Availability across multiple publishers nodes bi-directional graph replication would need to be setup between each cluster node, such that writes on one are pushed to the other and vice-versa as detailed at in the documentation at: 
 
    http://docs.openlinksw.com/virtuoso/rdfgraphreplicationtopl/#rdfgraphreplicationtoplbid  
@@ -1101,7 +1101,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "What is the Virtuoso strategy to scale? Is it possible to start small and then add servers if needed?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleAnswer#this> a schema:Answer;
 schema:name "Answer to question: What is the Virtuoso strategy to scale? Is it possible to start small and then add servers if needed?"@en ;
-schema:answerExplanation "Yes. You start with Single-Server which scales up to more than 100 billion RDF triples and then migrate to the Elastic Cluster Edition if your scalability demands exceed whatâs offered by single-server instances."@en .
+schema:answerExplanation "Yes. You start with Single-Server which scales up to more than 100 billion RDF triples and then migrate to the Elastic Cluster Edition if your scalability demands exceed what’s offered by single-server instances."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ScaleAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -1140,7 +1140,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "How do I use R2RML to map RDB to RDF with Virtuoso?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this> a schema:Answer;
 schema:name "Answer to question: How do I use R2RML to map RDB to RDF with Virtuoso?"@en ;
-schema:answerExplanation "You can use the HTML-based R2RML Wizard or upload existing R2RML documents for processing using Virtuoso's native R2RML processor."@en .
+schema:answerExplanation "You can use the HTML-based R2RML Wizard or upload existing R2RML documents for processing using Virtuoso’s native R2RML processor."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtR2RMLWizardAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this>;
 schema:creator <http://www.openlinksw.com/#this>;
@@ -1153,7 +1153,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "How do I Generate and Deploy RDF-based Linked Data from Tables in a Relational Database?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this> a schema:Answer;
 schema:name "Answer to question: How do I Generate and Deploy RDF-based Linked Data from Tables in a Relational Database?"@en ;
-schema:answerExplanation "Virtuoso's HTML-based Admin Interface (âThe Conductorâ) provides a one-click interface for generating RDF-Views that are deployed using Linked Data principles from relational database tables."@en ;
+schema:answerExplanation "Virtuoso’s HTML-based Admin Interface (‘The Conductor’) provides a one-click interface for generating RDF-Views that are deployed using Linked Data principles from relational database tables."@en ;
 schema:relatedLink <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/ViewsGenerationAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>;
@@ -1232,9 +1232,9 @@ schema:position "12"^^<http://www.w3.org/2001/XMLSchema#int> .
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> a schema:Question;
-schema:name "Are there entry level offers for Virtuoso's commercial edition?"@en .
+schema:name "Are there entry level offers for Virtuoso’s commercial edition?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this> a schema:Answer;
-schema:name "Answer to question: Are there entry level offers for Virtuoso's commercial edition?"@en ;
+schema:name "Answer to question: Are there entry level offers for Virtuoso’s commercial edition?"@en ;
 schema:answerExplanation "Yes, entry level offer licenses exist for usage scoped to Personal, Workgroup, and Project levels"@en ;
 schema:relatedLink <https://virtuoso.openlinksw.com/pricing/> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this>;
@@ -1260,4 +1260,5 @@ schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int> .
 <https://virtuoso.openlinksw.com/faq/> a schema:WebPage;
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+
 ### TURTLE END ###
