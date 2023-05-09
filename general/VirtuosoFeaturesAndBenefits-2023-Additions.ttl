@@ -1,0 +1,319 @@
+### TURTLE START ###
+@base <http://virtuoso.openlinksw.com/data/turtle/general/VirtuosoFeaturesAndBenefits-2023-Additions.ttl> .
+@prefix :       <#> .
+@prefix oplben: <http://www.openlinksw.com/ontology/benefits#> .
+@prefix oplfea: <http://www.openlinksw.com/ontology/features#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix wdrs:   <http://www.w3.org/2007/05/powder-s#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+@prefix xhv:     <http://www.w3.org/1999/xhtml/vocab#> . 
+
+:this
+  a schema:CreativeWork ;
+  schema:name """Additional Virtuoso Features & Benefits Document"""@en ;
+  schema:comment """Description of Additional 2023 Virtuoso Features & Benefits."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  cc:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software"@en ;
+  schema:dateCreated "2023-04-05T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2023-04-06T14:00:00-05:00"^^xsd:dateTime ;
+  cc:attributionURL <http://www.openlinksw.com/#this>.     
+
+<http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this>
+        rdf:type            oplben:TechnicalManagementBenefit ;
+        schema:description  "Quickly and efficiently process large volumes of data qwithout compromising data privacy and security"@en ;
+        schema:name         "High Performance"@en ;
+        wdrs:describedBy    :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/Scalability#this>
+        rdf:type            oplben:TechnicalManagementBenefit ;
+        schema:description  "Manage increasing instance demands without major changes and/or upgrades."@en ;
+        schema:name         "Scalability"@en ;
+        wdrs:describedBy    :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/CognitiveAgility#this>
+        rdf:type            oplben:TechnicalManagementBenefit ;
+        schema:description  "Use of declarative reasoning and inference to drive enterprise agility. This is achieved by incorporating  associated with cognitive computing into existing (and emerging) systems of intelligence. For instance, rules can used to dynamically inform data virtualization (that manifests as a Semantic Web of Linked Data) across disprate of record and engagement.\n\n" ;
+        schema:name         "Cognitive Agility"@en ;
+        wdrs:describedBy    :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/CognitiveSecurity#this>
+        rdf:type            oplben:TechnicalManagementBenefit ;
+        schema:description  "Use of declarative reasoning and inference to drive enterprise security using fine-grained attribute-based access controls. This approach to security, via a Semantic Web of Linked Data, enables the development and deployment of adaptive security solutions that scale to the Web and Internet." ;
+        schema:name         "Cognitive Security"@en ;
+        wdrs:describedBy    :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "column-wise-data-storage"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/SophisticatedApplicationFunctionality#this> ;
+        skos:altLabel      "Column-Wise Data Storage"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/graphql-query-endpoint#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "graphql-query-endpoint"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+        skos:altLabel      "GraphQL Query Endpoint"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/SophisticatedApplicationFunctionality#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance#this> ,
+                           <http://data.openlinksw.com/oplweb/product_feature/column-wise-data-storage#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "WebServiceDeploymentPlatform"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> , 
+                           <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "Web Services Deployment Platform (REST or SOAP interaction patterns)"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "RDFViewsoverExternalDataSources"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+        skos:altLabel      "Middleware for RDF based Linked Data Views over HTTP-based APIs"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "run-time-hosting"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+        skos:altLabel      "Run Time Hosting"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "elastic-cluster"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> ;
+        skos:altLabel      "Elastic Cluster"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "DistributedTransactionsSupport2PhaseCommit"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> , 
+                           <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+        skos:altLabel      "Distributed Transactions Support 2 Phase Commit"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "RDFbasedLinkedDataDeployment"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "RDF based Linked Data Deployment"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "ParallelizedSQLQueryExecution"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this> ;
+        skos:altLabel      "Parallelized SQL Query Execution"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "RDFDataManagement"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+        skos:altLabel      "Middleware for RDF based Linked Data Transformation"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/CognitiveAgility#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "LinkedDataPublishing"@en;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "Linked Data Publishing"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/CognitiveSecurity#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this> . 
+
+<http://data.openlinksw.com/oplweb/product_benefit/enables-application-of-sophisticated-security-and-data-access-policies-to-web-services-eg-sparql-endpoint-and-actual-dbms-objects#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#this> . 
+
+<http://data.openlinksw.com/oplweb/product_benefit/Scalability#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#this> , <http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#this> , <http://data.openlinksw.com/oplweb/product_feature/StorageEngine#this> , <http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#this> , <http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#this> , <http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#this> . 
+
+<http://data.openlinksw.com/oplweb/product_benefit/ControlledAccesstoDataAssets#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/encryption-at-rest#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/StorageEngine#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "StorageEngine"@en;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> , 
+                           <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> ;
+        skos:altLabel      "Storage Engine"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "AttributeBasedAccessControls"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/CognitiveSecurity#this> ;
+        skos:altLabel      "Attribute-Based Access Controls"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/ConfigurablePolicybasedSecurity#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "ConfigurablePolicybasedSecurity"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/enables-application-of-sophisticated-security-and-data-access-policies-to-web-services-eg-sparql-endpoint-and-actual-dbms-objects#this> ;
+        skos:altLabel      "Configurable Policy Based Security"@en;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/encryption-at-rest#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "encryption-at-rest"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/ControlledAccesstoDataAssets#this> ;
+        skos:altLabel      "Encryption-at-Rest (EAR)"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#this> , 
+                          <http://data.openlinksw.com/oplweb/product_feature/ParallelizedSQLQueryExecution#this> , 
+                          <http://data.openlinksw.com/oplweb/product_feature/vectored-execution#this> , 
+                          <http://data.openlinksw.com/oplweb/product_feature/data-compression#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/geosparql-functions-and-magic-predicates#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "geosparql-functions-and-magic-predicates" ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "GeoSPARQL Functions enabled via built-in Magic Predicates" ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/virtuoso-server-high-performance#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "high-performance"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/SophisticatedApplicationFunctionality#this> ;
+        skos:altLabel      "High Performance"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/ClusteringforFaultToleranceLoadBalancing#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "ClusteringforFaultToleranceLoadBalancing"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> ;
+        skos:altLabel      "Clustering, Fault Tolerance and Load Balancing"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/RDFawareClustering#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "RDFawareClustering"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> , <http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this> ;
+        skos:altLabel      "RDF aware Share Nothing Clustering"@en;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/vectored-execution#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "vectored-execution"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this> ;
+        skos:altLabel      "Vectored Execution"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/data-compression#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "data-compression" ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this> ;
+        skos:altLabel      "Data Compression" ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "IndustryStandardQueryLanguageSupportSPARQL"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "Industry Standard SPARQL Query Language Support"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/LinkedDataPublishing#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/IndustryStandardQueryLanguageSupportSPARQL#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/geosparql-functions-and-magic-predicates#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/SupportsBroadRangeofDataAccessStandards#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "SupportsBroadRangeofDataAccessStandards"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "Supports a Broad Range of Data Access Standards"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "CustomInferenceRules"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/CognitiveAgility#this> ;
+        skos:altLabel      "Custom Inference Rules"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "HTTPCompliantApplicationServer"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
+        skos:altLabel      "HTTP Application Server for REST and SOAP based interactions"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "EnhancedRelationMapping"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "Enhanced Relation Mapping"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/NetworkbasedQueryParallelization#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "NetworkbasedQueryParallelization"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/Scalability#this> ;
+        skos:altLabel      "Network-based Query Parallelization"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "ContentNegotiationSupportincludingRDFhandling"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "HTTP Content Negotiaion (Basic and Transparent)"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/WebDAVCompliantContentManager#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "WebDAVCompliantContentManager"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+        skos:altLabel      "WebDAV-Compliant Content Manager"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this>
+        oplben:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/StorageEngine#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/WebServiceDeploymentPlatform#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/RDFDataManagement#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/RunTimeHosting#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/HTTPCompliantApplicationServer#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/DistributedTransactionsSupport2PhaseCommit#this> , 
+                           <http://data.openlinksw.com/oplweb/product_feature/graphql-query-endpoint#this> . 
+
+<http://data.openlinksw.com/oplweb/product_feature/new-meta-cartridges#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "new-meta-cartridges"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this> ;
+        skos:altLabel      "New Meta Cartridges"@en ;
+        wdrs:describedBy   :this .
+
+<http://data.openlinksw.com/oplweb/product_feature/new-extractor-cartridges#this>
+        rdf:type           oplfea:ProductFeature ;
+        schema:name        "new-extractor-cartridges"@en ;
+        oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/EaseofIntegration#this> ;
+        skos:altLabel      "New Extractor Cartridges"@en ;
+        wdrs:describedBy   :this .
+
+
+### TURTLE END ###
