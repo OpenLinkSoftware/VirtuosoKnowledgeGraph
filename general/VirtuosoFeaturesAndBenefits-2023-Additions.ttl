@@ -23,7 +23,7 @@
 
 <http://data.openlinksw.com/oplweb/product_benefit/HighPerformance#this>
         rdf:type            oplben:TechnicalManagementBenefit ;
-        schema:description  "Quickly and efficiently process large volumes of data qwithout compromising data privacy and security"@en ;
+        schema:description  "Quickly and efficiently process large volumes of data without compromising data privacy or security"@en ;
         schema:name         "High Performance"@en ;
         wdrs:describedBy    :this .
 
