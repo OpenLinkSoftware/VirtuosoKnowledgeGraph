@@ -1235,7 +1235,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "Are there entry level offers for Virtuoso’s commercial edition?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this> a schema:Answer;
 schema:name "Answer to question: Are there entry level offers for Virtuoso’s commercial edition?"@en ;
-schema:answerExplanation "Yes, entry level offer licenses exist for usage scoped to Personal, Workgroup, and Project levels"@en ;
+schema:answerExplanation "Yes, entry level license offers exist for usage scoped to Personal, Workgroup, or Project levels."@en ;
 schema:relatedLink <https://virtuoso.openlinksw.com/pricing/> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/EntryLevelLicensesAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/license#this>;
