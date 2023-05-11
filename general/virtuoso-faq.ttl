@@ -1249,9 +1249,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "As a multi-model data platform, what query languages are supported by Virtuoso?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesAnswer#this> a schema:Answer;
 schema:name "Answer to question: As a multi-model data platform, what query languages are supported by Virtuoso?"@en ;
-schema:answerExplanation """SQL, SPARQL, SPASQL (fusion of SQL and SPARQL), and GraphQL
-
-"""@en .
+schema:answerExplanation "Virtuoso natively supports queries using SQL, SPARQL, SPASQL (fusion of SQL and SPARQL), and GraphQL."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/SupportedQueryLanguagesAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,<http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
 schema:creator <http://www.openlinksw.com/#this>;
