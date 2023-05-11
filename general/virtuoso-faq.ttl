@@ -1218,10 +1218,10 @@ schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this> a schema:Question;
-schema:name "Does Virtuoso support Encryption at Rest (EAR)"@en .
+schema:name "Does Virtuoso support Encryption at Rest (EAR)?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this> a schema:Answer;
-schema:name "Answer to question: Does Virtuoso support Encryption at Rest (EAR)"@en ;
-schema:answerExplanation "Yes, you can encrypt a Virtuoso Database cryptographically as part of your data governance and security initiatives"@en ;
+schema:name "Answer to question: Does Virtuoso support Encryption at Rest (EAR)?"@en ;
+schema:answerExplanation "Yes, you can cryptographically protect a Virtuoso Database as part of your data governance and security initiatives."@en ;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/VirtuosoEARSupportAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>,<http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this>;
