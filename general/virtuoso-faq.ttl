@@ -1192,10 +1192,10 @@ schema:position "11"^^<http://www.w3.org/2001/XMLSchema#int> .
 schema:about <http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementQuestion#this>,<http://data.openlinksw.com/oplweb/faq/Virtuoso/RDFRESTManagementAnswer#this>;
 schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestQuestion#this> a schema:Question;
-schema:name "Can N-Quads be ingested into Virtuoso using the REST API?"@en .
+schema:name "Can Virtuoso ingest N-Quads using the REST API?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestAnswer#this> a schema:Answer;
-schema:name "Answer to question: Can N-Quads be ingested into Virtuoso using the REST API?"@en ;
-schema:answerExplanation "N-Quads can be ingested into Virtuoso RESTfully through its Sponger Middleware, Directly through its SPARQL endpoint,  Virtuoso's Crawler, or RDF Sink Folders via Virtuoso or ODS-Briefcase."@en .
+schema:name "Answer to question: Can Virtuoso ingest N-Quads using the REST API?"@en ;
+schema:answerExplanation "Virtuoso can RESTfully ingest N-Quads through its Sponger Middleware, directly through its SPARQL endpoint, Virtuoso's Crawler, or RDF Sink Folders via Virtuoso or ODS-Briefcase."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/NQUADIngestionViaRestAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,<http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>;
 schema:creator <http://www.openlinksw.com/#this>;
