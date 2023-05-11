@@ -1208,7 +1208,7 @@ schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 schema:name "How do I deploy Virtuoso?"@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoAnswer#this> a schema:Answer;
 schema:name "Answer to question: How do I deploy Virtuoso?"@en ;
-schema:answerExplanation "You can download an installer for on-premise installation, instantiate a Docker Container, or instantiate in the cloud (on a BYOL or PAGO) basis across the Amazon AWS, Microsoft Azure, or Google Clouds"@en .
+schema:answerExplanation "You can download an installer for on-premise installation, instantiate a Docker Container, or instantiate on a BYOL- or PAGO-basis in Amazon AWS, Microsoft Azure, and/or Google Clouds."@en .
 <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoQuestion#this> schema:acceptedAnswer <http://data.openlinksw.com/oplweb/faq/Virtuoso/DeployVirtuosoAnswer#this>;
 schema:relatedLink <http://data.openlinksw.com/oplweb/glossary-term/Database#this>;
 schema:creator <http://www.openlinksw.com/#this>;
