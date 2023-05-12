@@ -35,7 +35,7 @@
 
 <http://data.openlinksw.com/oplweb/product_benefit/CognitiveAgility#this>
         rdf:type            oplben:TechnicalManagementBenefit ;
-        schema:description  "Use of declarative reasoning and inference to drive enterprise agility. This is achieved by incorporating  associated with cognitive computing into existing (and emerging) systems of intelligence. For instance, rules can used to dynamically inform data virtualization (that manifests as a Semantic Web of Linked Data) across disprate of record and engagement.\n\n" ;
+        schema:description  "Use declarative reasoning and inference to drive enterprise agility. This is achieved by incorporating _____ associated with cognitive computing into existing (and emerging) systems of intelligence. For instance, rules can be used to dynamically inform data virtualization (that manifests as a Semantic Web of Linked Data) across disparate of record and engagement.\n\n" ;
         schema:name         "Cognitive Agility"@en ;
         wdrs:describedBy    :this .
 
