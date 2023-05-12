@@ -68,7 +68,7 @@
         schema:name        "WebServiceDeploymentPlatform"@en ;
         oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> , 
                            <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
-        skos:altLabel      "Web Services Deployment Platform (REST or SOAP interaction patterns)"@en ;
+        skos:altLabel      "Web Services Deployment Platform supporting REST and SOAP interaction patterns"@en ;
         wdrs:describedBy   :this .
 
 <http://data.openlinksw.com/oplweb/product_feature/RDFViewsoverExternalDataSources#this>
