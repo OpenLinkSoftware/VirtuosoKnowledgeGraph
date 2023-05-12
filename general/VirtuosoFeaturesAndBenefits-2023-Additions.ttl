@@ -41,7 +41,7 @@
 
 <http://data.openlinksw.com/oplweb/product_benefit/CognitiveSecurity#this>
         rdf:type            oplben:TechnicalManagementBenefit ;
-        schema:description  "Use of declarative reasoning and inference to drive enterprise security using fine-grained attribute-based access controls. This approach to security, via a Semantic Web of Linked Data, enables the development and deployment of adaptive security solutions that scale to the Web and Internet." ;
+        schema:description  "Use declarative reasoning and inference to drive enterprise security using fine-grained, attribute-based access controls (ABAC). This approach to security, via a Semantic Web of Linked Data, enables development and deployment of adaptive security solutions that scale to the Web and Internet." ;
         schema:name         "Cognitive Security"@en ;
         wdrs:describedBy    :this .
 
