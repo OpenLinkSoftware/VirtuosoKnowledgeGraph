@@ -86,7 +86,7 @@
         rdf:type           oplfea:ProductFeature ;
         schema:name        "run-time-hosting"@en ;
         oplben:hasBenefit  <http://data.openlinksw.com/oplweb/product_benefit/increases-flexibility-and-interoperability#this> ;
-        skos:altLabel      "Run Time Hosting"@en ;
+        skos:altLabel      "Runtime Hosting"@en ;
         wdrs:describedBy   :this .
 
 <http://data.openlinksw.com/oplweb/product_feature/elastic-cluster#this>
