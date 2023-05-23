@@ -43,7 +43,7 @@ source: a schema:CreativeWork ;
   schema:author <http://www.openlinksw.com/#this> ;
   schema:url :this ;
   schema:dateCreated "2015-01-27T15:44:00-05:00"^^xsd:dateTime;
-  schema:dateModified "2023-02-18T19:46:00-00:00"^^xsd:dateTime ;
+  schema:dateModified "2023-05-23T19:46:00-00:00"^^xsd:dateTime ;
   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
   cc:attributionName "OpenLink Software" ;
   dcterms:subject
@@ -700,7 +700,7 @@ oplinst:hasMeasurementValue "73641"^^xsd:integer .
                     URL property. Otherwise, click on hyperlink anchors the text following 'About:'.
                  """@en ;
   schema:dateCreated "2019-05-14T13:47:27-00:00"^^xsd:dateTime ;
-  schema:dateModified "2023-02-18T19:00:28-04:00"^^xsd:dateTime ;
+  schema:dateModified "2023-05-23T19:00:28-04:00"^^xsd:dateTime ;
  ;
   oplinst:hasFileSizeSpecification :mwvpz2zz-30fcb64.dmgSpecification ;
   # oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>  ;
@@ -718,7 +718,7 @@ oplinst:hasMeasurementValue "73641"^^xsd:integer .
   oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchive83mwvpMacOSX#this> ;
   schema:name "File Size Details -- mwvpz2zz.dmg" ;
   oplinst:hasMeasurementUnit "Bytes" ;
-  oplinst:hasMeasurementValue "57560677"^^xsd:integer .
+  oplinst:hasMeasurementValue "57721600"^^xsd:integer .
 
 
 ## Virtuoso 8.3 Client Installer Archive for Mac OS X 10 64 Bit ##
@@ -775,7 +775,7 @@ oplinst:hasMeasurementValue "73641"^^xsd:integer .
                     URL property. Otherwise, click on hyperlink anchors the text following 'About:'.
                  """@en ;
   schema:dateCreated "2019-05-14T13:47:27-00:00"^^xsd:dateTime ;
-  schema:dateModified "2023-02-18T19:46:00-00:00"^^xsd:dateTime ;
+  schema:dateModified "2023-05-23T19:46:00-00:00"^^xsd:dateTime ;
  ;
   oplinst:hasFileSizeSpecification :m1vpz2zz-30fcb64.dmgSpecification ;
   # oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product/virtuoso-macosx-odbc-driver#this>  ;
@@ -793,7 +793,7 @@ oplinst:hasMeasurementValue "73641"^^xsd:integer .
   oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchive83mwvpMacOSX#this> ;
   schema:name "File Size Details -- m1vpz2zz.dmg" ;
   oplinst:hasMeasurementUnit "Bytes" ;
-  oplinst:hasMeasurementValue "57560677"^^xsd:integer .
+  oplinst:hasMeasurementValue "57721600"^^xsd:integer .
 
 
 ## Virtuoso 8.3 Client Installer Archive for Mac OS 11 64 Bit ##
