@@ -43,7 +43,7 @@ source: a schema:CreativeWork ;
   schema:author <http://www.openlinksw.com/#this> ;
   schema:url :this ;
   schema:dateCreated  "2015-01-27T15:44:00-05:00"^^xsd:dateTime;
-  schema:dateModified "2023-02-18T19:37:00-04:00"^^xsd:dateTime ;
+  schema:dateModified "2023-05-23T19:37:00-04:00"^^xsd:dateTime ;
   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
   cc:attributionName "OpenLink Software" ;
   dcterms:subject
@@ -740,7 +740,7 @@ oplinst:hasMeasurementValue "121173"^^xsd:integer .
                     URL property. Otherwise, click on hyperlink anchors the text following 'About:'.
                  """@en ;
   schema:dateCreated "2019-05-14T13:47:27-00:00"^^xsd:dateTime ;
-  schema:dateModified "2023-02-18T19:47:27-00:00"^^xsd:dateTime ;
+  schema:dateModified "2023-05-23T19:47:27-00:00"^^xsd:dateTime ;
   oplinst:hasFileSizeSpecification :wavpz2zz-30fcb64.tarSpecification ;
   # oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>  ;
   oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#this> ;
@@ -757,7 +757,7 @@ oplinst:hasMeasurementValue "121173"^^xsd:integer .
   oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/VirtuosoClientServerInstallerArchive83wavpWindows#this> ;
   schema:name "File Size Details -- wavpz2zz.exe" ;
   oplinst:hasMeasurementUnit "Bytes" ;
-  oplinst:hasMeasurementValue "49529264"^^xsd:integer .
+  oplinst:hasMeasurementValue "49534488"^^xsd:integer .
 
 
 ## Virtuoso Client Installer Archive for Windows 64 bit
@@ -776,7 +776,7 @@ oplinst:hasMeasurementValue "121173"^^xsd:integer .
                     URL property. Otherwise, click on hyperlink anchors the text following 'About:'.
                  """@en ;
   schema:dateCreated "2019-05-14T13:47:27-00:00"^^xsd:dateTime ;
-  schema:dateModified "2023-02-18T19:47:27-00:00"^^xsd:dateTime ;
+  schema:dateModified "2023-05-23T19:47:27-00:00"^^xsd:dateTime ;
   oplinst:hasFileSizeSpecification :wavcz2zz-30fcb64.tarSpecification ;
   # oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product/virtuoso-windows-odbc-driver#this>  ;
   oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#this> ;
@@ -796,7 +796,7 @@ oplinst:hasMeasurementValue "121173"^^xsd:integer .
   oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/VirtuosoClientInstallerArchive83wavcWindows#this> ;
   schema:name "File Size Details -- wavcz2zz.exe" ;
   oplinst:hasMeasurementUnit "Bytes" ;
-  oplinst:hasMeasurementValue "6295552"^^xsd:integer .
+  oplinst:hasMeasurementValue "6296384"^^xsd:integer .
 
 
 ## Virtuoso 7.2 Open Source Server Installer Archive for Windows 64 bit
