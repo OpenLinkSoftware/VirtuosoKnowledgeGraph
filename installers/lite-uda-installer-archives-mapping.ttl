@@ -28,7 +28,7 @@ sourceDAV:
    dcterms:format "text/turtle" ;
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:dateCreated  "2015-08-20T18:00:00-05:00"^^xsd:dateTime ;
-   schema:dateModified "2023-03-14T09:46:00-00:00"^^xsd:dateTime ;
+   schema:dateModified "2023-06-21T09:46:00-00:00"^^xsd:dateTime ;
    schema:creator <http://www.openlinksw.com/#this>;
    schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
    owl:sameAs source: .
@@ -38,7 +38,7 @@ source:
    schema:name "OpenLink UDA Lite Edition (Single-Tier) Installers Archives Description Document"^^xsd:string ;
    schema:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink UDA Lite Edition (Single-Tier) Installers"""@en ;
    schema:dateCreated  "2015-08-20T18:00:00-05:00"^^xsd:dateTime ;
-   schema:dateModified "2023-03-14T09:46:00-00:00"^^xsd:dateTime ;
+   schema:dateModified "2023-06-21T09:46:00-00:00"^^xsd:dateTime ;
    schema:creator <http://www.openlinksw.com/#this>;
    schema:about
         <http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3ntl6nodbmsiWindows98XPVista7WKS2000810Server20xx32Bitx86#this> ,
@@ -287,7 +287,10 @@ source:
 	<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3mxl8o12zdmg80MacOSX107Universal#this> ,
 	<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3mxl8y5zzdmg80MacOSX107Universal#this> ,
 	<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3mxl8g7zzdmg80MacOSX107Universal#this> ,
-	<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3mxl8jzzzdmg80MacOSX107Universal#this> .
+	<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3mxl8jzzzdmg80MacOSX107Universal#this> ,
+
+	<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3jdbclttaz90GenericLinuxGlibc2564Bitx8664#this> ,
+        <http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3sqllttaz90GenericLinuxGlibc2564Bitx8664#this> .
         
 <http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3ntl6nodbmsiWindows98XPVista7WKS2000810Server20xx32Bitx86#this>
     a oplinst:InstallerArchive ,
@@ -9426,4 +9429,99 @@ source:
     oplinst:hasMeasurementUnit "Bytes" ;
     oplinst:hasMeasurementValue "6315858"^^xsd:integer ;
     oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3m1jczzzzdmg80macOS11Universal#this> ;
+    wdrs:describedby source: .
+
+
+
+######### UDA 9.0 Release ##########
+
+#### UDA 9.0 Generic Linux glibc25 x64  ####
+
+<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3sqllttaz90GenericLinuxGlibc2564Bitx8664#this> 
+    a oplinst:InstallerArchive ,
+        schema:CreativeWork ,
+        oplinst:UDASTInstallerArchive ,
+        oplinst:UDASTLiteInstallerArchive ,
+        oplinst:UDASTLite80InstallerArchive ;
+    dcterms:format "application/x-gzip" ;
+    dcterms:identifier "sql_lt.taz" ;
+    oplinst:hasInstallerArchiveScript oplinst:UDAEnterpriseAndSingleTierInstallerScript ;
+    schema:dateCreated "2023-06-21T10:50:19+05:00"^^xsd:dateTime ;
+    schema:downloadUrl <https://download3.openlinksw.com/uda/components/9.0/x86_64-generic-linux-glibc25-64/sql_lt.taz> ;
+    schema:name "Lite Edition (Single-Tier) ODBC Driver Installer Archive for Sybase 10.x, 11.x, 12.x, 15.x and Microsoft SQL Server 6.x - 2017 on Generic Linux Glibc 2.5 (64 Bit) (x86_64) and Higher -- Amazon S3 HTTP Depot" ;
+    opldep:hasDepot <https://download3.openlinksw.com/#this> ;
+    oplinst:hasComponentCode <http://data.openlinksw.com/oplweb/component_code/L9#this> ;
+    oplinst:hasFileSizeSpecification <#https3sql_lttaz90GenericLinuxGlibc2564Bitx8664FileSpecification> ;
+    oplinst:hasInstallerArchiveCategory <http://data.openlinksw.com/oplweb/component_category/STLiteInstaller#this> ;
+    oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product_release/UDASingleTierLiteEditionODBCRelease9SQLServer#this>,
+        <http://data.openlinksw.com/oplweb/product_release/UDASingleTierLiteEditionODBCRelease9Sybase#this> ;
+    oplpro:versionText "9.0" ;
+    oplsof:hasDatabaseEngine
+        oplsof:SQLServer6,
+        oplsof:SQLServer7,
+        oplsof:SQLServer2000,
+        oplsof:SQLServer2005,
+        oplsof:SQLServer2008,
+        oplsof:SQLServer2008R2,
+        oplsof:SQLServer2012,
+        oplsof:SQLServer2014,
+        oplsof:SQLServer2016,
+        oplsof:SQLServer2017,
+        oplsof:Sybase10,
+        oplsof:Sybase11,
+        oplsof:Sybase12,
+        oplsof:Sybase15 ;
+    oplsof:hasDatabaseFamily oplsof:SQLServer,
+        oplsof:Sybase ;
+    oplsof:hasDbmsEngineVersion "10.x",
+        "11.x",
+        "12.x",
+        "15.x",
+        "6.x - 2017" ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-linux-glibc25-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOpsysVersion "Glibc 2.5" ;
+    wdrs:describedby source: .
+
+<#https3sql_lttaz90GenericLinuxGlibc2564Bitx8664FileSpecification> 
+    a oplinst:FileSizeSpecification, schema:CreativeWork ;
+    schema:name "File Size Details -- sql_lt.taz on Generic Linux Glibc 2.5 (64 Bit) (x86_64) (with location OpenLink Download Amazon S3 HTTP Depot)" ;
+    oplinst:hasMeasurementUnit "Bytes" ;
+    oplinst:hasMeasurementValue "6620536"^^xsd:integer ;
+    oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3sqllttaz90GenericLinuxGlibc2564Bitx8664#this> ;
+    wdrs:describedby source: .
+
+
+<http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3jdbclttaz90GenericLinuxGlibc2564Bitx8664#this> 
+    a oplinst:InstallerArchive ,
+        schema:CreativeWork ,
+        oplinst:UDASTInstallerArchive ,
+        oplinst:UDASTLiteInstallerArchive ,
+        oplinst:UDASTLite80InstallerArchive ;
+    dcterms:format "application/x-gzip" ;
+    dcterms:identifier "jdbc_lt.taz" ;
+    oplinst:hasInstallerArchiveScript oplinst:UDAEnterpriseAndSingleTierInstallerScript ;
+    schema:dateCreated "2023-06-21T03:37:34-05:00"^^xsd:dateTime ;
+    schema:downloadUrl <https://download3.openlinksw.com/uda/components/9.0/x86_64-generic-linux-glibc25-64/jdbc_lt.taz> ;
+    schema:name "Lite Edition (Single-Tier) ODBC Driver Installer Archive for JDBC Data Sources on Generic Linux Glibc 2.5 (64 Bit) (x86_64) and Higher -- Amazon S3 HTTP Depot" ;
+    opldep:hasDepot <https://download3.openlinksw.com/#this> ;
+    oplinst:hasComponentCode <http://data.openlinksw.com/oplweb/component_code/L9#this> ;
+    oplinst:hasFileSizeSpecification <#https3jdbc_lttaz90GenericLinuxGlibc21264Bitx8664FileSpecification> ;
+    oplinst:hasInstallerArchiveCategory <http://data.openlinksw.com/oplweb/component_category/STLiteInstaller#this> ;
+    oplinst:isInstallerArchiveOf <http://data.openlinksw.com/oplweb/product_release/UDASingleTierLiteEditionODBCRelease9JDBCBridge#this> ;
+    oplpro:versionText "9.0" ;
+    oplsof:hasDatabaseEngine oplsof:jdbc ;
+    oplsof:hasDatabaseFamily oplsof:JDBCBridge ;
+    oplsof:hasDbmsEngineVersion "3" ;
+    oplsof:hasOperatingSystem <http://data.openlinksw.com/oplweb/opsys/x86_64-generic-linux-glibc25-64#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:GenericLinux ;
+    oplsof:hasOpsysVersion "Glibc 2.5" ;
+    wdrs:describedby source: .
+
+<#https3jdbc_lttaz90GenericLinuxGlibc2564Bitx8664FileSpecification> 
+    a oplinst:FileSizeSpecification, schema:CreativeWork ;
+    schema:name "File Size Details -- jdbc_lt.taz on Generic Linux Glibc 2.5 (64 Bit) (x86_64) (with location OpenLink Download Amazon S3 HTTP Depot)" ;
+    oplinst:hasMeasurementUnit "Bytes" ;
+    oplinst:hasMeasurementValue "13529863"^^xsd:integer ;
+    oplinst:isFileSizeSpecificationOf <http://data.openlinksw.com/oplweb/installer/UDASTLitehttps3jdbclttaz90GenericLinuxGlibc21264Bitx8664#this> ;
     wdrs:describedby source: .
