@@ -1,0 +1,69 @@
+# Virtuoso CSV Bulk Loader Guide
+
+@prefix schema: <http://schema.org/> .
+@prefix howto-bulkcsv: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading#> .
+@prefix howto-step1: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step1#> .
+@prefix howto-step2: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step2#> .
+@prefix howto-step3: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step3#> .
+@prefix howto-step4: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step4#> .
+@prefix howto-step5: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step5#> .
+@prefix howto-step6: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step6#> .
+@prefix howto-step7: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step7#> .
+@prefix howto-step8: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step8#> .
+@prefix howto-step9: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step9#> .
+
+howto-bulkcsv:this a schema:HowTo ;
+    schema:name "Virtuoso CSV File Bulk Loader Guide" ;
+    schema:headline "Virtuoso CSV File Bulk Loader" ;
+    schema:author [
+        a schema:Person ;
+        schema:name "OpenLink Software Documentation Team"
+    ] ;
+    schema:datePublished "2024" ;
+    schema:articleBody "The Virtuoso CSV File Bulk loader enables the bulk loading of CSV files into Virtuoso." ;
+    schema:hasPart howto-step1:this, howto-step2:this, howto-step3:this, howto-step4:this, howto-step5:this, howto-step6:this, howto-step7:this, howto-step8:this, howto-step9:this .
+
+howto-step1:this a schema:HowToStep ;
+    schema:name "Register CSV files" ;
+    schema:position 1 ;
+    schema:text "Use csv_register() to register CSV files for loading." .
+
+howto-step2:this a schema:HowToStep ;
+    schema:name "Register all CSV files" ;
+    schema:position 2 ;
+    schema:text "Use csv_register_all() to register all CSV files in a directory." .
+
+howto-step3:this a schema:HowToStep ;
+    schema:name "Run CSV loader" ;
+    schema:position 3 ;
+    schema:text "Use csv_loader_run() to load the registered CSV files into the database." .
+
+howto-step4:this a schema:HowToStep ;
+    schema:name "Include directories" ;
+    schema:position 4 ;
+    schema:text "Ensure directories containing CSV files are included in the DirsAllowed parameter." .
+
+howto-step5:this a schema:HowToStep ;
+    schema:name "Create configuration file" ;
+    schema:position 5 ;
+    schema:text "Create a .cfg file for non-default CSV structures." .
+
+howto-step6:this a schema:HowToStep ;
+    schema:name "Register and load" ;
+    schema:position 6 ;
+    schema:text "Register and load CSV files using csv_register() and csv_loader_run()." .
+
+howto-step7:this a schema:HowToStep ;
+    schema:name "Create configuration file" ;
+    schema:position 7 ;
+    schema:text "Create a .cfg file with the appropriate CSV structure settings." .
+
+howto-step8:this a schema:HowToStep ;
+    schema:name "Register CSV files" ;
+    schema:position 8 ;
+    schema:text "Use csv_register() to register the CSV files." .
+
+howto-step9:this a schema:HowToStep ;
+    schema:name "Run CSV loader" ;
+    schema:position 9 ;
+    schema:text "Use csv_loader_run() to load the registered CSV files into the database." .
