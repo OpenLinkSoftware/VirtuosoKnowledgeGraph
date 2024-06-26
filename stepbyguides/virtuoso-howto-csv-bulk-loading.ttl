@@ -1,6 +1,7 @@
 # Virtuoso CSV Bulk Loader Guide
 
 @prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 @prefix howto-bulkcsv: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading#> .
 @prefix howto-step1: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step1#> .
 @prefix howto-step2: <http://data.openlinksw.com/oplweb/howto/bulk-csv-loading/step2#> .
@@ -19,7 +20,7 @@ howto-bulkcsv:this a schema:HowTo ;
         a schema:Person ;
         schema:name "OpenLink Software Documentation Team"
     ] ;
-    schema:datePublished "2024" ;
+    schema:datePublished "2024-06-26"^xsd:date ;
     schema:articleBody "The Virtuoso CSV File Bulk loader enables the bulk loading of CSV files into Virtuoso." ;
     schema:hasPart howto-step1:this, howto-step2:this, howto-step3:this, howto-step4:this, howto-step5:this, howto-step6:this, howto-step7:this, howto-step8:this, howto-step9:this .
 
